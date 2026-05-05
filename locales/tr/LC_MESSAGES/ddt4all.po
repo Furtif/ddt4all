@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-11 21:32+0200\n"
+"POT-Creation-Date: 2026-05-05 17:47+0200\n"
 "PO-Revision-Date: 2026-04-29 23:58+0300\n"
 "Last-Translator: Abdullah YILMAZ (TA1GI) <h.abdullahyilmaz@hotmail.com>\n"
 "Language-Team: TURKISH\n"
@@ -179,8 +179,107 @@ msgstr "Adres taranıyor: "
 msgid "Scanning DoIP address: "
 msgstr "Adres taranıyor: "
 
+#, fuzzy, python-format
+msgid "Device detection error: %s"
+msgstr "Bağlantı hatası: "
+
+#, fuzzy, python-format
+msgid "STPX mode enabled for %s"
+msgstr "Seri yazma hatası: %s"
+
+#, fuzzy, python-format
+msgid "Pin swapping enabled for %s"
+msgstr "Seri yazma hatası: %s"
+
+#, python-format
+msgid "Enhanced features enable error: %s"
+msgstr ""
+
+msgid "STPX mode not supported by this adapter as native, trying fallback..."
+msgstr ""
+
+#, fuzzy
+msgid "STPX mode enabled successfully"
+msgstr "Bağlantı başarıyla kuruldu"
+
+#, fuzzy, python-format
+msgid "STPX mode enable error: %s"
+msgstr "Seri yazma hatası: %s"
+
+#, fuzzy, python-format
+msgid "Pin swap error: %s"
+msgstr "Seri yazma hatası: %s"
+
+msgid "VGate pin swapping successful"
+msgstr ""
+
+msgid "VGate pin swapping failed, using fallback"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "VGate pin swap error: %s"
+msgstr "Seri yazma hatası: %s"
+
+msgid "OBDLink pin swapping completed"
+msgstr ""
+
+#, python-format
+msgid "OBDLink pin swap error: %s"
+msgstr ""
+
+msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
+msgstr ""
+
+#, python-format
+msgid "DerleK USB-DIAG2 pin swap error: %s"
+msgstr ""
+
+msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
+msgstr ""
+
+#, python-format
+msgid "DerleK USB-DIAG3 pin swap error: %s"
+msgstr ""
+
+#, fuzzy
+msgid "USB CAN pin swapping completed"
+msgstr "ELS27 V5 CAN pin yapılandırması tamamlandı"
+
+#, python-format
+msgid "USB CAN pin swap error: %s"
+msgstr ""
+
+#, fuzzy
+msgid "ELS27 pin swapping completed"
+msgstr "ELS27 V5 CAN pin yapılandırması tamamlandı"
+
+#, fuzzy, python-format
+msgid "ELS27 pin swap error: %s"
+msgstr "Seri yazma hatası: %s"
+
+#, python-format
+msgid "Device %s initialized successfully with enhanced features"
+msgstr ""
+
+#, python-format
+msgid "Device %s initialized with basic features only"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Device initialization error: %s"
+msgstr "Ekran başlatma"
+
 msgid "Found USB device:"
 msgstr "USB cihazı bulundu:"
+
+#, fuzzy
+msgid "USB device detection error:"
+msgstr "ELS27 cihazı algılandı: "
+
+msgid ""
+"Note: This error does not affect serial communication or bypass cable "
+"functionality."
+msgstr ""
 
 msgid "Trying to open port "
 msgstr "Bağlantı noktası (port) açmaya çalışılıyor "
@@ -202,6 +301,10 @@ msgstr "OBDLink şu hıza geçemedi: "
 
 msgid "OBDLINK Connection OK, using optimal settings"
 msgstr "OBDLINK Bağlantısı TAMAM, optimal ayarlar kullanılıyor"
+
+#, fuzzy
+msgid "OBDLink STPX mode enabled for enhanced long command support"
+msgstr "STPX modu etkinleştirildi - uzun komut desteği aktif"
 
 msgid "Connection established successfully"
 msgstr "Bağlantı başarıyla kuruldu"
@@ -429,6 +532,24 @@ msgstr "ELS27 V5 CAN pin yapılandırması tamamlandı"
 
 msgid "Found USB adapter:"
 msgstr "USB adaptörü bulundu:"
+
+#, fuzzy
+msgid "USB not available"
+msgstr "WebEngine mevcut değil."
+
+#, fuzzy
+msgid "USB Device"
+msgstr "USB cihazı bulundu:"
+
+msgid "Warning: Could not read string descriptor:"
+msgstr ""
+
+msgid "USB OBD Device"
+msgstr ""
+
+#, fuzzy
+msgid "Warning: Vendor request failed:"
+msgstr "DoIP isteği başarısız: {}"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
 msgstr "Uyarı: PyQtWebEngine mevcut değil. Bazı özellikler sınırlı olabilir."

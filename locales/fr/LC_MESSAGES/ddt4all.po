@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-11 21:32+0200\n"
-"PO-Revision-Date: 2026-04-11 21:48+0200\n"
+"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"PO-Revision-Date: 2026-05-05 17:51+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: fr_FR\n"
@@ -182,8 +182,116 @@ msgstr "Adresse de numérisation: "
 msgid "Scanning DoIP address: "
 msgstr "Analyse de l'adresse DoIP: "
 
+#, python-format
+msgid "Device detection error: %s"
+msgstr "Erreur de détection du périphérique : %s"
+
+#, python-format
+msgid "STPX mode enabled for %s"
+msgstr "Mode STPX activé pour %s"
+
+#, python-format
+msgid "Pin swapping enabled for %s"
+msgstr "Permutation des broches activée pour %s"
+
+#, python-format
+msgid "Enhanced features enable error: %s"
+msgstr "Erreur lors de l’activation des fonctionnalités améliorées : %s"
+
+msgid "STPX mode not supported by this adapter as native, trying fallback..."
+msgstr ""
+"Le mode STPX n’est pas pris en charge nativement par cet adaptateur, "
+"tentative de solution de secours…"
+
+msgid "STPX mode enabled successfully"
+msgstr "Le mode STPX a été activé avec succès"
+
+#, python-format
+msgid "STPX mode enable error: %s"
+msgstr "Erreur d'activation du mode STPX : %s"
+
+#, python-format
+msgid "Pin swap error: %s"
+msgstr "Erreur d'échange de broches : %s"
+
+msgid "VGate pin swapping successful"
+msgstr "Permutation des broches VGate réussie"
+
+msgid "VGate pin swapping failed, using fallback"
+msgstr ""
+"Échec de la permutation des broches VGate, utilisation de la solution de "
+"secours"
+
+#, python-format
+msgid "VGate pin swap error: %s"
+msgstr "Erreur d'inversion de broches VGate : %s"
+
+msgid "OBDLink pin swapping completed"
+msgstr "Permutation des broches OBDLink terminée"
+
+#, python-format
+msgid "OBDLink pin swap error: %s"
+msgstr "Erreur lors de la permutation des broches OBDLink: %s"
+
+msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
+msgstr ""
+"DerleK USB-DIAG2 utilise un protocole propriétaire – aucune commande AT "
+"n’est nécessaire"
+
+#, python-format
+msgid "DerleK USB-DIAG2 pin swap error: %s"
+msgstr "Erreur de permutation des broches DerleK USB-DIAG2: %s"
+
+msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
+msgstr ""
+"DerleK USB-DIAG3 utilise un protocole propriétaire – aucune commande AT "
+"n’est nécessaire"
+
+#, python-format
+msgid "DerleK USB-DIAG3 pin swap error: %s"
+msgstr "Erreur de permutation des broches DerleK USB-DIAG3 : %s"
+
+msgid "USB CAN pin swapping completed"
+msgstr "Le permutation des broches USB CAN est terminée"
+
+#, python-format
+msgid "USB CAN pin swap error: %s"
+msgstr "Erreur de permutation des broches USB CAN: %s"
+
+msgid "ELS27 pin swapping completed"
+msgstr "Permutation des broches de l'ELS27 terminée"
+
+#, python-format
+msgid "ELS27 pin swap error: %s"
+msgstr "Erreur d'inversion de broches ELS27 : %s"
+
+#, python-format
+msgid "Device %s initialized successfully with enhanced features"
+msgstr ""
+"Le périphérique %s a été initialisé avec succès et dispose désormais de "
+"fonctionnalités avancées"
+
+#, python-format
+msgid "Device %s initialized with basic features only"
+msgstr ""
+"L'appareil %s a été initialisé avec les fonctionnalités de base uniquement"
+
+#, python-format
+msgid "Device initialization error: %s"
+msgstr "Erreur d'initialisation du périphérique : %s"
+
 msgid "Found USB device:"
 msgstr "Périphérique USB trouvé :"
+
+msgid "USB device detection error:"
+msgstr "Adaptateur USB non trouvé:"
+
+msgid ""
+"Note: This error does not affect serial communication or bypass cable "
+"functionality."
+msgstr ""
+"Remarque : cette erreur n’affecte pas la communication série ni la "
+"fonctionnalité du câble de contournement."
 
 msgid "Trying to open port "
 msgstr "Essayer d'ouvrir le port "
@@ -205,6 +313,10 @@ msgstr "Échec du basculement pour remplacer OBDLink par "
 
 msgid "OBDLINK Connection OK, using optimal settings"
 msgstr "Connexion OBDLINK OK, en utilisant les paramètres optimaux"
+
+msgid "OBDLink STPX mode enabled for enhanced long command support"
+msgstr ""
+"Mode STPX activé pour une prise en charge améliorée des commandes longues"
 
 msgid "Connection established successfully"
 msgstr "Connexion établie avec succès"
@@ -437,6 +549,21 @@ msgstr "Configuration des broches CAN ELS27 V5 terminée"
 
 msgid "Found USB adapter:"
 msgstr "Adaptateur USB trouvé :"
+
+msgid "USB not available"
+msgstr "USB non disponible"
+
+msgid "USB Device"
+msgstr "Périphérique USB trouvé"
+
+msgid "Warning: Could not read string descriptor:"
+msgstr "Avertissement : impossible de lire le descripteur de chaîne:"
+
+msgid "USB OBD Device"
+msgstr "Périphérique OBD USB"
+
+msgid "Warning: Vendor request failed:"
+msgstr "Avertissement : la requête du fournisseur a échoué:"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
 msgstr ""

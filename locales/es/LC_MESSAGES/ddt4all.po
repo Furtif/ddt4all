@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-11 21:32+0200\n"
+"POT-Creation-Date: 2026-05-05 17:47+0200\n"
 "PO-Revision-Date: 2026-04-10 00:04+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: \n"
@@ -186,7 +186,104 @@ msgstr "Dirección de función ECU"
 msgid "Scanning DoIP address: "
 msgstr "Dirección de función ECU"
 
+#, fuzzy, python-format
+msgid "Device detection error: %s"
+msgstr "Error de conexión: "
+
+#, fuzzy, python-format
+msgid "STPX mode enabled for %s"
+msgstr "¡Prueba de conexión exitosa!"
+
+#, python-format
+msgid "Pin swapping enabled for %s"
+msgstr ""
+
+#, python-format
+msgid "Enhanced features enable error: %s"
+msgstr ""
+
+msgid "STPX mode not supported by this adapter as native, trying fallback..."
+msgstr ""
+
+#, fuzzy
+msgid "STPX mode enabled successfully"
+msgstr "¡Prueba de conexión exitosa!"
+
+#, python-format
+msgid "STPX mode enable error: %s"
+msgstr ""
+
+#, python-format
+msgid "Pin swap error: %s"
+msgstr ""
+
+msgid "VGate pin swapping successful"
+msgstr ""
+
+msgid "VGate pin swapping failed, using fallback"
+msgstr ""
+
+#, python-format
+msgid "VGate pin swap error: %s"
+msgstr ""
+
+msgid "OBDLink pin swapping completed"
+msgstr ""
+
+#, python-format
+msgid "OBDLink pin swap error: %s"
+msgstr ""
+
+msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
+msgstr ""
+
+#, python-format
+msgid "DerleK USB-DIAG2 pin swap error: %s"
+msgstr ""
+
+msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
+msgstr ""
+
+#, python-format
+msgid "DerleK USB-DIAG3 pin swap error: %s"
+msgstr ""
+
+msgid "USB CAN pin swapping completed"
+msgstr ""
+
+#, python-format
+msgid "USB CAN pin swap error: %s"
+msgstr ""
+
+msgid "ELS27 pin swapping completed"
+msgstr ""
+
+#, python-format
+msgid "ELS27 pin swap error: %s"
+msgstr ""
+
+#, python-format
+msgid "Device %s initialized successfully with enhanced features"
+msgstr ""
+
+#, python-format
+msgid "Device %s initialized with basic features only"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Device initialization error: %s"
+msgstr "Inicialización de pantalla"
+
 msgid "Found USB device:"
+msgstr ""
+
+#, fuzzy
+msgid "USB device detection error:"
+msgstr "Dispositivo ELM327 detectado exitosamente"
+
+msgid ""
+"Note: This error does not affect serial communication or bypass cable "
+"functionality."
 msgstr ""
 
 msgid "Trying to open port "
@@ -209,6 +306,9 @@ msgid "Failed to switch OBDLink to "
 msgstr ""
 
 msgid "OBDLINK Connection OK, using optimal settings"
+msgstr ""
+
+msgid "OBDLink STPX mode enabled for enhanced long command support"
 msgstr ""
 
 #, fuzzy
@@ -445,6 +545,21 @@ msgid "ELS27 V5 CAN pin configuration complete"
 msgstr ""
 
 msgid "Found USB adapter:"
+msgstr ""
+
+msgid "USB not available"
+msgstr ""
+
+msgid "USB Device"
+msgstr ""
+
+msgid "Warning: Could not read string descriptor:"
+msgstr ""
+
+msgid "USB OBD Device"
+msgstr ""
+
+msgid "Warning: Vendor request failed:"
 msgstr ""
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
