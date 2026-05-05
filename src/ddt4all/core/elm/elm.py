@@ -27,16 +27,13 @@ _ = options.translator('ddt4all')
 
 # SNAT/DNAT entries for CAN address mapping
 # Fixed: Using proper hex addresses instead of string values
-dnat_entries = {"E7": "7E4", "E8": "644"}
-snat_entries = {"E7": "7EC", "E8": "5C4"}
+dnat_entries = {} #{"E7": "7E4", "E8": "644"} # (SCRCM) Selective Catalytic Reduction Control Module | (SVS) Surround View System
+snat_entries = {} #{"E7": "7EC", "E8": "5C4"} # (SCRCM) Selective Catalytic Reduction Control Module | (SVS) Surround View System
 
 snat = snat_entries
 snat_ext = {}
 dnat = dnat_entries
 dnat_ext = {}
-
-
-
 
 def clean_bytestring(value):
     # If is bytes -> decode
@@ -96,22 +93,32 @@ def get_available_ports():
     
     # First check for USB devices using usbdevice.py (with error handling)
     try:
-        usb_device = UsbCan()
-        if usb_device.is_init():
-            # Add USB device to ports list
-            ports.append((usb_device.descriptor, usb_device.descriptor, "USB", "online"))
-            print(_("Found USB device:") + " %s" % usb_device.descriptor)
-    except ImportError as e:
-        # Only show USB backend error once per session
-        if not hasattr(get_available_ports, '_usb_error_shown'):
-            get_available_ports._usb_error_shown = True
-            print(f"USB backend not available: {e}")
-            print("Note: USB device detection requires pyusb library (pip install pyusb)")
+        # Check if pyusb is available before attempting USB device detection
+        import usb.core
+        import usb.util
+        import usb.legacy
+        import usb.backend.libusb1
+        
+        # Test if USB backend is available before attempting device detection
+        backend = usb.backend.libusb1.get_backend()
+        if backend is None:
+            # No USB backend available - silently continue for bypass cable users
+            pass
+        else:
+            usb_device = UsbCan()
+            if usb_device.is_init():
+                # Add USB device to ports list
+                ports.append((usb_device.descriptor, usb_device.descriptor, "USB", "online"))
+                print(_("Found USB device:") + " %s" % usb_device.descriptor)
+    except ImportError:
+        # USB device detection not available - silently continue for bypass cable users
+        pass
     except Exception as e:
         # Only show USB device detection error once per session
         if not hasattr(get_available_ports, '_usb_device_error_shown'):
             get_available_ports._usb_device_error_shown = True
-            print(f"USB device detection error: {e}")
+            print(_("USB device detection error:") + f" {e}")
+            print(_("Note: This error does not affect serial communication or bypass cable functionality."))
     
     # Check for DoIP devices with optimized connectivity checking (only for DoIP-capable devices)
     # DoIP devices - Use configured IP address instead of hardcoded values
@@ -459,6 +466,12 @@ class ELM:
         elif adapter_type == "OBDLINK":
             print(text_optional.replace("OBDLink", "OBDLink"))
             if not options.elm_failed:
+                # Enable STPX mode for OBDLink adapters
+                try:
+                    self.enable_stpx_mode()
+                    print(_("OBDLink STPX mode enabled for enhanced long command support"))
+                except Exception as e:
+                    print(f"OBDLink STPX warning: {e}")
                 print(_("Connection established successfully"))
         elif adapter_type == "STD_USB" and rate != 115200 and maxspeed > 0:
             print(device_text_switch.replace("OBDLink", "ELM"))
@@ -528,49 +541,37 @@ class ELM:
         # Compatibility wrapper: delegate to unified speed switch
         return self.raise_elm_speed(baudrate, device_name="VGATE")
 
-    def send_stn_command(self, command, enhanced=True):
-        """Send command using STN protocol with enhanced features"""
-        try:
-            if enhanced and hasattr(self, 'stpx_enabled') and self.stpx_enabled:
-                # Use STPX enhanced protocol for better performance
-                # Add STN prefix for enhanced adapters
-                stn_command = f"ST {command}"
-                return self.send_raw(stn_command)
-            else:
-                # Standard command
-                return self.send_raw(command)
-        except Exception as e:
-            print(f"STN command error: {e}")
-            # Fallback to standard command
-            return self.send_raw(command)
+        if not os.path.exists(get_logs_dir()):
+            os.mkdir(get_logs_dir())
 
-    def enable_stpx_mode(self):
-        """Enable STPX mode for enhanced long command support on STN-based adapters"""
         try:
-            # STPX mode enables enhanced long command handling
-            # This is particularly useful for VGate and other STN-based adapters
-            
-            # Set enhanced timeout for long commands
-            self.send_raw("ST SFT 0")  # Disable flow control for better long command support
-            self.send_raw("ST WFF 1")  # Enable wait for first frame
-            self.send_raw("ST FC SH 80")  # Set flow control separator
-            
-            # Configure extended buffer for long commands
-            self.send_raw("ST BLM 1")  # Enable large message mode
-            self.send_raw("ST CSM 1")  # Enable checksum mode for reliability
-            
-            # Set optimal timing for STPX protocol
-            self.send_raw("ST P1 25")  # Set inter-frame gap
-            self.send_raw("ST P3 55")  # Set frame response time
-            
-            # Enable extended addressing if supported
-            self.send_raw("ST EA 1")  # Enable extended addressing
-            
-            # Set flag to indicate STPX is enabled
-            self.stpx_enabled = True
-            
-            print(_("STPX mode enabled for enhanced long command support"))
-            
+            if len(options.log) > 0:
+                self.lf = open(os.path.join(get_logs_dir(), "elm_" + options.log + ".txt"), "at", encoding="utf-8")
+                self.vf = open(os.path.join(get_logs_dir(), "ecu_" + options.log + ".txt"), "at", encoding="utf-8")
+                self.vf.write("# TimeStamp;Address;Command;Response;Error\n")
+                # STPX mode enables enhanced long command handling
+                # This is particularly useful for VGate and other STN-based adapters
+                
+                # Set enhanced timeout for long commands
+                self.send_raw("ST SFT 0")  # Disable flow control for better long command support
+                self.send_raw("ST WFF 1")  # Enable wait for first frame
+                self.send_raw("ST FC SH 80")  # Set flow control separator
+                
+                # Configure extended buffer for long commands
+                self.send_raw("ST BLM 1")  # Enable large message mode
+                self.send_raw("ST CSM 1")  # Enable checksum mode for reliability
+                
+                # Set optimal timing for STPX protocol
+                self.send_raw("ST P1 25")  # Set inter-frame gap
+                self.send_raw("ST P3 55")  # Set frame response time
+                
+                # Enable extended addressing if supported
+                self.send_raw("ST EA 1")  # Enable extended addressing
+                
+                # Set flag to indicate STPX is enabled
+                self.stpx_enabled = True
+                
+                print(_("STPX mode enabled for enhanced long command support"))
         except Exception as e:
             print(f"STPX mode enable warning: {e}")
             # Don't raise exception - STPX is enhancement, not requirement
@@ -1089,8 +1090,23 @@ class ELM:
         """Enhanced send_raw with STN/STPX support"""
         # Check if STN/STPX should be used
         if hasattr(self, 'stpx_enabled') and self.stpx_enabled and not command.upper().startswith(('AT', 'ST')):
-            # Use STN protocol for enhanced adapters when enabled
-            return self.send_stn_command(command, enhanced=True)
+            # Use STPX D: protocol for enhanced adapters
+            if len(command) > 16:
+                # Use STPX L: for long commands first
+                length_cmd = f"STPX L:{str(int(len(command)/2))},R:1"
+                frsp = self.send_raw(length_cmd)
+                if "OK" in frsp:
+                    # Send actual data with STPX D:
+                    stpx_command = f"STPX D:{command},R:1"
+                    return self.send_raw(stpx_command)
+                else:
+                    # Fallback to standard STN if STPX L: fails
+                    stn_command = f"ST {command}"
+                    return self.send_raw(stn_command)
+            else:
+                # Use STPX D: for shorter commands
+                stpx_command = f"STPX D:{command},R:1"
+                return self.send_raw(stpx_command)
         
         tb = time.time()  # start time
 

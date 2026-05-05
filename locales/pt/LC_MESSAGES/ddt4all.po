@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-11 21:32+0200\n"
-"PO-Revision-Date: 2026-04-11 21:49+0200\n"
+"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"PO-Revision-Date: 2026-05-05 17:52+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: Portuguese\n"
 "Language: pt_PT\n"
@@ -181,8 +181,111 @@ msgstr "Endereço de digitalização: "
 msgid "Scanning DoIP address: "
 msgstr "Verificando o endereço DoIP: "
 
+#, python-format
+msgid "Device detection error: %s"
+msgstr "Erro de detecção do dispositivo: %s"
+
+#, python-format
+msgid "STPX mode enabled for %s"
+msgstr "Modo STPX ativado para %s"
+
+#, python-format
+msgid "Pin swapping enabled for %s"
+msgstr "Troca de pinos ativada para %s"
+
+#, python-format
+msgid "Enhanced features enable error: %s"
+msgstr "Erro ao ativar recursos avançados: %s"
+
+msgid "STPX mode not supported by this adapter as native, trying fallback..."
+msgstr ""
+"Modo STPX não suportado nativamente por este adaptador, tentando "
+"alternativa..."
+
+msgid "STPX mode enabled successfully"
+msgstr "Modo STPX ativado com sucesso"
+
+#, python-format
+msgid "STPX mode enable error: %s"
+msgstr "Erro ao ativar o modo STPX: %s"
+
+#, python-format
+msgid "Pin swap error: %s"
+msgstr "Erro na troca de pinos: %s"
+
+msgid "VGate pin swapping successful"
+msgstr "Troca de pinos VGate realizada com sucesso"
+
+msgid "VGate pin swapping failed, using fallback"
+msgstr "Falha na troca de pinos VGate, usando alternativa"
+
+#, python-format
+msgid "VGate pin swap error: %s"
+msgstr "Erro na troca de pinos VGate: %s"
+
+msgid "OBDLink pin swapping completed"
+msgstr "Troca de pinos OBDLink concluída"
+
+#, python-format
+msgid "OBDLink pin swap error: %s"
+msgstr "Erro na troca de pinos OBDLink: %s"
+
+msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
+msgstr ""
+"DerleK USB-DIAG2 usa protocolo proprietário – não são necessários comandos AT"
+
+#, python-format
+msgid "DerleK USB-DIAG2 pin swap error: %s"
+msgstr "Erro na troca de pinos DerleK USB-DIAG2: %s"
+
+msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
+msgstr ""
+"DerleK USB-DIAG3 usa protocolo proprietário – não são necessários comandos AT"
+
+#, python-format
+msgid "DerleK USB-DIAG3 pin swap error: %s"
+msgstr "Erro na troca de pinos DerleK USB-DIAG3: %s"
+
+msgid "USB CAN pin swapping completed"
+msgstr "Troca de pinos USB CAN concluída"
+
+#, python-format
+msgid "USB CAN pin swap error: %s"
+msgstr "Erro na troca de pinos USB CAN: %s"
+
+msgid "ELS27 pin swapping completed"
+msgstr "Troca de pinos ELS27 concluída"
+
+#, python-format
+msgid "ELS27 pin swap error: %s"
+msgstr "Erro na troca de pinos ELS27: %s"
+
+#, python-format
+msgid "Device %s initialized successfully with enhanced features"
+msgstr ""
+"O dispositivo %s foi inicializado com sucesso com funcionalidades melhoradas"
+
+#, python-format
+msgid "Device %s initialized with basic features only"
+msgstr ""
+"O dispositivo %s foi inicializado apenas com as funcionalidades básicas"
+
+#, python-format
+msgid "Device initialization error: %s"
+msgstr "Erro de inicialização do dispositivo: %s"
+
 msgid "Found USB device:"
 msgstr "Dispositivo USB encontrado:"
+
+msgid "USB device detection error:"
+msgstr "Erro na detecção do dispositivo USB:"
+
+msgid ""
+"Note: This error does not affect serial communication or bypass cable "
+"functionality."
+msgstr ""
+"Nota: este erro não afeta a comunicação serial nem a funcionalidade do cabo "
+"de bypass."
 
 msgid "Trying to open port "
 msgstr "Tentando abrir porta "
@@ -204,6 +307,9 @@ msgstr "Falha ao mudar para alterar OBDLink para "
 
 msgid "OBDLINK Connection OK, using optimal settings"
 msgstr "Conexão OBDLINK de velocidade total OK"
+
+msgid "OBDLink STPX mode enabled for enhanced long command support"
+msgstr "Modo STPX do OBDLink ativado para suporte aprimorado a comandos longos"
 
 msgid "Connection established successfully"
 msgstr "Conexão estabelecida com êxito"
@@ -432,6 +538,21 @@ msgstr "Configuração do pino CAN ELS27 V5 concluída"
 
 msgid "Found USB adapter:"
 msgstr "Adaptador USB encontrado:"
+
+msgid "USB not available"
+msgstr "USB não disponível"
+
+msgid "USB Device"
+msgstr "Dispositivo USB"
+
+msgid "Warning: Could not read string descriptor:"
+msgstr "Aviso: não foi possível ler o descritor de string:"
+
+msgid "USB OBD Device"
+msgstr "Dispositivo OBD USB"
+
+msgid "Warning: Vendor request failed:"
+msgstr "Aviso: a solicitação do fornecedor falhou:"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
 msgstr ""
