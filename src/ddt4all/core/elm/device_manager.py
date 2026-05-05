@@ -125,12 +125,12 @@ class DeviceManager:
             # Enable STN/STPX features
             if settings.get('stpx_support', False):
                 DeviceManager._enable_stpx_mode(elm_instance)
-                print(f"STPX mode enabled for {device_type}")
+                print(_("STPX mode enabled for %s") % device_type)
             
             # Enable pin swapping if supported
             if settings.get('pin_swap', False):
                 DeviceManager._auto_swap_pins(elm_instance, device_type)
-                print(f"Pin swapping enabled for {device_type}")
+                print(_("Pin swapping enabled for %s") % device_type)
             
             return True
             
@@ -333,9 +333,9 @@ class DeviceManager:
             success = DeviceManager.enable_enhanced_features(elm_instance, device_type)
             
             if success:
-                print(f"Device {device_type} initialized successfully with enhanced features")
+                print(_("Device %s initialized successfully with enhanced features") % device_type)
             else:
-                print(f"Device {device_type} initialized with basic features only")
+                print(_("Device %s initialized with basic features only") % device_type)
             
             return True
             
