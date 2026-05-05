@@ -466,6 +466,12 @@ class ELM:
         elif adapter_type == "OBDLINK":
             print(text_optional.replace("OBDLink", "OBDLink"))
             if not options.elm_failed:
+                # Enable STPX mode for OBDLink adapters
+                try:
+                    self.enable_stpx_mode()
+                    print(_("OBDLink STPX mode enabled for enhanced long command support"))
+                except Exception as e:
+                    print(f"OBDLink STPX warning: {e}")
                 print(_("Connection established successfully"))
         elif adapter_type == "STD_USB" and rate != 115200 and maxspeed > 0:
             print(device_text_switch.replace("OBDLink", "ELM"))
@@ -535,49 +541,37 @@ class ELM:
         # Compatibility wrapper: delegate to unified speed switch
         return self.raise_elm_speed(baudrate, device_name="VGATE")
 
-    def send_stn_command(self, command, enhanced=True):
-        """Send command using STN protocol with enhanced features"""
-        try:
-            if enhanced and hasattr(self, 'stpx_enabled') and self.stpx_enabled:
-                # Use STPX enhanced protocol for better performance
-                # Add STN prefix for enhanced adapters
-                stn_command = f"ST {command}"
-                return self.send_raw(stn_command)
-            else:
-                # Standard command
-                return self.send_raw(command)
-        except Exception as e:
-            print(f"STN command error: {e}")
-            # Fallback to standard command
-            return self.send_raw(command)
+        if not os.path.exists(get_logs_dir()):
+            os.mkdir(get_logs_dir())
 
-    def enable_stpx_mode(self):
-        """Enable STPX mode for enhanced long command support on STN-based adapters"""
         try:
-            # STPX mode enables enhanced long command handling
-            # This is particularly useful for VGate and other STN-based adapters
-            
-            # Set enhanced timeout for long commands
-            self.send_raw("ST SFT 0")  # Disable flow control for better long command support
-            self.send_raw("ST WFF 1")  # Enable wait for first frame
-            self.send_raw("ST FC SH 80")  # Set flow control separator
-            
-            # Configure extended buffer for long commands
-            self.send_raw("ST BLM 1")  # Enable large message mode
-            self.send_raw("ST CSM 1")  # Enable checksum mode for reliability
-            
-            # Set optimal timing for STPX protocol
-            self.send_raw("ST P1 25")  # Set inter-frame gap
-            self.send_raw("ST P3 55")  # Set frame response time
-            
-            # Enable extended addressing if supported
-            self.send_raw("ST EA 1")  # Enable extended addressing
-            
-            # Set flag to indicate STPX is enabled
-            self.stpx_enabled = True
-            
-            print(_("STPX mode enabled for enhanced long command support"))
-            
+            if len(options.log) > 0:
+                self.lf = open(os.path.join(get_logs_dir(), "elm_" + options.log + ".txt"), "at", encoding="utf-8")
+                self.vf = open(os.path.join(get_logs_dir(), "ecu_" + options.log + ".txt"), "at", encoding="utf-8")
+                self.vf.write("# TimeStamp;Address;Command;Response;Error\n")
+                # STPX mode enables enhanced long command handling
+                # This is particularly useful for VGate and other STN-based adapters
+                
+                # Set enhanced timeout for long commands
+                self.send_raw("ST SFT 0")  # Disable flow control for better long command support
+                self.send_raw("ST WFF 1")  # Enable wait for first frame
+                self.send_raw("ST FC SH 80")  # Set flow control separator
+                
+                # Configure extended buffer for long commands
+                self.send_raw("ST BLM 1")  # Enable large message mode
+                self.send_raw("ST CSM 1")  # Enable checksum mode for reliability
+                
+                # Set optimal timing for STPX protocol
+                self.send_raw("ST P1 25")  # Set inter-frame gap
+                self.send_raw("ST P3 55")  # Set frame response time
+                
+                # Enable extended addressing if supported
+                self.send_raw("ST EA 1")  # Enable extended addressing
+                
+                # Set flag to indicate STPX is enabled
+                self.stpx_enabled = True
+                
+                print(_("STPX mode enabled for enhanced long command support"))
         except Exception as e:
             print(f"STPX mode enable warning: {e}")
             # Don't raise exception - STPX is enhancement, not requirement
@@ -1096,8 +1090,23 @@ class ELM:
         """Enhanced send_raw with STN/STPX support"""
         # Check if STN/STPX should be used
         if hasattr(self, 'stpx_enabled') and self.stpx_enabled and not command.upper().startswith(('AT', 'ST')):
-            # Use STN protocol for enhanced adapters when enabled
-            return self.send_stn_command(command, enhanced=True)
+            # Use STPX D: protocol for enhanced adapters
+            if len(command) > 16:
+                # Use STPX L: for long commands first
+                length_cmd = f"STPX L:{str(int(len(command)/2))},R:1"
+                frsp = self.send_raw(length_cmd)
+                if "OK" in frsp:
+                    # Send actual data with STPX D:
+                    stpx_command = f"STPX D:{command},R:1"
+                    return self.send_raw(stpx_command)
+                else:
+                    # Fallback to standard STN if STPX L: fails
+                    stn_command = f"ST {command}"
+                    return self.send_raw(stn_command)
+            else:
+                # Use STPX D: for shorter commands
+                stpx_command = f"STPX D:{command},R:1"
+                return self.send_raw(stpx_command)
         
         tb = time.time()  # start time
 
