@@ -124,8 +124,9 @@ class DeviceManager:
             
             # Enable STN/STPX features
             if settings.get('stpx_support', False):
-                DeviceManager._enable_stpx_mode(elm_instance)
-                print(_("STPX mode enabled for %s") % device_type)
+                stpx_enabled = DeviceManager._enable_stpx_mode(elm_instance, device_type)
+                if stpx_enabled:
+                    print(_("STPX mode enabled for %s") % device_type)
             
             # Enable pin swapping if supported
             if settings.get('pin_swap', False):
@@ -139,7 +140,7 @@ class DeviceManager:
             return False
 
     @staticmethod
-    def _enable_stpx_mode(elm_instance):
+    def _enable_stpx_mode(elm_instance, device_type):
         """Enable STPX mode for enhanced long command support"""
         try:
             # STPX is a mode, not individual commands
