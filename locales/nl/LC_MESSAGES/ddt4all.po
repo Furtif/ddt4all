@@ -100,15 +100,18 @@ msgid "DoIP: Electric ECU detected - {}"
 msgstr "DoIP: Elektrische ECU gedetecteerd - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr "DoIP: Uitgebreide adressering gebruiken voor Elektrische Voertuigsystemen"
+msgstr ""
+"DoIP: Uitgebreide adressering gebruiken voor Elektrische Voertuigsystemen"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr "DoIP: 29-bit uitgebreide adressering gebruiken - TX:0x{:04X}, RX:0x{:04X}"
+msgstr ""
+"DoIP: 29-bit uitgebreide adressering gebruiken - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr "DoIP: 11-bit standaard adressering gebruiken - TX:0x{:03X}, RX:0x{:03X}"
+msgstr ""
+"DoIP: 11-bit standaard adressering gebruiken - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
 msgstr "Waarschuwing, kan geen waarde met teken krijgen voor"
@@ -125,305 +128,297 @@ msgstr "Groep toevoegen "
 msgid "Unable to find eculist"
 msgstr "Kan eculist niet vinden"
 
-#, fuzzy
 msgid "Cannot find file "
-msgstr "Kan aanvraag niet uitvoeren "
+msgstr "Kan bestand niet vinden "
 
 msgid "Cannot load ECU file"
-msgstr ""
+msgstr "Kan ECU-bestand niet laden"
 
-#, fuzzy
 msgid "XML not found"
-msgstr "XML bestand niet gevonden: "
+msgstr "XML niet gevonden"
 
 msgid "Cannot retrieve functionnal address of ECU"
-msgstr ""
+msgstr "Kan functioneel adres van ECU niet ophalen"
 
 msgid "Generated stream "
-msgstr ""
+msgstr "Gegenereerde stream "
 
-#, fuzzy
 msgid "Send request stream "
-msgstr "Verzend aanvraag-bytes (HEX)"
+msgstr "Verzend aanvraag stream "
 
-#, fuzzy
 msgid "Received stream "
-msgstr "Bytes ontvangen"
+msgstr "Ontvangen stream "
 
 msgid "Request ECU Error"
-msgstr ""
+msgstr "Aanvraag ECU Fout"
 
 msgid "Decoded values"
-msgstr ""
+msgstr "Gedecodeerde waarden"
 
 msgid "Found: "
-msgstr ""
+msgstr "Gevonden: "
 
 msgid "Identified ECU"
-msgstr ""
+msgstr "ECU geïdentificeerd"
 
 msgid "Found ECU"
-msgstr ""
+msgstr "ECU gevonden"
 
 msgid "(not perfect match)"
-msgstr ""
+msgstr "(niet perfecte overeenkomst)"
 
 msgid "(no relevant ECU file found)"
-msgstr ""
+msgstr "(geen relevant ECU-bestand gevonden)"
 
-#, fuzzy
 msgid "Warning, address"
-msgstr "ECU Functie Adres"
+msgstr "Waarschuwing, adres"
 
 msgid "is not mapped"
-msgstr ""
+msgstr "is niet in kaart gebracht"
 
-#, fuzzy
 msgid "Scanning address: "
-msgstr "ECU Functie Adres"
+msgstr "Adres scannen: "
 
-#, fuzzy
 msgid "Scanning DoIP address: "
-msgstr "ECU Functie Adres"
+msgstr "DoIP adres scannen: "
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device detection error: %s"
-msgstr "Connection error: "
+msgstr "Apparaat detectiefout: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "STPX mode enabled for %s"
-msgstr "Connection test successful!"
+msgstr "STPX modus ingeschakeld voor %s"
 
 #, python-format
 msgid "Pin swapping enabled for %s"
-msgstr ""
+msgstr "Pin wisselen ingeschakeld voor %s"
 
 #, python-format
 msgid "Enhanced features enable error: %s"
-msgstr ""
+msgstr "Fout bij inschakelen uitgebreide functies: %s"
 
 msgid "STPX mode not supported by this adapter as native, trying fallback..."
 msgstr ""
+"STPX modus niet ondersteund door deze adapter als native, fallback "
+"proberen..."
 
-#, fuzzy
 msgid "STPX mode enabled successfully"
-msgstr "Connection test successful!"
+msgstr "STPX modus succesvol ingeschakeld"
 
 #, python-format
 msgid "STPX mode enable error: %s"
-msgstr ""
+msgstr "STPX modus inschakelfout: %s"
 
 #, python-format
 msgid "Pin swap error: %s"
-msgstr ""
+msgstr "Pin wisselfout: %s"
 
 msgid "VGate pin swapping successful"
-msgstr ""
+msgstr "VGate pin wisselen succesvol"
 
 msgid "VGate pin swapping failed, using fallback"
-msgstr ""
+msgstr "VGate pin wisselen mislukt, fallback gebruiken"
 
 #, python-format
 msgid "VGate pin swap error: %s"
-msgstr ""
+msgstr "VGate pin wisselfout: %s"
 
 msgid "OBDLink pin swapping completed"
-msgstr ""
+msgstr "OBDLink pin wisselen voltooid"
 
 #, python-format
 msgid "OBDLink pin swap error: %s"
-msgstr ""
+msgstr "OBDLink pin wisselfout: %s"
 
 msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
-msgstr ""
+msgstr "DerleK USB-DIAG2 gebruikt eigen protocol - geen AT commando's nodig"
 
 #, python-format
 msgid "DerleK USB-DIAG2 pin swap error: %s"
-msgstr ""
+msgstr "DerleK USB-DIAG2 pin wisselfout: %s"
 
 msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
-msgstr ""
+msgstr "DerleK USB-DIAG3 gebruikt eigen protocol - geen AT commando's nodig"
 
 #, python-format
 msgid "DerleK USB-DIAG3 pin swap error: %s"
-msgstr ""
+msgstr "DerleK USB-DIAG3 pin wisselfout: %s"
 
 msgid "USB CAN pin swapping completed"
-msgstr ""
+msgstr "USB CAN pin wisselen voltooid"
 
 #, python-format
 msgid "USB CAN pin swap error: %s"
-msgstr ""
+msgstr "USB CAN pin wisselfout: %s"
 
 msgid "ELS27 pin swapping completed"
-msgstr ""
+msgstr "ELS27 pin wisselen voltooid"
 
 #, python-format
 msgid "ELS27 pin swap error: %s"
-msgstr ""
+msgstr "ELS27 pin wisselfout: %s"
 
 #, python-format
 msgid "Device %s initialized successfully with enhanced features"
-msgstr ""
+msgstr "Apparaat %s succesvol geïnitialiseerd met uitgebreide functies"
 
 #, python-format
 msgid "Device %s initialized with basic features only"
-msgstr ""
+msgstr "Apparaat %s geïnitialiseerd met alleen basisfuncties"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device initialization error: %s"
-msgstr "Scherm initialisatie"
+msgstr "Apparaat initialisatiefout: %s"
 
 msgid "Found USB device:"
-msgstr ""
+msgstr "USB-apparaat gevonden:"
 
-#, fuzzy
 msgid "USB device detection error:"
-msgstr "ELM327 device detected successfully"
+msgstr "USB-apparaat detectiefout:"
 
 msgid ""
 "Note: This error does not affect serial communication or bypass cable "
 "functionality."
 msgstr ""
+"Let op: Deze fout beïnvloedt de seriële communicatie of bypass-kabel "
+"functionaliteit niet."
 
 msgid "Trying to open port "
 msgstr "Proberen om de poort te openen "
 
-#, fuzzy
 msgid "Port initialization failed"
-msgstr "Scherm initialisatie"
+msgstr "Poort initialisatie mislukt"
 
 msgid "Port connection failed - port object is invalid"
-msgstr ""
+msgstr "Poortverbinding mislukt - poortobject is ongeldig"
 
 msgid "No ELM interface on port"
 msgstr "Geen ELM interface aangesloten"
 
 msgid "OBDLink Connection OK, attempting full speed UART switch"
-msgstr ""
+msgstr "OBDLink verbinding OK, volledige snelheid UART schakeling proberen"
 
 msgid "Failed to switch OBDLink to "
-msgstr ""
+msgstr "OBDLink schakelen naar mislukt: "
 
 msgid "OBDLINK Connection OK, using optimal settings"
-msgstr ""
+msgstr "OBDLINK verbinding OK, optimale instellingen gebruiken"
 
 msgid "OBDLink STPX mode enabled for enhanced long command support"
 msgstr ""
+"OBDLink STPX modus ingeschakeld voor uitgebreide lange commando ondersteuning"
 
-#, fuzzy
 msgid "Connection established successfully"
-msgstr "Connection test successful!"
+msgstr "Verbinding succesvol tot stand gebracht"
 
 msgid "VGate STPX mode enabled for enhanced long command support"
 msgstr ""
+"VGate STPX modus ingeschakeld voor uitgebreide lange commando ondersteuning"
 
 msgid "Configuring ELS27 V5 CAN pins (12-13)"
-msgstr ""
+msgstr "ELS27 V5 CAN pinnen configureren (12-13)"
 
 msgid "ELS27 V5 CAN configuration complete"
-msgstr ""
+msgstr "ELS27 V5 CAN configuratie voltooid"
 
 msgid "STPX mode enabled for enhanced long command support"
-msgstr ""
+msgstr "STPX modus ingeschakeld voor uitgebreide lange commando ondersteuning"
 
 msgid "Port is None - cannot switch speed"
-msgstr ""
+msgstr "Poort is None - kan snelheid niet wisselen"
 
 #, python-format
 msgid "%s switched baudrate OK, changing UART speed now..."
-msgstr ""
+msgstr "%s baudrate wisseling OK, UART snelheid nu veranderen..."
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s STN connection established"
-msgstr "Connection test failed"
+msgstr "%s STN verbinding tot stand gebracht"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s Version: "
-msgstr "Versie"
+msgstr "%s Versie: "
 
 msgid ""
 "VGate adapter detected but STN verification failed, attempting fallback..."
 msgstr ""
+"VGate adapter gedetecteerd, maar STN-verificatie mislukt, fallback "
+"proberen..."
 
 #, python-format
 msgid "Unsupported baudrate for ELM: %s"
-msgstr ""
+msgstr "Niet-ondersteunde baudrate voor ELM: %s"
 
 msgid "ELM baudrate switched OK, changing UART speed now..."
-msgstr ""
+msgstr "ELM baudrate wisseling OK, UART snelheid nu veranderen..."
 
 msgid "ELM full speed connection OK "
-msgstr ""
+msgstr "ELM volledige snelheid verbinding OK "
 
-#, fuzzy
 msgid "Version "
-msgstr "Versie"
+msgstr "Versie "
 
 msgid "ELM did not report version after speed switch"
-msgstr ""
+msgstr "ELM rapporteerde geen versie na snelheidswisseling"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Your ELM does not support baudrate %s"
-msgstr "Fout - Wifi ondersteunt wisselen baudrate niet"
+msgstr "Uw ELM ondersteunt geen baudrate %s"
 
 msgid "ELM reset..."
-msgstr ""
+msgstr "ELM reset..."
 
-#, fuzzy
 msgid "Unknown address: "
-msgstr "ECU Functie Adres"
+msgstr "Onbekend adres: "
 
 msgid "Using saved device settings"
-msgstr ""
+msgstr "Opgeslagen apparaatinstellingen gebruiken"
 
 msgid "Using optimal device settings"
-msgstr ""
+msgstr "Optimale apparaatinstellingen gebruiken"
 
 msgid "Connecting to device at port: "
-msgstr "Connecting to device at port: "
+msgstr "Verbinden met apparaat op poort: "
 
 msgid "Using baudrate: "
-msgstr "Using baudrate: "
+msgstr "Baudrate gebruiken: "
 
 msgid "Testing for ELS27 device..."
-msgstr ""
+msgstr "Testen voor ELS27 apparaat..."
 
-#, fuzzy
 msgid "ELS27 device detected: "
-msgstr "ELM327 device detected successfully"
+msgstr "ELS27 apparaat gedetecteerd: "
 
-#, fuzzy
 msgid "Using detected baud rate: "
-msgstr "Using baudrate: "
+msgstr "Gedetecteerde baudrate gebruiken: "
 
 msgid "Warning: No ELS27 response detected"
-msgstr ""
+msgstr "Waarschuwing: Geen ELS27 respons gedetecteerd"
 
-#, fuzzy
 msgid "Will attempt connection anyway..."
-msgstr "Attempting connection..."
+msgstr "Zal toch verbinding proberen..."
 
 msgid "Connection failed: "
-msgstr "Connection failed: "
+msgstr "Verbinding mislukt: "
 
 msgid "Testing basic connectivity..."
-msgstr "Testing basic connectivity..."
+msgstr "Basisconnectiviteit testen..."
 
 msgid "Warning: Device may not be ELM327 compatible"
-msgstr "Warning: Device may not be ELM327 compatible"
+msgstr "Waarschuwing: Apparaat is mogelijk niet ELM327 compatibel"
 
 msgid "ELM327 device detected successfully"
-msgstr "ELM327 device detected successfully"
+msgstr "ELM327 apparaat succesvol gedetecteerd"
 
 msgid "Device version: "
-msgstr "Device version: "
+msgstr "Apparaatversie: "
 
 msgid "Connection error: "
-msgstr "Connection error: "
+msgstr "Verbindingsfout: "
 
 msgid "FAIL"
-msgstr "Fout"
+msgstr "MISLUKT"
 
 msgid "OK/TIMEOUT"
 msgstr "OK/TIMEOUT"
@@ -438,65 +433,62 @@ msgid "Result: "
 msgstr "Resultaat: "
 
 msgid " succeeded from "
-msgstr " geslaagd van "
+msgstr " geslaagd vanaf "
 
 msgid "ELM Max version:"
 msgstr "ELM Max versie:"
 
 msgid "Using saved settings for"
-msgstr ""
+msgstr "Opgeslagen instellingen gebruiken voor"
 
 msgid "Using optimal settings for"
-msgstr ""
+msgstr "Optimale instellingen gebruiken voor"
 
-#, fuzzy
 msgid "Serial port opened"
-msgstr "Controleer poort snelheid:"
+msgstr "Seriële poort geopend"
 
-#, fuzzy
 msgid "Error: "
-msgstr "Fout:"
+msgstr "Fout: "
 
 msgid "ELM not connected or wrong COM port"
-msgstr "ELM is niet verbonden of verkeerde COM poort"
+msgstr "ELM niet verbonden of verkeerde COM poort"
 
-#, fuzzy
 msgid "Port closed"
-msgstr "Poortsnelheid"
+msgstr "Poort gesloten"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
-msgstr ""
+msgstr "Seriële fout in read_byte: %s"
 
 msgid "Connection to ELM was lost"
 msgstr "Verbinding met ELM is verbroken"
 
 #, python-format
 msgid "*       Error: %s"
-msgstr ""
+msgstr "*       Fout: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Cannot decode bytes %s"
-msgstr "Kan aanvraag niet uitvoeren "
+msgstr "Kan bytes %s niet decoderen"
 
 #, python-format
 msgid "Error in read(): %s"
-msgstr ""
+msgstr "Fout in read(): %s"
 
 #, fuzzy
 msgid "Attempting WiFi reconnection..."
 msgstr "Attempting connection..."
 
 msgid "Port handler is None, cannot write"
-msgstr ""
+msgstr "Poort handler is None, kan niet schrijven"
 
 #, python-format
 msgid "Serial write error: %s"
-msgstr ""
+msgstr "Seriële schrijffout: %s"
 
 #, python-format
 msgid "*       Write error: %s"
-msgstr ""
+msgstr "*       Schrijffout: %s"
 
 msgid "TIMEOUT"
 msgstr "TIMEOUT"
@@ -511,433 +503,460 @@ msgid "ELM not responding"
 msgstr "ELM reageert niet"
 
 msgid "Cannot zip database, no 'ecus' directory"
-msgstr ""
+msgstr "Kan database niet zippen, geen 'ecus' map"
 
-#, fuzzy
 msgid "Starting conversion"
-msgstr "Diag versie"
+msgstr "Conversie starten"
 
 msgid "Starting processing "
-msgstr ""
+msgstr "Verwerking starten "
 
 msgid " to "
-msgstr ""
+msgstr " naar "
 
 msgid "Skipping current file (cannot parse it)"
-msgstr ""
+msgstr "Huidige bestand overslaan (kan niet parsen)"
 
 msgid "Writing database"
-msgstr ""
+msgstr "Database schrijven"
 
 msgid "Writing archive"
-msgstr ""
+msgstr "Archief schrijven"
 
 msgid "Opening ECU Database..."
-msgstr ""
+msgstr "ECU Database openen..."
 
 msgid "parts as: "
-msgstr ""
+msgstr "onderdelen als: "
 
 msgid " please review dumpVehicles def."
-msgstr ""
+msgstr " gelieve dumpVehicles def. te bekijken."
 
 msgid "ELS27 V5 CAN pin configuration complete"
-msgstr ""
+msgstr "ELS27 V5 CAN pin configuratie voltooid"
 
 msgid "Found USB adapter:"
-msgstr ""
+msgstr "USB adapter gevonden:"
 
 msgid "USB not available"
-msgstr ""
+msgstr "USB niet beschikbaar"
 
 msgid "USB Device"
-msgstr ""
+msgstr "USB Apparaat"
 
 msgid "Warning: Could not read string descriptor:"
-msgstr ""
+msgstr "Waarschuwing: Kon string descriptor niet lezen:"
 
 msgid "USB OBD Device"
-msgstr ""
+msgstr "USB OBD Apparaat"
 
 msgid "Warning: Vendor request failed:"
-msgstr ""
+msgstr "Waarschuwing: Verzoek van leverancier mislukt:"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
 msgstr ""
+"Waarschuwing: PyQtWebEngine niet beschikbaar. Sommige functies kunnen "
+"beperkt zijn."
 
 msgid "resources/projects.json not found or invalid."
-msgstr ""
+msgstr "resources/projects.json niet gevonden of ongeldig."
 
 msgid "Using custom DDT database"
-msgstr "Gebruikt aangepaste DDT database"
+msgstr "Aangepaste DDT database gebruiken"
 
 msgid "No COM port selected"
-msgstr "Geen COM poort geselcteerd"
+msgstr "Geen COM poort geselecteerd"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Initializing ELM with speed %i..."
-msgstr "Initialisering ELM met snelheid %i..."
+msgstr "ELM initialiseren met snelheid %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
-msgstr "Geen ELM327 of OBDLINK-SX gevonden op COM poort "
+msgstr "Geen ELM327 of OBDLINK-SX gedetecteerd op COM poort "
 
-#, fuzzy
 msgid "Initializing device features..."
-msgstr "Initialisering ELM met snelheid %i..."
+msgstr "Apparaatfuncties initialiseren..."
 
 msgid "AB90 AIRBAG Reset"
-msgstr ""
+msgstr "AB90 AIRBAG Reset"
 
 msgid "Airbag Tools"
-msgstr ""
+msgstr "Airbag Gereedschap"
 
 msgid ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL "
 "UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</"
 "font>"
 msgstr ""
+"AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL "
+"AIRBAG CRASH DATA ONTGRENDELEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT "
+"BETEKENT</font>"
 
 msgid "Check ACU Virgin"
-msgstr ""
+msgstr "Controleer ACU Virgin"
 
 msgid "Waiting"
-msgstr ""
+msgstr "Wachten"
 
 msgid "Virginize ACU"
-msgstr ""
+msgstr "ACU Virgin maken"
 
 msgid "Cannot connect to ECU"
-msgstr ""
+msgstr "Kan niet verbinden met ECU"
 
 msgid "<font color='orange'>UNEXPECTED RESPONSE</font>"
-msgstr ""
+msgstr "<font color='orange'>ONVERWACHT ANTWOORD</font>"
 
 msgid "<font color='red'>CRASH DETECTED</font>"
-msgstr ""
+msgstr "<font color='red'>CRASH GEDETECTEERD</font>"
 
 msgid "<font color='green'>NO CRASH DETECTED</font>"
-msgstr ""
+msgstr "<font color='green'>GEEN CRASH GEDETECTEERD</font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS stream: %s"
-msgstr "Bytes ontvangen"
+msgstr "SDS stream: %s"
 
+#, fuzzy
 msgid "<font color='green'>CLEAR EXECUTED</font>"
-msgstr ""
+msgstr "<font color='green'>CLEAR HIGH UITGEVOERD</font>"
 
+#, fuzzy
 msgid "<font color='red'>CLEAR FAILED</font>"
-msgstr ""
+msgstr "<font color='red'>CLEAR HIGH MISLUKT</font>"
 
 msgid "Megane/Scenic II card programming"
-msgstr ""
+msgstr "Megane/Scenic II kaart programmeren"
 
 msgid "Keys"
-msgstr ""
+msgstr "Sleutels"
 
 msgid "ENTER AFTER SALE MODE"
-msgstr ""
+msgstr "NA VERKOOP MODUS INVOEREN"
 
 msgid ""
 "<font color='red'>MEGANE II CARD PROGRAMMING<br>EXPERIMENTAL : NOT TESTED "
 "YET</font>"
 msgstr ""
+"<font color='red'>MEGANE II KAART PROGRAMMEREN<br>EXPERIMENTEEL : NOG NIET "
+"GETEST</font>"
 
 msgid "LEARN"
-msgstr ""
+msgstr "LEREN"
 
 msgid "VALIDATE"
-msgstr ""
+msgstr "VALIDEREN"
 
 msgid "CANCEL"
-msgstr ""
+msgstr "ANNULEREN"
 
 msgid "Algo 2"
-msgstr ""
+msgstr "Algo 2"
 
 msgid "ISK"
-msgstr ""
+msgstr "ISK"
 
 msgid "PIN"
-msgstr ""
+msgstr "PIN"
 
 msgid "Num key learnt"
-msgstr ""
+msgstr "Aantal geleerde sleutels"
 
 msgid "CARD IDE"
-msgstr ""
+msgstr "KAART IDE"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
-msgstr ""
+msgstr "Kan ISK niet krijgen, controleer verbindingen en UCH compatibiliteit"
 
 msgid "<font color='red'>PIN CODE NOT RECOGNIZED</font>"
-msgstr ""
+msgstr "<font color='red'>PIN CODE NIET HERKEND</font>"
 
 msgid "<font color='green'>PIN CODE OK / KEY LEARNING</font>"
-msgstr ""
+msgstr "<font color='green'>PIN CODE OK / SLEUTEL LEREN</font>"
 
 msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
-msgstr ""
+msgstr "<font color='green'>PIN CODE OK / UCH LEREN</font>"
 
 msgid "Modus/Clio III EPS Reset"
-msgstr ""
+msgstr "Modus/Clio III EPS Reset"
 
+#, fuzzy
 msgid "EPS Tools"
-msgstr ""
+msgstr "EVC Gereedschap"
 
 msgid ""
 "Modus/Clio III EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET "
 "EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Modus/Clio III EPS VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL EPS IMMO "
+"DATA RESETTEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 msgid "BLANK STATUS & VIN READ"
-msgstr ""
+msgstr "BLANK STATUS & VIN LEZEN"
 
 msgid "Virginize EPS"
-msgstr ""
+msgstr "EPS Virgin maken"
 
 msgid "VIN - READ"
-msgstr ""
+msgstr "VIN - LEZEN"
 
 msgid "VIN - WRITE"
-msgstr ""
+msgstr "VIN - SCHRIJVEN"
 
 msgid "Write VIN"
-msgstr ""
+msgstr "VIN schrijven"
 
 msgid "<font color='red'>VIN - INVALID</font>"
-msgstr ""
+msgstr "<font color='red'>VIN - ONGELDIG</font>"
 
+#, fuzzy
 msgid "<font color='res'>VIN - BAD LENGTH</font>"
-msgstr ""
+msgstr "<font color='red'>VIN - FOUTE LENGTE</font>"
 
 msgid "<font color='orange'>VIN WRITE FAILED</font>"
-msgstr ""
+msgstr "<font color='orange'>VIN SCHRIJVEN MISLUKT</font>"
 
 msgid "<font color='green'>VIN WRITE OK</font>"
-msgstr ""
+msgstr "<font color='green'>VIN SCHRIJVEN OK</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr ""
+msgstr "<font color='green'>EPS virgin</font>"
 
 msgid "<font color='red'>EPS coded</font>"
-msgstr ""
+msgstr "<font color='red'>EPS gecodeerd</font>"
 
 #, python-format
 msgid "SdSC0 stream: %s"
-msgstr ""
+msgstr "SdSC0 stream: %s"
 
 msgid "Clio IV EPS Reset"
-msgstr ""
+msgstr "Clio IV EPS Reset"
 
 msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Clio IV EPS VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL EPS IMMO DATA "
+"RESETTEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 msgid "Check EPS Virgin"
-msgstr ""
+msgstr "Controleer EPS Virgin"
 
 msgid "<font color='green'>EPS not operational</font>"
-msgstr ""
+msgstr "<font color='green'>EPS niet operationeel</font>"
 
 msgid "<font color='red'>UNEXPECTED RESPONSE</font>"
-msgstr ""
+msgstr "<font color='red'>ONVERWACHT ANTWOORD</font>"
 
 #, python-format
 msgid "SdSFA stream: %s"
-msgstr ""
+msgstr "SdSFA stream: %s"
 
 msgid "Laguna II UCH Reset"
-msgstr ""
+msgstr "Laguna II UCH Reset"
 
 msgid "UCH Tools"
-msgstr "UCH tools"
+msgstr "UCH Gereedschap"
 
 msgid ""
 "LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"LAGUNA II UCH VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL UW UCH "
+"WISSEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 msgid "Check UCH Virgin"
-msgstr ""
+msgstr "Controleer UCH Virgin"
 
 msgid "Virginize UCH"
-msgstr ""
+msgstr "UCH Virgin maken"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr ""
+msgstr "<font color='green'>UCH virgin</font>"
 
 msgid "<font color='red'>UCH coded</font>"
-msgstr ""
+msgstr "<font color='red'>UCH gecodeerd</font>"
 
 msgid "Laguna III UCH Reset"
-msgstr ""
+msgstr "Laguna III UCH Reset"
 
 msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"LAGUNA III UCH VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL UW UCH "
+"WISSEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr ""
+msgstr "Megane/Scenic II UCH Reset"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"MEGANE II UCH VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL UW UCH "
+"WISSEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr ""
+msgstr "Megane3 AIRBAG Reset"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
 "AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL AIRBAG "
+"CRASH DATA ONTGRENDELEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</"
+"font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS FA stream: %s"
-msgstr "Bytes ontvangen"
+msgstr "SDS FA stream: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr ""
+msgstr "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
 "PLUGIN WILL RESET EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT "
 "MEANS</font>"
 msgstr ""
+"ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>DEZE "
+"PLUGIN ZAL EPS IMMO DATA RESETTEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT "
+"BETEKENT</font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr ""
+msgstr "Megane/Scenic III UCH Reset"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"MEGANE III UCH VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL UW UCH "
+"WISSEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr ""
+msgstr "RSAT4 AIRBAG Reset"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
 "VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK AIRBAG CRASH "
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
+"VIRGINIZER<br><font color='red'>DEZE PLUGIN ZAL AIRBAG CRASH DATA "
+"ONTGRENDELEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 #, python-format
 msgid "SdSEX stream: %s"
-msgstr ""
+msgstr "SdSEX stream: %s"
 
 msgid "CRC calculator"
-msgstr ""
+msgstr "CRC calculator"
 
 msgid "VIN"
-msgstr ""
+msgstr "VIN"
 
 msgid "CRC Calculator"
-msgstr ""
+msgstr "CRC Calculator"
 
 msgid "CRC CALCULATOR"
-msgstr ""
+msgstr "CRC CALCULATOR"
 
 msgid "Zoe water pump Reset"
-msgstr ""
+msgstr "Zoe waterpomp Reset"
 
-#, fuzzy
 msgid "EVC Tools"
-msgstr "UCH tools"
+msgstr "EVC Gereedschap"
 
 msgid "Water pump counters"
-msgstr ""
+msgstr "Waterpomp tellers"
 
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 msgid "Values"
-msgstr ""
+msgstr "Waarden"
 
 msgid "Action"
 msgstr "Actie"
 
-#, fuzzy
 msgid "Low Speed"
-msgstr "Poortsnelheid"
+msgstr "Lage snelheid"
 
 msgid "Middle Speed"
-msgstr ""
+msgstr "Middelsnelheid"
 
 msgid "High Speed"
-msgstr ""
+msgstr "Hoge snelheid"
 
 msgid "V_Timer_DrivWEP_ON"
-msgstr ""
+msgstr "V_Timer_DrivWEP_ON"
 
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
 "PUMP COUNTERS<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Zoe waterpomp tellers<br><font color='red'>DEZE PLUGIN ZAL WATER POMP "
+"TELLERS WISSEN<br>GA WEG ALS U GEEN IDEE HEEFT WAT DIT BETEKENT</font>"
 
 msgid "Check values"
-msgstr ""
+msgstr "Waarden controleren"
 
-#, fuzzy
 msgid "Waiting action"
-msgstr "Diag versie"
+msgstr "Wachten op actie"
 
 msgid "Reset all counters"
-msgstr ""
+msgstr "Alle tellers resetten"
 
 msgid ""
 "<h1>TIPS</h1><ul><li>Insert key CARD</li><li>Put D position</li><li>Press/"
 "Stay START until <b>Remove card</b> message</li><li>Put P position</"
 "li><li>Keep key card inserted</li></ul>"
 msgstr ""
+"<h1>TIPS</h1><ul><li>Voer kaart CARD in</li><li>Zet D positie</li><li>Druk "
+"op/Houd START vast tot <b>Kaart verwijderen</b> bericht</li><li>Zet P "
+"positie</li><li>Houd kaart CARD ingevoerd</li></ul>"
 
-#, fuzzy
 msgid "<font color='green'>Values read</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='green'>Waarden gelezen</font>"
 
-#, fuzzy
 msgid "Reading Low speed"
-msgstr "Controleer poort snelheid:"
+msgstr "Lage snelheid lezen"
 
 msgid "Reading Middle speed"
-msgstr ""
+msgstr "Middelsnelheid lezen"
 
 msgid "Reading High speed"
-msgstr ""
+msgstr "Hoge snelheid lezen"
 
 msgid "<font color='green'>CLEAR V_Timer_DrivWEP_ON EXECUTED</font>"
-msgstr ""
+msgstr "<font color='green'>CLEAR V_Timer_DrivWEP_ON UITGEVOERD</font>"
 
 msgid "<font color='red'>CLEAR V_Timer_DrivWEP_ON FAILED</font>"
-msgstr ""
+msgstr "<font color='red'>CLEAR V_Timer_DrivWEP_ON MISLUKT</font>"
 
 #, fuzzy
 msgid "<font color='green'>CLEAR Low EXECUTED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='green'>CLEAR HIGH UITGEVOERD</font>"
 
 #, fuzzy
 msgid "<font color='red'>CLEAR Low FAILED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='red'>CLEAR HIGH MISLUKT</font>"
 
 msgid "<font color='green'>CLEAR Medium EXECUTED</font>"
-msgstr ""
+msgstr "<font color='green'>CLEAR Medium UITGEVOERD</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR Medium FAILED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='red'>CLEAR Medium MISLUKT</font>"
 
-#, fuzzy
 msgid "<font color='green'>CLEAR HIGH EXECUTED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='green'>CLEAR HIGH UITGEVOERD</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR HIGH FAILED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='red'>CLEAR HIGH MISLUKT</font>"
 
 msgid "Add"
 msgstr "Toevoegen"
@@ -994,10 +1013,10 @@ msgid "New"
 msgstr "Nieuw"
 
 msgid "Duplicate selected"
-msgstr ""
+msgstr "Dupliceer geselecteerde"
 
 msgid "Remove selected"
-msgstr ""
+msgstr "Verwijder geselecteerde"
 
 msgid "Reload"
 msgstr "Herladen"
@@ -1022,7 +1041,7 @@ msgstr "Hex"
 
 #, python-format
 msgid "Data is used by request %s"
-msgstr ""
+msgstr "Data wordt gebruikt door aanvraag %s"
 
 msgid "New data"
 msgstr "Nieuwe data"
@@ -1064,7 +1083,7 @@ msgid "Little Endian"
 msgstr "Klein Endian"
 
 msgid "ECU Auto identification"
-msgstr ""
+msgstr "ECU Auto identificatie"
 
 msgid "Diag version;Supplier;Soft;Version"
 msgstr "Diag versie;Leverancier;Soft;Versie"
@@ -1145,16 +1164,16 @@ msgid "Inherits globals"
 msgstr "Algemeen overnemen"
 
 msgid "No SDS"
-msgstr ""
+msgstr "Geen SDS"
 
 msgid "Plant"
-msgstr ""
+msgstr "Fabriek"
 
 msgid "After Sale"
-msgstr ""
+msgstr "Na verkoop"
 
 msgid "Engineering"
-msgstr ""
+msgstr "Engineering"
 
 msgid "Reload requests"
 msgstr "Aanvraag herladen"
@@ -1169,35 +1188,37 @@ msgid "Receive bytes"
 msgstr "Bytes ontvangen"
 
 msgid "Request name;Bytes;Manual"
-msgstr ""
+msgstr "Aanvraagnaam;Bytes;Handmatig"
 
 msgid "No request named"
-msgstr ""
+msgstr "Geen aanvraag genaamd"
 
 msgid "Found similar"
-msgstr ""
+msgstr "Vergelijkbaar gevonden"
 
 msgid "DataItem not found"
-msgstr ""
+msgstr "DataItem niet gevonden"
 
 msgid "Cannot find data "
-msgstr ""
+msgstr "Kan data niet vinden "
 
 msgid " vs "
-msgstr ""
+msgstr " vs "
 
 msgid "Cannot draw input "
 msgstr "Kan aanvraag niet uitvoeren "
 
 msgid "No Value"
-msgstr ""
+msgstr "Geen waarde"
 
 msgid ""
 "<center>This Software is free, but I need money to buy cables/ECUs and make "
 "this application more reliable</center>"
 msgstr ""
-"<center>Deze software is gratis, maar er is geld nodig voor kabels/ECU's om "
-"de applicatie te verbeteren</center>"
+"<center>Deze software is gratis, maar ik heb geld nodig om kabels/ECU's te "
+"kopen en deze applicatie betrouwbaarder te maken</center><center>Deze "
+"software is gratis, maar er is geld nodig voor kabels/ECU's om de applicatie "
+"te verbeteren</center>"
 
 msgid "Yes I contribute"
 msgstr "Ja, ik doneer"

@@ -102,11 +102,13 @@ msgstr "DoIP: Použití rozšířeného adresování pro systémy elektrických 
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr "DoIP: Použití 29-bitového rozšířeného adresování - TX:0x{:04X}, RX:0x{:04X}"
+msgstr ""
+"DoIP: Použití 29-bitového rozšířeného adresování - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr "DoIP: Použití 11-bitového standardního adresování - TX:0x{:03X}, RX:0x{:03X}"
+msgstr ""
+"DoIP: Použití 11-bitového standardního adresování - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
 msgstr "Varování, nelze získat hodnotu se znaménkem pro"
@@ -124,16 +126,16 @@ msgid "Unable to find eculist"
 msgstr "Nelze najít eculist"
 
 msgid "Cannot find file "
-msgstr "Cannot find file "
+msgstr "Nelze najít soubor "
 
 msgid "Cannot load ECU file"
 msgstr "Nelze načíst soubor ECU"
 
 msgid "XML not found"
-msgstr "Otevřete XML"
+msgstr "XML nenalezeno"
 
 msgid "Cannot retrieve functionnal address of ECU"
-msgstr "Nelze načíst funkční adresu řídicí jednotky motoru (ECU)"
+msgstr "Nelze získat funkční adresu ECU"
 
 msgid "Generated stream "
 msgstr "Generovaný stream "
@@ -145,19 +147,19 @@ msgid "Received stream "
 msgstr "Přijatý stream "
 
 msgid "Request ECU Error"
-msgstr "Chyba připojení"
+msgstr "Chyba požadavku ECU"
 
 msgid "Decoded values"
-msgstr "Zkontrolujte hodnoty"
+msgstr "Dekódované hodnoty"
 
 msgid "Found: "
 msgstr "Nalezeno: "
 
 msgid "Identified ECU"
-msgstr "Identifikovaná řídicí jednotka motoru (ECU)"
+msgstr "Identifikováno ECU"
 
 msgid "Found ECU"
-msgstr "Nalezena ECU"
+msgstr "Nalezeno ECU"
 
 msgid "(not perfect match)"
 msgstr "(není to dokonalá shoda)"
@@ -166,46 +168,46 @@ msgid "(no relevant ECU file found)"
 msgstr "(nebyl nalezen žádný relevantní soubor ECU)"
 
 msgid "Warning, address"
-msgstr "Neznámá adresa"
+msgstr "Varování, adresa"
 
 msgid "is not mapped"
 msgstr "není zmapováno"
 
 msgid "Scanning address: "
-msgstr "Adresa skenování:  "
+msgstr "Skenování adresy: "
 
-#, fuzzy
 msgid "Scanning DoIP address: "
-msgstr "Adresa skenování:  "
+msgstr "Skenování DoIP adresy: "
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device detection error: %s"
-msgstr "Chyba připojení: "
+msgstr "Chyba detekce zařízení: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "STPX mode enabled for %s"
-msgstr "Sériová chyba při čtení_bajtu: %s"
+msgstr "Režim STPX povolen pro %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Pin swapping enabled for %s"
-msgstr "Sériová chyba při čtení_bajtu: %s"
+msgstr "Prohození pinů povoleno pro %s"
 
 #, python-format
 msgid "Enhanced features enable error: %s"
 msgstr "Chyba při povolení rozšířených funkcí: %s"
 
 msgid "STPX mode not supported by this adapter as native, trying fallback..."
-msgstr "Režim STPX není tímto adaptérem podporován v nativním režimu, zkoušíme záložní variantu..."
+msgstr ""
+"Režim STPX není tímto adaptérem podporován v nativním režimu, zkoušíme "
+"záložní variantu..."
 
-#, fuzzy
 msgid "STPX mode enabled successfully"
 msgstr "Režim STPX úspěšně povolen"
 
-#, fuzzy, python-format
+#, python-format
 msgid "STPX mode enable error: %s"
 msgstr "Chyba při povolení režimu STPX: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Pin swap error: %s"
 msgstr "Chyba při prohození pinů: %s"
 
@@ -215,7 +217,7 @@ msgstr "Prohození pinů VGate úspěšně dokončeno"
 msgid "VGate pin swapping failed, using fallback"
 msgstr "Prohození pinů VGate selhalo, používá se záložní variantou"
 
-#, fuzzy, python-format
+#, python-format
 msgid "VGate pin swap error: %s"
 msgstr "Chyba při prohození pinů VGate: %s"
 
@@ -224,68 +226,68 @@ msgstr "OBDLink prohození pinů dokončeno"
 
 #, python-format
 msgid "OBDLink pin swap error: %s"
-msgstr ""
+msgstr "Chyba při prohození pinů OBDLink: %s"
 
 msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
 msgstr ""
+"DerleK USB-DIAG2 používá proprietární protokol - nejsou potřeba AT příkazy"
 
 #, python-format
 msgid "DerleK USB-DIAG2 pin swap error: %s"
-msgstr ""
+msgstr "Chyba při prohození pinů DerleK USB-DIAG2: %s"
 
 msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
 msgstr ""
+"DerleK USB-DIAG3 používá proprietární protokol - nejsou potřeba AT příkazy"
 
 #, python-format
 msgid "DerleK USB-DIAG3 pin swap error: %s"
-msgstr ""
+msgstr "Chyba při prohození pinů DerleK USB-DIAG3: %s"
 
-#, fuzzy
 msgid "USB CAN pin swapping completed"
-msgstr "Konfigurace pinů ELS27 V5 CAN dokončena"
+msgstr "Prohození pinů USB CAN dokončeno"
 
 #, python-format
 msgid "USB CAN pin swap error: %s"
-msgstr ""
+msgstr "Chyba při prohození pinů USB CAN: %s"
 
-#, fuzzy
 msgid "ELS27 pin swapping completed"
-msgstr "Konfigurace pinů ELS27 V5 CAN dokončena"
+msgstr "Prohození pinů ELS27 dokončeno"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ELS27 pin swap error: %s"
-msgstr "Sériová chyba při čtení_bajtu: %s"
+msgstr "Chyba prohození pinů ELS27: %s"
 
 #, python-format
 msgid "Device %s initialized successfully with enhanced features"
-msgstr ""
+msgstr "Zařízení %s úspěšně inicializováno s rozšířenými funkcemi"
 
 #, python-format
 msgid "Device %s initialized with basic features only"
-msgstr ""
+msgstr "Zařízení %s inicializováno pouze se základními funkcemi"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device initialization error: %s"
-msgstr "Inicializace obrazovky"
+msgstr "Chyba inicializace zařízení: %s"
 
-#, fuzzy
 msgid "Found USB device:"
-msgstr "Nalezený USB adaptér:"
+msgstr "Nalezeno USB zařízení:"
 
-#, fuzzy
 msgid "USB device detection error:"
-msgstr "Detekováno zařízení ELS27: "
+msgstr "Chyba detekce USB zařízení:"
 
 msgid ""
 "Note: This error does not affect serial communication or bypass cable "
 "functionality."
 msgstr ""
+"Poznámka: Tato chyba neovlivňuje sériovou komunikaci ani funkčnost "
+"obcházejícího kabelu."
 
 msgid "Trying to open port "
-msgstr "Není vybrán žádný port COM "
+msgstr "Pokus o otevření portu "
 
 msgid "Port initialization failed"
-msgstr "Test připojení se nezdařil"
+msgstr "Inicializace portu selhala"
 
 msgid "Port connection failed - port object is invalid"
 msgstr "Připojení k portu selhalo - objekt portu je neplatný"
@@ -296,22 +298,20 @@ msgstr "Na portu není žádné rozhraní ELM"
 msgid "OBDLink Connection OK, attempting full speed UART switch"
 msgstr "Připojení OBDLink v pořádku, pokus o přepnutí UART na plnou rychlost"
 
-#, fuzzy
 msgid "Failed to switch OBDLink to "
-msgstr "Nepodařilo se přepnout na změnu OBDLinku na "
+msgstr "Nepodařilo se přepnout OBDLink na "
 
 msgid "OBDLINK Connection OK, using optimal settings"
-msgstr "Použití optimálního nastavení zařízení"
+msgstr "Připojení OBDLINK OK, používá se optimální nastavení"
 
-#, fuzzy
 msgid "OBDLink STPX mode enabled for enhanced long command support"
-msgstr "Vybráno VGate iCar Pro – povolena rozšířená podpora STN/STPX"
+msgstr "Režim OBDLink STPX povolen pro rozšířenou podporu dlouhých příkazů"
 
 msgid "Connection established successfully"
-msgstr "Pokus o připojení"
+msgstr "Spojení úspěšně navázáno"
 
 msgid "VGate STPX mode enabled for enhanced long command support"
-msgstr "Vybráno VGate iCar Pro – povolena rozšířená podpora STN/STPX"
+msgstr "Režim VGate STPX povolen pro rozšířenou podporu dlouhých příkazů"
 
 msgid "Configuring ELS27 V5 CAN pins (12-13)"
 msgstr "Konfigurace pinů CAN ELS27 V5 (12-13)"
@@ -320,10 +320,10 @@ msgid "ELS27 V5 CAN configuration complete"
 msgstr "Konfigurace ELS27 V5 CAN dokončena"
 
 msgid "STPX mode enabled for enhanced long command support"
-msgstr "Vybráno VGate iCar Pro – povolena rozšířená podpora STN/STPX"
+msgstr "Režim STPX povolen pro rozšířenou podporu dlouhých příkazů"
 
 msgid "Port is None - cannot switch speed"
-msgstr "Obslužná rutina portu je Žádná, nelze zapisovat"
+msgstr "Port je None - nelze přepnout rychlost"
 
 #, python-format
 msgid "%s switched baudrate OK, changing UART speed now..."
@@ -355,7 +355,7 @@ msgid "ELM full speed connection OK "
 msgstr "Plnorychlostní připojení ELM v pořádku "
 
 msgid "Version "
-msgstr "Version "
+msgstr "Verze "
 
 msgid "ELM did not report version after speed switch"
 msgstr "ELM po přepnutí rychlosti nehlásil verzi"
@@ -371,7 +371,7 @@ msgid "Unknown address: "
 msgstr "Neznámá adresa: "
 
 msgid "Using saved device settings"
-msgstr "Pomocí uložených nastavení zařízení"
+msgstr "Použití uložených nastavení zařízení"
 
 msgid "Using optimal device settings"
 msgstr "Použití optimálního nastavení zařízení"
@@ -392,7 +392,7 @@ msgid "Using detected baud rate: "
 msgstr "Použití detekované přenosové rychlosti: "
 
 msgid "Warning: No ELS27 response detected"
-msgstr "Konfigurace ELS27 V5 CAN dokončena"
+msgstr "Varování: Nebyla detekována žádná odpověď ELS27"
 
 msgid "Will attempt connection anyway..."
 msgstr "Pokus o připojení..."
@@ -407,7 +407,7 @@ msgid "Warning: Device may not be ELM327 compatible"
 msgstr "Varování: Zařízení nemusí být kompatibilní s ELM327"
 
 msgid "ELM327 device detected successfully"
-msgstr "Varování: Zařízení nemusí být kompatibilní s ELM327"
+msgstr "Zařízení ELM327 úspěšně detekováno"
 
 msgid "Device version: "
 msgstr "Verze zařízení: "
@@ -416,10 +416,10 @@ msgid "Connection error: "
 msgstr "Chyba připojení: "
 
 msgid "FAIL"
-msgstr "FAIL"
+msgstr "CHYBA"
 
 msgid "OK/TIMEOUT"
-msgstr "OK/TIMEOUT"
+msgstr "OK/ČASOVÝ LIMIT"
 
 msgid "OK"
 msgstr "OK"
@@ -428,19 +428,19 @@ msgid "Incompatible adapter on ARM core"
 msgstr "Nekompatibilní adaptér na jádru ARM"
 
 msgid "Result: "
-msgstr "Result: "
+msgstr "Výsledek: "
 
 msgid " succeeded from "
 msgstr " podařilo z "
 
 msgid "ELM Max version:"
-msgstr "Odpověď ELM:"
+msgstr "Maximální verze ELM:"
 
 msgid "Using saved settings for"
 msgstr "Použití uložených nastavení pro"
 
 msgid "Using optimal settings for"
-msgstr "Použití optimálního nastavení zařízení"
+msgstr "Použití optimálního nastavení pro"
 
 msgid "Serial port opened"
 msgstr "Otevřen sériový port"
@@ -452,7 +452,7 @@ msgid "ELM not connected or wrong COM port"
 msgstr "ELM není připojen nebo má špatný COM port"
 
 msgid "Port closed"
-msgstr "Port  uzavřen"
+msgstr "Port uzavřen"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
@@ -463,7 +463,7 @@ msgstr "Spojení s ELM bylo ztraceno."
 
 #, python-format
 msgid "*       Error: %s"
-msgstr "Chyba při čtení(): %s"
+msgstr "*       Chyba: %s"
 
 #, python-format
 msgid "Cannot decode bytes %s"
@@ -481,105 +481,100 @@ msgstr "Obslužná rutina portu je Žádná, nelze zapisovat"
 
 #, python-format
 msgid "Serial write error: %s"
-msgstr "Sériová chyba při čtení_bajtu: %s"
+msgstr "Sériová chyba při zápisu: %s"
 
 #, python-format
 msgid "*       Write error: %s"
-msgstr "Chyba při čtení(): %s"
+msgstr "*       Chyba při zápisu: %s"
 
 msgid "TIMEOUT"
-msgstr "OK/TIMEOUT"
+msgstr "ČASOVÝ LIMIT"
 
 msgid "Checking port speed:"
-msgstr "Checking:"
+msgstr "Kontrola rychlosti portu:"
 
 msgid "Start COM speed :"
-msgstr "Není vybrán žádný port COM:"
+msgstr "Počáteční rychlost COM :"
 
 msgid "ELM not responding"
-msgstr "Odpověď ELM"
+msgstr "ELM neodpovídá"
 
 msgid "Cannot zip database, no 'ecus' directory"
-msgstr "Nelze zkomprimovat databázi, chybí adresář 'ecus'"
+msgstr "Nelze zazipovat databázi, neexistuje adresář 'ecus'"
 
 msgid "Starting conversion"
-msgstr "Spuštění konverze"
+msgstr "Zahájení konverze"
 
 msgid "Starting processing "
 msgstr "Zahájení zpracování "
 
 msgid " to "
-msgstr " Na "
+msgstr " na "
 
 msgid "Skipping current file (cannot parse it)"
-msgstr "Přeskakuji aktuální soubor (nelze jej analyzovat)"
+msgstr "Přeskočení aktuálního souboru (nelze jej zpracovat)"
 
 msgid "Writing database"
 msgstr "Zápis do databáze"
 
 msgid "Writing archive"
-msgstr "Zápis parametru"
+msgstr "Zápis archivu"
 
 msgid "Opening ECU Database..."
-msgstr "Otevírání databáze řídicí jednotky motoru..."
+msgstr "Otevírání databáze ECU..."
 
 msgid "parts as: "
-msgstr "díly jako: "
+msgstr "části jako: "
 
 msgid " please review dumpVehicles def."
-msgstr " Prosím, zkontrolujte dumpVehicles def."
+msgstr " prosím zkontrolujte definici dumpVehicles."
 
 msgid "ELS27 V5 CAN pin configuration complete"
 msgstr "Konfigurace pinů ELS27 V5 CAN dokončena"
 
 msgid "Found USB adapter:"
-msgstr "Nalezený USB adaptér:"
+msgstr "Nalezen USB adaptér:"
 
-#, fuzzy
 msgid "USB not available"
-msgstr "WebEngine není k dispozici."
+msgstr "USB není k dispozici"
 
-#, fuzzy
 msgid "USB Device"
-msgstr "Nalezený USB adaptér:"
+msgstr "USB zařízení"
 
 msgid "Warning: Could not read string descriptor:"
-msgstr ""
+msgstr "Varování: Nelze přečíst popisovač řetězce:"
 
 msgid "USB OBD Device"
-msgstr ""
+msgstr "USB OBD zařízení"
 
-#, fuzzy
 msgid "Warning: Vendor request failed:"
-msgstr "Není uveden žádný požadavek"
+msgstr "Varování: Požadavek dodavatele selhal:"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
 msgstr ""
 "Varování: PyQtWebEngine není k dispozici. Některé funkce mohou být omezené."
 
-#, fuzzy
 msgid "resources/projects.json not found or invalid."
-msgstr "soubor resources/projects.json nebyl nalezen nebo není v pořádku."
+msgstr "resources/projects.json nenalezeno nebo neplatné."
 
 msgid "Using custom DDT database"
-msgstr "Použití optimálního nastavení zařízení"
+msgstr "Použití vlastní databáze DDT"
 
 msgid "No COM port selected"
-msgstr "Není vybrán žádný port COM"
+msgstr "Nevybrán žádný COM port"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Initializing ELM with speed %i..."
 msgstr "Inicializace ELM rychlostí %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
-msgstr "Na portu COM nebyl detekován ELM327 ani OBDLINK-SX "
+msgstr "Na COM portu nebylo detekováno žádné ELM327 nebo OBDLINK-SX "
 
-#, fuzzy
 msgid "Initializing device features..."
-msgstr "Inicializace ELM rychlostí %i..."
+msgstr "Inicializace funkcí zařízení..."
 
 msgid "AB90 AIRBAG Reset"
-msgstr "Reset airbagu AB90"
+msgstr "Resetování AIRBAG AB90"
 
 msgid "Airbag Tools"
 msgstr "Nástroje pro airbagy"
@@ -603,29 +598,29 @@ msgid "Virginize ACU"
 msgstr "Virginizovat ACU"
 
 msgid "Cannot connect to ECU"
-msgstr "Nelze se připojit k řídicí jednotce (ECU)"
+msgstr "Nelze se připojit k ECU"
 
 msgid "<font color='orange'>UNEXPECTED RESPONSE</font>"
-msgstr "<font color='green'>VIN KÓD V POŘÁDKU / NAUČENÍ KLÍČE</font>"
+msgstr "<font color='orange'>NEOČEKÁVANÁ ODPOVĚĎ</font>"
 
 msgid "<font color='red'>CRASH DETECTED</font>"
-msgstr "<font color='red'>VYMAZÁNÍ média NEÚSPĚŠNÉ</font>"
+msgstr "<font color='red'>NEHODA DETEKOVÁNA</font>"
 
 msgid "<font color='green'>NO CRASH DETECTED</font>"
-msgstr "<font color='green'>VIN KÓD V POŘÁDKU / NAUČENÍ KLÍČE</font>"
+msgstr "<font color='green'>NEHODA NEDETEKOVÁNA</font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS stream: %s"
-msgstr "Stream SdS: %s"
+msgstr "SDS proud: %s"
 
 msgid "<font color='green'>CLEAR EXECUTED</font>"
-msgstr "<font color='green'>VYČISTIT VYSOKÝ PROVEDENÝ</font>"
+msgstr "<font color='green'>CLEAR PROVEDEN</font>"
 
 msgid "<font color='red'>CLEAR FAILED</font>"
-msgstr "<font color='red'>VYMAZÁNÍ VYSOKÉ HODNOTY SE NEDOŠLO</font>"
+msgstr "<font color='red'>CLEAR SELHAL</font>"
 
 msgid "Megane/Scenic II card programming"
-msgstr "Reset centrální řídicí jednotky Megane/Scénic II"
+msgstr "Programování karty Megane/Scenic II"
 
 msgid "Keys"
 msgstr "Klíče"
@@ -641,7 +636,7 @@ msgstr ""
 "NEVYTESTOVÁNO</font>"
 
 msgid "LEARN"
-msgstr "LEARN"
+msgstr "UČIT"
 
 msgid "VALIDATE"
 msgstr "Potvrďte změny"
@@ -659,7 +654,7 @@ msgid "PIN"
 msgstr "PIN"
 
 msgid "Num key learnt"
-msgstr "Num key naučil"
+msgstr "Počet naučených klíčů"
 
 msgid "CARD IDE"
 msgstr "IDE KARTY"
@@ -671,10 +666,10 @@ msgid "<font color='red'>PIN CODE NOT RECOGNIZED</font>"
 msgstr "<font color='red'>PIN KÓD NEBYL ROZPOZNÁN</font>"
 
 msgid "<font color='green'>PIN CODE OK / KEY LEARNING</font>"
-msgstr "<font color='green'>PIN KÓD V POŘÁDKU / NAUČENÍ KLÍČE</font>"
+msgstr "<font color='green'>PIN KÓD OK / NAUČENÍ KLÍČE</font>"
 
 msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
-msgstr "<font color='green'>PIN KÓD V POŘÁDKU / UCH UČENÍ</font>"
+msgstr "<font color='green'>PIN KÓD OK / UČENÍ UCH</font>"
 
 msgid "Modus/Clio III EPS Reset"
 msgstr "Reset EPS u Modusu/Clia III"
@@ -696,35 +691,36 @@ msgid "Virginize EPS"
 msgstr "Virginize EPS"
 
 msgid "VIN - READ"
-msgstr "VIN - PŘEČTĚTE"
+msgstr "VIN - ČTENÍ"
 
 msgid "VIN - WRITE"
-msgstr "VIN - NAPIŠTE"
+msgstr "VIN - ZÁPIS"
 
 msgid "Write VIN"
-msgstr "Napište VIN"
+msgstr "Zapsat VIN"
 
 msgid "<font color='red'>VIN - INVALID</font>"
 msgstr "<font color='red'>VIN – NEPLATNÉ</font>"
 
+#, fuzzy
 msgid "<font color='res'>VIN - BAD LENGTH</font>"
-msgstr "<font color='res'>VIN - ŠPATNÁ DÉLKA</font>"
+msgstr "<font color='red'>VIN - ŠPATNÁ DÉLKA</font>"
 
 msgid "<font color='orange'>VIN WRITE FAILED</font>"
 msgstr "<font color='orange'>ZÁPIS VIN SE NEPODAŘIL</font>"
 
 msgid "<font color='green'>VIN WRITE OK</font>"
-msgstr "<font color='green'>VIN KÓD V POŘÁDKU / NAUČENÍ KLÍČE</font>"
+msgstr "<font color='green'>ZÁPIS VIN OK</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr "<font color='green'>EPS panenský</font>"
+msgstr "<font color='green'>EPS virgin</font>"
 
 msgid "<font color='red'>EPS coded</font>"
-msgstr "<font color='red'>Kód EPS</font>"
+msgstr "<font color='red'>EPS kódovaný</font>"
 
 #, python-format
 msgid "SdSC0 stream: %s"
-msgstr "SdS stream .%s"
+msgstr "Proud SdSC0: %s"
 
 msgid "Clio IV EPS Reset"
 msgstr "Reset EPS u Clia IV"
@@ -753,7 +749,7 @@ msgid "Laguna II UCH Reset"
 msgstr "Resetování hlavní řídicí jednotky Laguna II"
 
 msgid "UCH Tools"
-msgstr "Nástroje EVC"
+msgstr "Nástroje UCH"
 
 msgid ""
 "LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -769,10 +765,10 @@ msgid "Virginize UCH"
 msgstr "Virginize UCH"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr "<font color='green'>UCH panna</font>"
+msgstr "<font color='green'>UCH virgin</font>"
 
 msgid "<font color='red'>UCH coded</font>"
-msgstr "<font color='red'>Kód UCH</font>"
+msgstr "<font color='red'>UCH kódovaný</font>"
 
 msgid "Laguna III UCH Reset"
 msgstr "Resetování hlavní řídicí jednotky Laguny III"
@@ -785,7 +781,7 @@ msgstr ""
 "UCH<br>ZMIZÍ, POKUD NEMÁTE TUŠENÍ, CO TO ZNAMENÁ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr "Reset centrální řídicí jednotky Megane/Scénic II"
+msgstr "Reset UCH Megane/Scenic II"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -795,7 +791,7 @@ msgstr ""
 "UCH<br>ZMIZE, POKUD NEMÁTE TUŠENÍ, CO TO ZNAMENÁ</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr "Reset airbagu Megane3"
+msgstr "Reset AIRBAG Megane3"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
@@ -805,12 +801,12 @@ msgstr ""
 "ÚDAJE O NEHODÁCH AIRBAGŮ<br>POKUD NEMÁTE TUŠENÍ, CO TO ZNAMENÁ, ODEJDĚTE HO</"
 "font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS FA stream: %s"
-msgstr "Stream SdSFA: %s"
+msgstr "SDS FA proud: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr "Reset EPS u ZOE/FLENCE/Megane III/Scénic III"
+msgstr "Reset EPS ZOE/FLENCE/Megane III/Scenic III"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
@@ -822,7 +818,7 @@ msgstr ""
 "HO</font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr "Reset centrální řídicí jednotky vozidla Megane/Scénic III"
+msgstr "Reset UCH Megane/Scenic III"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -832,7 +828,7 @@ msgstr ""
 "UCH<br>ZMIZÍ, POKUD NEMÁTE TUŠENÍ, CO TO ZNAMENÁ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr "Reset airbagu RSAT4"
+msgstr "Reset AIRBAG RSAT4"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
@@ -860,7 +856,7 @@ msgid "CRC CALCULATOR"
 msgstr "KALKULAČKA CRC"
 
 msgid "Zoe water pump Reset"
-msgstr "Počítadla vodní pumpy"
+msgstr "Reset vodní pumpy Zoe"
 
 msgid "EVC Tools"
 msgstr "Nástroje EVC"
@@ -869,22 +865,22 @@ msgid "Water pump counters"
 msgstr "Počítadla vodní pumpy"
 
 msgid "Name"
-msgstr "Name"
+msgstr "Název"
 
 msgid "Values"
-msgstr "Zkontrolujte hodnoty"
+msgstr "Hodnoty"
 
 msgid "Action"
-msgstr "Action"
+msgstr "Akce"
 
 msgid "Low Speed"
-msgstr "Čtení Nízká rychlost"
+msgstr "Nízká rychlost"
 
 msgid "Middle Speed"
-msgstr "Střední rychlost čtení"
+msgstr "Střední rychlost"
 
 msgid "High Speed"
-msgstr "Čtení Vysoká rychlost"
+msgstr "Vysoká rychlost"
 
 msgid "V_Timer_DrivWEP_ON"
 msgstr "V_Časovač_DrivWEP_Zapnuto"
@@ -896,9 +892,8 @@ msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
 "PUMP COUNTERS<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"Počítadla vodních čerpadel Zoe<br><font color='red'>TENTO PLUGIN VYMAŽE "
-"POČÍTADLA VODNÍCH ČERPADEL<br>ODSTRANĚTE HO, POKUD NEMÁTE TUŠENÍ, CO TO "
-"ZNAMENÁ</font>"
+"Zoe počítadla vodní pumpy<br><font color='red'>TENTO PLUGIN VYMAŽE POČÍTADLA "
+"VODNÍ PUMPY<br>POKUD NEMÁTE TUŠENÍ, CO TO ZNAMENÁ, ZRUŠTE TO</font>"
 
 msgid "Check values"
 msgstr "Zkontrolujte hodnoty"
@@ -906,8 +901,9 @@ msgstr "Zkontrolujte hodnoty"
 msgid "Waiting action"
 msgstr "Čekání na akci"
 
+#, fuzzy
 msgid "Reset all counters"
-msgstr "Vynulujte všechna počítadla"
+msgstr "Reset počítadel"
 
 msgid ""
 "<h1>TIPS</h1><ul><li>Insert key CARD</li><li>Put D position</li><li>Press/"

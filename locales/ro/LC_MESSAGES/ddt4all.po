@@ -54,7 +54,8 @@ msgstr "Date insuficiente de control al sesiunii"
 
 #, python-brace-format
 msgid "Expected diagnostic session control response, got: {}"
-msgstr "Se aștepta răspuns de control al sesiunii de diagnosticare, s-a primit: {}"
+msgstr ""
+"Se aștepta răspuns de control al sesiunii de diagnosticare, s-a primit: {}"
 
 #, python-brace-format
 msgid "Diagnostic session control failed: {}"
@@ -123,306 +124,295 @@ msgstr "Adăugare grup "
 msgid "Unable to find eculist"
 msgstr "Nu se poate găsi eculist"
 
-#, fuzzy
 msgid "Cannot find file "
-msgstr "Pluginul nu se poate incarca "
+msgstr "Nu se poate găsi fișierul "
 
 msgid "Cannot load ECU file"
-msgstr ""
+msgstr "Nu se poate încărca fișierul ECU"
 
-#, fuzzy
 msgid "XML not found"
-msgstr "Fisierul XML nu a fost gasit : "
+msgstr "XML nu a fost găsit"
 
 msgid "Cannot retrieve functionnal address of ECU"
-msgstr ""
+msgstr "Nu se poate obține adresa funcțională a ECU"
 
 msgid "Generated stream "
-msgstr ""
+msgstr "Flux generat "
 
-#, fuzzy
 msgid "Send request stream "
-msgstr "Trimiteti octeti de solicitare (HEX)"
+msgstr "Trimite flux de cerere "
 
-#, fuzzy
 msgid "Received stream "
-msgstr "Primiti octeti"
+msgstr "Flux primit "
 
 msgid "Request ECU Error"
-msgstr ""
+msgstr "Eroare de cerere ECU"
 
 msgid "Decoded values"
-msgstr ""
+msgstr "Valori decodate"
 
 msgid "Found: "
-msgstr ""
+msgstr "Găsit: "
 
-#, fuzzy
 msgid "Identified ECU"
-msgstr "Identificati ECU"
+msgstr "ECU identificat"
 
 msgid "Found ECU"
-msgstr ""
+msgstr "ECU găsit"
 
 msgid "(not perfect match)"
-msgstr ""
+msgstr "(potrivire nu perfectă)"
 
 msgid "(no relevant ECU file found)"
-msgstr ""
+msgstr "(nu s-a găsit fișier ECU relevant)"
 
-#, fuzzy
 msgid "Warning, address"
-msgstr "ECU Adresa functiei"
+msgstr "Avertisment, adresă"
 
 msgid "is not mapped"
-msgstr ""
+msgstr "nu este mapat"
 
-#, fuzzy
 msgid "Scanning address: "
-msgstr "ECU Adresa functiei"
+msgstr "Scanare adresă: "
 
-#, fuzzy
 msgid "Scanning DoIP address: "
-msgstr "ECU Adresa functiei"
+msgstr "Scanare adresă DoIP: "
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device detection error: %s"
-msgstr "Connection error: "
+msgstr "Eroare de detectare a dispozitivului: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "STPX mode enabled for %s"
-msgstr "Cadru de eroare hex: "
+msgstr "Modul STPX activat pentru %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Pin swapping enabled for %s"
-msgstr "Cadru de eroare hex: "
+msgstr "Schimbare pini activată pentru %s"
 
 #, python-format
 msgid "Enhanced features enable error: %s"
-msgstr ""
+msgstr "Eroare activare funcționalități extinse: %s"
 
 msgid "STPX mode not supported by this adapter as native, trying fallback..."
 msgstr ""
+"Modul STPX nu este suportat nativ de acest adaptor, încercare fallback..."
 
-#, fuzzy
 msgid "STPX mode enabled successfully"
-msgstr "Connection test successful!"
+msgstr "Modul STPX activat cu succes"
 
-#, fuzzy, python-format
+#, python-format
 msgid "STPX mode enable error: %s"
-msgstr "Cadru de eroare hex: "
+msgstr "Eroare activare mod STPX: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Pin swap error: %s"
-msgstr "Cadru de eroare hex: "
+msgstr "Eroare schimbare pini: %s"
 
 msgid "VGate pin swapping successful"
-msgstr ""
+msgstr "Schimbare pini VGate reușită"
 
 msgid "VGate pin swapping failed, using fallback"
-msgstr ""
+msgstr "Schimbare pini VGate eșuată, folosire fallback"
 
-#, fuzzy, python-format
+#, python-format
 msgid "VGate pin swap error: %s"
-msgstr "Cadru de eroare hex: "
+msgstr "Eroare schimbare pini VGate: %s"
 
 msgid "OBDLink pin swapping completed"
-msgstr ""
+msgstr "Schimbare pini OBDLink finalizată"
 
 #, python-format
 msgid "OBDLink pin swap error: %s"
-msgstr ""
+msgstr "Eroare schimbare pini OBDLink: %s"
 
 msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
 msgstr ""
+"DerleK USB-DIAG2 folosește protocol proprietar - nu sunt necesare comenzi AT"
 
 #, python-format
 msgid "DerleK USB-DIAG2 pin swap error: %s"
-msgstr ""
+msgstr "Eroare schimbare pini DerleK USB-DIAG2: %s"
 
 msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
 msgstr ""
+"DerleK USB-DIAG3 folosește protocol proprietar - nu sunt necesare comenzi AT"
 
 #, python-format
 msgid "DerleK USB-DIAG3 pin swap error: %s"
-msgstr ""
+msgstr "Eroare schimbare pini DerleK USB-DIAG3: %s"
 
 msgid "USB CAN pin swapping completed"
-msgstr ""
+msgstr "Schimbare pini USB CAN finalizată"
 
 #, python-format
 msgid "USB CAN pin swap error: %s"
-msgstr ""
+msgstr "Eroare schimbare pini USB CAN: %s"
 
 msgid "ELS27 pin swapping completed"
-msgstr ""
+msgstr "Schimbare pini ELS27 finalizată"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ELS27 pin swap error: %s"
-msgstr "Cadru de eroare hex: "
+msgstr "Eroare schimbare pini ELS27: %s"
 
 #, python-format
 msgid "Device %s initialized successfully with enhanced features"
-msgstr ""
+msgstr "Dispozitivul %s inițializat cu succes cu funcționalități extinse"
 
 #, python-format
 msgid "Device %s initialized with basic features only"
-msgstr ""
+msgstr "Dispozitivul %s inițializat doar cu funcționalități de bază"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device initialization error: %s"
-msgstr "Initializarea ecranului"
+msgstr "Eroare de inițializare a dispozitivului: %s"
 
 msgid "Found USB device:"
-msgstr ""
+msgstr "Dispozitiv USB găsit:"
 
-#, fuzzy
 msgid "USB device detection error:"
-msgstr "ELM327 device detected successfully"
+msgstr "Eroare de detectare a dispozitivului USB:"
 
 msgid ""
 "Note: This error does not affect serial communication or bypass cable "
 "functionality."
 msgstr ""
+"Notă: Această eroare nu afectează comunicarea serială sau funcționalitatea "
+"cablului bypass."
 
 msgid "Trying to open port "
-msgstr "Incercare de a deschide portul "
+msgstr "Încercare de a deschide portul "
 
-#, fuzzy
 msgid "Port initialization failed"
-msgstr "Initializarea ecranului"
+msgstr "Inițializarea portului a eșuat"
 
 msgid "Port connection failed - port object is invalid"
-msgstr ""
+msgstr "Conectarea la port a eșuat - obiectul port este invalid"
 
 msgid "No ELM interface on port"
-msgstr "Nu exista interfata ELM in port"
+msgstr "Nu există interfață ELM pe port"
 
 msgid "OBDLink Connection OK, attempting full speed UART switch"
-msgstr ""
+msgstr "Conectare OBDLink OK, încercare comutare la viteză maximă UART"
 
 msgid "Failed to switch OBDLink to "
-msgstr ""
+msgstr "Comutarea OBDLink la a eșuat "
 
 msgid "OBDLINK Connection OK, using optimal settings"
-msgstr ""
+msgstr "Conectare OBDLINK OK, utilizare setări optime"
 
 msgid "OBDLink STPX mode enabled for enhanced long command support"
-msgstr ""
+msgstr "Modul STPX OBDLink activat pentru suport extins de comenzi lungi"
 
-#, fuzzy
 msgid "Connection established successfully"
-msgstr "Connection test successful!"
+msgstr "Conexiune stabilită cu succes"
 
 msgid "VGate STPX mode enabled for enhanced long command support"
-msgstr ""
+msgstr "Modul STPX VGate activat pentru suport extins de comenzi lungi"
 
 msgid "Configuring ELS27 V5 CAN pins (12-13)"
-msgstr ""
+msgstr "Configurare pini CAN ELS27 V5 (12-13)"
 
 msgid "ELS27 V5 CAN configuration complete"
-msgstr ""
+msgstr "Configurare CAN ELS27 V5 finalizată"
 
 msgid "STPX mode enabled for enhanced long command support"
-msgstr ""
+msgstr "Modul STPX activat pentru suport extins de comenzi lungi"
 
 msgid "Port is None - cannot switch speed"
-msgstr ""
+msgstr "Portul este None - nu se poate comuta viteza"
 
 #, python-format
 msgid "%s switched baudrate OK, changing UART speed now..."
-msgstr ""
+msgstr "%s a comutat cu succes baudrate, schimbare viteza UART acum..."
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s STN connection established"
-msgstr "Connection test failed"
+msgstr "%s conexiune STN stabilită"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s Version: "
-msgstr "Versiune"
+msgstr "%s Versiune: "
 
 msgid ""
 "VGate adapter detected but STN verification failed, attempting fallback..."
 msgstr ""
+"Adaptor VGate detectat dar verificarea STN a eșuat, încercare fallback..."
 
 #, python-format
 msgid "Unsupported baudrate for ELM: %s"
-msgstr ""
+msgstr "Baudrate nesuportat pentru ELM: %s"
 
 msgid "ELM baudrate switched OK, changing UART speed now..."
-msgstr ""
+msgstr "Baudrate ELM comutat cu succes, schimbare viteza UART acum..."
 
 msgid "ELM full speed connection OK "
-msgstr ""
+msgstr "Conexiune ELM la viteză maximă OK "
 
-#, fuzzy
 msgid "Version "
-msgstr "Versiune"
+msgstr "Versiune "
 
 msgid "ELM did not report version after speed switch"
-msgstr ""
+msgstr "ELM nu a raportat versiunea după comutarea vitezei"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Your ELM does not support baudrate %s"
-msgstr "EROARE - Wifi nu accepta modificarea ratei de transfer"
+msgstr "ELM-ul dvs. nu suportă baudrate %s"
 
 msgid "ELM reset..."
-msgstr ""
+msgstr "Resetare ELM..."
 
-#, fuzzy
 msgid "Unknown address: "
-msgstr "ECU Adresa functiei"
+msgstr "Adresă necunoscută: "
 
 msgid "Using saved device settings"
-msgstr ""
+msgstr "Utilizare setări dispozitiv salvate"
 
 msgid "Using optimal device settings"
-msgstr ""
+msgstr "Utilizare setări dispozitiv optime"
 
 msgid "Connecting to device at port: "
-msgstr "Connecting to device at port: "
+msgstr "Conectare la dispozitiv pe port: "
 
 msgid "Using baudrate: "
-msgstr "Using baudrate: "
+msgstr "Utilizare baudrate: "
 
 msgid "Testing for ELS27 device..."
-msgstr ""
+msgstr "Testare pentru dispozitiv ELS27..."
 
-#, fuzzy
 msgid "ELS27 device detected: "
-msgstr "ELM327 device detected successfully"
+msgstr "Dispozitiv ELS27 detectat: "
 
-#, fuzzy
 msgid "Using detected baud rate: "
-msgstr "Using baudrate: "
+msgstr "Utilizare baudrate detectat: "
 
 msgid "Warning: No ELS27 response detected"
-msgstr ""
+msgstr "Avertisment: Nu s-a detectat nicio răspuns de la ELS27"
 
-#, fuzzy
 msgid "Will attempt connection anyway..."
-msgstr "Attempting connection..."
+msgstr "Se va încerca conectarea oricum..."
 
 msgid "Connection failed: "
-msgstr "Connection failed: "
+msgstr "Conexiune eșuată: "
 
 msgid "Testing basic connectivity..."
-msgstr "Testing basic connectivity..."
+msgstr "Testare conectivitate de bază..."
 
 msgid "Warning: Device may not be ELM327 compatible"
-msgstr "Warning: Device may not be ELM327 compatible"
+msgstr "Avertisment: Dispozitivul poate nu fi compatibil cu ELM327"
 
 msgid "ELM327 device detected successfully"
-msgstr "ELM327 device detected successfully"
+msgstr "Dispozitiv ELM327 detectat cu succes"
 
 msgid "Device version: "
-msgstr "Device version: "
+msgstr "Versiune dispozitiv: "
 
 msgid "Connection error: "
-msgstr "Connection error: "
+msgstr "Eroare de conexiune: "
 
 msgid "FAIL"
-msgstr "ESEC"
+msgstr "EȘEC"
 
 msgid "OK/TIMEOUT"
 msgstr "OK/TIMP EXPIRAT"
@@ -437,65 +427,61 @@ msgid "Result: "
 msgstr "Rezultat: "
 
 msgid " succeeded from "
-msgstr " reusit din "
+msgstr " a reușit de la "
 
 msgid "ELM Max version:"
-msgstr "ELM Versiune max:"
+msgstr "Versiune maximă ELM:"
 
 msgid "Using saved settings for"
-msgstr ""
+msgstr "Utilizare setări salvate pentru"
 
 msgid "Using optimal settings for"
-msgstr ""
+msgstr "Utilizare setări optime pentru"
 
-#, fuzzy
 msgid "Serial port opened"
-msgstr "Verificarea vitezei portului:"
+msgstr "Port serial deschis"
 
-#, fuzzy
 msgid "Error: "
-msgstr "Eroare:"
+msgstr "Eroare: "
 
 msgid "ELM not connected or wrong COM port"
 msgstr "ELM nu este conectat sau port COM gresit"
 
-#, fuzzy
 msgid "Port closed"
-msgstr "Viteza portului"
+msgstr "Portul este închis"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
-msgstr ""
+msgstr "Eroare serială în read_byte: %s"
 
 msgid "Connection to ELM was lost"
 msgstr "Conexiunea cu ELM a fost pierduta"
 
 #, python-format
 msgid "*       Error: %s"
-msgstr ""
+msgstr "*       Eroare: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Cannot decode bytes %s"
-msgstr "Nu se poate conecta la ECU"
+msgstr "Nu se pot decoda octeții %s"
 
 #, python-format
 msgid "Error in read(): %s"
-msgstr ""
+msgstr "Eroare la citire: %s"
 
-#, fuzzy
 msgid "Attempting WiFi reconnection..."
-msgstr "Attempting connection..."
+msgstr "Încercare reconectare WiFi..."
 
 msgid "Port handler is None, cannot write"
-msgstr ""
+msgstr "Handler-ul portului este None, nu se poate scrie"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Serial write error: %s"
-msgstr "Cadru de eroare hex: "
+msgstr "Eroare de scriere serială: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "*       Write error: %s"
-msgstr "Cadru de eroare hex: "
+msgstr "*       Eroare de scriere: %s"
 
 msgid "TIMEOUT"
 msgstr "TIMP EXPIRAT"
@@ -504,69 +490,69 @@ msgid "Checking port speed:"
 msgstr "Verificarea vitezei portului:"
 
 msgid "Start COM speed :"
-msgstr ""
+msgstr "Viteză inițială COM :"
 
 msgid "ELM not responding"
 msgstr "ELM nu raspunde"
 
 msgid "Cannot zip database, no 'ecus' directory"
-msgstr ""
+msgstr "Nu se poate arhiva baza de date, nu există directorul 'ecus'"
 
-#, fuzzy
 msgid "Starting conversion"
-msgstr "Versiune Diag"
+msgstr "Pornire conversie"
 
 msgid "Starting processing "
-msgstr ""
+msgstr "Pornire procesare "
 
 msgid " to "
-msgstr ""
+msgstr " la "
 
 msgid "Skipping current file (cannot parse it)"
-msgstr ""
+msgstr "Omitere fișier curent (nu se poate parsa)"
 
-#, fuzzy
 msgid "Writing database"
-msgstr "Baza de date zip"
+msgstr "Scriere bază de date"
 
 msgid "Writing archive"
-msgstr ""
+msgstr "Scriere arhivă"
 
 msgid "Opening ECU Database..."
-msgstr ""
+msgstr "Deschidere bază de date ECU..."
 
 msgid "parts as: "
-msgstr ""
+msgstr "părți ca: "
 
 msgid " please review dumpVehicles def."
-msgstr ""
+msgstr " vă rugăm să revizuiți dumpVehicles def."
 
 msgid "ELS27 V5 CAN pin configuration complete"
-msgstr ""
+msgstr "Configurare pini CAN ELS27 V5 finalizată"
 
 msgid "Found USB adapter:"
-msgstr ""
+msgstr "Adaptor USB găsit:"
 
 msgid "USB not available"
-msgstr ""
+msgstr "USB nu este disponibil"
 
 msgid "USB Device"
-msgstr ""
+msgstr "Dispozitiv USB"
 
 msgid "Warning: Could not read string descriptor:"
-msgstr ""
+msgstr "Avertisment: Nu s-a putut citi descriptorul de șir:"
 
 msgid "USB OBD Device"
-msgstr ""
+msgstr "Dispozitiv USB OBD"
 
 msgid "Warning: Vendor request failed:"
-msgstr ""
+msgstr "Avertisment: Cererea furnizorului a eșuat:"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
 msgstr ""
+"Avertisment: PyQtWebEngine nu este disponibil. Unele funcționalități pot fi "
+"limitate."
 
 msgid "resources/projects.json not found or invalid."
-msgstr ""
+msgstr "resources/projects.json nu a fost găsit sau este invalid."
 
 msgid "Using custom DDT database"
 msgstr "Utilizarea bazei de date DDT personalizate"
@@ -576,14 +562,13 @@ msgstr "Niciun port COM nu a fost selectat"
 
 #, fuzzy, python-format
 msgid "Initializing ELM with speed %i..."
-msgstr "Initializeaza ELM cu viteza %i..."
+msgstr "Initializează ELM cu viteza %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
-msgstr "Niciun ELM327 sau OBDLINK-SX nu a fost detectat in portul COM "
+msgstr "Niciun ELM327 sau OBDLINK-SX nu a fost detectat în portul COM "
 
-#, fuzzy
 msgid "Initializing device features..."
-msgstr "Initializeaza ELM cu viteza %i..."
+msgstr "Inițializare funcționalități dispozitiv..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr "Resetare AIRBAG AB90"
@@ -596,61 +581,62 @@ msgid ""
 "UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</"
 "font>"
 msgstr ""
-"AB90 (Clio III)/2<br>VIRGINIZATOR AIRBAG<br><font color='red\">ACEST PLUGIN "
-"VA DEBLOCA <br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+"AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>ACEST PLUGIN VA "
+"DEBLOCA DATELE DE ACCIDENT AIRBAG<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</"
+"font>"
 
 msgid "Check ACU Virgin"
 msgstr "Verificare ACU Virgin"
 
 msgid "Waiting"
-msgstr "Asteptare"
+msgstr "Așteptare"
 
 msgid "Virginize ACU"
-msgstr "Virginizeaza ACU"
+msgstr "Virginizare ACU"
 
 msgid "Cannot connect to ECU"
 msgstr "Nu se poate conecta la ECU"
 
 msgid "<font color='orange'>UNEXPECTED RESPONSE</font>"
-msgstr "<font color='orange'>RASPUNS NEASTEPTAT</font>"
+msgstr "<font color='orange'>RĂSPUNS NEAȘTEPTAT</font>"
 
 msgid "<font color='red'>CRASH DETECTED</font>"
-msgstr "<font color='red'>AVARIE DETECTATA</font>"
+msgstr "<font color='red'>ACCIDENT DETECTAT</font>"
 
 msgid "<font color='green'>NO CRASH DETECTED</font>"
-msgstr "<font color='green'>NICI O AVARIE DETECTATA</font>"
+msgstr "<font color='green'>NU EXISTĂ ACCIDENT</font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS stream: %s"
-msgstr "Primiti octeti"
+msgstr "Flux SDS: %s"
 
 msgid "<font color='green'>CLEAR EXECUTED</font>"
-msgstr "<font color='green'>CURATARE EXECUTATA</font>"
+msgstr "<font color='green'>CURĂȚARE EXECUTATĂ</font>"
 
 msgid "<font color='red'>CLEAR FAILED</font>"
-msgstr "<font color='red'>CURATARE ESUATA</font>\""
+msgstr "<font color='red'>CURĂȚARE EȘUATĂ</font>"
 
 msgid "Megane/Scenic II card programming"
-msgstr "Programare carduri Megane/Scenic II"
+msgstr "Programare card Megane/Scenic II"
 
 msgid "Keys"
 msgstr "Chei"
 
 msgid "ENTER AFTER SALE MODE"
-msgstr "INTRATI IN MODUL DE DUPA VANZARE"
+msgstr "INTRATI ÎN MODUL DE DUPĂ VÂNZARE"
 
 msgid ""
 "<font color='red'>MEGANE II CARD PROGRAMMING<br>EXPERIMENTAL : NOT TESTED "
 "YET</font>"
 msgstr ""
 "<font color='red'>MEGANE II PROGRAMARE CARD<br>EXPERIMENTAL : NU ESTE TESTAT "
-"YET</font>"
+"ÎNCĂ</font>"
 
 msgid "LEARN"
-msgstr "INVATA"
+msgstr "ÎNVĂȚĂ"
 
 msgid "VALIDATE"
-msgstr "VALIDEAZA"
+msgstr "VALIDEAZĂ"
 
 msgid "CANCEL"
 msgstr "ANULARE"
@@ -665,22 +651,22 @@ msgid "PIN"
 msgstr "PIN"
 
 msgid "Num key learnt"
-msgstr "Nume cheie invatat"
+msgstr "Nume cheie învățat"
 
 msgid "CARD IDE"
 msgstr "CARD IDE"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
-msgstr "Nu se poate obtine ISK, verifica conexiunile si compatibilitatea UCH"
+msgstr "Nu se poate obține ISK, verificați conexiunile și compatibilitatea UCH"
 
 msgid "<font color='red'>PIN CODE NOT RECOGNIZED</font>"
 msgstr "<font color='red'>COD PIN NERECUNOSCUT</font>"
 
 msgid "<font color='green'>PIN CODE OK / KEY LEARNING</font>"
-msgstr "<font color='green'>COD PIN BUN / INVATARE CHEIE</font>"
+msgstr "<font color='green'>COD PIN BUN / ÎNVĂȚARE CHEIE</font>"
 
 msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
-msgstr "<font color='green'>COD PIN BUN / INVATARE UCH</font>"
+msgstr "<font color='green'>COD PIN BUN / ÎNVĂȚARE UCH</font>"
 
 msgid "Modus/Clio III EPS Reset"
 msgstr "Resetare EPS Modus/Clio III"
@@ -693,11 +679,10 @@ msgid ""
 "EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "Modus/Clio III VIRGINIZATOR EPS<br><font color='red'>ACEST PLUGIN VA RESETA "
-"DATELE EPS IMMO<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE INSEAMNA ASTA</"
-"font>"
+"DATELE EPS IMMO<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "BLANK STATUS & VIN READ"
-msgstr "STERGE STATUS SI CITESTE VIN"
+msgstr "ȘTERGE STATUS ȘI CITESTE VIN"
 
 msgid "Virginize EPS"
 msgstr "Virginizare EPS"
@@ -718,7 +703,7 @@ msgid "<font color='res'>VIN - BAD LENGTH</font>"
 msgstr "<font color='res'>VIN - LUNGIME FALSA</font>"
 
 msgid "<font color='orange'>VIN WRITE FAILED</font>"
-msgstr "<font color='orange'>SCRIERE VIN ESUATA</font>"
+msgstr "<font color='orange'>SCRIERE VIN EȘUATĂ</font>"
 
 msgid "<font color='green'>VIN WRITE OK</font>"
 msgstr "<font color='green'>SCRIERE VIN BINE</font>"
@@ -731,7 +716,7 @@ msgstr "<font color='red'>EPS codat</font>"
 
 #, python-format
 msgid "SdSC0 stream: %s"
-msgstr ""
+msgstr "Flux SdSC0: %s"
 
 msgid "Clio IV EPS Reset"
 msgstr "Clio IV EPS Reset"
@@ -741,20 +726,20 @@ msgid ""
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "Clio IV VIRGINIZATOR EPS<br><font color='red'>ACEST PLUGIN VA RESETA DATELE "
-"IMMO<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE INSEAMNA ASTA</font>"
+"IMMO<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Check EPS Virgin"
-msgstr "Verifica EPS Virgin"
+msgstr "Verifică EPS Virgin"
 
 msgid "<font color='green'>EPS not operational</font>"
-msgstr "<font color='green'>EPS nu functioneaza</font>"
+msgstr "<font color='green'>EPS nu funcționează</font>"
 
 msgid "<font color='red'>UNEXPECTED RESPONSE</font>"
-msgstr "<font color='red'>RASPUNS NEASTEPTAT</font>"
+msgstr "<font color='red'>RĂSPUNS NEAȘTEPTAT</font>"
 
 #, python-format
 msgid "SdSFA stream: %s"
-msgstr ""
+msgstr "Flux SdSFA: %s"
 
 msgid "Laguna II UCH Reset"
 msgstr "Laguna II UCH Reset"
@@ -766,11 +751,11 @@ msgid ""
 "LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"LAGUNA II VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA STERGE UCH-"
-"ul TAU<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE INSEAMNA ASTA</font>"
+"LAGUNA II VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
+"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Check UCH Virgin"
-msgstr "Verifica UCH Virgin"
+msgstr "Verifică UCH Virgin"
 
 msgid "Virginize UCH"
 msgstr "Virginizare UCH"
@@ -788,8 +773,8 @@ msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"LAGUNA III VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA STERGE UCH-"
-"ul TAU<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE INSEAMNA ASTA</font>"
+"LAGUNA III VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
+"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
 msgstr "Megane/Scenic II UCH Reset"
@@ -798,8 +783,8 @@ msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"MEGANE II VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA STERGE UCH-"
-"ul TAU<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE INSEAMNA ASTA</font>"
+"MEGANE II VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
+"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Megane3 AIRBAG Reset"
 msgstr "Megane3 AIRBAG Reset"
@@ -809,12 +794,12 @@ msgid ""
 "AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "Megane III<br>VIRGINIZATOR AIRBAG<br><font color='red'>ACEST PLUGIN VA "
-"DEBLOCA DATELE DE AVARIE A AIRBAG-ului<br>NU MERGE MAI DEPARTE, DACA NU AI "
-"IDEE CE INSEAMNA ASTA</font>"
+"DEBLOCA DATELE DE AVARIE A AIRBAG-ULUI<br>PLECAȚI DACĂ NU AVEȚI IDEA CE "
+"ÎNSEAMNĂ</font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS FA stream: %s"
-msgstr "Primiti octeti"
+msgstr "Flux SDS FA: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
 msgstr "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
@@ -825,8 +810,8 @@ msgid ""
 "MEANS</font>"
 msgstr ""
 "ZOE/FLENCE/Megane III/Scenic III VIRGINIZATOR EPS<br><font color='red'>ACEST "
-"PLUGIN VA RESETA DATELE EPS IMMO<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE "
-"INSEAMNA ASTA</font>"
+"PLUGIN VA RESETA DATELE EPS IMMO<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</"
+"font>"
 
 msgid "Megane/Scenic III UCH Reset"
 msgstr "Megane/Scenic III UCH Reset"
@@ -835,8 +820,8 @@ msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"MEGANE III VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA STERGE UCH-"
-"ul TAU<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE INSEAMNA ASTA</font>"
+"MEGANE III VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
+"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
 msgstr "RSAT4 AIRBAG Reset"
@@ -848,12 +833,12 @@ msgid ""
 msgstr ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY "
 "ph1/2<br>VIRGINIZATOR AIRBAG<br><font color='red'>ACEST PLUGIN VA DEBLOCA "
-"DATELE DE AVARIE ALE AIRBAG-ului<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE "
-"INSEAMNA ASTA</font>"
+"DATELE DE AVARIE ALE AIRBAG-ULUI<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</"
+"font>"
 
 #, python-format
 msgid "SdSEX stream: %s"
-msgstr ""
+msgstr "Flux SdSEX: %s"
 
 msgid "CRC calculator"
 msgstr "Calculator CRC"
@@ -861,7 +846,6 @@ msgstr "Calculator CRC"
 msgid "VIN"
 msgstr "VIN"
 
-#, fuzzy
 msgid "CRC Calculator"
 msgstr "Calculator CRC"
 
@@ -869,109 +853,98 @@ msgid "CRC CALCULATOR"
 msgstr "CALCULATOR CRC"
 
 msgid "Zoe water pump Reset"
-msgstr ""
+msgstr "Resetare pompă apă Zoe"
 
-#, fuzzy
 msgid "EVC Tools"
-msgstr "Instrumente pentru EPS"
+msgstr "Unelte EVC"
 
 msgid "Water pump counters"
-msgstr ""
+msgstr "Contoare pompă apă"
 
 msgid "Name"
-msgstr ""
+msgstr "Nume"
 
 msgid "Values"
 msgstr "Valori"
 
 msgid "Action"
-msgstr "Actiune"
+msgstr "Acțiune"
 
-#, fuzzy
 msgid "Low Speed"
-msgstr "Viteza portului"
+msgstr "Viteză mică"
 
 msgid "Middle Speed"
-msgstr ""
+msgstr "Viteză medie"
 
 msgid "High Speed"
-msgstr ""
+msgstr "Viteză mare"
 
 msgid "V_Timer_DrivWEP_ON"
-msgstr ""
+msgstr "V_Timer_DrivWEP_ON"
 
 msgid "Reset"
-msgstr ""
+msgstr "Resetare"
 
-#, fuzzy
 msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
 "PUMP COUNTERS<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"LAGUNA II VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA STERGE UCH-"
-"ul TAU<br>NU MERGE MAI DEPARTE, DACA NU AI IDEE CE INSEAMNA ASTA</font>"
+"Contoare pompă apă Zoe<br><font color='red'>ACEST PLUGIN VA ȘTERGE "
+"CONTOARELE POMPĂI DE APĂ<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Check values"
-msgstr ""
+msgstr "Verifică valori"
 
-#, fuzzy
 msgid "Waiting action"
-msgstr "Asteptare"
+msgstr "Așteptare acțiune"
 
 msgid "Reset all counters"
-msgstr ""
+msgstr "Resetare toate contoarele"
 
 msgid ""
 "<h1>TIPS</h1><ul><li>Insert key CARD</li><li>Put D position</li><li>Press/"
 "Stay START until <b>Remove card</b> message</li><li>Put P position</"
 "li><li>Keep key card inserted</li></ul>"
 msgstr ""
+"<h1>SFATURI</h1><ul><li>Introduceți cardul cheie</li><li>Puneți poziția D</"
+"li><li>Apăsați/Țineți START până apare mesajul <b>Eliminați cardul</b></"
+"li><li>Puneți poziția P</li><li>Păstrați cardul cheie introdus</li></ul>"
 
-#, fuzzy
 msgid "<font color='green'>Values read</font>"
-msgstr "<font color='green'>EPS virgin</font>"
+msgstr "<font color='green'>Valori citite</font>"
 
-#, fuzzy
 msgid "Reading Low speed"
-msgstr "Verificarea vitezei portului:"
+msgstr "Citire viteză mică"
 
 msgid "Reading Middle speed"
-msgstr ""
+msgstr "Citire viteză medie"
 
 msgid "Reading High speed"
-msgstr ""
+msgstr "Citire viteză mare"
 
-#, fuzzy
 msgid "<font color='green'>CLEAR V_Timer_DrivWEP_ON EXECUTED</font>"
-msgstr "<font color='green'>CURATARE EXECUTATA</font>"
+msgstr "<font color='green'>CLEAR V_Timer_DrivWEP_ON EXECUTAT</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR V_Timer_DrivWEP_ON FAILED</font>"
-msgstr "<font color='red'>CURATARE ESUATA</font>\""
+msgstr "<font color='red'>CLEAR V_Timer_DrivWEP_ON EȘUAT</font>"
 
-#, fuzzy
 msgid "<font color='green'>CLEAR Low EXECUTED</font>"
-msgstr "<font color='green'>CURATARE EXECUTATA</font>"
+msgstr "<font color='green'>CLEAR SCĂZUT EXECUTAT</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR Low FAILED</font>"
-msgstr "<font color='red'>CURATARE ESUATA</font>\""
+msgstr "<font color='red'>CLEAR SCĂZUT EȘUAT</font>"
 
-#, fuzzy
 msgid "<font color='green'>CLEAR Medium EXECUTED</font>"
-msgstr "<font color='green'>CURATARE EXECUTATA</font>"
+msgstr "<font color='green'>CLEAR MEDIU EXECUTAT</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR Medium FAILED</font>"
-msgstr "<font color='red'>CURATARE ESUATA</font>\""
+msgstr "<font color='red'>CLEAR MEDIU EȘUAT</font>"
 
-#, fuzzy
 msgid "<font color='green'>CLEAR HIGH EXECUTED</font>"
-msgstr "<font color='green'>CURATARE EXECUTATA</font>"
+msgstr "<font color='green'>CLEAR RIDICAT EXECUTAT</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR HIGH FAILED</font>"
-msgstr "<font color='red'>CURATARE ESUATA</font>\""
+msgstr "<font color='red'>CLEAR RIDICAT EȘUAT</font>"
 
 msgid "Add"
 msgstr "Adauga"
@@ -1206,19 +1179,19 @@ msgid "Request name;Bytes;Manual"
 msgstr "Numele solicitarii;Octeti;Manual"
 
 msgid "No request named"
-msgstr ""
+msgstr "Nicio cerere numită"
 
 msgid "Found similar"
-msgstr ""
+msgstr "Găsit similar"
 
 msgid "DataItem not found"
-msgstr ""
+msgstr "DataItem negăsit"
 
 msgid "Cannot find data "
-msgstr ""
+msgstr "Nu se pot găsi date "
 
 msgid " vs "
-msgstr ""
+msgstr " vs "
 
 msgid "Cannot draw input "
 msgstr "Pluginul nu se poate incarca "
@@ -1230,6 +1203,8 @@ msgid ""
 "<center>This Software is free, but I need money to buy cables/ECUs and make "
 "this application more reliable</center>"
 msgstr ""
+"<center>Acest software este gratuit, dar am nevoie de bani pentru a cumpăra "
+"cabluri/ECU-uri și a face această aplicație mai fiabilă</center>"
 
 msgid "Yes I contribute"
 msgstr "Da, contribui"
@@ -1239,19 +1214,20 @@ msgstr "Nu, nu vreu"
 
 msgid "Thank you for you contribution, if nothing happens, please go to"
 msgstr ""
+"Vă mulțumesc pentru contribuția dumneavoastră, dacă nu se întâmplă nimic, vă "
+"rugăm mergeți la"
 
-#, fuzzy
 msgid "ECU Finder"
-msgstr "ECU nume"
+msgstr "Căutător ECU"
 
 msgid "Address :"
-msgstr ""
+msgstr "Adresă :"
 
 msgid "ID frame :"
-msgstr ""
+msgstr "ID cadru :"
 
 msgid "No vehicles available"
-msgstr ""
+msgstr "Nu sunt vehicule disponibile"
 
 msgid "ECU name"
 msgstr "ECU nume"

@@ -103,7 +103,8 @@ msgstr "DoIP: Kiterjesztett címzés használata Elektromos Jármű Rendszerekhe
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr "DoIP: 29-bites kiterjesztett címzés használata - TX:0x{:04X}, RX:0x{:04X}"
+msgstr ""
+"DoIP: 29-bites kiterjesztett címzés használata - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
@@ -124,302 +125,294 @@ msgstr "Csoport hozzáadása "
 msgid "Unable to find eculist"
 msgstr "Nem található eculist"
 
-#, fuzzy
 msgid "Cannot find file "
-msgstr "Sikertelen parancshívás "
+msgstr "Fájl nem található "
 
 msgid "Cannot load ECU file"
-msgstr ""
+msgstr "ECU fájl nem tölthető be"
 
-#, fuzzy
 msgid "XML not found"
-msgstr "XML fájl nem létezik: "
+msgstr "XML nem található"
 
 msgid "Cannot retrieve functionnal address of ECU"
-msgstr ""
+msgstr "ECU funkcionális címe nem kérhető le"
 
 msgid "Generated stream "
-msgstr ""
+msgstr "Generált stream "
 
-#, fuzzy
 msgid "Send request stream "
-msgstr "Parancsbájtok küldése (HEX)"
+msgstr "Kérés stream küldése "
 
-#, fuzzy
 msgid "Received stream "
-msgstr "Bájtok fogadása"
+msgstr "Fogadott stream "
 
 msgid "Request ECU Error"
-msgstr ""
+msgstr "ECU kérés hiba"
 
 msgid "Decoded values"
-msgstr ""
+msgstr "Dekódolt értékek"
 
 msgid "Found: "
-msgstr ""
+msgstr "Találat: "
 
 msgid "Identified ECU"
-msgstr ""
+msgstr "Azonosított ECU"
 
 msgid "Found ECU"
-msgstr ""
+msgstr "ECU találva"
 
 msgid "(not perfect match)"
-msgstr ""
+msgstr "(nem tökéletes egyezés)"
 
 msgid "(no relevant ECU file found)"
-msgstr ""
+msgstr "(nem található releváns ECU fájl)"
 
-#, fuzzy
 msgid "Warning, address"
-msgstr "ECU funkció címe"
+msgstr "Figyelmeztetés, cím"
 
 msgid "is not mapped"
-msgstr ""
+msgstr "nincs leképezve"
 
-#, fuzzy
 msgid "Scanning address: "
-msgstr "ECU funkció címe"
+msgstr "Cím szkennelése: "
 
-#, fuzzy
 msgid "Scanning DoIP address: "
-msgstr "ECU funkció címe"
+msgstr "DoIP cím szkennelése: "
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device detection error: %s"
-msgstr "Connection error: "
+msgstr "Eszköz észlelési hiba: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "STPX mode enabled for %s"
-msgstr "Connection test successful!"
+msgstr "STPX mód engedélyezve ehhez: %s"
 
 #, python-format
 msgid "Pin swapping enabled for %s"
-msgstr ""
+msgstr "Pin csere engedélyezve ehhez: %s"
 
 #, python-format
 msgid "Enhanced features enable error: %s"
-msgstr ""
+msgstr "További funkciók engedélyezési hiba: %s"
 
 msgid "STPX mode not supported by this adapter as native, trying fallback..."
-msgstr ""
+msgstr "STPX mód nem támogatott ezen adapteren natívan, fallback próbálása..."
 
-#, fuzzy
 msgid "STPX mode enabled successfully"
-msgstr "Connection test successful!"
+msgstr "STPX mód sikeresen engedélyezve"
 
 #, python-format
 msgid "STPX mode enable error: %s"
-msgstr ""
+msgstr "STPX mód engedélyezési hiba: %s"
 
 #, python-format
 msgid "Pin swap error: %s"
-msgstr ""
+msgstr "Pin csere hiba: %s"
 
 msgid "VGate pin swapping successful"
-msgstr ""
+msgstr "VGate pin csere sikeres"
 
 msgid "VGate pin swapping failed, using fallback"
-msgstr ""
+msgstr "VGate pin csere sikertelen, fallback használata"
 
 #, python-format
 msgid "VGate pin swap error: %s"
-msgstr ""
+msgstr "VGate pin csere hiba: %s"
 
 msgid "OBDLink pin swapping completed"
-msgstr ""
+msgstr "OBDLink pin csere befejezve"
 
 #, python-format
 msgid "OBDLink pin swap error: %s"
-msgstr ""
+msgstr "OBDLink pin csere hiba: %s"
 
 msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
 msgstr ""
+"DerleK USB-DIAG2 saját protokollt használ - nincs szükség AT parancsokra"
 
 #, python-format
 msgid "DerleK USB-DIAG2 pin swap error: %s"
-msgstr ""
+msgstr "DerleK USB-DIAG2 pin csere hiba: %s"
 
 msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
 msgstr ""
+"DerleK USB-DIAG3 saját protokollt használ - nincs szükség AT parancsokra"
 
 #, python-format
 msgid "DerleK USB-DIAG3 pin swap error: %s"
-msgstr ""
+msgstr "DerleK USB-DIAG3 pin csere hiba: %s"
 
 msgid "USB CAN pin swapping completed"
-msgstr ""
+msgstr "USB CAN pin csere befejezve"
 
 #, python-format
 msgid "USB CAN pin swap error: %s"
-msgstr ""
+msgstr "USB CAN pin csere hiba: %s"
 
 msgid "ELS27 pin swapping completed"
-msgstr ""
+msgstr "ELS27 pin csere befejezve"
 
 #, python-format
 msgid "ELS27 pin swap error: %s"
-msgstr ""
+msgstr "ELS27 pin csere hiba: %s"
 
 #, python-format
 msgid "Device %s initialized successfully with enhanced features"
-msgstr ""
+msgstr "%s eszköz sikeresen inicializálva további funkciókkal"
 
 #, python-format
 msgid "Device %s initialized with basic features only"
-msgstr ""
+msgstr "%s eszköz csak alap funkciókkal inicializálva"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Device initialization error: %s"
-msgstr "Képernyő inicializálása"
+msgstr "Eszköz inicializálási hiba: %s"
 
 msgid "Found USB device:"
-msgstr ""
+msgstr "USB eszköz találva:"
 
-#, fuzzy
 msgid "USB device detection error:"
-msgstr "ELM327 device detected successfully"
+msgstr "USB eszköz észlelési hiba"
 
 msgid ""
 "Note: This error does not affect serial communication or bypass cable "
 "functionality."
 msgstr ""
+"Megjegyzés: Ez a hiba nem befolyásolja a soros kommunikációt vagy a bypass "
+"kábel funkcionalitását.Megjegyzés: Ez a hiba nem befolyásolja a soros "
+"kommunikációt vagy a bypass kábel funkcionalitását."
 
 msgid "Trying to open port "
 msgstr "Port megnyitása "
 
-#, fuzzy
 msgid "Port initialization failed"
-msgstr "Képernyő inicializálása"
+msgstr "Port inicializálás sikertelen"
 
 msgid "Port connection failed - port object is invalid"
-msgstr ""
+msgstr "Port csatlakozás sikertelen - port objektum érvénytelen"
 
 msgid "No ELM interface on port"
 msgstr "Nincs ELM interfész a porton"
 
 msgid "OBDLink Connection OK, attempting full speed UART switch"
-msgstr ""
+msgstr "OBDLink kapcsolat OK, teljes sebességű UART váltás kísérlete"
 
 msgid "Failed to switch OBDLink to "
-msgstr ""
+msgstr "OBDLink váltása sikertelen erre: "
 
 msgid "OBDLINK Connection OK, using optimal settings"
-msgstr ""
+msgstr "OBDLINK kapcsolat OK, optimális beállítások használata"
 
 msgid "OBDLink STPX mode enabled for enhanced long command support"
-msgstr ""
+msgstr "OBDLink STPX mód engedélyezve további hosszú parancs támogatáshoz"
 
-#, fuzzy
 msgid "Connection established successfully"
-msgstr "Connection test successful!"
+msgstr "Kapcsolat sikeresen létrejött"
 
 msgid "VGate STPX mode enabled for enhanced long command support"
-msgstr ""
+msgstr "VGate STPX mód engedélyezve további hosszú parancs támogatáshoz"
 
 msgid "Configuring ELS27 V5 CAN pins (12-13)"
-msgstr ""
+msgstr "ELS27 V5 CAN pinek konfigurálása (12-13)"
 
 msgid "ELS27 V5 CAN configuration complete"
-msgstr ""
+msgstr "ELS27 V5 CAN konfiguráció kész"
 
 msgid "STPX mode enabled for enhanced long command support"
-msgstr ""
+msgstr "STPX mód engedélyezve további hosszú parancs támogatáshoz"
 
 msgid "Port is None - cannot switch speed"
-msgstr ""
+msgstr "Port értéke None - nem lehet váltani a sebességet"
 
 #, python-format
 msgid "%s switched baudrate OK, changing UART speed now..."
-msgstr ""
+msgstr "%s baudrate váltás OK, UART sebesség váltása most..."
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s STN connection established"
-msgstr "Connection test failed"
+msgstr "%s STN kapcsolat létrejött"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s Version: "
-msgstr "Verzió"
+msgstr "%s Verzió: "
 
 msgid ""
 "VGate adapter detected but STN verification failed, attempting fallback..."
 msgstr ""
+"VGate adapter észlelve, de az STN ellenőrzés sikertelen, fallback "
+"próbálása...VGate adapter észlelve, de az STN ellenőrzés sikertelen, "
+"fallback próbálása..."
 
 #, python-format
 msgid "Unsupported baudrate for ELM: %s"
-msgstr ""
+msgstr "Nem támogatott baudrate ELM-hez: %s"
 
 msgid "ELM baudrate switched OK, changing UART speed now..."
-msgstr ""
+msgstr "ELM baudrate váltás OK, UART sebesség váltása most..."
 
 msgid "ELM full speed connection OK "
-msgstr ""
+msgstr "ELM teljes sebességű kapcsolat OK "
 
-#, fuzzy
 msgid "Version "
-msgstr "Verzió"
+msgstr "Verzió "
 
 msgid "ELM did not report version after speed switch"
-msgstr ""
+msgstr "ELM nem jelentette meg a verziót a sebességváltás után"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Your ELM does not support baudrate %s"
-msgstr "HIBA - wifi nem támogatja a adatkapcsolati sebesség megváltoztatását"
+msgstr "Az Ön ELM-je nem támogatja ezt a baudrate-et: %s"
 
 msgid "ELM reset..."
-msgstr ""
+msgstr "ELM reset..."
 
-#, fuzzy
 msgid "Unknown address: "
-msgstr "ECU funkció címe"
+msgstr "Ismeretlen cím: "
 
 msgid "Using saved device settings"
-msgstr ""
+msgstr "Mentett eszközbeállítások használata"
 
 msgid "Using optimal device settings"
-msgstr ""
+msgstr "Optimális eszközbeállítások használata"
 
 msgid "Connecting to device at port: "
-msgstr "Connecting to device at port: "
+msgstr "Kapcsolódás az eszközhöz ezen a porton: "
 
 msgid "Using baudrate: "
-msgstr "Using baudrate: "
+msgstr "Baudrate használata: "
 
 msgid "Testing for ELS27 device..."
-msgstr ""
+msgstr "ELS27 eszköz tesztelése..."
 
-#, fuzzy
 msgid "ELS27 device detected: "
-msgstr "ELM327 device detected successfully"
+msgstr "ELS27 eszköz észlelve: "
 
-#, fuzzy
 msgid "Using detected baud rate: "
-msgstr "Using baudrate: "
+msgstr "Észlelt baudrate használata: "
 
 msgid "Warning: No ELS27 response detected"
-msgstr ""
+msgstr "Figyelmeztetés: Nincs ELS27 válasz észlelve"
 
-#, fuzzy
 msgid "Will attempt connection anyway..."
-msgstr "Attempting connection..."
+msgstr "Megpróbál kapcsolódni mindenképp..."
 
 msgid "Connection failed: "
-msgstr "Connection failed: "
+msgstr "Kapcsolat sikertelen: "
 
 msgid "Testing basic connectivity..."
-msgstr "Testing basic connectivity..."
+msgstr "Alapvető kapcsolódás tesztelése..."
 
 msgid "Warning: Device may not be ELM327 compatible"
-msgstr "Warning: Device may not be ELM327 compatible"
+msgstr "Figyelmeztetés: Az eszköz lehet, hogy nem ELM327 kompatibilis"
 
 msgid "ELM327 device detected successfully"
-msgstr "ELM327 device detected successfully"
+msgstr "ELM327 eszköz sikeresen észlelve"
 
 msgid "Device version: "
-msgstr "Device version: "
+msgstr "Eszköz verzió: "
 
 msgid "Connection error: "
-msgstr "Connection error: "
+msgstr "Kapcsolat hiba: "
 
 msgid "FAIL"
 msgstr "SIKERTELEN"
@@ -437,65 +430,61 @@ msgid "Result: "
 msgstr "Eredmény: "
 
 msgid " succeeded from "
-msgstr " sikeres, összesen "
+msgstr " sikeres innen: összesen "
 
 msgid "ELM Max version:"
-msgstr "ELM legmagasabb verzió:"
+msgstr "ELM Max verzió:"
 
 msgid "Using saved settings for"
-msgstr ""
+msgstr "Mentett beállítások használata ehhez:"
 
 msgid "Using optimal settings for"
-msgstr ""
+msgstr "Optimális beállítások használata ehhez:"
 
-#, fuzzy
 msgid "Serial port opened"
-msgstr "Port sebességének ellenőrzése:"
+msgstr "Soros port megnyitva"
 
-#, fuzzy
 msgid "Error: "
-msgstr "Hiba:"
+msgstr "Hiba: "
 
 msgid "ELM not connected or wrong COM port"
 msgstr "ELM nincs csatlakoztatva vagy rossz COM port"
 
-#, fuzzy
 msgid "Port closed"
-msgstr "Port sebessége"
+msgstr "Port lezárva"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
-msgstr ""
+msgstr "Soros hiba a read_byte-ben: %s"
 
 msgid "Connection to ELM was lost"
 msgstr "Megszakadt a kapcsolat az ELM-mel"
 
 #, python-format
 msgid "*       Error: %s"
-msgstr ""
+msgstr "*       Hiba: %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Cannot decode bytes %s"
-msgstr "Sikertelen parancshívás "
+msgstr "Nem lehet dekódolni a bájtokat %s"
 
 #, python-format
 msgid "Error in read(): %s"
-msgstr ""
+msgstr "Hiba a read()-ben: %s"
 
-#, fuzzy
 msgid "Attempting WiFi reconnection..."
-msgstr "Attempting connection..."
+msgstr "WiFi újracsatlakozás kísérlete..."
 
 msgid "Port handler is None, cannot write"
-msgstr ""
+msgstr "Port handler értéke None, nem lehet írni"
 
 #, python-format
 msgid "Serial write error: %s"
-msgstr ""
+msgstr "Soros írási hiba: %s"
 
 #, python-format
 msgid "*       Write error: %s"
-msgstr ""
+msgstr "*       Írási hiba: %s"
 
 msgid "TIMEOUT"
 msgstr "IDŐTÚLLÉPÉS"
@@ -510,244 +499,262 @@ msgid "ELM not responding"
 msgstr "ELM nem válaszol"
 
 msgid "Cannot zip database, no 'ecus' directory"
-msgstr ""
+msgstr "Nem lehet zipelni az adatbázist, nincs 'ecus' könyvtár"
 
-#, fuzzy
 msgid "Starting conversion"
-msgstr "Diag verzió"
+msgstr "Konverzió indítása"
 
 msgid "Starting processing "
-msgstr ""
+msgstr "Feldolgozás indítása "
 
 msgid " to "
-msgstr ""
+msgstr " erre: "
 
 msgid "Skipping current file (cannot parse it)"
-msgstr ""
+msgstr "Aktuális fájl kihagyása (nem lehet feldolgozni)"
 
 msgid "Writing database"
-msgstr ""
+msgstr "Adatbázis írása"
 
 msgid "Writing archive"
-msgstr ""
+msgstr "Archívum írása"
 
 msgid "Opening ECU Database..."
-msgstr ""
+msgstr "ECU adatbázis megnyitása..."
 
 msgid "parts as: "
-msgstr ""
+msgstr "részek mint: "
 
 msgid " please review dumpVehicles def."
-msgstr ""
+msgstr " kérem, ellenőrizze a dumpVehicles def.-t."
 
 msgid "ELS27 V5 CAN pin configuration complete"
-msgstr ""
+msgstr "ELS27 V5 CAN pin konfiguráció kész"
 
 msgid "Found USB adapter:"
-msgstr ""
+msgstr "USB adapter találva:"
 
 msgid "USB not available"
-msgstr ""
+msgstr "USB nem elérhető"
 
 msgid "USB Device"
-msgstr ""
+msgstr "USB eszköz"
 
 msgid "Warning: Could not read string descriptor:"
-msgstr ""
+msgstr "Figyelmeztetés: Nem lehet olvasni a string leírót:"
 
 msgid "USB OBD Device"
-msgstr ""
+msgstr "USB OBD eszköz"
 
 msgid "Warning: Vendor request failed:"
-msgstr ""
+msgstr "Figyelmeztetés: Vendor kérés sikertelen:"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
 msgstr ""
+"Figyelmeztetés: PyQtWebEngine nem elérhető. Néhány funkció korlátozott lehet."
 
 msgid "resources/projects.json not found or invalid."
-msgstr ""
+msgstr "resources/projects.json nem található vagy érvénytelen."
 
 msgid "Using custom DDT database"
-msgstr "Saját DDT adatbázis használata"
+msgstr "Egyedi DDT adatbázis használata"
 
 msgid "No COM port selected"
 msgstr "Nincs COM port kiválasztva"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Initializing ELM with speed %i..."
 msgstr "ELM inicializálása %i sebességgel..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Nem található ELM327 vagy OBDLINK-SX a COM porton: "
 
-#, fuzzy
 msgid "Initializing device features..."
-msgstr "ELM inicializálása %i sebességgel..."
+msgstr "Eszköz funkcióinak inicializálása..."
 
 msgid "AB90 AIRBAG Reset"
-msgstr ""
+msgstr "AB90 AIRBAG Reset"
 
 msgid "Airbag Tools"
-msgstr ""
+msgstr "Airbag eszközök"
 
 msgid ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL "
 "UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</"
 "font>"
 msgstr ""
+"AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>EZ A PLUGIN "
+"FELOLDJA AZ AIRBAG ÜTKÖZÉSI ADATOKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT "
+"JELENT EZ</font>AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font "
+"color='red'>EZ A PLUGIN FELOLDJA AZ AIRBAG ÜTKÖZÉSI ADATOKAT<br>TÁVOZZON EL, "
+"HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "Check ACU Virgin"
-msgstr ""
+msgstr "ACU Virgin ellenőrzése"
 
 msgid "Waiting"
-msgstr ""
+msgstr "Várakozás"
 
 msgid "Virginize ACU"
-msgstr ""
+msgstr "ACU Virginizálása"
 
 msgid "Cannot connect to ECU"
-msgstr ""
+msgstr "Nem lehet csatlakozni az ECU-hoz"
 
 msgid "<font color='orange'>UNEXPECTED RESPONSE</font>"
-msgstr ""
+msgstr "<font color='orange'>VÁRATLAN VÁLASZ</font>"
 
 msgid "<font color='red'>CRASH DETECTED</font>"
-msgstr ""
+msgstr "<font color='red'>ÜTKÖZÉS ÉSZLELVE</font>"
 
 msgid "<font color='green'>NO CRASH DETECTED</font>"
-msgstr ""
+msgstr "<font color='green'>NINCS ÜTKÖZÉS ÉSZLELVE</font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS stream: %s"
-msgstr "Bájtok fogadása"
+msgstr "SDS stream: %s"
 
 msgid "<font color='green'>CLEAR EXECUTED</font>"
-msgstr ""
+msgstr "<font color='green'>CLEAR VÉGREHAJTVA</font>"
 
 msgid "<font color='red'>CLEAR FAILED</font>"
-msgstr ""
+msgstr "<font color='red'>CLEAR SIKERTELEN</font>"
 
 msgid "Megane/Scenic II card programming"
-msgstr ""
+msgstr "Megane/Scenic II kártya programozás"
 
 msgid "Keys"
-msgstr ""
+msgstr "Kulcsok"
 
 msgid "ENTER AFTER SALE MODE"
-msgstr ""
+msgstr "BELÉPÉS ELADÁS UTÁNI MÓDBA"
 
 msgid ""
 "<font color='red'>MEGANE II CARD PROGRAMMING<br>EXPERIMENTAL : NOT TESTED "
 "YET</font>"
 msgstr ""
+"<font color='red'>MEGANE II KÁRTYA PROGRAMOZÁS<br>KÍSÉRLETI : MÉG NEM "
+"TESZTELT</font><font color='red'>MEGANE II KÁRTYA PROGRAMOZÁS<br>KÍSÉRLETI : "
+"MÉG NEM TESZELT</font>"
 
 msgid "LEARN"
-msgstr ""
+msgstr "TANULÁS"
 
 msgid "VALIDATE"
-msgstr ""
+msgstr "ÉRVÉNYESÍTÉS"
 
 msgid "CANCEL"
-msgstr ""
+msgstr "MÉGSE"
 
 msgid "Algo 2"
-msgstr ""
+msgstr "Algo 2"
 
 msgid "ISK"
-msgstr ""
+msgstr "ISK"
 
 msgid "PIN"
-msgstr ""
+msgstr "PIN"
 
 msgid "Num key learnt"
-msgstr ""
+msgstr "Tanult kulcsok száma"
 
 msgid "CARD IDE"
-msgstr ""
+msgstr "KÁRTYA IDE"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr ""
+"Nem lehet lekérni az ISK-t, ellenőrizze a kapcsolatokat és UCH "
+"kompatibilitást"
 
 msgid "<font color='red'>PIN CODE NOT RECOGNIZED</font>"
-msgstr ""
+msgstr "<font color='red'>PIN KÓD NEM ISMERHETŐ FEL</font>"
 
 msgid "<font color='green'>PIN CODE OK / KEY LEARNING</font>"
-msgstr ""
+msgstr "<font color='green'>PIN KÓD OK / KULCS TANULÁSA</font>"
 
 msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
-msgstr ""
+msgstr "<font color='green'>PIN KÓD OK / UCH TANULÁSA</font>"
 
 msgid "Modus/Clio III EPS Reset"
-msgstr ""
+msgstr "Modus/Clio III EPS Reset"
 
 msgid "EPS Tools"
-msgstr ""
+msgstr "EPS eszközök"
 
 msgid ""
 "Modus/Clio III EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET "
 "EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Modus/Clio III EPS VIRGINIZER<br><font color='red'>EZ A PLUGIN VISSZAÁLLÍTJA "
+"AZ EPS IMMO ADATOKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>Modus/"
+"Clio III EPS VIRGINIZER<br><font color='red'>EZ A PLUGIN VISSZAÁLLÍTJA AZ "
+"EPS IMMO ADATOKAT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "BLANK STATUS & VIN READ"
-msgstr ""
+msgstr "ÜRES ÁLLAPOT & VIN OLVASÁS"
 
 msgid "Virginize EPS"
-msgstr ""
+msgstr "EPS Virginizálása"
 
 msgid "VIN - READ"
-msgstr ""
+msgstr "VIN - OLVASÁS"
 
 msgid "VIN - WRITE"
-msgstr ""
+msgstr "VIN - ÍRÁS"
 
 msgid "Write VIN"
-msgstr ""
+msgstr "VIN írása"
 
 msgid "<font color='red'>VIN - INVALID</font>"
-msgstr ""
+msgstr "<font color='red'>VIN - ÉRVÉNYTELEN</font>"
 
+#, fuzzy
 msgid "<font color='res'>VIN - BAD LENGTH</font>"
-msgstr ""
+msgstr "<font color='red'>VIN - ROSSZ HOSSZ</font>"
 
 msgid "<font color='orange'>VIN WRITE FAILED</font>"
-msgstr ""
+msgstr "<font color='orange'>VIN ÍRÁS SIKERTELEN</font>"
 
 msgid "<font color='green'>VIN WRITE OK</font>"
-msgstr ""
+msgstr "<font color='green'>VIN ÍRÁS OK</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr ""
+msgstr "<font color='green'>EPS virgin</font>"
 
 msgid "<font color='red'>EPS coded</font>"
-msgstr ""
+msgstr "<font color='red'>EPS kódolt</font>"
 
 #, python-format
 msgid "SdSC0 stream: %s"
-msgstr ""
+msgstr "SdSC0 stream: %s"
 
 msgid "Clio IV EPS Reset"
-msgstr ""
+msgstr "Clio IV EPS Reset"
 
 msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Clio IV EPS VIRGINIZER<br><font color='red'>EZ A PLUGIN VISSZAÁLLÍTJA AZ EPS "
+"IMMO ADATOKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>Clio IV EPS "
+"VIRGINIZER<br><font color='red'>EZ A PLUGIN VISSZAÁLLÍTJA AZ EPS IMMO "
+"ADATOKAT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "Check EPS Virgin"
-msgstr ""
+msgstr "EPS Virgin ellenőrzése"
 
 msgid "<font color='green'>EPS not operational</font>"
-msgstr ""
+msgstr "<font color='green'>EPS nem működőképes</font>"
 
 msgid "<font color='red'>UNEXPECTED RESPONSE</font>"
-msgstr ""
+msgstr "<font color='red'>VÁRATLAN VÁLASZ</font>"
 
 #, python-format
 msgid "SdSFA stream: %s"
-msgstr ""
+msgstr "SdSFA stream: %s"
 
 msgid "Laguna II UCH Reset"
-msgstr ""
+msgstr "Laguna II UCH Reset"
 
 msgid "UCH Tools"
 msgstr "UCH eszközök"
@@ -756,190 +763,224 @@ msgid ""
 "LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"LAGUNA II UCH VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRLI AZ ÖN UCH-"
+"JÁT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>LAGUNA II UCH "
+"VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRÖLNI FOGJA AZ ÖN UCH-"
+"JÁT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "Check UCH Virgin"
-msgstr ""
+msgstr "UCH Virgin ellenőrzése"
 
 msgid "Virginize UCH"
-msgstr ""
+msgstr "UCH Virginizálása"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr ""
+msgstr "<font color='green'>UCH virgin</font>"
 
 msgid "<font color='red'>UCH coded</font>"
-msgstr ""
+msgstr "<font color='red'>UCH kódolt</font>"
 
 msgid "Laguna III UCH Reset"
-msgstr ""
+msgstr "Laguna III UCH Reset"
 
 msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"LAGUNA III UCH VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRLI AZ ÖN UCH-"
+"JÁT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>LAGUNA III UCH "
+"VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRÖLNI FOGJA AZ ÖN UCH-"
+"JÁT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr ""
+msgstr "Megane/Scenic II UCH Reset"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"MEGANE II UCH VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRLI AZ ÖN UCH-"
+"JÁT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>MEGANE II UCH "
+"VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRÖLNI FOGJA AZ ÖN UCH-"
+"JÁT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr ""
+msgstr "Megane3 AIRBAG Reset"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
 "AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>EZ A PLUGIN FELOLDJA AZ "
+"AIRBAG ÜTKÖZÉSI ADATOKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</"
+"font>Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>EZ A PLUGIN "
+"FELOLDJA AZ AIRBAG ÜTKÖZÉSI ADATOKAT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT "
+"JELENT EZ</font>"
 
-#, fuzzy, python-format
+#, python-format
 msgid "SDS FA stream: %s"
-msgstr "Bájtok fogadása"
+msgstr "SDS FA stream: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr ""
+msgstr "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
 "PLUGIN WILL RESET EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT "
 "MEANS</font>"
 msgstr ""
+"ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>EZ A "
+"PLUGIN VISSZAÁLLÍTJA AZ EPS IMMO ADATOKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT "
+"JELENT EZ</font>ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font "
+"color='red'>EZ A PLUGIN VISSZAÁLLÍTJA AZ EPS IMMO ADATOKAT<br>TÁVOZZON EL, "
+"HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr ""
+msgstr "Megane/Scenic III UCH Reset"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"MEGANE III UCH VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRLI AZ ÖN UCH-"
+"JÁT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>MEGANE III UCH "
+"VIRGINIZER<br><font color='red'>EZ A PLUGIN TÖRÖLNI FOGJA AZ ÖN UCH-"
+"JÁT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr ""
+msgstr "RSAT4 AIRBAG Reset"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
 "VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK AIRBAG CRASH "
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
+"VIRGINIZER<br><font color='red'>EZ A PLUGIN FELOLDJA AZ AIRBAG ÜTKÖZÉSI "
+"ADATOKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>TWINGO III/ZOE/"
+"DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
+"VIRGINIZER<br><font color='red'>EZ A PLUGIN FELOLDJA AZ AIRBAG ÜTKÖZÉSI "
+"ADATOKAT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 #, python-format
 msgid "SdSEX stream: %s"
-msgstr ""
+msgstr "SdSEX stream: %s"
 
 msgid "CRC calculator"
-msgstr ""
+msgstr "CRC számológép"
 
 msgid "VIN"
-msgstr ""
+msgstr "VIN"
 
 msgid "CRC Calculator"
-msgstr ""
+msgstr "CRC számológép"
 
 msgid "CRC CALCULATOR"
-msgstr ""
+msgstr "CRC SZÁMOLÓGÉP"
 
 msgid "Zoe water pump Reset"
-msgstr ""
+msgstr "Zoe vízpumpa Reset"
 
-#, fuzzy
 msgid "EVC Tools"
-msgstr "UCH eszközök"
+msgstr "EVC eszközök"
 
 msgid "Water pump counters"
-msgstr ""
+msgstr "Vízpumpa számlálók"
 
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 msgid "Values"
-msgstr ""
+msgstr "Értékek"
 
 msgid "Action"
 msgstr "Művelet"
 
-#, fuzzy
 msgid "Low Speed"
-msgstr "Port sebessége"
+msgstr "Alacsony sebesség"
 
 msgid "Middle Speed"
-msgstr ""
+msgstr "Közepes sebesség"
 
 msgid "High Speed"
-msgstr ""
+msgstr "Magas sebesség"
 
 msgid "V_Timer_DrivWEP_ON"
-msgstr ""
+msgstr "V_Timer_DrivWEP_ON"
 
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
 "PUMP COUNTERS<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
+"Zoe vízszivattyú számlálók<br><font color='red'>EZ A PLUGIN TÖRLI A "
+"VÍZSZIVATTYÚ SZÁMLÁLÓKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</"
+"font>Zoe vízpumpa számlálók<br><font color='red'>EZ A PLUGIN TÖRÖLNI FOGJA A "
+"VÍZPUMPA SZÁMLÁLÓKAT<br>TÁVOZZON EL, HA NINCS ÖTLETE, MIT JELENT EZ</font>"
 
 msgid "Check values"
-msgstr ""
+msgstr "Értékek ellenőrzése"
 
-#, fuzzy
 msgid "Waiting action"
-msgstr "Diag verzió"
+msgstr "Műveletre várakozás"
 
 msgid "Reset all counters"
-msgstr ""
+msgstr "Összes számláló resetje"
 
 msgid ""
 "<h1>TIPS</h1><ul><li>Insert key CARD</li><li>Put D position</li><li>Press/"
 "Stay START until <b>Remove card</b> message</li><li>Put P position</"
 "li><li>Keep key card inserted</li></ul>"
 msgstr ""
+"<h1>TIPPEK</h1><ul><li>Helyezze be a kulcs KÁRTYÁT</li><li>Helyezze D "
+"pozícióba</li><li>Nyomja meg/Tartsa nyomva a START gombot, amíg meg nem "
+"jelenik a <b>Kártya eltávolítása</b> üzenet</li><li>Helyezze P pozícióba</"
+"li><li>Tartsa behelyezve a kulcs kártyát</li></ul><h1>TIPPEK</"
+"h1><ul><li>Helyezze be a kulcs kártyát</li><li>Helyezze D pozícióba</"
+"li><li>Nyomja meg/Tartsa a START gombot amíg a <b>Kártya eltávolítása</b> "
+"üzenet meg nem jelenik</li><li>Helyezze P pozícióba</li><li>Tartsa a kulcs "
+"kártyát behelyezve</li></ul>"
 
-#, fuzzy
 msgid "<font color='green'>Values read</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='green'>Értékek beolvasva</font>"
 
-#, fuzzy
 msgid "Reading Low speed"
-msgstr "Port sebességének ellenőrzése:"
+msgstr "Alacsony sebesség olvasása"
 
 msgid "Reading Middle speed"
-msgstr ""
+msgstr "Közepes sebesség olvasása"
 
 msgid "Reading High speed"
-msgstr ""
+msgstr "Magas sebesség olvasása"
 
 msgid "<font color='green'>CLEAR V_Timer_DrivWEP_ON EXECUTED</font>"
-msgstr ""
+msgstr "<font color='green'>CLEAR V_Timer_DrivWEP_ON VÉGREHAJTVA</font>"
 
 msgid "<font color='red'>CLEAR V_Timer_DrivWEP_ON FAILED</font>"
-msgstr ""
+msgstr "<font color='red'>CLEAR V_Timer_DrivWEP_ON SIKERTELEN</font>"
 
-#, fuzzy
 msgid "<font color='green'>CLEAR Low EXECUTED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='green'>CLEAR Low VÉGREHAJTVA</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR Low FAILED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='red'>CLEAR Low SIKERTELEN</font>"
 
 msgid "<font color='green'>CLEAR Medium EXECUTED</font>"
-msgstr ""
+msgstr "<font color='green'>CLEAR Medium VÉGREHAJTVA</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR Medium FAILED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='red'>CLEAR Medium SIKERTELEN</font>"
 
-#, fuzzy
 msgid "<font color='green'>CLEAR HIGH EXECUTED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='green'>CLEAR HIGH VÉGREHAJTVA</font>"
 
-#, fuzzy
 msgid "<font color='red'>CLEAR HIGH FAILED</font>"
-msgstr "<font color=orange> - '%s'</font>"
+msgstr "<font color='red'>CLEAR HIGH SIKERTELEN</font>"
 
 msgid "Add"
-msgstr "Hozzáad"
+msgstr "Hozzáadás"
 
 msgid "Del"
 msgstr "Törlés"
@@ -962,14 +1003,16 @@ msgid ""
 "<font color=green>Request</font><font color=blue>'%s'</font> has no missing "
 "input values"
 msgstr ""
-"<font color=green>A(z) <font color=blue>'%s'</font> parancsnak nincs hiányzó "
-"bemeneti értéke</font>"
+"<font color=green>Kérés</font><font color=blue>'%s'</font> nem hiányoznak a "
+"bemeneti értékek</font><font color=green>A(z) <font color=blue>'%s'</font> "
+"parancsnak nincs hiányzó bemeneti értéke</font>"
 
 #, fuzzy, python-format
 msgid ""
 "<font color=red>Request</font><font color=blue>'%s'</font> has missing "
 "inputs :"
 msgstr ""
+"<font color=red>Kérés</font><font color=blue>'%s'</font> hiányzó bemenetek :"
 "<font color=red>A(z) <font color=blue>'%s'</font> parancsnak hiányos a "
 "bemenete :</font>"
 
@@ -993,10 +1036,10 @@ msgid "New"
 msgstr "Új"
 
 msgid "Duplicate selected"
-msgstr ""
+msgstr "Kijelölt másolása"
 
 msgid "Remove selected"
-msgstr ""
+msgstr "Kijelölt eltávolítása"
 
 msgid "Reload"
 msgstr "Újratöltés"
@@ -1021,7 +1064,7 @@ msgstr "Hex"
 
 #, python-format
 msgid "Data is used by request %s"
-msgstr ""
+msgstr "Adatot használja a %s parancs"
 
 msgid "New data"
 msgstr "Új adat"
@@ -1063,7 +1106,7 @@ msgid "Little Endian"
 msgstr "Kicsi az elején"
 
 msgid "ECU Auto identification"
-msgstr ""
+msgstr "ECU automatikus azonosítás"
 
 msgid "Diag version;Supplier;Soft;Version"
 msgstr "Diag verzió;Gyártó;Szoft;Verzió"
@@ -1144,16 +1187,16 @@ msgid "Inherits globals"
 msgstr "Globális megöröklése"
 
 msgid "No SDS"
-msgstr ""
+msgstr "Nincs SDS"
 
 msgid "Plant"
-msgstr ""
+msgstr "Üzem"
 
 msgid "After Sale"
-msgstr ""
+msgstr "Értékesítés utáni"
 
 msgid "Engineering"
-msgstr ""
+msgstr "Mérnöki"
 
 msgid "Reload requests"
 msgstr "Parancsok újratöltése"
@@ -1168,35 +1211,39 @@ msgid "Receive bytes"
 msgstr "Bájtok fogadása"
 
 msgid "Request name;Bytes;Manual"
-msgstr ""
+msgstr "Parancs neve;Bájtok;Kézi"
 
 msgid "No request named"
-msgstr ""
+msgstr "Nincs elnevezett parancs"
 
 msgid "Found similar"
-msgstr ""
+msgstr "Hasonló található"
 
 msgid "DataItem not found"
-msgstr ""
+msgstr "DataItem nem található"
 
 msgid "Cannot find data "
-msgstr ""
+msgstr "Nem található adat "
 
 msgid " vs "
-msgstr ""
+msgstr " vs "
 
 msgid "Cannot draw input "
 msgstr "Sikertelen parancshívás "
 
 msgid "No Value"
-msgstr ""
+msgstr "Nincs érték"
 
 msgid ""
 "<center>This Software is free, but I need money to buy cables/ECUs and make "
 "this application more reliable</center>"
 msgstr ""
-"<center>Ez a program ingyenes, de szükségem van pénzre, hogy kábeleket/ECU-"
-"kat vásároljak és megbízhatóbbá tegyem az alkalmazást</center>"
+"<center>Ez a szoftver ingyenes, de pénzre van szükségem kábelek/ECU-k "
+"vásárlásához és ehhez az alkalmazás megbízhatóbbá tételéhez</"
+"center><center>Ez a szoftver ingyenes, de pénzre van szükségem kábelek/ECU-k "
+"vásárlásához és az alkalmazás megbízhatóbbá tételéhez</center><center>Ez a "
+"program ingyenes, de szükségem van pénzre, hogy kábeleket/ECU-kat vásároljak "
+"és megbízhatóbbá tegyem az alkalmazást</center>"
 
 msgid "Yes I contribute"
 msgstr "Igen, hozzájárulok"
@@ -1204,80 +1251,79 @@ msgstr "Igen, hozzájárulok"
 msgid "No, I don't"
 msgstr "Nem"
 
-#, fuzzy
 msgid "Thank you for you contribution, if nothing happens, please go to"
-msgstr ""
-"<center>Köszönjük a hozzájárulást, ha semmi nem történik, látogass el "
-"ide:https://github.com/cedricp/ddt4all</center>"
+msgstr "Köszönjük a hozzájárulását, ha semmi nem történik, látogasson el ide:"
 
-#, fuzzy
 msgid "ECU Finder"
-msgstr "ECU neve"
+msgstr "ECU kereső"
 
 msgid "Address :"
-msgstr ""
+msgstr "Cím :"
 
 msgid "ID frame :"
-msgstr ""
+msgstr "ID keret :"
 
 msgid "No vehicles available"
-msgstr ""
+msgstr "Nincs elérhető jármű"
 
 msgid "ECU name"
 msgstr "ECU neve"
 
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgid "Protocol"
 msgstr "Protokoll"
 
 msgid "Diag"
-msgstr ""
+msgstr "Diag"
 
 msgid "Projets"
 msgstr "Projektek"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%d loaded ECUs in database."
-msgstr "eCUs betöltve."
+msgstr "%d ECU betöltve az adatbázisban."
 
 msgid "No database found"
-msgstr ""
+msgstr "Nem található adatbázis"
 
 msgid "Check documentation"
-msgstr ""
+msgstr "Dokumentáció ellenőrzése"
 
 msgid "DDT4All Documentation"
-msgstr ""
+msgstr "DDT4All Dokumentáció"
 
 msgid "WebEngine not available."
-msgstr ""
+msgstr "WebEngine nem elérhető."
 
 msgid ""
 "For full documentation with web browsing capability, install PyQtWebEngine:"
 msgstr ""
+"A teljes dokumentációhoz webböngészési képességgel, telepítse a "
+"PyQtWebEngine-t:"
 
 msgid "Visit the online documentation at:"
-msgstr ""
+msgstr "Látogasson el az online dokumentációhoz:"
 
 msgid "This basic view will still show ECU documentation when available."
 msgstr ""
+"Ez az alap nézet továbbra is megjeleníti az ECU dokumentációt, ha elérhető."
 
 msgid "Refresh rate (ms):"
 msgstr "Frissítés (ms):"
 
 msgid "Can timeout (ms) [0:AUTO] :"
-msgstr ""
+msgstr "CAN időtúllépés (ms) [0:AUTO] :"
 
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentáció"
 
 msgid "Screen"
 msgstr "Képernyő"
 
 msgid "CAN Sniffer"
-msgstr ""
+msgstr "CAN Sniffer"
 
 msgid "Requests"
 msgstr "Parancsok"
@@ -1826,6 +1872,8 @@ msgid ""
 "<center>BLOCKED COMMAND</center>\n"
 "Activate expert mode to unlock"
 msgstr ""
+"<center>BLOKKOLT PARANCS</center>\n"
+"Aktiválja a szakértői módot a feloldáshoz"
 
 #, fuzzy
 msgid "Writing parameter"
