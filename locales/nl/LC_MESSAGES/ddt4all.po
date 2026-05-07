@@ -281,8 +281,8 @@ msgid ""
 "Note: This error does not affect serial communication or bypass cable "
 "functionality."
 msgstr ""
-"Let op: Deze fout beïnvloedt de seriële communicatie of bypass-kabel "
-"functionaliteit niet."
+"Let op: Deze fout beïnvloedt de seriële communicatie of de functionaliteit "
+"van de bypass-kabel niet."
 
 msgid "Trying to open port "
 msgstr "Proberen om de poort te openen "
@@ -343,8 +343,7 @@ msgstr "%s Versie: "
 msgid ""
 "VGate adapter detected but STN verification failed, attempting fallback..."
 msgstr ""
-"VGate adapter gedetecteerd, maar STN-verificatie mislukt, fallback "
-"proberen..."
+"VGate adapter gedetecteerd, maar STN-verificatie mislukt, fallback poging..."
 
 #, python-format
 msgid "Unsupported baudrate for ELM: %s"
@@ -583,6 +582,7 @@ msgstr "AB90 AIRBAG Reset"
 msgid "Airbag Tools"
 msgstr "Airbag Gereedschap"
 
+#, fuzzy
 msgid ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL "
 "UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</"
@@ -916,9 +916,12 @@ msgid ""
 "Stay START until <b>Remove card</b> message</li><li>Put P position</"
 "li><li>Keep key card inserted</li></ul>"
 msgstr ""
-"<h1>TIPS</h1><ul><li>Voer kaart CARD in</li><li>Zet D positie</li><li>Druk "
-"op/Houd START vast tot <b>Kaart verwijderen</b> bericht</li><li>Zet P "
-"positie</li><li>Houd kaart CARD ingevoerd</li></ul>"
+"<h1>TIPS</h1><ul><li>Voeg sleutelkaart in</li><li>Zet in D-positie</"
+"li><li>Druk/Houd START ingedrukt tot <b>Verwijder kaart</b> bericht "
+"verschijnt</li><li>Zet in P-positie</li><li>Houd sleutelkaart ingevoegd</"
+"li></ul><h1>TIPS</h1><ul><li>Voer kaart CARD in</li><li>Zet D positie</"
+"li><li>Druk op/Houd START vast tot <b>Kaart verwijderen</b> bericht</"
+"li><li>Zet P positie</li><li>Houd kaart CARD ingevoerd</li></ul>"
 
 msgid "<font color='green'>Values read</font>"
 msgstr "<font color='green'>Waarden gelezen</font>"
@@ -977,21 +980,21 @@ msgstr "Controleren"
 msgid "Request %s not found"
 msgstr "Aanvraag %s niet gevonden"
 
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "<font color=green>Request</font><font color=blue>'%s'</font> has no missing "
 "input values"
 msgstr ""
-"<font color=green>Aanvraag <font color=blue>'%s'</font> Heeft geen "
-"ontbrekende waardes</font>"
+"<font color=green>Aanvraag</font><font color=blue>'%s'</font> heeft geen "
+"ontbrekende invoerwaarden"
 
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "<font color=red>Request</font><font color=blue>'%s'</font> has missing "
 "inputs :"
 msgstr ""
-"<font color=red>Aanvraag <font color=blue>'%s'</font> Heeft ontbrekende: "
-"waardes</font>"
+"<font color=red>Aanvraag</font><font color=blue>'%s'</font> heeft "
+"ontbrekende invoer :"
 
 #, python-format
 msgid "<font color=orange> - '%s'</font>"
@@ -1216,9 +1219,9 @@ msgid ""
 "this application more reliable</center>"
 msgstr ""
 "<center>Deze software is gratis, maar ik heb geld nodig om kabels/ECU's te "
-"kopen en deze applicatie betrouwbaarder te maken</center><center>Deze "
-"software is gratis, maar er is geld nodig voor kabels/ECU's om de applicatie "
-"te verbeteren</center>"
+"kopen en deze applicatie betrouwbaarder te maken</center>applicatie "
+"betrouwbaarder te maken</center><center>Deze software is gratis, maar er is "
+"geld nodig voor kabels/ECU's om de applicatie te verbeteren</center>"
 
 msgid "Yes I contribute"
 msgstr "Ja, ik doneer"
@@ -1274,11 +1277,13 @@ msgid "DDT4All Documentation"
 msgstr ""
 
 msgid "WebEngine not available."
-msgstr ""
+msgstr "WebEngine niet beschikbaar."
 
 msgid ""
 "For full documentation with web browsing capability, install PyQtWebEngine:"
 msgstr ""
+"Voor volledige documentatie met web-browse-mogelijkheid, installeer "
+"PyQtWebEngine:"
 
 msgid "Visit the online documentation at:"
 msgstr ""
@@ -1372,7 +1377,7 @@ msgid "Open XML"
 msgstr ""
 
 msgid "Identify ECU"
-msgstr ""
+msgstr "ECU identificeren"
 
 msgid "Create New ECU"
 msgstr "Maak nieuwe ECU"
@@ -1381,40 +1386,40 @@ msgid "Save current ECU"
 msgstr "Huidige ECU opslaan"
 
 msgid "Save last record"
-msgstr ""
+msgstr "Laatste record opslaan"
 
 msgid "Save ECU list"
 msgstr "ECU lijst opslaan"
 
 msgid "Zip database"
-msgstr ""
+msgstr "Database zippen"
 
 msgid "Exit"
-msgstr ""
+msgstr "Afsluiten"
 
 msgid "View"
 msgstr "Weergave"
 
 msgid "CarList Order"
-msgstr ""
+msgstr "Autolijst volgorde"
 
 msgid "By Project Code"
-msgstr ""
+msgstr "Op projectcode"
 
 msgid "By Car Name"
-msgstr ""
+msgstr "Op autonaam"
 
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 msgid "Dark Theme"
-msgstr ""
+msgstr "Donker thema"
 
 msgid "Light Theme"
-msgstr ""
+msgstr "Licht thema"
 
 msgid "New Category"
-msgstr "Nieuwe catagorie"
+msgstr "Nieuwe categorie"
 
 msgid "New Screen"
 msgstr "Nieuw scherm"
@@ -1423,82 +1428,82 @@ msgid "Rename"
 msgstr "Hernoemen"
 
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #, fuzzy
 msgid "Cannot load plugin "
-msgstr "Kan aanvraag niet uitvoeren "
+msgstr "Kan plugin niet laden "
 
 msgid "Help"
 msgstr "Help"
 
 msgid "Web Wiki"
-msgstr ""
+msgstr "Web Wiki"
 
 msgid "About Developers"
-msgstr ""
+msgstr "Over ontwikkelaars"
 
 msgid "Get Git update"
-msgstr ""
+msgstr "Git update verkrijgen"
 
 msgid "About"
-msgstr ""
+msgstr "Over"
 
 msgid "About DDT4ALL"
-msgstr ""
+msgstr "Over DDT4ALL"
 
 #, fuzzy
 msgid " version:"
-msgstr "Diag versie"
+msgstr " versie:"
 
 msgid "Created by:"
-msgstr ""
+msgstr "Gemaakt door:"
 
 #, fuzzy
 msgid "Options"
-msgstr "Scan opties"
+msgstr "Opties"
 
 msgid "CAN Line 1 Auto"
-msgstr ""
+msgstr "CAN lijn 1 Auto"
 
 msgid "CAN Line 1@500K"
-msgstr ""
+msgstr "CAN lijn 1@500K"
 
 msgid "CAN Line 1@250K"
-msgstr ""
+msgstr "CAN lijn 1@250K"
 
 msgid "CAN Line 2@500K"
-msgstr ""
+msgstr "CAN lijn 2@500K"
 
 msgid "CAN Line 2@250K"
-msgstr ""
+msgstr "CAN lijn 2@250K"
 
 msgid "CAN Line 2@125K"
-msgstr ""
+msgstr "CAN lijn 2@125K"
 
 msgid "KWP2000"
-msgstr ""
+msgstr "KWP2000"
 
 msgid "ISO8"
-msgstr ""
+msgstr "ISO8"
 
 msgid "Save database (keep '.zip' extension)"
-msgstr ""
+msgstr "Database opslaan (behoud '.zip' extensie)"
 
 msgid "Zipping XML database... (this can take a few minutes)"
-msgstr ""
+msgstr "XML database zippen... (dit kan een paar minuten duren)"
 
 msgid "Zip job finished"
-msgstr ""
+msgstr "Zippen voltooid"
 
 msgid "Enter new name"
 msgstr "Nieuwe naam invullen"
 
 msgid "Enter category name"
-msgstr "Catagorie naam invullen"
+msgstr "Categorie naam invullen"
 
 msgid "Please select a category before creating new screen"
-msgstr "Selecteer een catagorie voordat je een nieuw scherm maakt"
+msgstr "Selecteer een categorie voordat je een nieuw scherm maakt"
 
 msgid "Enter screen name"
 msgstr "Schermnaam invullen"
@@ -1511,7 +1516,7 @@ msgstr "KWP scannen"
 
 #, fuzzy
 msgid "Scanning DoIP"
-msgstr "KWP scannen"
+msgstr "DoIP scannen"
 
 msgid "Scan options"
 msgstr "Scan opties"
@@ -1532,13 +1537,13 @@ msgid "Save ECU (keep '.json' extension)"
 msgstr "ECU opslaan (bewaar '.json extensie)"
 
 msgid "Save record (keep '.txt' extension)"
-msgstr "Voertuig opslaan (bewaar '.ecu' extensie)"
+msgstr "Record opslaan (bewaar '.txt' extensie)"
 
 msgid "Recorded "
-msgstr ""
+msgstr "Opgenomen "
 
 msgid " entries"
-msgstr ""
+msgstr "invoer"
 
 msgid "No"
 msgstr "Nee"
@@ -1547,34 +1552,34 @@ msgid "ELM port selection"
 msgstr "ELM poort selectie"
 
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr ""
+msgstr "OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
-msgstr ""
+msgstr "ELS27/ELS27 V5 - Kan verschijnen als FTDI/CH340/CP210x apparaat"
 
 msgid "Vlinker FS/MC"
-msgstr ""
+msgstr "Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr ""
+msgstr "DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
-msgstr ""
+msgstr "VGate (Hoge snelheid)"
 
 msgid "DoIP (Diagnostics over IP)"
-msgstr ""
+msgstr "DoIP (Diagnostiek via IP)"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Interface taal"
 
 msgid "Port speed"
 msgstr "Poortsnelheid"
@@ -1598,142 +1603,143 @@ msgid "I'm aware that I can harm my car if badly used"
 msgstr "Ik snap dat ik de auto beschadig bij verkeerd gebruik"
 
 msgid "Dark style"
-msgstr ""
+msgstr "Donkere stijl"
 
 msgid "DoIP (Diagnostics over IP) Configuration"
-msgstr ""
+msgstr "DoIP (Diagnostiek via IP) Configuratie"
 
 #, fuzzy
 msgid "Device Preset : "
-msgstr "Device version: "
+msgstr "Apparaat voorkeur : "
 
 msgid "Custom"
-msgstr ""
+msgstr "Aangepast"
 
 msgid "Bosch MTS"
-msgstr ""
+msgstr "Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr ""
+msgstr "VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr ""
+msgstr "VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr ""
+msgstr "JLR DoIP VCI"
 
 msgid "Generic DoIP"
-msgstr ""
+msgstr "Generieke DoIP"
 
 msgid "DoIP Target IP : "
-msgstr ""
+msgstr "DoIP doel IP : "
 
 #, fuzzy
 msgid "DoIP Port : "
-msgstr "Port: "
+msgstr "DoIP Poort : "
 
 msgid "DoIP Timeout (seconds) : "
-msgstr ""
+msgstr "DoIP timeout (seconden) : "
 
 msgid "Enable Vehicle Announcement Discovery"
-msgstr ""
+msgstr "Voertuig aankondiging ontdekking inschakelen"
 
 msgid "Auto-reconnect on connection loss"
-msgstr ""
+msgstr "Automatisch opnieuw verbinden bij verbindingsverlies"
 
 msgid "Change UART speed"
-msgstr ""
+msgstr "UART snelheid wijzigen"
 
 #, fuzzy
 msgid "Checking..."
 msgstr "Controleren"
 
 msgid "Please enter WiFi adapter IP address"
-msgstr "Please enter WiFi adapter IP address"
+msgstr "Voer WiFi adapter IP adres in"
 
 msgid "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
-msgstr "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
+msgstr "Ongeldig WiFi formaat. Gebruik IP:PORT (bv. 192.168.0.10:35000)"
 
 msgid "Please select a serial port"
-msgstr "Please select a serial port"
+msgstr "Selecteer een seriële poort"
 
 msgid "Selected port is no longer available"
-msgstr "Selected port is no longer available"
+msgstr "Geselecteerde poort is niet langer beschikbaar"
 
 msgid "Attempting connection..."
-msgstr "Attempting connection..."
+msgstr "Verbinding proberen..."
 
 msgid "Port: "
-msgstr "Port: "
+msgstr "Poort: "
 
 msgid "Speed: "
-msgstr "Speed: "
+msgstr "Snelheid: "
 
 msgid "Connection test failed"
-msgstr "Connection test failed"
+msgstr "Verbindingstest mislukt"
 
 msgid "Troubleshooting suggestions:"
-msgstr "Troubleshooting suggestions:"
+msgstr "Probleemoplossing suggesties:"
 
 msgid "1. Check device is properly connected"
-msgstr "1. Check device is properly connected"
+msgstr "1. Controleer of apparaat correct is aangesloten"
 
 msgid "2. Try different baud rates"
-msgstr "2. Try different baud rates"
+msgstr "2. Probeer verschillende baud rates"
 
 msgid "3. Ensure device drivers are installed"
-msgstr "3. Ensure device drivers are installed"
+msgstr "3. Zorg ervoor dat apparaatstuurprogramma's zijn geïnstalleerd"
 
 msgid "4. Check port permissions (Linux/macOS)"
-msgstr "4. Check port permissions (Linux/macOS)"
+msgstr "4. Controleer poortrechten (Linux/macOS)"
 
 msgid "Connection test successful!"
-msgstr "Connection test successful!"
+msgstr "Verbindingstest succesvol!"
 
 msgid "Error during connection test: "
-msgstr "Error during connection test: "
+msgstr "Fout tijdens verbindingstest: "
 
 msgid "Reset and Recheck"
-msgstr ""
+msgstr "Resetten en opnieuw controleren"
 
 msgid "57600"
-msgstr ""
+msgstr "57600"
 
 msgid "115200"
-msgstr ""
+msgstr "115200"
 
 msgid "230400"
-msgstr ""
+msgstr "230400"
 
 msgid "500000"
-msgstr ""
+msgstr "500000"
 
 msgid "1000000"
-msgstr ""
+msgstr "1000000"
 
 msgid "2000000"
-msgstr ""
+msgstr "2000000"
 
 msgid "38400"
-msgstr ""
+msgstr "38400"
 
 msgid "VGate iCar Pro selected - Enhanced STN/STPX support enabled"
 msgstr ""
+"VGate iCar Pro geselecteerd - Verbeterde STN/STPX ondersteuning ingeschakeld"
 
 msgid "Long command support and high-speed communication available"
-msgstr ""
+msgstr "Lange commando ondersteuning en hoge snelheid communicatie beschikbaar"
 
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgid "DoIP (Diagnostics over IP) selected"
-msgstr ""
+msgstr "DoIP (Diagnostiek via IP) geselecteerd"
 
 msgid "Ethernet-based diagnostic communication"
-msgstr ""
+msgstr "Ethernet-gebaseerde diagnostische communicatie"
 
 msgid "Compatible with Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
-msgstr ""
+msgstr "Compatibel met Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
 
 msgid "You must check the recommandations"
 msgstr "Je moet de voorwaarde accepteren"
@@ -1742,10 +1748,10 @@ msgid "Please select a communication port"
 msgstr "Selecteer aub een communicatiepoort"
 
 msgid "ECU Command"
-msgstr ""
+msgstr "ECU Commando"
 
 msgid "Err, cannot rename "
-msgstr ""
+msgstr "Fout, kan niet hernoemen "
 
 msgid "To be able to edit your screen, first export it in JSON format"
 msgstr "Exporteer naar JSON formaat om dit scherm te kunnen bewerken"
@@ -1763,7 +1769,7 @@ msgid "Rename label"
 msgstr "Label hernoemen"
 
 msgid "Change color"
-msgstr ""
+msgstr "Kleur wijzigen"
 
 msgid "Remove element"
 msgstr "Element verwijderen"
@@ -1779,11 +1785,11 @@ msgstr "Uitgang"
 
 #, fuzzy
 msgid "Protocol not supported"
-msgstr "Fout - commando niet ondersteund"
+msgstr "Protocol niet ondersteund"
 
 #, fuzzy
 msgid "Protocol not supported: "
-msgstr "Fout - commando niet ondersteund"
+msgstr "Protocol niet ondersteund: "
 
 msgid "XML file not found : "
 msgstr "XML bestand niet gevonden: "
@@ -1792,19 +1798,19 @@ msgid "Invalid DDT file"
 msgstr "Ongeldig DDT bestand"
 
 msgid "Connection to ELM lost, trying to reconnect..."
-msgstr ""
+msgstr "Verbinding met ELM verloren, probeer opnieuw te verbinden..."
 
 msgid "Cannot reconnect..."
-msgstr ""
+msgstr "Kan niet opnieuw verbinden..."
 
 msgid "Switching to session mode"
 msgstr "Overschakelen naar sessie modus"
 
 msgid "Sending ELM request :"
-msgstr ""
+msgstr "ELM verzoek verzenden :"
 
 msgid "Blocked ELM request :"
-msgstr ""
+msgstr "Geblokkeerd ELM verzoek :"
 
 msgid "Sending ELM request:"
 msgstr "ELM aanvraag verzenden:"
@@ -1813,7 +1819,7 @@ msgid "Sending simulated ELM request :"
 msgstr "Gesimuleerde ELM aanvraag verzenden:"
 
 msgid "Bad ELM response :"
-msgstr ""
+msgstr "Slechte ELM respons :"
 
 msgid "ELM response : "
 msgstr "ELM respons: "
@@ -1826,27 +1832,29 @@ msgstr "Aanvraag verzenden:"
 
 #, fuzzy
 msgid "Unknown request "
-msgstr "ECU Functie Adres"
+msgstr "Onbekend verzoek "
 
 msgid "Command aborted "
-msgstr ""
+msgstr "Commando afgebroken "
 
 msgid "Value error of this stuff need a bypass gateway maybe."
-msgstr ""
+msgstr "Waarde fout van deze spullen heeft misschien een bypass gateway nodig."
 
 msgid "Request aborted (look at red paramters entries): "
 msgstr "Aanvraag afgebroken (bekijk rood gemarkeerde parameter waarden): "
 
 msgid "Delay"
-msgstr ""
+msgstr "Vertraging"
 
 msgid "For your safety"
-msgstr ""
+msgstr "Voor uw veiligheid"
 
 msgid ""
 "<center>BLOCKED COMMAND</center>\n"
 "Activate expert mode to unlock"
 msgstr ""
+"<center>GEBLOKKEERDE OPDRACHT</center>\n"
+"Activeer expert-modus om te ontgrendelen"
 
 #, fuzzy
 msgid "Writing parameter"

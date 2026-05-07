@@ -580,14 +580,15 @@ msgstr "Сброс AIRBAG AB90"
 msgid "Airbag Tools"
 msgstr "Инструменты Airbag"
 
+#, fuzzy
 msgid ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL "
 "UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</"
 "font>"
 msgstr ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН "
-"РАЗБЛОКИРУЕТ ДАННЫЕ О СБОЕ AIRBAG<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, "
-"ЧТО ЭТО ЗНАЧИТ</font>"
+"РАЗБЛОКИРУЕТ ДАННЫЕ ОБ АВАРИИ ПОДУШКИ БЕЗОПАСНОСТИ<br>УХОДИТЕ, ЕСЛИ У ВАС "
+"НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</font>"
 
 msgid "Check ACU Virgin"
 msgstr "Проверить ACU Virgin"
@@ -633,8 +634,8 @@ msgid ""
 "<font color='red'>MEGANE II CARD PROGRAMMING<br>EXPERIMENTAL : NOT TESTED "
 "YET</font>"
 msgstr ""
-"<font color='red'>ПРОГРАММИРОВАНИЕ КАРТЫ MEGANE II<br>ЭКСПЕРИМЕНТАЛЬНО : НЕ "
-"ТЕСТИРОВАНО</font>"
+"<font color='red'>ПРОГРАММИРОВАНИЕ КАРТЫ MEGANE II<br>ЭКСПЕРИМЕНТАЛЬНО : ЕЩЕ "
+"НЕ ТЕСТИРОВАНО</font>"
 
 msgid "LEARN"
 msgstr "ОБУЧЕНИЕ"
@@ -682,8 +683,10 @@ msgid ""
 "Modus/Clio III EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET "
 "EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"Modus/Clio III EPS VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СБРОСИТ EPS "
-"IMMO DATA<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
+"Modus/Clio III EPS VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СБРОСИТ "
+"ДАННЫЕ IMMO EPS<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</"
+"font>Modus/Clio III EPS VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СБРОСИТ "
+"EPS IMMO DATA<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 msgid "BLANK STATUS & VIN READ"
 msgstr "ПУСТОЙ СТАТУС И ЧТЕНИЕ VIN"
@@ -730,7 +733,9 @@ msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"Clio IV EPS VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СБРОСИТ EPS IMMO "
+"Clio IV EPS VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СБРОСИТ ДАННЫЕ IMMO "
+"EPS<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</font>Clio IV EPS "
+"VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СБРОСИТ EPS IMMO "
 "DATA<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 msgid "Check EPS Virgin"
@@ -757,7 +762,9 @@ msgid ""
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "LAGUNA II UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ "
-"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
+"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</font>LAGUNA II "
+"UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ UCH<br>УХОДИТЕ, "
+"ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 msgid "Check UCH Virgin"
 msgstr "Проверить UCH Virgin"
@@ -779,7 +786,9 @@ msgid ""
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ "
-"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
+"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</font>LAGUNA III "
+"UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ UCH<br>УХОДИТЕ, "
+"ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
 msgstr "Сброс UCH Megane/Scenic II"
@@ -789,7 +798,9 @@ msgid ""
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ "
-"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
+"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</font>MEGANE II "
+"UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ UCH<br>УХОДИТЕ, "
+"ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 msgid "Megane3 AIRBAG Reset"
 msgstr "Сброс AIRBAG Megane3"
@@ -799,8 +810,10 @@ msgid ""
 "AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН "
-"РАЗБЛОКИРУЕТ ДАННЫЕ О СБОЕ AIRBAG<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, "
-"ЧТО ЭТО ЗНАЧИТ</font>"
+"РАЗБЛОКИРУЕТ ДАННЫЕ ОБ АВАРИИ ПОДУШКИ БЕЗОПАСНОСТИ<br>УХОДИТЕ, ЕСЛИ У ВАС "
+"НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</font>Megane III<br>AIRBAG "
+"VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН РАЗБЛОКИРУЕТ ДАННЫЕ О СБОЕ "
+"AIRBAG<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 #, python-format
 msgid "SDS FA stream: %s"
@@ -815,8 +828,10 @@ msgid ""
 "MEANS</font>"
 msgstr ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>ЭТОТ "
-"ПЛАГИН СБРОСИТ EPS IMMO DATA<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО "
-"ЭТО ЗНАЧИТ</font>"
+"ПЛАГИН СБРОСИТ ДАННЫЕ IMMO EPS<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО "
+"ОЗНАЧАЕТ</font>ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font "
+"color='red'>ЭТОТ ПЛАГИН СБРОСИТ EPS IMMO DATA<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ "
+"ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 msgid "Megane/Scenic III UCH Reset"
 msgstr "Сброс UCH Megane/Scenic III"
@@ -826,7 +841,9 @@ msgid ""
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ "
-"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
+"UCH<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</font>MEGANE III "
+"UCH VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ ВАШ UCH<br>УХОДИТЕ, "
+"ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
 msgstr "Сброс AIRBAG RSAT4"
@@ -837,8 +854,12 @@ msgid ""
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
-"VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН РАЗБЛОКИРУЕТ AIRBAG CRASH "
-"DATA<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
+"VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН РАЗБЛОКИРУЕТ ДАННЫЕ ОБ АВАРИИ "
+"ПОДУШКИ БЕЗОПАСНОСТИ<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО ОЗНАЧАЕТ</"
+"font>TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY "
+"ph1/2<br>AIRBAG VIRGINIZER<br><font color='red'>ЭТОТ ПЛАГИН РАЗБЛОКИРУЕТ "
+"AIRBAG CRASH DATA<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</"
+"font>"
 
 #, python-format
 msgid "SdSEX stream: %s"
@@ -893,8 +914,11 @@ msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
 "PUMP COUNTERS<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"Счетчики водяной помпы Zoe<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ СЧЕТЧИКИ "
-"ВОДЯНОЙ ПОМПЫ<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО ЭТО ЗНАЧИТ</font>"
+"Счетчики водяного насоса Zoe<br><font color='red'>ЭТОТ ПЛАГИН СТИРАЕТ "
+"СЧЕТЧИКИ ВОДЯНОГО НАСОСА<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПОНИМАНИЯ, ЧТО ЭТО "
+"ОЗНАЧАЕТ</font>Счетчики водяной помпы Zoe<br><font color='red'>ЭТОТ ПЛАГИН "
+"СТИРАЕТ СЧЕТЧИКИ ВОДЯНОЙ ПОМПЫ<br>УХОДИТЕ, ЕСЛИ У ВАС НЕТ ПРЕДСТАВЛЕНИЯ, ЧТО "
+"ЭТО ЗНАЧИТ</font>"
 
 msgid "Check values"
 msgstr "Проверить значения"
@@ -910,9 +934,13 @@ msgid ""
 "Stay START until <b>Remove card</b> message</li><li>Put P position</"
 "li><li>Keep key card inserted</li></ul>"
 msgstr ""
-"<h1>СОВЕТЫ</h1><ul><li>Вставьте ключ CARD</li><li>Установите позицию D</"
-"li><li>Нажмите/Удерживайте START до сообщения <b>Убрать карту</b></"
-"li><li>Установите позицию P</li><li>Держите ключ CARD вставленным</li></ul>"
+"<h1>СОВЕТЫ</h1><ul><li>Вставьте ключевую КАРТУ</li><li>Установите позицию D</"
+"li><li>Нажмите/Удерживайте START пока не появится сообщение <b>Удалите "
+"карту</b></li><li>Установите позицию P</li><li>Держите ключевую карту "
+"вставленной</li></ul><h1>СОВЕТЫ</h1><ul><li>Вставьте ключ CARD</"
+"li><li>Установите позицию D</li><li>Нажмите/Удерживайте START до сообщения "
+"<b>Убрать карту</b></li><li>Установите позицию P</li><li>Держите ключ CARD "
+"вставленным</li></ul>"
 
 msgid "<font color='green'>Values read</font>"
 msgstr "<font color='green'>Значения прочитаны</font>"
@@ -974,16 +1002,16 @@ msgid ""
 "<font color=green>Request</font><font color=blue>'%s'</font> has no missing "
 "input values"
 msgstr ""
-"<font color=green>Request <font color=blue>'%s'</font> has no missing input "
-"values</font>"
+"<font color=green>Запрос</font><font color=blue>'%s'</font> не имеет "
+"отсутствующих входных значений</font>"
 
 #, python-format
 msgid ""
 "<font color=red>Request</font><font color=blue>'%s'</font> has missing "
 "inputs :"
 msgstr ""
-"<font color=red>Request <font color=blue>'%s'</font> has missing inputs :</"
-"font>"
+"<font color=red>Запрос</font><font color=blue>'%s'</font> имеет "
+"отсутствующие входы :"
 
 #, python-format
 msgid "<font color=orange> - '%s'</font>"
@@ -1207,8 +1235,10 @@ msgid ""
 "<center>This Software is free, but I need money to buy cables/ECUs and make "
 "this application more reliable</center>"
 msgstr ""
-"<center>Эта программа бесплатна, но мне нужны деньги для покупки тестовых "
-"ЭБУ, развития её функциональности и надежности</center>"
+"<center>Это программное обеспечение бесплатное, но мне нужны деньги на "
+"покупку кабелей/ECU и сделать это приложение более надежным</"
+"center><center>Эта программа бесплатна, но мне нужны деньги для покупки "
+"тестовых ЭБУ, развития её функциональности и надежности</center>"
 
 msgid "Yes I contribute"
 msgstr "Да, Я заплачу"
@@ -1265,11 +1295,13 @@ msgid "DDT4All Documentation"
 msgstr "Документация"
 
 msgid "WebEngine not available."
-msgstr ""
+msgstr "WebEngine недоступен."
 
 msgid ""
 "For full documentation with web browsing capability, install PyQtWebEngine:"
 msgstr ""
+"Для полной документации с возможностью веб-просмотра, установите "
+"PyQtWebEngine:"
 
 #, fuzzy
 msgid "Visit the online documentation at:"
@@ -1388,10 +1420,10 @@ msgid "View"
 msgstr "Вид"
 
 msgid "CarList Order"
-msgstr ""
+msgstr "Порядок списка автомобилей"
 
 msgid "By Project Code"
-msgstr ""
+msgstr "По коду проекта"
 
 msgid "By Car Name"
 msgstr "По названию автомобиля"
@@ -1419,7 +1451,7 @@ msgstr "Плагины"
 
 #, fuzzy
 msgid "Cannot load plugin "
-msgstr "Не могу сформировать запрос "
+msgstr "Не удается загрузить плагин "
 
 msgid "Help"
 msgstr "Справка"
@@ -1441,41 +1473,41 @@ msgstr "О DDT4ALL"
 
 #, fuzzy
 msgid " version:"
-msgstr "Diag version"
+msgstr " версия:"
 
 msgid "Created by:"
 msgstr "Создано:"
 
 #, fuzzy
 msgid "Options"
-msgstr "Опции сканирования"
+msgstr "Опции"
 
 msgid "CAN Line 1 Auto"
-msgstr ""
+msgstr "CAN линия 1 Авто"
 
 msgid "CAN Line 1@500K"
-msgstr ""
+msgstr "CAN линия 1@500K"
 
 msgid "CAN Line 1@250K"
-msgstr ""
+msgstr "CAN линия 1@250K"
 
 msgid "CAN Line 2@500K"
-msgstr ""
+msgstr "CAN линия 2@500K"
 
 msgid "CAN Line 2@250K"
-msgstr ""
+msgstr "CAN линия 2@250K"
 
 msgid "CAN Line 2@125K"
-msgstr ""
+msgstr "CAN линия 2@125K"
 
 msgid "KWP2000"
-msgstr ""
+msgstr "KWP2000"
 
 msgid "ISO8"
-msgstr ""
+msgstr "ISO8"
 
 msgid "Save database (keep '.zip' extension)"
-msgstr "Сохранить базу данных (сохранять расширение '.zip')"
+msgstr "Сохранить базу данных (сохранить расширение '.zip')"
 
 msgid "Zipping XML database... (this can take a few minutes)"
 msgstr "Архивирование XML базы данных ... (это может занять несколько минут)"
@@ -1503,7 +1535,7 @@ msgstr "Сканирование KWP"
 
 #, fuzzy
 msgid "Scanning DoIP"
-msgstr "Сканирование KWP"
+msgstr "Сканирование DoIP"
 
 msgid "Scan options"
 msgstr "Опции сканирования"
@@ -1524,7 +1556,7 @@ msgid "Save ECU (keep '.json' extension)"
 msgstr "Создание нового ЭБУ (.json)"
 
 msgid "Save record (keep '.txt' extension)"
-msgstr "Сохранить список моих ЭБУ (.ecu)"
+msgstr "Сохранить запись (сохранить расширение '.txt')"
 
 msgid "Recorded "
 msgstr "Записано "
@@ -1539,31 +1571,31 @@ msgid "ELM port selection"
 msgstr "Выберите порт ELM"
 
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr ""
+msgstr "OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
-msgstr ""
+msgstr "ELS27/ELS27 V5 - Может появиться как устройство FTDI/CH340/CP210x"
 
 msgid "Vlinker FS/MC"
-msgstr ""
+msgstr "Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr ""
+msgstr "DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
-msgstr ""
+msgstr "VGate (Высокая скорость)"
 
 msgid "DoIP (Diagnostics over IP)"
-msgstr ""
+msgstr "DoIP (Диагностика через IP)"
 
 msgid "Interface language"
 msgstr "Язык интерфейса"
@@ -1593,67 +1625,68 @@ msgid "Dark style"
 msgstr "Темный стиль"
 
 msgid "DoIP (Diagnostics over IP) Configuration"
-msgstr ""
+msgstr "Конфигурация DoIP (Диагностика через IP)"
 
 #, fuzzy
 msgid "Device Preset : "
-msgstr "Версия устройства: "
+msgstr "Предустановка устройства : "
 
 msgid "Custom"
-msgstr ""
+msgstr "Пользовательский"
 
 msgid "Bosch MTS"
-msgstr ""
+msgstr "Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr ""
+msgstr "VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr ""
+msgstr "VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr ""
+msgstr "JLR DoIP VCI"
 
 msgid "Generic DoIP"
-msgstr ""
+msgstr "Обычный DoIP"
 
 msgid "DoIP Target IP : "
-msgstr ""
+msgstr "Целевой IP DoIP : "
 
 #, fuzzy
 msgid "DoIP Port : "
-msgstr "Порт: "
+msgstr "Порт DoIP : "
 
 msgid "DoIP Timeout (seconds) : "
-msgstr ""
+msgstr "Таймаут DoIP (секунды) : "
 
 msgid "Enable Vehicle Announcement Discovery"
-msgstr ""
+msgstr "Включить обнаружение объявлений транспортных средств"
 
 msgid "Auto-reconnect on connection loss"
-msgstr ""
+msgstr "Автоматическое переподключение при потере соединения"
 
 msgid "Change UART speed"
 msgstr "Изменить скорость UART"
 
 #, fuzzy
 msgid "Checking..."
-msgstr "Check"
+msgstr "Проверка..."
 
 msgid "Please enter WiFi adapter IP address"
-msgstr "Please enter WiFi adapter IP address"
+msgstr "Введите IP-адрес WiFi адаптера"
 
 msgid "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
-msgstr "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
+msgstr ""
+"Неверный формат WiFi. Используйте IP:PORT (например, 192.168.0.10:35000)"
 
 msgid "Please select a serial port"
-msgstr "Please select a serial port"
+msgstr "Выберите последовательный порт"
 
 msgid "Selected port is no longer available"
-msgstr "Selected port is no longer available"
+msgstr "Выбранный порт больше недоступен"
 
 msgid "Attempting connection..."
-msgstr "Пытаюсь установить соединение..."
+msgstr "Попытка подключения..."
 
 msgid "Port: "
 msgstr "Порт: "
@@ -1668,64 +1701,64 @@ msgid "Troubleshooting suggestions:"
 msgstr "Предложения по устранению неполадок:"
 
 msgid "1. Check device is properly connected"
-msgstr "1. Проверьте правильность подключения устройства"
+msgstr "1. Проверьте, правильно ли подключено устройство"
 
 msgid "2. Try different baud rates"
-msgstr "2. Попробуйте разные скорости передачи данных в бодах"
+msgstr "2. Попробуйте разные скорости передачи"
 
 msgid "3. Ensure device drivers are installed"
-msgstr "3. Убедитесь, что установлены драйверы устройств"
+msgstr "3. Убедитесь, что драйверы устройств установлены"
 
 msgid "4. Check port permissions (Linux/macOS)"
-msgstr "4. Проверьте права доступа к портам (Linux/macOS)"
+msgstr "4. Проверьте права доступа к порту (Linux/macOS)"
 
 msgid "Connection test successful!"
-msgstr "Проверка подключения прошла успешно!"
+msgstr "Проверка подключения успешна!"
 
 msgid "Error during connection test: "
-msgstr "Ошибка при проверке подключения: "
+msgstr "Ошибка во время проверки подключения: "
 
 msgid "Reset and Recheck"
-msgstr "Сброс и повторная проверка"
+msgstr "Сбросить и перепроверить"
 
 msgid "57600"
-msgstr ""
+msgstr "57600"
 
 msgid "115200"
-msgstr ""
+msgstr "115200"
 
 msgid "230400"
-msgstr ""
+msgstr "230400"
 
 msgid "500000"
-msgstr ""
+msgstr "500000"
 
 msgid "1000000"
-msgstr ""
+msgstr "1000000"
 
 msgid "2000000"
-msgstr ""
+msgstr "2000000"
 
 msgid "38400"
-msgstr ""
+msgstr "38400"
 
 msgid "VGate iCar Pro selected - Enhanced STN/STPX support enabled"
-msgstr ""
+msgstr "VGate iCar Pro выбрана - улучшенная поддержка STN/STPX включена"
 
 msgid "Long command support and high-speed communication available"
-msgstr ""
+msgstr "Поддержка длинных команд и высокоскоростная связь доступны"
 
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgid "DoIP (Diagnostics over IP) selected"
-msgstr ""
+msgstr "DoIP (Диагностика через IP) выбран"
 
 msgid "Ethernet-based diagnostic communication"
-msgstr ""
+msgstr "Диагностическая связь на основе Ethernet"
 
 msgid "Compatible with Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
-msgstr ""
+msgstr "Совместимо с Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
 
 msgid "You must check the recommandations"
 msgstr "Вы должны согласиться с условиями"
@@ -1734,7 +1767,7 @@ msgid "Please select a communication port"
 msgstr "Выберите нужный порт"
 
 msgid "ECU Command"
-msgstr "ЭБУ команды"
+msgstr "Команда ЭБУ"
 
 msgid "Err, cannot rename "
 msgstr "Ошибка, не могу переименовать "
@@ -1771,11 +1804,11 @@ msgstr "Поле вывода"
 
 #, fuzzy
 msgid "Protocol not supported"
-msgstr "ОШИБКА - команда не поддерживается"
+msgstr "Протокол не поддерживается"
 
 #, fuzzy
 msgid "Protocol not supported: "
-msgstr "ОШИБКА - команда не поддерживается"
+msgstr "Протокол не поддерживается: "
 
 msgid "XML file not found : "
 msgstr "XML файл не найден : "
@@ -1818,13 +1851,13 @@ msgstr "Отправка запроса :"
 
 #, fuzzy
 msgid "Unknown request "
-msgstr "ECU Function address"
+msgstr "Неизвестный запрос "
 
 msgid "Command aborted "
 msgstr "Команда прервана "
 
 msgid "Value error of this stuff need a bypass gateway maybe."
-msgstr ""
+msgstr "Ошибка значения этого материала требует обходной шлюз возможно."
 
 msgid "Request aborted (look at red paramters entries): "
 msgstr "Запрос прерван (проверьте красные записи): "
@@ -1838,7 +1871,9 @@ msgstr "Для вашей безопасности"
 msgid ""
 "<center>BLOCKED COMMAND</center>\n"
 "Activate expert mode to unlock"
-msgstr "Активируйте режим эксперта для разблокировки"
+msgstr ""
+"<center>БЛОКИРОВАННАЯ КОМАНДА</center>\n"
+"Активируйте режим эксперта для разблокировки"
 
 #, fuzzy
 msgid "Writing parameter"

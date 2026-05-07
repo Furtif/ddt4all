@@ -582,8 +582,8 @@ msgid ""
 "font>"
 msgstr ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>ACEST PLUGIN VA "
-"DEBLOCA DATELE DE ACCIDENT AIRBAG<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</"
-"font>"
+"DEBLOCA DATELE DE CIURNIRE AIRBAG<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE "
+"INSEAMNĂ</font>"
 
 msgid "Check ACU Virgin"
 msgstr "Verificare ACU Virgin"
@@ -629,8 +629,8 @@ msgid ""
 "<font color='red'>MEGANE II CARD PROGRAMMING<br>EXPERIMENTAL : NOT TESTED "
 "YET</font>"
 msgstr ""
-"<font color='red'>MEGANE II PROGRAMARE CARD<br>EXPERIMENTAL : NU ESTE TESTAT "
-"ÎNCĂ</font>"
+"<font color='red'>PROGRAMARE CARD MEGANE II<br>EXPERIMENTAL : NU A FOST "
+"TESTAT ÎNCĂ</font>"
 
 msgid "LEARN"
 msgstr "ÎNVĂȚĂ"
@@ -678,8 +678,10 @@ msgid ""
 "Modus/Clio III EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET "
 "EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"Modus/Clio III VIRGINIZATOR EPS<br><font color='red'>ACEST PLUGIN VA RESETA "
-"DATELE EPS IMMO<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
+"Modus/Clio III EPS VIRGINIZER<br><font color='red'>ACEST PLUGIN VA RESETA "
+"DATELE IMMO EPS<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>Modus/Clio "
+"III VIRGINIZATOR EPS<br><font color='red'>ACEST PLUGIN VA RESETA DATELE EPS "
+"IMMO<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "BLANK STATUS & VIN READ"
 msgstr "ȘTERGE STATUS ȘI CITESTE VIN"
@@ -725,7 +727,9 @@ msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"Clio IV VIRGINIZATOR EPS<br><font color='red'>ACEST PLUGIN VA RESETA DATELE "
+"Clio IV EPS VIRGINIZER<br><font color='red'>ACEST PLUGIN VA RESETA DATELE "
+"IMMO EPS<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>Clio IV "
+"VIRGINIZATOR EPS<br><font color='red'>ACEST PLUGIN VA RESETA DATELE "
 "IMMO<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Check EPS Virgin"
@@ -751,8 +755,10 @@ msgid ""
 "LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"LAGUNA II VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
-"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
+"LAGUNA II UCH VIRGINIZER<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-ul "
+"DVS.<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>LAGUNA II VIRGINIZATOR "
+"UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-UL TĂU<br>PLECAȚI DACĂ "
+"NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Check UCH Virgin"
 msgstr "Verifică UCH Virgin"
@@ -773,8 +779,10 @@ msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"LAGUNA III VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
-"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
+"LAGUNA III UCH VIRGINIZER<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-ul "
+"DVS.<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>LAGUNA III "
+"VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-UL "
+"TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
 msgstr "Megane/Scenic II UCH Reset"
@@ -783,8 +791,10 @@ msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"MEGANE II VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
-"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
+"MEGANE II UCH VIRGINIZER<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-ul "
+"DVS.<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>MEGANE II VIRGINIZATOR "
+"UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-UL TĂU<br>PLECAȚI DACĂ "
+"NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Megane3 AIRBAG Reset"
 msgstr "Megane3 AIRBAG Reset"
@@ -793,7 +803,9 @@ msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
 "AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"Megane III<br>VIRGINIZATOR AIRBAG<br><font color='red'>ACEST PLUGIN VA "
+"Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>ACEST PLUGIN VA DEBLOCA "
+"DATELE DE CIURNIRE AIRBAG<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</"
+"font>Megane III<br>VIRGINIZATOR AIRBAG<br><font color='red'>ACEST PLUGIN VA "
 "DEBLOCA DATELE DE AVARIE A AIRBAG-ULUI<br>PLECAȚI DACĂ NU AVEȚI IDEA CE "
 "ÎNSEAMNĂ</font>"
 
@@ -809,9 +821,11 @@ msgid ""
 "PLUGIN WILL RESET EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT "
 "MEANS</font>"
 msgstr ""
-"ZOE/FLENCE/Megane III/Scenic III VIRGINIZATOR EPS<br><font color='red'>ACEST "
-"PLUGIN VA RESETA DATELE EPS IMMO<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</"
-"font>"
+"ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>ACEST "
+"PLUGIN VA RESETA DATELE IMMO EPS<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</"
+"font>ZOE/FLENCE/Megane III/Scenic III VIRGINIZATOR EPS<br><font "
+"color='red'>ACEST PLUGIN VA RESETA DATELE EPS IMMO<br>PLECAȚI DACĂ NU AVEȚI "
+"IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Megane/Scenic III UCH Reset"
 msgstr "Megane/Scenic III UCH Reset"
@@ -820,8 +834,10 @@ msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
 "UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"MEGANE III VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-"
-"UL TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
+"MEGANE III UCH VIRGINIZER<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-ul "
+"DVS.<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>MEGANE III "
+"VIRGINIZATOR UCH<br><font color='red'>ACEST PLUGIN VA ȘTERGE UCH-UL "
+"TĂU<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
 msgstr "RSAT4 AIRBAG Reset"
@@ -831,10 +847,12 @@ msgid ""
 "VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK AIRBAG CRASH "
 "DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
-"TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY "
-"ph1/2<br>VIRGINIZATOR AIRBAG<br><font color='red'>ACEST PLUGIN VA DEBLOCA "
-"DATELE DE AVARIE ALE AIRBAG-ULUI<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</"
-"font>"
+"TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
+"VIRGINIZER<br><font color='red'>ACEST PLUGIN VA DEBLOCA DATELE DE CIURNIRE "
+"AIRBAG<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>TWINGO III/ZOE/"
+"DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>VIRGINIZATOR "
+"AIRBAG<br><font color='red'>ACEST PLUGIN VA DEBLOCA DATELE DE AVARIE ALE "
+"AIRBAG-ULUI<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 #, python-format
 msgid "SdSEX stream: %s"
@@ -890,6 +908,8 @@ msgid ""
 "PUMP COUNTERS<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
 msgstr ""
 "Contoare pompă apă Zoe<br><font color='red'>ACEST PLUGIN VA ȘTERGE "
+"CONTOARELE POMPEI DE APĂ<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</"
+"font>Contoare pompă apă Zoe<br><font color='red'>ACEST PLUGIN VA ȘTERGE "
 "CONTOARELE POMPĂI DE APĂ<br>PLECAȚI DACĂ NU AVEȚI IDEA CE ÎNSEAMNĂ</font>"
 
 msgid "Check values"
@@ -906,9 +926,13 @@ msgid ""
 "Stay START until <b>Remove card</b> message</li><li>Put P position</"
 "li><li>Keep key card inserted</li></ul>"
 msgstr ""
-"<h1>SFATURI</h1><ul><li>Introduceți cardul cheie</li><li>Puneți poziția D</"
-"li><li>Apăsați/Țineți START până apare mesajul <b>Eliminați cardul</b></"
-"li><li>Puneți poziția P</li><li>Păstrați cardul cheie introdus</li></ul>"
+"<h1>SFATURI</h1><ul><li>Introduceți cardul cheie</li><li>Puneți în poziția "
+"D</li><li>Apăsați/Țineți apăsat START până apare mesajul <b>Eliminați "
+"cardul</b></li><li>Puneți în poziția P</li><li>Păstrați cardul cheie "
+"introdus</li></ul><h1>SFATURI</h1><ul><li>Introduceți cardul cheie</"
+"li><li>Puneți poziția D</li><li>Apăsați/Țineți START până apare mesajul "
+"<b>Eliminați cardul</b></li><li>Puneți poziția P</li><li>Păstrați cardul "
+"cheie introdus</li></ul>"
 
 msgid "<font color='green'>Values read</font>"
 msgstr "<font color='green'>Valori citite</font>"
@@ -970,14 +994,15 @@ msgid ""
 "<font color=green>Request</font><font color=blue>'%s'</font> has no missing "
 "input values"
 msgstr ""
-"<font color=green>Cererea <font color=blue>'%s'</font> nu are nici o intrare "
-"lipsavalues</font>"
+"<font color=green>Cerere</font><font color=blue>'%s'</font> nu are valori de "
+"intrare lipsă</font>"
 
 #, fuzzy, python-format
 msgid ""
 "<font color=red>Request</font><font color=blue>'%s'</font> has missing "
 "inputs :"
 msgstr ""
+"<font color=red>Cerere</font><font color=blue>'%s'</font> are intrări lipsă :"
 "<font color=red>Cererea <font color=blue>'%s'</font> are intrari lipsa :</"
 "font>"
 
@@ -1204,7 +1229,9 @@ msgid ""
 "this application more reliable</center>"
 msgstr ""
 "<center>Acest software este gratuit, dar am nevoie de bani pentru a cumpăra "
-"cabluri/ECU-uri și a face această aplicație mai fiabilă</center>"
+"cabluri/ECU-uri și a face această aplicație mai fiabilă</"
+"center><center>Acest software este gratuit, dar am nevoie de bani pentru a "
+"cumpăra cabluri/ECU-uri și a face această aplicație mai fiabilă</center>"
 
 msgid "Yes I contribute"
 msgstr "Da, contribui"
@@ -1259,11 +1286,13 @@ msgid "DDT4All Documentation"
 msgstr "Documentatie"
 
 msgid "WebEngine not available."
-msgstr ""
+msgstr "WebEngine nu este disponibil."
 
 msgid ""
 "For full documentation with web browsing capability, install PyQtWebEngine:"
 msgstr ""
+"Pentru documentație completă cu capacitate de navigare web, instalați "
+"PyQtWebEngine:"
 
 #, fuzzy
 msgid "Visit the online documentation at:"
@@ -1355,7 +1384,7 @@ msgid "File"
 msgstr "Fisier"
 
 msgid "Open XML"
-msgstr "Deschideti XML"
+msgstr "Deschideti XML-ul"
 
 msgid "Identify ECU"
 msgstr "Identificati ECU"
@@ -1367,7 +1396,7 @@ msgid "Save current ECU"
 msgstr "Salvati ECU curent"
 
 msgid "Save last record"
-msgstr ""
+msgstr "Salvati ultimul inregistrare"
 
 msgid "Save ECU list"
 msgstr "Salvati lista ECU"
@@ -1376,29 +1405,29 @@ msgid "Zip database"
 msgstr "Baza de date zip"
 
 msgid "Exit"
-msgstr ""
+msgstr "Iesire"
 
 msgid "View"
 msgstr "Vizualizare"
 
 msgid "CarList Order"
-msgstr ""
+msgstr "Ordinea listei de masini"
 
 msgid "By Project Code"
-msgstr ""
+msgstr "Dupa codul proiectului"
 
 msgid "By Car Name"
-msgstr ""
+msgstr "Dupa numele masinii"
 
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #, fuzzy
 msgid "Dark Theme"
-msgstr "Stil intunecat"
+msgstr "Tema intunecata"
 
 msgid "Light Theme"
-msgstr ""
+msgstr "Tema deschisa"
 
 msgid "New Category"
 msgstr "Categorie noua"
@@ -1420,54 +1449,54 @@ msgid "Help"
 msgstr "Ajutor"
 
 msgid "Web Wiki"
-msgstr ""
+msgstr "Web Wiki"
 
 msgid "About Developers"
-msgstr ""
+msgstr "Despre dezvoltatori"
 
 msgid "Get Git update"
-msgstr ""
+msgstr "Obtine actualizare Git"
 
 msgid "About"
-msgstr ""
+msgstr "Despre"
 
 msgid "About DDT4ALL"
-msgstr ""
+msgstr "Despre DDT4ALL"
 
 #, fuzzy
 msgid " version:"
-msgstr "Versiune Diag"
+msgstr " versiune:"
 
 msgid "Created by:"
-msgstr ""
+msgstr "Creat de:"
 
 #, fuzzy
 msgid "Options"
-msgstr "Optiuni de scanare"
+msgstr "Optiuni"
 
 msgid "CAN Line 1 Auto"
-msgstr ""
+msgstr "Linie CAN 1 Auto"
 
 msgid "CAN Line 1@500K"
-msgstr ""
+msgstr "Linie CAN 1@500K"
 
 msgid "CAN Line 1@250K"
-msgstr ""
+msgstr "Linie CAN 1@250K"
 
 msgid "CAN Line 2@500K"
-msgstr ""
+msgstr "Linie CAN 2@500K"
 
 msgid "CAN Line 2@250K"
-msgstr ""
+msgstr "Linie CAN 2@250K"
 
 msgid "CAN Line 2@125K"
-msgstr ""
+msgstr "Linie CAN 2@125K"
 
 msgid "KWP2000"
-msgstr ""
+msgstr "KWP2000"
 
 msgid "ISO8"
-msgstr ""
+msgstr "ISO8"
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "Salvati baza de date (pastrati extensia \".zip\")"
@@ -1499,7 +1528,7 @@ msgstr "Scanarea KWP"
 
 #, fuzzy
 msgid "Scanning DoIP"
-msgstr "Scanarea KWP"
+msgstr "Scanarea DoIP"
 
 msgid "Scan options"
 msgstr "Optiuni de scanare"
@@ -1520,13 +1549,13 @@ msgid "Save ECU (keep '.json' extension)"
 msgstr "Salvati ECU (pastrati extensia \".json\")"
 
 msgid "Save record (keep '.txt' extension)"
-msgstr "Salvati vehiculul (pastrati extensia '.ecu')"
+msgstr "Salvati inregistrarea (pastrati extensia '.txt')"
 
 msgid "Recorded "
-msgstr ""
+msgstr "Inregistrat "
 
 msgid " entries"
-msgstr ""
+msgstr " inregistrari"
 
 msgid "No"
 msgstr "Nu"
@@ -1535,34 +1564,34 @@ msgid "ELM port selection"
 msgstr "Selectie port ELM"
 
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr ""
+msgstr "OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
-msgstr ""
+msgstr "ELS27/ELS27 V5 - Poate aparea ca dispozitiv FTDI/CH340/CP210x"
 
 msgid "Vlinker FS/MC"
-msgstr ""
+msgstr "Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr ""
+msgstr "DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
-msgstr ""
+msgstr "VGate (Viteza mare)"
 
 msgid "DoIP (Diagnostics over IP)"
-msgstr ""
+msgstr "DoIP (Diagnosticare prin IP)"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Limba interfetei"
 
 msgid "Port speed"
 msgstr "Viteza portului"
@@ -1589,139 +1618,139 @@ msgid "Dark style"
 msgstr "Stil intunecat"
 
 msgid "DoIP (Diagnostics over IP) Configuration"
-msgstr ""
+msgstr "Configurare DoIP (Diagnosticare prin IP)"
 
 #, fuzzy
 msgid "Device Preset : "
 msgstr "Device version: "
 
 msgid "Custom"
-msgstr ""
+msgstr "Personalizat"
 
 msgid "Bosch MTS"
-msgstr ""
+msgstr "Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr ""
+msgstr "VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr ""
+msgstr "VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr ""
+msgstr "JLR DoIP VCI"
 
 msgid "Generic DoIP"
-msgstr ""
+msgstr "DoIP Generic"
 
 msgid "DoIP Target IP : "
-msgstr ""
+msgstr "IP Tinta DoIP : "
 
 #, fuzzy
 msgid "DoIP Port : "
 msgstr "Port: "
 
 msgid "DoIP Timeout (seconds) : "
-msgstr ""
+msgstr "Timeout DoIP (secunde) : "
 
 msgid "Enable Vehicle Announcement Discovery"
-msgstr ""
+msgstr "Activare Descoperire Anunt Vehicul"
 
 msgid "Auto-reconnect on connection loss"
-msgstr ""
+msgstr "Reconectare automata la pierderea conexiunii"
 
 msgid "Change UART speed"
-msgstr ""
+msgstr "Modificare viteza UART"
 
 #, fuzzy
 msgid "Checking..."
 msgstr "Verifica"
 
 msgid "Please enter WiFi adapter IP address"
-msgstr "Please enter WiFi adapter IP address"
+msgstr "Va rugam introduceti adresa IP a adaptorului WiFi"
 
 msgid "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
-msgstr "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
+msgstr "Format WiFi invalid. Folositi IP:PORT (ex. 192.168.0.10:35000)"
 
 msgid "Please select a serial port"
-msgstr "Please select a serial port"
+msgstr "Va rugam selectati un port serial"
 
 msgid "Selected port is no longer available"
-msgstr "Selected port is no longer available"
+msgstr "Portul selectat nu mai este disponibil"
 
 msgid "Attempting connection..."
-msgstr "Attempting connection..."
+msgstr "Incercare de conectare..."
 
 msgid "Port: "
 msgstr "Port: "
 
 msgid "Speed: "
-msgstr "Speed: "
+msgstr "Viteza: "
 
 msgid "Connection test failed"
-msgstr "Connection test failed"
+msgstr "Testul de conexiune a esuat"
 
 msgid "Troubleshooting suggestions:"
-msgstr "Troubleshooting suggestions:"
+msgstr "Sugestii de depanare:"
 
 msgid "1. Check device is properly connected"
-msgstr "1. Check device is properly connected"
+msgstr "1. Verificati daca dispozitivul este conectat corect"
 
 msgid "2. Try different baud rates"
-msgstr "2. Try different baud rates"
+msgstr "2. Incercati rate de baud diferite"
 
 msgid "3. Ensure device drivers are installed"
-msgstr "3. Ensure device drivers are installed"
+msgstr "3. Asigurati-va ca driverele dispozitivului sunt instalate"
 
 msgid "4. Check port permissions (Linux/macOS)"
-msgstr "4. Check port permissions (Linux/macOS)"
+msgstr "4. Verificati permisiunile portului (Linux/macOS)"
 
 msgid "Connection test successful!"
-msgstr "Connection test successful!"
+msgstr "Testul de conexiune a reusit!"
 
 msgid "Error during connection test: "
-msgstr "Error during connection test: "
+msgstr "Eroare in timpul testului de conexiune: "
 
 msgid "Reset and Recheck"
-msgstr ""
+msgstr "Resetare si reverificare"
 
 msgid "57600"
-msgstr ""
+msgstr "57600"
 
 msgid "115200"
-msgstr ""
+msgstr "115200"
 
 msgid "230400"
-msgstr ""
+msgstr "230400"
 
 msgid "500000"
-msgstr ""
+msgstr "500000"
 
 msgid "1000000"
-msgstr ""
+msgstr "1000000"
 
 msgid "2000000"
-msgstr ""
+msgstr "2000000"
 
 msgid "38400"
-msgstr ""
+msgstr "38400"
 
 msgid "VGate iCar Pro selected - Enhanced STN/STPX support enabled"
-msgstr ""
+msgstr "VGate iCar Pro selectat - Suport STN/STPX imbunatatit activat"
 
 msgid "Long command support and high-speed communication available"
-msgstr ""
+msgstr "Suport comenzi lungi si comunicare viteza mare disponibil"
 
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgid "DoIP (Diagnostics over IP) selected"
-msgstr ""
+msgstr "DoIP (Diagnosticare prin IP) selectat"
 
 msgid "Ethernet-based diagnostic communication"
-msgstr ""
+msgstr "Comunicare de diagnosticare bazata pe Ethernet"
 
 msgid "Compatible with Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
-msgstr ""
+msgstr "Compatibil cu Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
 
 msgid "You must check the recommandations"
 msgstr "Trebuie sa verificati recomandarile"
@@ -1730,10 +1759,10 @@ msgid "Please select a communication port"
 msgstr "Va rugam sa selectati un port de comunicare"
 
 msgid "ECU Command"
-msgstr ""
+msgstr "Comanda ECU"
 
 msgid "Err, cannot rename "
-msgstr ""
+msgstr "Eroare, nu se poate redenumi "
 
 msgid "To be able to edit your screen, first export it in JSON format"
 msgstr "Pentru a putea edita ecranul, exportati-l mai intai in format JSON"
@@ -1751,7 +1780,7 @@ msgid "Rename label"
 msgstr "Redenumiti eticheta"
 
 msgid "Change color"
-msgstr "Schimbare culoare"
+msgstr "Schimbati culoarea"
 
 msgid "Remove element"
 msgstr "Eliminati elementul"
@@ -1835,6 +1864,8 @@ msgid ""
 "<center>BLOCKED COMMAND</center>\n"
 "Activate expert mode to unlock"
 msgstr ""
+"<center>COMANDĂ BLOCATĂ</center>\n"
+"Activați modul expert pentru a debloca"
 
 #, fuzzy
 msgid "Writing parameter"

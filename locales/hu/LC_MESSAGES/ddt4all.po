@@ -279,8 +279,7 @@ msgid ""
 "functionality."
 msgstr ""
 "Megjegyzés: Ez a hiba nem befolyásolja a soros kommunikációt vagy a bypass "
-"kábel funkcionalitását.Megjegyzés: Ez a hiba nem befolyásolja a soros "
-"kommunikációt vagy a bypass kábel funkcionalitását."
+"kábel funkcionalitását."
 
 msgid "Trying to open port "
 msgstr "Port megnyitása "
@@ -340,8 +339,7 @@ msgid ""
 "VGate adapter detected but STN verification failed, attempting fallback..."
 msgstr ""
 "VGate adapter észlelve, de az STN ellenőrzés sikertelen, fallback "
-"próbálása...VGate adapter észlelve, de az STN ellenőrzés sikertelen, "
-"fallback próbálása..."
+"próbálása..."
 
 #, python-format
 msgid "Unsupported baudrate for ELM: %s"
@@ -585,9 +583,7 @@ msgid ""
 msgstr ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>EZ A PLUGIN "
 "FELOLDJA AZ AIRBAG ÜTKÖZÉSI ADATOKAT<br>MENJ EL, HA NINCS ÖTLETED, MIT "
-"JELENT EZ</font>AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font "
-"color='red'>EZ A PLUGIN FELOLDJA AZ AIRBAG ÜTKÖZÉSI ADATOKAT<br>TÁVOZZON EL, "
-"HA NINCS ÖTLETE, MIT JELENT EZ</font>"
+"JELENT EZ</font>"
 
 msgid "Check ACU Virgin"
 msgstr "ACU Virgin ellenőrzése"
@@ -634,8 +630,7 @@ msgid ""
 "YET</font>"
 msgstr ""
 "<font color='red'>MEGANE II KÁRTYA PROGRAMOZÁS<br>KÍSÉRLETI : MÉG NEM "
-"TESZTELT</font><font color='red'>MEGANE II KÁRTYA PROGRAMOZÁS<br>KÍSÉRLETI : "
-"MÉG NEM TESZELT</font>"
+"TESZTELT</font>"
 
 msgid "LEARN"
 msgstr "TANULÁS"
@@ -1396,7 +1391,7 @@ msgid "Open XML"
 msgstr ""
 
 msgid "Identify ECU"
-msgstr ""
+msgstr "ECU azonosítása"
 
 msgid "Create New ECU"
 msgstr "Új ECU létrehozása"
@@ -1405,37 +1400,37 @@ msgid "Save current ECU"
 msgstr "Aktuális ECU mentése"
 
 msgid "Save last record"
-msgstr ""
+msgstr "Utolsó rekord mentése"
 
 msgid "Save ECU list"
 msgstr "ECU-lista mentése"
 
 msgid "Zip database"
-msgstr ""
+msgstr "Adatbázis tömörítése"
 
 msgid "Exit"
-msgstr ""
+msgstr "Kilépés"
 
 msgid "View"
 msgstr "Nézet"
 
 msgid "CarList Order"
-msgstr ""
+msgstr "Autólista sorrendje"
 
 msgid "By Project Code"
-msgstr ""
+msgstr "Projekt kód szerint"
 
 msgid "By Car Name"
-msgstr ""
+msgstr "Autónév szerint"
 
 msgid "Theme"
-msgstr ""
+msgstr "Téma"
 
 msgid "Dark Theme"
-msgstr ""
+msgstr "Sötét téma"
 
 msgid "Light Theme"
-msgstr ""
+msgstr "Világos téma"
 
 msgid "New Category"
 msgstr "Új kategória"
@@ -1447,85 +1442,85 @@ msgid "Rename"
 msgstr "Átnevezés"
 
 msgid "Plugins"
-msgstr ""
+msgstr "Bővítmények"
 
 #, fuzzy
 msgid "Cannot load plugin "
-msgstr "Sikertelen parancshívás "
+msgstr "Nem lehet betölteni a bővítményt "
 
 msgid "Help"
 msgstr "Súgó"
 
 msgid "Web Wiki"
-msgstr ""
+msgstr "Web Wiki"
 
 msgid "About Developers"
-msgstr ""
+msgstr "A fejlesztőkről"
 
 msgid "Get Git update"
-msgstr ""
+msgstr "Git frissítés beszerzése"
 
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 msgid "About DDT4ALL"
-msgstr ""
+msgstr "A DDT4ALL-ről"
 
 #, fuzzy
 msgid " version:"
-msgstr "Diag verzió"
+msgstr " verzió:"
 
 msgid "Created by:"
-msgstr ""
+msgstr "Készítette:"
 
 #, fuzzy
 msgid "Options"
-msgstr "Keresés beállításai"
+msgstr "Beállítások"
 
 msgid "CAN Line 1 Auto"
-msgstr ""
+msgstr "CAN 1-es vonal Auto"
 
 msgid "CAN Line 1@500K"
-msgstr ""
+msgstr "CAN 1-es vonal@500K"
 
 msgid "CAN Line 1@250K"
-msgstr ""
+msgstr "CAN 1-es vonal@250K"
 
 msgid "CAN Line 2@500K"
-msgstr ""
+msgstr "CAN 2-es vonal@500K"
 
 msgid "CAN Line 2@250K"
-msgstr ""
+msgstr "CAN 2-es vonal@250K"
 
 msgid "CAN Line 2@125K"
-msgstr ""
+msgstr "CAN 2-es vonal@125K"
 
 msgid "KWP2000"
-msgstr ""
+msgstr "KWP2000"
 
 msgid "ISO8"
-msgstr ""
+msgstr "ISO8"
 
 msgid "Save database (keep '.zip' extension)"
-msgstr ""
+msgstr "Adatbázis mentése (tartsa meg a '.zip' kiterjesztést)"
 
 msgid "Zipping XML database... (this can take a few minutes)"
-msgstr ""
+msgstr "XML adatbázis tömörítése... (ez néhány percig tarthat)"
 
 msgid "Zip job finished"
-msgstr ""
+msgstr "Tömörítés befejezve"
 
 msgid "Enter new name"
-msgstr "Új név megadása"
+msgstr "Adja meg az új nevet"
 
 msgid "Enter category name"
-msgstr "Kategória nevének megadása"
+msgstr "Adja meg a kategória nevét"
 
 msgid "Please select a category before creating new screen"
 msgstr "Új képernyő létrehozásához válassz ki egy kategóriát"
 
 msgid "Enter screen name"
-msgstr "Képernyő nevének megadása"
+msgstr "Adja meg a képernyő nevét"
 
 msgid "Scanning CAN"
 msgstr "CAN keresés"
@@ -1535,10 +1530,10 @@ msgstr "KWP keresés"
 
 #, fuzzy
 msgid "Scanning DoIP"
-msgstr "KWP keresés"
+msgstr "DoIP keresés"
 
 msgid "Scan options"
-msgstr "Keresés beállításai"
+msgstr "Keresési beállítások"
 
 msgid "EDITION MODE"
 msgstr "SZERKESZTÉS MÓD"
@@ -1556,13 +1551,13 @@ msgid "Save ECU (keep '.json' extension)"
 msgstr "ECU mentése ('.json' kiteresztés megtartása)"
 
 msgid "Save record (keep '.txt' extension)"
-msgstr "Jármű mentése ('.ecu' kiteresztés megtartása)"
+msgstr "Rekord mentése ('.txt' kiteresztés megtartása)"
 
 msgid "Recorded "
-msgstr ""
+msgstr "Rögzített "
 
 msgid " entries"
-msgstr ""
+msgstr " bejegyzés"
 
 msgid "No"
 msgstr "Nem"
@@ -1571,34 +1566,34 @@ msgid "ELM port selection"
 msgstr "ELM port kiválasztása"
 
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr ""
+msgstr "OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
-msgstr ""
+msgstr "ELS27/ELS27 V5 - Megjelenhet FTDI/CH340/CP210x eszközként"
 
 msgid "Vlinker FS/MC"
-msgstr ""
+msgstr "Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr ""
+msgstr "DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
-msgstr ""
+msgstr "VGate (Nagy sebességű)"
 
 msgid "DoIP (Diagnostics over IP)"
-msgstr ""
+msgstr "DoIP (Diagnosztika IP-n keresztül)"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Felület nyelve"
 
 msgid "Port speed"
 msgstr "Port sebessége"
@@ -1623,142 +1618,145 @@ msgstr ""
 "Tisztában vagyok vele, hogy a helytelen használat kárt tehet a járművemben"
 
 msgid "Dark style"
-msgstr ""
+msgstr "Sötét stílus"
 
 msgid "DoIP (Diagnostics over IP) Configuration"
-msgstr ""
+msgstr "DoIP (Diagnosztika IP-n keresztül) konfiguráció"
 
 #, fuzzy
 msgid "Device Preset : "
 msgstr "Device version: "
 
 msgid "Custom"
-msgstr ""
+msgstr "Egyéni"
 
 msgid "Bosch MTS"
-msgstr ""
+msgstr "Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr ""
+msgstr "VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr ""
+msgstr "VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr ""
+msgstr "JLR DoIP VCI"
 
 msgid "Generic DoIP"
-msgstr ""
+msgstr "Általános DoIP"
 
 msgid "DoIP Target IP : "
-msgstr ""
+msgstr "DoIP cél IP : "
 
 #, fuzzy
 msgid "DoIP Port : "
 msgstr "Port: "
 
 msgid "DoIP Timeout (seconds) : "
-msgstr ""
+msgstr "DoIP időtúllépés (másodperc) : "
 
 msgid "Enable Vehicle Announcement Discovery"
-msgstr ""
+msgstr "Jármű bejelentés felfedezésének engedélyezése"
 
 msgid "Auto-reconnect on connection loss"
-msgstr ""
+msgstr "Automatikus újracsatlakozás kapcsolatvesztés esetén"
 
 msgid "Change UART speed"
-msgstr ""
+msgstr "UART sebesség módosítása"
 
 #, fuzzy
 msgid "Checking..."
 msgstr "Ellenőrzés"
 
 msgid "Please enter WiFi adapter IP address"
-msgstr "Please enter WiFi adapter IP address"
+msgstr "Kérem, adja meg a WiFi adapter IP címét"
 
 msgid "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
-msgstr "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
+msgstr ""
+"Érvénytelen WiFi formátum. Használja az IP:PORT formátumot (pl. "
+"192.168.0.10:35000)"
 
 msgid "Please select a serial port"
-msgstr "Please select a serial port"
+msgstr "Kérem, válasszon ki egy soros portot"
 
 msgid "Selected port is no longer available"
-msgstr "Selected port is no longer available"
+msgstr "A kiválasztott port már nem elérhető"
 
 msgid "Attempting connection..."
-msgstr "Attempting connection..."
+msgstr "Kapcsolódási kísérlet..."
 
 msgid "Port: "
 msgstr "Port: "
 
 msgid "Speed: "
-msgstr "Speed: "
+msgstr "Sebesség: "
 
 msgid "Connection test failed"
-msgstr "Connection test failed"
+msgstr "Kapcsolat tesztje sikertelen"
 
 msgid "Troubleshooting suggestions:"
-msgstr "Troubleshooting suggestions:"
+msgstr "Hibaelhárítási javaslatok:"
 
 msgid "1. Check device is properly connected"
-msgstr "1. Check device is properly connected"
+msgstr "1. Ellenőrizze, hogy az eszköz megfelelően van-e csatlakoztatva"
 
 msgid "2. Try different baud rates"
-msgstr "2. Try different baud rates"
+msgstr "2. Próbáljon ki különböző baud sebességeket"
 
 msgid "3. Ensure device drivers are installed"
-msgstr "3. Ensure device drivers are installed"
+msgstr "3. Győződjön meg róla, hogy az eszközillesztők telepítve vannak-e"
 
 msgid "4. Check port permissions (Linux/macOS)"
-msgstr "4. Check port permissions (Linux/macOS)"
+msgstr "4. Ellenőrizze a port jogosultságokat (Linux/macOS)"
 
 msgid "Connection test successful!"
-msgstr "Connection test successful!"
+msgstr "Kapcsolat teszt sikeres!"
 
 msgid "Error during connection test: "
-msgstr "Error during connection test: "
+msgstr "Hiba a kapcsolat tesztelése során: "
 
 msgid "Reset and Recheck"
-msgstr ""
+msgstr "Visszaállítás és újraellenőrzés"
 
 msgid "57600"
-msgstr ""
+msgstr "57600"
 
 msgid "115200"
-msgstr ""
+msgstr "115200"
 
 msgid "230400"
-msgstr ""
+msgstr "230400"
 
 msgid "500000"
-msgstr ""
+msgstr "500000"
 
 msgid "1000000"
-msgstr ""
+msgstr "1000000"
 
 msgid "2000000"
-msgstr ""
+msgstr "2000000"
 
 msgid "38400"
-msgstr ""
+msgstr "38400"
 
 msgid "VGate iCar Pro selected - Enhanced STN/STPX support enabled"
 msgstr ""
+"VGate iCar Pro kiválasztva - Kibővített STN/STPX támogatás engedélyezve"
 
 msgid "Long command support and high-speed communication available"
-msgstr ""
+msgstr "Hosszú parancs támogatás és nagy sebességű kommunikáció elérhető"
 
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgid "DoIP (Diagnostics over IP) selected"
-msgstr ""
+msgstr "DoIP (Diagnosztika IP-n keresztül) kiválasztva"
 
 msgid "Ethernet-based diagnostic communication"
-msgstr ""
+msgstr "Ethernet-alapú diagnosztikai kommunikáció"
 
 msgid "Compatible with Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
-msgstr ""
+msgstr "Kompatibilis a Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI eszközökkel"
 
 msgid "You must check the recommandations"
 msgstr "Tudomásul kell venned a figyelmeztetést"
@@ -1767,10 +1765,10 @@ msgid "Please select a communication port"
 msgstr "Válassz egy portot a kapcsolathoz"
 
 msgid "ECU Command"
-msgstr ""
+msgstr "ECU parancs"
 
 msgid "Err, cannot rename "
-msgstr ""
+msgstr "Hiba, nem lehet átnevezni "
 
 msgid "To be able to edit your screen, first export it in JSON format"
 msgstr "A képernyő módosításához először exportáld JSON formátumba"
@@ -1788,7 +1786,7 @@ msgid "Rename label"
 msgstr "Címke átnevezése"
 
 msgid "Change color"
-msgstr ""
+msgstr "Szín módosítása"
 
 msgid "Remove element"
 msgstr "Elem eltávolítása"

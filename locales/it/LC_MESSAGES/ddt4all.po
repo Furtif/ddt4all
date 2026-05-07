@@ -284,8 +284,7 @@ msgid ""
 "functionality."
 msgstr ""
 "Nota: Questo errore non influisce sulla comunicazione seriale o sulla "
-"funzionalità del cavo bypass.Nota: Questo errore non influisce sulla "
-"comunicazione seriale o sulla funzionalità del cavo bypass."
+"funzionalità del cavo bypass."
 
 msgid "Trying to open port "
 msgstr "Tentativo apertura porta "
@@ -344,9 +343,7 @@ msgstr "%s Version: "
 msgid ""
 "VGate adapter detected but STN verification failed, attempting fallback..."
 msgstr ""
-"Adattatore VGate rilevato ma verifica STN fallita, tentativo "
-"fallback...Adattatore VGate rilevato ma verifica STN fallita, tentativo "
-"fallback..."
+"Adattatore VGate rilevato ma verifica STN fallita, tentativo fallback..."
 
 #, python-format
 msgid "Unsupported baudrate for ELM: %s"
@@ -595,9 +592,7 @@ msgid ""
 msgstr ""
 "AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>QUESTO PLUGIN "
 "SBLOCHERÀ I DATI DI URTO AIRBAG<br>VIA SE NON HAI IDEA DI COSA SIGNIFICA</"
-"font>AB90 (Clio III)/2<br>AIRBAG - Azzeramento<br><font color='red'>QUESTO "
-"PLUGIN SBLOCCHERA' IL DATO CRASH AIRBAG<br>NON USARLO SE NON HAI IDEA DI "
-"CIO' CHE SIGNIFICA</font>"
+"font>"
 
 msgid "Check ACU Virgin"
 msgstr "Controllo ACU vergine"
@@ -644,8 +639,7 @@ msgid ""
 "YET</font>"
 msgstr ""
 "<font color='red'>PROGRAMMAZIONE SCHEDA MEGANE II<br>SPERIMENTALE : NON "
-"ANCORA TESTATO</font><font color='red'>MEGANE II - PROGRAMMAZIONE "
-"SCHEDA<br>SPERIMENTALE : NON ANCORA TESTATO</font>"
+"ANCORA TESTATO</font>"
 
 msgid "LEARN"
 msgstr "IMPARA"
@@ -1010,8 +1004,7 @@ msgid ""
 "input values"
 msgstr ""
 "<font color=green>Richiesta</font><font color=blue>'%s'</font> non ha valori "
-"di input mancanti</font><font color=green>Richiesta</font><font "
-"color=blue>'%s'</font> non ha valori input mancanti</font>"
+"di input mancanti</font>"
 
 #, python-format
 msgid ""
@@ -1019,8 +1012,7 @@ msgid ""
 "inputs :"
 msgstr ""
 "<font color=red>Richiesta</font><font color=blue>'%s'</font> ha input "
-"mancanti :<font color=red>Richiesta</font><font color=blue>'%s'</font> ha "
-"input mancanti :"
+"mancanti :"
 
 #, python-format
 msgid "<font color=orange> - '%s'</font>"
@@ -1425,23 +1417,23 @@ msgid "View"
 msgstr "Visualizza"
 
 msgid "CarList Order"
-msgstr ""
+msgstr "Ordinamento lista auto"
 
 msgid "By Project Code"
-msgstr ""
+msgstr "Per codice progetto"
 
 msgid "By Car Name"
-msgstr ""
+msgstr "Per nome auto"
 
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #, fuzzy
 msgid "Dark Theme"
-msgstr "Stile scuro"
+msgstr "Tema scuro"
 
 msgid "Light Theme"
-msgstr ""
+msgstr "Tema chiaro"
 
 msgid "New Category"
 msgstr "Nuova categoria"
@@ -1462,61 +1454,61 @@ msgid "Help"
 msgstr "Aiuto"
 
 msgid "Web Wiki"
-msgstr ""
+msgstr "Web Wiki"
 
 msgid "About Developers"
-msgstr ""
+msgstr "Informazioni sviluppatori"
 
 msgid "Get Git update"
-msgstr ""
+msgstr "Ottieni aggiornamento Git"
 
 msgid "About"
-msgstr ""
+msgstr "Informazioni"
 
 msgid "About DDT4ALL"
-msgstr ""
+msgstr "Informazioni su DDT4ALL"
 
 #, fuzzy
 msgid " version:"
-msgstr "Versione diagnostica"
+msgstr " versione:"
 
 msgid "Created by:"
-msgstr ""
+msgstr "Creato da:"
 
 #, fuzzy
 msgid "Options"
-msgstr "Opzioni ricerca"
+msgstr "Opzioni"
 
 msgid "CAN Line 1 Auto"
-msgstr ""
+msgstr "Linea CAN 1 Auto"
 
 msgid "CAN Line 1@500K"
-msgstr ""
+msgstr "Linea CAN 1@500K"
 
 msgid "CAN Line 1@250K"
-msgstr ""
+msgstr "Linea CAN 1@250K"
 
 msgid "CAN Line 2@500K"
-msgstr ""
+msgstr "Linea CAN 2@500K"
 
 msgid "CAN Line 2@250K"
-msgstr ""
+msgstr "Linea CAN 2@250K"
 
 msgid "CAN Line 2@125K"
-msgstr ""
+msgstr "Linea CAN 2@125K"
 
 msgid "KWP2000"
-msgstr ""
+msgstr "KWP2000"
 
 msgid "ISO8"
-msgstr ""
+msgstr "ISO8"
 
 msgid "Save database (keep '.zip' extension)"
-msgstr "Salva database (mantieni estensione '.json')"
+msgstr "Salva database (mantieni estensione '.zip')"
 
 #, fuzzy
 msgid "Zipping XML database... (this can take a few minutes)"
-msgstr "Compressione database... (potrebbe richiedere alcuni minuti)"
+msgstr "Compressione database XML... (potrebbe richiedere alcuni minuti)"
 
 msgid "Zip job finished"
 msgstr "Attività compressione completata"
@@ -1528,20 +1520,20 @@ msgid "Enter category name"
 msgstr "Inserisci nome categoria"
 
 msgid "Please select a category before creating new screen"
-msgstr "Seleziona una categoria prima di creare un nuovo schermo"
+msgstr "Seleziona una categoria prima di creare uno schermo nuovo"
 
 msgid "Enter screen name"
-msgstr "Insersici nome schermo"
+msgstr "Inserisci il nome dello schermo"
 
 msgid "Scanning CAN"
-msgstr "Ricerca CAN"
+msgstr "Ricerca CAN in corso"
 
 msgid "Scanning KWP"
 msgstr "Ricerca KWP"
 
 #, fuzzy
 msgid "Scanning DoIP"
-msgstr "Ricerca KWP"
+msgstr "Ricerca DoIP"
 
 msgid "Scan options"
 msgstr "Opzioni ricerca"
@@ -1565,10 +1557,10 @@ msgid "Save record (keep '.txt' extension)"
 msgstr "Salva record (mantieni l'estensione '.txt')"
 
 msgid "Recorded "
-msgstr ""
+msgstr "Registrate "
 
 msgid " entries"
-msgstr ""
+msgstr " voci"
 
 msgid "No"
 msgstr "No"
@@ -1577,34 +1569,34 @@ msgid "ELM port selection"
 msgstr "Selezione porta ELM"
 
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr ""
+msgstr "OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
-msgstr ""
+msgstr "ELS27/ELS27 V5 - Può apparire come dispositivo FTDI/CH340/CP210x"
 
 msgid "Vlinker FS/MC"
-msgstr ""
+msgstr "Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr ""
+msgstr "DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
-msgstr ""
+msgstr "VGate (Alta Velocità)"
 
 msgid "DoIP (Diagnostics over IP)"
-msgstr ""
+msgstr "DoIP (Diagnostica su IP)"
 
 msgid "Interface language"
-msgstr ""
+msgstr "Lingua interfaccia"
 
 msgid "Port speed"
 msgstr "Velocità porta"
@@ -1631,139 +1623,139 @@ msgid "Dark style"
 msgstr "Stile scuro"
 
 msgid "DoIP (Diagnostics over IP) Configuration"
-msgstr ""
+msgstr "Configurazione DoIP (Diagnostica su IP)"
 
 #, fuzzy
 msgid "Device Preset : "
-msgstr "Device version: "
+msgstr "Impostazioni dispositivo : "
 
 msgid "Custom"
-msgstr ""
+msgstr "Personalizzato"
 
 msgid "Bosch MTS"
-msgstr ""
+msgstr "Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr ""
+msgstr "VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr ""
+msgstr "VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr ""
+msgstr "JLR DoIP VCI"
 
 msgid "Generic DoIP"
-msgstr ""
+msgstr "DoIP Generico"
 
 msgid "DoIP Target IP : "
-msgstr ""
+msgstr "IP Target DoIP : "
 
 #, fuzzy
 msgid "DoIP Port : "
-msgstr "Port: "
+msgstr "Porta DoIP : "
 
 msgid "DoIP Timeout (seconds) : "
-msgstr ""
+msgstr "Timeout DoIP (secondi) : "
 
 msgid "Enable Vehicle Announcement Discovery"
-msgstr ""
+msgstr "Abilita Scoperta Annuncio Veicolo"
 
 msgid "Auto-reconnect on connection loss"
-msgstr ""
+msgstr "Riconnessione automatica in caso di perdita connessione"
 
 msgid "Change UART speed"
 msgstr "Modifica la velocità UART"
 
 #, fuzzy
 msgid "Checking..."
-msgstr "Controlla"
+msgstr "Controllo..."
 
 msgid "Please enter WiFi adapter IP address"
-msgstr "Please enter WiFi adapter IP address"
+msgstr "Per favore inserisci l'indirizzo IP dell'adattatore WiFi"
 
 msgid "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
-msgstr "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
+msgstr "Formato WiFi non valido. Usa IP:PORTA (es. 192.168.0.10:35000)"
 
 msgid "Please select a serial port"
-msgstr "Please select a serial port"
+msgstr "Per favore seleziona una porta seriale"
 
 msgid "Selected port is no longer available"
-msgstr "Selected port is no longer available"
+msgstr "La porta selezionata non è più disponibile"
 
 msgid "Attempting connection..."
-msgstr "Attempting connection..."
+msgstr "Tentativo di connessione..."
 
 msgid "Port: "
-msgstr "Port: "
+msgstr "Porta: "
 
 msgid "Speed: "
-msgstr "Speed: "
+msgstr "Velocità: "
 
 msgid "Connection test failed"
-msgstr "Connection test failed"
+msgstr "Test di connessione fallito"
 
 msgid "Troubleshooting suggestions:"
-msgstr "Troubleshooting suggestions:"
+msgstr "Suggerimenti per la risoluzione dei problemi:"
 
 msgid "1. Check device is properly connected"
-msgstr "1. Check device is properly connected"
+msgstr "1. Verifica che il dispositivo sia correttamente collegato"
 
 msgid "2. Try different baud rates"
-msgstr "2. Try different baud rates"
+msgstr "2. Prova diversi baud rate"
 
 msgid "3. Ensure device drivers are installed"
-msgstr "3. Ensure device drivers are installed"
+msgstr "3. Assicurati che i driver del dispositivo siano installati"
 
 msgid "4. Check port permissions (Linux/macOS)"
-msgstr "4. Check port permissions (Linux/macOS)"
+msgstr "4. Verifica i permessi della porta (Linux/macOS)"
 
 msgid "Connection test successful!"
-msgstr "Connection test successful!"
+msgstr "Test di connessione riuscito!"
 
 msgid "Error during connection test: "
-msgstr "Error during connection test: "
+msgstr "Errore durante il test di connessione: "
 
 msgid "Reset and Recheck"
-msgstr ""
+msgstr "Reimposta e Ricontrolla"
 
 msgid "57600"
-msgstr ""
+msgstr "57600"
 
 msgid "115200"
-msgstr ""
+msgstr "115200"
 
 msgid "230400"
-msgstr ""
+msgstr "230400"
 
 msgid "500000"
-msgstr ""
+msgstr "500000"
 
 msgid "1000000"
-msgstr ""
+msgstr "1000000"
 
 msgid "2000000"
-msgstr ""
+msgstr "2000000"
 
 msgid "38400"
-msgstr ""
+msgstr "38400"
 
 msgid "VGate iCar Pro selected - Enhanced STN/STPX support enabled"
-msgstr ""
+msgstr "VGate iCar Pro selezionato - Supporto STN/STPX avanzato abilitato"
 
 msgid "Long command support and high-speed communication available"
-msgstr ""
+msgstr "Supporto comandi lunghi e comunicazione ad alta velocità disponibile"
 
 msgid "N/A"
-msgstr ""
+msgstr "N/D"
 
 msgid "DoIP (Diagnostics over IP) selected"
-msgstr ""
+msgstr "DoIP (Diagnostica su IP) selezionato"
 
 msgid "Ethernet-based diagnostic communication"
-msgstr ""
+msgstr "Comunicazione diagnostica basata su Ethernet"
 
 msgid "Compatible with Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
-msgstr ""
+msgstr "Compatibile con Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
 
 msgid "You must check the recommandations"
 msgstr "Devi accettare le raccomandazioni"
@@ -1772,10 +1764,10 @@ msgid "Please select a communication port"
 msgstr "Seleziona una porta di comunicazione"
 
 msgid "ECU Command"
-msgstr ""
+msgstr "Comando ECU"
 
 msgid "Err, cannot rename "
-msgstr ""
+msgstr "Errore, impossibile rinominare "
 
 msgid "To be able to edit your screen, first export it in JSON format"
 msgstr "Per poter modificare la schermata, prima esportala in formato JSON"
@@ -1793,7 +1785,7 @@ msgid "Rename label"
 msgstr "Rinomina etichetta"
 
 msgid "Change color"
-msgstr "Colore modifica"
+msgstr "Cambia colore"
 
 msgid "Remove element"
 msgstr "Rimuovi elemento"
@@ -1809,11 +1801,11 @@ msgstr "Uscita"
 
 #, fuzzy
 msgid "Protocol not supported"
-msgstr "ERRORE - comando non supportato"
+msgstr "Protocollo non supportato"
 
 #, fuzzy
 msgid "Protocol not supported: "
-msgstr "ERRORE - comando non supportato"
+msgstr "Protocollo non supportato: "
 
 msgid "XML file not found : "
 msgstr "File XML non trovato : "
@@ -1856,22 +1848,22 @@ msgstr "Invio richiesta :"
 
 #, fuzzy
 msgid "Unknown request "
-msgstr "Indirizzo funzione ECU"
+msgstr "Richiesta sconosciuta "
 
 msgid "Command aborted "
-msgstr ""
+msgstr "Comando interrotto "
 
 msgid "Value error of this stuff need a bypass gateway maybe."
-msgstr ""
+msgstr "Errore valore di questo materiale richiede un bypass gateway forse."
 
 msgid "Request aborted (look at red paramters entries): "
 msgstr "Richiesta interrotta (vedi elementi parametri rossi): "
 
 msgid "Delay"
-msgstr ""
+msgstr "Ritardo"
 
 msgid "For your safety"
-msgstr ""
+msgstr "Per la tua sicurezza"
 
 msgid ""
 "<center>BLOCKED COMMAND</center>\n"
@@ -1885,7 +1877,7 @@ msgid "Writing parameter"
 msgstr "Comprimi database"
 
 msgid "Blocked writing parameter"
-msgstr ""
+msgstr "Parametro di scrittura bloccato"
 
 msgid "Invalid"
 msgstr "Non valida"
@@ -1897,7 +1889,7 @@ msgid "Cannot call request "
 msgstr "Impossibile chiamare richiesta "
 
 msgid "Update time"
-msgstr ""
+msgstr "Tempo di aggiornamento"
 
 msgid "Clearing DTC information"
 msgstr "Azzeramento informazioni DTC"
