@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: 2026-04-10 00:05+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: \n"
@@ -18,112 +18,111 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#, fuzzy
 msgid "DoIP device connected successfully"
-msgstr "ELM327 оборудование определено успешно"
+msgstr "Устройство DoIP успешно подключено"
 
 msgid "DoIP CAN initialized with Electric ECU support"
-msgstr ""
+msgstr "DoIP CAN инициализирован с поддержкой электрического ЭБУ"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP response: {}"
-msgstr "Ответ ELM : "
+msgstr "Ответ DoIP: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP request failed: {}"
-msgstr "Запрос не назван"
+msgstr "Запрос DoIP не выполнен: {}"
 
 #, python-brace-format
 msgid "Testing Electric ECU: {}"
-msgstr ""
+msgstr "Тестирование электрического ЭБУ: {}"
 
 msgid "Failed to connect to DoIP device"
-msgstr ""
+msgstr "Не удалось подключиться к устройству DoIP"
 
 msgid "Insufficient vehicle identification data"
-msgstr ""
+msgstr "Недостаточные данные идентификации транспортного средства"
 
 #, python-brace-format
 msgid "Expected vehicle identification response, got: {}"
-msgstr ""
+msgstr "Ожидался ответ идентификации транспортного средства, получен: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Vehicle identification failed: {}"
-msgstr "Screen initialization"
+msgstr "Идентификация транспортного средства не выполнена: {}"
 
 msgid "Insufficient session control data"
-msgstr ""
+msgstr "Недостаточные данные управления сеансом"
 
 #, python-brace-format
 msgid "Expected diagnostic session control response, got: {}"
-msgstr ""
+msgstr "Ожидался ответ управления диагностическим сеансом, получен: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Diagnostic session control failed: {}"
-msgstr "Диагностическая сессия"
+msgstr "Управление диагностическим сеансом не выполнено: {}"
 
 msgid "Insufficient diagnostic message data"
-msgstr ""
+msgstr "Недостаточные данные диагностического сообщения"
 
 #, python-brace-format
 msgid "Expected diagnostic message response, got: {}"
-msgstr ""
+msgstr "Ожидался ответ диагностического сообщения, получен: {}"
 
 msgid "Insufficient alive check data"
-msgstr ""
+msgstr "Недостаточные данные проверки alive"
 
 #, python-brace-format
 msgid "Expected alive check response, got: {}"
-msgstr ""
+msgstr "Ожидался ответ проверки alive, получен: {}"
 
 #, python-brace-format
 msgid "Alive check failed: {}"
-msgstr ""
+msgstr "Проверка alive не выполнена: {}"
 
 msgid "Not connected to DoIP device"
-msgstr ""
+msgstr "Не подключено к устройству DoIP"
 
 #, python-brace-format
 msgid "Invalid hex request format: {}"
-msgstr ""
+msgstr "Неверный формат hex запроса: {}"
 
 #, python-brace-format
 msgid "DoIP session start failed: {}"
-msgstr ""
+msgstr "Запуск сеанса DoIP не выполнен: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP CAN initialization failed: {}"
-msgstr "Screen initialization"
+msgstr "Инициализация DoIP CAN не выполнена: {}"
 
 #, python-brace-format
 msgid "DoIP: Electric ECU detected - {}"
-msgstr ""
+msgstr "DoIP: Обнаружен электрический ЭБУ - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr ""
+msgstr "DoIP: Использование расширенной адресации для систем электромобилей"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr ""
+msgstr "DoIP: Использование 29-битной расширенной адресации - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr ""
+msgstr "DoIP: Использование 11-битной стандартной адресации - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
-msgstr "Предупреждение, не удается получить подписанное значение для"
+msgstr "Предупреждение, не может получить значение со знаком для"
 
 msgid "Division by zero, please check data item: "
-msgstr "Деление на ноль, пожалуйста, проверьте элемент данных: "
+msgstr "Деление на ноль, пожалуйста проверьте элемент данных: "
 
 msgid "getHexValue >> abnormal remaining bytes "
-msgstr "getHexValue >> ненормальные оставшиеся байты"
+msgstr "getHexValue >> аномальные оставшиеся байты "
 
 msgid "Adding group "
 msgstr "Добавление группы "
 
 msgid "Unable to find eculist"
-msgstr "Не удалось найти список ЭБУ"
+msgstr "Не удалось найти eculist"
 
 #, fuzzy
 msgid "Cannot find file "
@@ -585,6 +584,10 @@ msgstr "Инициализация ELM на скорости %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "ELM327 или OBDLINK-SX не обнаружены на COM порту "
+
+#, fuzzy
+msgid "Initializing device features..."
+msgstr "Инициализация ELM на скорости %i..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr ""

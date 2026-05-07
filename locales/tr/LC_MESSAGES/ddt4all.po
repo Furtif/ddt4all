@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: 2026-04-29 23:58+0300\n"
 "Last-Translator: Abdullah YILMAZ (TA1GI) <h.abdullahyilmaz@hotmail.com>\n"
 "Language-Team: TURKISH\n"
@@ -44,7 +44,7 @@ msgstr "Yetersiz araç tanımlama verisi"
 
 #, python-brace-format
 msgid "Expected vehicle identification response, got: {}"
-msgstr "Araç tanımlama yanıtı beklendi, alınan: {}"
+msgstr "Beklenen araç tanımlama yanıtı, alındı: {}"
 
 #, python-brace-format
 msgid "Vehicle identification failed: {}"
@@ -84,11 +84,11 @@ msgstr "DoIP cihazına bağlı değil"
 
 #, python-brace-format
 msgid "Invalid hex request format: {}"
-msgstr "Geçersiz hex istek biçimi: {}"
+msgstr "Geçersiz hex isteği formatı: {}"
 
 #, python-brace-format
 msgid "DoIP session start failed: {}"
-msgstr "DoIP oturum başlatma başarısız: {}"
+msgstr "DoIP oturumu başlatılamadı: {}"
 
 #, python-brace-format
 msgid "DoIP CAN initialization failed: {}"
@@ -99,16 +99,18 @@ msgid "DoIP: Electric ECU detected - {}"
 msgstr "DoIP: Elektrikli ECU algılandı - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr ""
-"DoIP: Elektrikli Araç Sistemleri için genişletilmiş adresleme kullanılıyor"
+msgstr "DoIP: Elektrikli Araç Sistemleri için genişletilmiş adresleme kullanılıyor"
+
+msgid "DoIP: Elektrikli Araç Sistemleri için genişletilmiş adresleme kullanılıyor"
+msgstr "DoIP: Elektrikli Araç Sistemleri için genişletilmiş adresleme kullanılıyor"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr "DoIP: 29-bit genişletilmiş adresleme - TX:0x{:04X}, RX:0x{:04X}"
+msgstr "DoIP: 29-bit genişletilmiş adresleme kullanıyor - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr "DoIP: 11-bit standart adresleme - TX:0x{:03X}, RX:0x{:03X}"
+msgstr "DoIP: 11-bit standart adresleme kullanıyor - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
 msgstr "Uyarı, imzalı değer alınamıyor"
@@ -120,10 +122,10 @@ msgid "getHexValue >> abnormal remaining bytes "
 msgstr "getHexValue >> anormal kalan baytlar "
 
 msgid "Adding group "
-msgstr "Grup ekleme "
+msgstr "Grup ekleniyor "
 
 msgid "Unable to find eculist"
-msgstr "Eculist bulunamadı"
+msgstr "eculist bulunamadı"
 
 msgid "Cannot find file "
 msgstr "Dosya bulunamadı "
@@ -569,6 +571,10 @@ msgstr "ELM %i hızıyla başlatılıyor..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "COM portta ELM327 veya OBDLINK-SX algılanmadı "
+
+#, fuzzy
+msgid "Initializing device features..."
+msgstr "ELM %i hızıyla başlatılıyor..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr "AB90 HAVA YASTIĞI Sıfırlama"

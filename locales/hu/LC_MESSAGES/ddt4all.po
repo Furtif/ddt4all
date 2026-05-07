@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: 2026-04-10 00:04+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: \n"
@@ -18,112 +18,111 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#, fuzzy
 msgid "DoIP device connected successfully"
-msgstr "ELM327 device detected successfully"
+msgstr "DoIP eszköz sikeresen csatlakoztatva"
 
 msgid "DoIP CAN initialized with Electric ECU support"
-msgstr ""
+msgstr "DoIP CAN inicializálva Elektromos ECU támogatással"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP response: {}"
-msgstr "ELM válasz: "
+msgstr "DoIP válasz: {}"
 
 #, python-brace-format
 msgid "DoIP request failed: {}"
-msgstr ""
+msgstr "DoIP kérés sikertelen: {}"
 
 #, python-brace-format
 msgid "Testing Electric ECU: {}"
-msgstr ""
+msgstr "Elektromos ECU tesztelése: {}"
 
 msgid "Failed to connect to DoIP device"
-msgstr ""
+msgstr "Nem sikerült csatlakozni a DoIP eszközhöz"
 
 msgid "Insufficient vehicle identification data"
-msgstr ""
+msgstr "Elégtelen jármű azonosítási adat"
 
 #, python-brace-format
 msgid "Expected vehicle identification response, got: {}"
-msgstr ""
+msgstr "Várt jármű azonosítási válasz, érkezett: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Vehicle identification failed: {}"
-msgstr "Képernyő inicializálása"
+msgstr "Jármű azonosítás sikertelen: {}"
 
 msgid "Insufficient session control data"
-msgstr ""
+msgstr "Elégtelen munkamenet vezérlő adat"
 
 #, python-brace-format
 msgid "Expected diagnostic session control response, got: {}"
-msgstr ""
+msgstr "Várt diagnosztikai munkamenet vezérlő válasz, érkezett: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Diagnostic session control failed: {}"
-msgstr "Diagnózis munkaszakasz"
+msgstr "Diagnózis munkamenet vezérlés sikertelen: {}"
 
 msgid "Insufficient diagnostic message data"
-msgstr ""
+msgstr "Elégtelen diagnosztikai üzenet adat"
 
 #, python-brace-format
 msgid "Expected diagnostic message response, got: {}"
-msgstr ""
+msgstr "Várt diagnosztikai üzenet válasz, érkezett: {}"
 
 msgid "Insufficient alive check data"
-msgstr ""
+msgstr "Elégtelen ellenőrzési adat"
 
 #, python-brace-format
 msgid "Expected alive check response, got: {}"
-msgstr ""
+msgstr "Várt ellenőrzési válasz, érkezett: {}"
 
 #, python-brace-format
 msgid "Alive check failed: {}"
-msgstr ""
+msgstr "Ellenőrzés sikertelen: {}"
 
 msgid "Not connected to DoIP device"
-msgstr ""
+msgstr "Nincs csatlakozva a DoIP eszközhöz"
 
 #, python-brace-format
 msgid "Invalid hex request format: {}"
-msgstr ""
+msgstr "Érvénytelen hex kérés formátum: {}"
 
 #, python-brace-format
 msgid "DoIP session start failed: {}"
-msgstr ""
+msgstr "DoIP munkamenet indítása sikertelen: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP CAN initialization failed: {}"
-msgstr "Képernyő inicializálása"
+msgstr "DoIP CAN inicializálás sikertelen: {}"
 
 #, python-brace-format
 msgid "DoIP: Electric ECU detected - {}"
-msgstr ""
+msgstr "DoIP: Elektromos ECU észlelve - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr ""
+msgstr "DoIP: Kiterjesztett címzés használata Elektromos Jármű Rendszerekhez"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr ""
+msgstr "DoIP: 29-bites kiterjesztett címzés használata - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr ""
+msgstr "DoIP: 11-bites szabványos címzés használata - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
-msgstr ""
+msgstr "Figyelmeztetés, nem lehet előjeles értéket kapni ehhez"
 
 msgid "Division by zero, please check data item: "
-msgstr ""
+msgstr "Nullával való osztás, kérem ellenőrizze az adatelemet: "
 
 msgid "getHexValue >> abnormal remaining bytes "
-msgstr ""
+msgstr "getHexValue >> abnormális maradék bájtok "
 
 msgid "Adding group "
-msgstr ""
+msgstr "Csoport hozzáadása "
 
 msgid "Unable to find eculist"
-msgstr ""
+msgstr "Nem található eculist"
 
 #, fuzzy
 msgid "Cannot find file "
@@ -580,6 +579,10 @@ msgstr "ELM inicializálása %i sebességgel..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Nem található ELM327 vagy OBDLINK-SX a COM porton: "
+
+#, fuzzy
+msgid "Initializing device features..."
+msgstr "ELM inicializálása %i sebességgel..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr ""

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: 2026-04-10 00:03+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: Czech\n"
@@ -17,112 +17,111 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#, fuzzy
 msgid "DoIP device connected successfully"
-msgstr "Varování: Zařízení nemusí být kompatibilní s ELM327"
+msgstr "Zařízení DoIP úspěšně připojeno"
 
 msgid "DoIP CAN initialized with Electric ECU support"
-msgstr ""
+msgstr "DoIP CAN inicializováno s podporou elektrického ECU"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP response: {}"
-msgstr "Odpověď ELM: "
+msgstr "Odpověď DoIP: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP request failed: {}"
-msgstr "Není uveden žádný požadavek"
+msgstr "Požadavek DoIP selhal: {}"
 
 #, python-brace-format
 msgid "Testing Electric ECU: {}"
-msgstr ""
+msgstr "Testování elektrického ECU: {}"
 
 msgid "Failed to connect to DoIP device"
-msgstr ""
+msgstr "Nepodařilo se připojit k zařízení DoIP"
 
 msgid "Insufficient vehicle identification data"
-msgstr ""
+msgstr "Nedostatečná data pro identifikaci vozidla"
 
 #, python-brace-format
 msgid "Expected vehicle identification response, got: {}"
-msgstr ""
+msgstr "Očekávána odpověď identifikace vozidla, obdrženo: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Vehicle identification failed: {}"
-msgstr "Test připojení se nezdařil"
+msgstr "Identifikace vozidla selhala: {}"
 
 msgid "Insufficient session control data"
-msgstr ""
+msgstr "Nedostatečná data pro řízení relace"
 
 #, python-brace-format
 msgid "Expected diagnostic session control response, got: {}"
-msgstr ""
+msgstr "Očekávána odpověď řízení diagnostické relace, obdrženo: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Diagnostic session control failed: {}"
-msgstr "Diagnostické sezení"
+msgstr "Řízení diagnostické relace selhalo: {}"
 
 msgid "Insufficient diagnostic message data"
-msgstr ""
+msgstr "Nedostatečná data diagnostické zprávy"
 
 #, python-brace-format
 msgid "Expected diagnostic message response, got: {}"
-msgstr ""
+msgstr "Očekávána odpověď diagnostické zprávy, obdrženo: {}"
 
 msgid "Insufficient alive check data"
-msgstr ""
+msgstr "Nedostatečná data pro kontrolu alive"
 
 #, python-brace-format
 msgid "Expected alive check response, got: {}"
-msgstr ""
+msgstr "Očekávána odpověď kontroly alive, obdrženo: {}"
 
 #, python-brace-format
 msgid "Alive check failed: {}"
-msgstr ""
+msgstr "Kontrola alive selhala: {}"
 
 msgid "Not connected to DoIP device"
-msgstr ""
+msgstr "Nepřipojeno k zařízení DoIP"
 
 #, python-brace-format
 msgid "Invalid hex request format: {}"
-msgstr ""
+msgstr "Neplatný formát hex požadavku: {}"
 
 #, python-brace-format
 msgid "DoIP session start failed: {}"
-msgstr ""
+msgstr "Spuštění relace DoIP selhalo: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP CAN initialization failed: {}"
-msgstr "Test připojení se nezdařil"
+msgstr "Inicializace DoIP CAN selhala: {}"
 
 #, python-brace-format
 msgid "DoIP: Electric ECU detected - {}"
-msgstr ""
+msgstr "DoIP: Detekován elektrický ECU - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr ""
+msgstr "DoIP: Použití rozšířeného adresování pro systémy elektrických vozidel"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr ""
+msgstr "DoIP: Použití 29-bitového rozšířeného adresování - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr ""
+msgstr "DoIP: Použití 11-bitového standardního adresování - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
-msgstr "Varování, nelze získat podepsanou hodnotu pro"
+msgstr "Varování, nelze získat hodnotu se znaménkem pro"
 
 msgid "Division by zero, please check data item: "
-msgstr "Dělení nulou, zkontrolujte prosím datovou položku: "
+msgstr "Dělení nulou, prosím zkontrolujte datovou položku: "
 
 msgid "getHexValue >> abnormal remaining bytes "
 msgstr "getHexValue >> abnormální zbývající bajty "
 
 msgid "Adding group "
-msgstr "Přidávání skupiny "
+msgstr "Přidání skupiny "
 
 msgid "Unable to find eculist"
-msgstr "Nelze najít ekologa/ekologa"
+msgstr "Nelze najít eculist"
 
 msgid "Cannot find file "
 msgstr "Cannot find file "
@@ -193,35 +192,35 @@ msgstr "Sériová chyba při čtení_bajtu: %s"
 
 #, python-format
 msgid "Enhanced features enable error: %s"
-msgstr ""
+msgstr "Chyba při povolení rozšířených funkcí: %s"
 
 msgid "STPX mode not supported by this adapter as native, trying fallback..."
-msgstr ""
+msgstr "Režim STPX není tímto adaptérem podporován v nativním režimu, zkoušíme záložní variantu..."
 
 #, fuzzy
 msgid "STPX mode enabled successfully"
-msgstr "Pokus o připojení"
+msgstr "Režim STPX úspěšně povolen"
 
 #, fuzzy, python-format
 msgid "STPX mode enable error: %s"
-msgstr "Sériová chyba při čtení_bajtu: %s"
+msgstr "Chyba při povolení režimu STPX: %s"
 
 #, fuzzy, python-format
 msgid "Pin swap error: %s"
-msgstr "Sériová chyba při čtení_bajtu: %s"
+msgstr "Chyba při prohození pinů: %s"
 
 msgid "VGate pin swapping successful"
-msgstr ""
+msgstr "Prohození pinů VGate úspěšně dokončeno"
 
 msgid "VGate pin swapping failed, using fallback"
-msgstr ""
+msgstr "Prohození pinů VGate selhalo, používá se záložní variantou"
 
 #, fuzzy, python-format
 msgid "VGate pin swap error: %s"
-msgstr "Sériová chyba při čtení_bajtu: %s"
+msgstr "Chyba při prohození pinů VGate: %s"
 
 msgid "OBDLink pin swapping completed"
-msgstr ""
+msgstr "OBDLink prohození pinů dokončeno"
 
 #, python-format
 msgid "OBDLink pin swap error: %s"
@@ -574,6 +573,10 @@ msgstr "Inicializace ELM rychlostí %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Na portu COM nebyl detekován ELM327 ani OBDLINK-SX "
+
+#, fuzzy
+msgid "Initializing device features..."
+msgstr "Inicializace ELM rychlostí %i..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr "Reset airbagu AB90"

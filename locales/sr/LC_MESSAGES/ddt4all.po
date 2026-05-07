@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: 2026-04-10 00:05+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: \n"
@@ -18,112 +18,111 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#, fuzzy
 msgid "DoIP device connected successfully"
-msgstr "ELM327 device detected successfully"
+msgstr "DoIP uređaj uspešno povezan"
 
 msgid "DoIP CAN initialized with Electric ECU support"
-msgstr ""
+msgstr "DoIP CAN inicijalizovan sa podrškom za električni ECU"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP response: {}"
-msgstr "ELM odgovor: "
+msgstr "DoIP odgovor: {}"
 
 #, python-brace-format
 msgid "DoIP request failed: {}"
-msgstr ""
+msgstr "DoIP zahtev nije uspeo: {}"
 
 #, python-brace-format
 msgid "Testing Electric ECU: {}"
-msgstr ""
+msgstr "Testiranje električnog ECU: {}"
 
 msgid "Failed to connect to DoIP device"
-msgstr ""
+msgstr "Neuspela veza sa DoIP uređajem"
 
 msgid "Insufficient vehicle identification data"
-msgstr ""
+msgstr "Nedovoljni podaci za identifikaciju vozila"
 
 #, python-brace-format
 msgid "Expected vehicle identification response, got: {}"
-msgstr ""
+msgstr "Očekivan odgovor identifikacije vozila, dobijeno: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Vehicle identification failed: {}"
-msgstr "Inicijalizacija prikaza"
+msgstr "Identifikacija vozila nije uspela: {}"
 
 msgid "Insufficient session control data"
-msgstr ""
+msgstr "Nedovoljni podaci za kontrolu sesije"
 
 #, python-brace-format
 msgid "Expected diagnostic session control response, got: {}"
-msgstr ""
+msgstr "Očekivan odgovor kontrole dijagnostičke sesije, dobijeno: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Diagnostic session control failed: {}"
-msgstr "Dijagnosticka sesija"
+msgstr "Kontrola dijagnostičke sesije nije uspela: {}"
 
 msgid "Insufficient diagnostic message data"
-msgstr ""
+msgstr "Nedovoljni podaci dijagnostičke poruke"
 
 #, python-brace-format
 msgid "Expected diagnostic message response, got: {}"
-msgstr ""
+msgstr "Očekivan odgovor dijagnostičke poruke, Dobijeno: {}"
 
 msgid "Insufficient alive check data"
-msgstr ""
+msgstr "Nedovoljni podaci za proveru alive"
 
 #, python-brace-format
 msgid "Expected alive check response, got: {}"
-msgstr ""
+msgstr "Očekivan odgovor provere alive, Dobijeno: {}"
 
 #, python-brace-format
 msgid "Alive check failed: {}"
-msgstr ""
+msgstr "Provera alive nije uspela: {}"
 
 msgid "Not connected to DoIP device"
-msgstr ""
+msgstr "Nije povezano sa DoIP uređajem"
 
 #, python-brace-format
 msgid "Invalid hex request format: {}"
-msgstr ""
+msgstr "Neispravan format hex zahteva: {}"
 
 #, python-brace-format
 msgid "DoIP session start failed: {}"
-msgstr ""
+msgstr "Pokretanje DoIP sesije nije uspelo: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP CAN initialization failed: {}"
-msgstr "Inicijalizacija prikaza"
+msgstr "Inicijalizacija DoIP CAN nije uspela: {}"
 
 #, python-brace-format
 msgid "DoIP: Electric ECU detected - {}"
-msgstr ""
+msgstr "DoIP: Električni ECU otkriven - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr ""
+msgstr "DoIP: Korišćenje proširenog adresiranja za sisteme električnih vozila"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr ""
+msgstr "DoIP: Korišćenje 29-bitnog proširenog adresiranja - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr ""
+msgstr "DoIP: Korišćenje 11-bitnog standardnog adresiranja - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
-msgstr ""
+msgstr "Upozorenje, ne može se dobiti vrednost sa znakom za"
 
 msgid "Division by zero, please check data item: "
-msgstr ""
+msgstr "Deljenje sa nulom, molimo proverite stavku podataka: "
 
 msgid "getHexValue >> abnormal remaining bytes "
-msgstr ""
+msgstr "getHexValue >> abnormalni preostali bajtovi "
 
 msgid "Adding group "
-msgstr ""
+msgstr "Dodavanje grupe "
 
 msgid "Unable to find eculist"
-msgstr ""
+msgstr "Ne može se naći eculist"
 
 #, fuzzy
 msgid "Cannot find file "
@@ -140,36 +139,36 @@ msgid "Cannot retrieve functionnal address of ECU"
 msgstr ""
 
 msgid "Generated stream "
-msgstr ""
+msgstr "Генерисани ток "
 
 #, fuzzy
 msgid "Send request stream "
-msgstr "Posalji zahtev u bajtima (HEX)"
+msgstr "Пошај ток захтјева "
 
 #, fuzzy
 msgid "Received stream "
-msgstr "Primi bajtove"
+msgstr "Примљен ток "
 
 msgid "Request ECU Error"
-msgstr ""
+msgstr "Грешка захтјева ECU"
 
 msgid "Decoded values"
-msgstr ""
+msgstr "Декодиране вредности"
 
 msgid "Found: "
-msgstr ""
+msgstr "Пронађено: "
 
 msgid "Identified ECU"
-msgstr ""
+msgstr "Идентификован ECU"
 
 msgid "Found ECU"
-msgstr ""
+msgstr "Пронађено ECU"
 
 msgid "(not perfect match)"
-msgstr ""
+msgstr "(није савршено подудешава)"
 
 msgid "(no relevant ECU file found)"
-msgstr ""
+msgstr "(није пронађено одговарај датотеку ECU)"
 
 #, fuzzy
 msgid "Warning, address"
@@ -580,6 +579,10 @@ msgstr "Initilizing ELM sa brzinom %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Nema ELM327 ili OBDLINK-SX uredjaja na COM portu  "
+
+#, fuzzy
+msgid "Initializing device features..."
+msgstr "Initilizing ELM sa brzinom %i..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr ""

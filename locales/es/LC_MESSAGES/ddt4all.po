@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: 2026-04-10 00:04+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: \n"
@@ -18,112 +18,111 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#, fuzzy
 msgid "DoIP device connected successfully"
-msgstr "Dispositivo ELM327 detectado exitosamente"
+msgstr "Dispositivo DoIP conectado exitosamente"
 
 msgid "DoIP CAN initialized with Electric ECU support"
-msgstr ""
+msgstr "DoIP CAN inicializado con soporte para ECU eléctrico"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP response: {}"
-msgstr "Respuesta ELM : "
+msgstr "Respuesta DoIP: {}"
 
 #, python-brace-format
 msgid "DoIP request failed: {}"
-msgstr ""
+msgstr "Petición DoIP fallida: {}"
 
 #, python-brace-format
 msgid "Testing Electric ECU: {}"
-msgstr ""
+msgstr "Probando ECU eléctrico: {}"
 
 msgid "Failed to connect to DoIP device"
-msgstr ""
+msgstr "Fallo al conectar al dispositivo DoIP"
 
 msgid "Insufficient vehicle identification data"
-msgstr ""
+msgstr "Datos de identificación del vehículo insuficientes"
 
 #, python-brace-format
 msgid "Expected vehicle identification response, got: {}"
-msgstr ""
+msgstr "Se esperaba respuesta de identificación del vehículo, se obtuvo: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Vehicle identification failed: {}"
-msgstr "Inicialización de pantalla"
+msgstr "Identificación del vehículo fallida: {}"
 
 msgid "Insufficient session control data"
-msgstr ""
+msgstr "Datos de control de sesión insuficientes"
 
 #, python-brace-format
 msgid "Expected diagnostic session control response, got: {}"
-msgstr ""
+msgstr "Se esperaba respuesta de control de sesión de diagnóstico, se obtuvo: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Diagnostic session control failed: {}"
-msgstr "Sesión de dianostico"
+msgstr "Control de sesión de diagnóstico fallido: {}"
 
 msgid "Insufficient diagnostic message data"
-msgstr ""
+msgstr "Datos de mensaje de diagnóstico insuficientes"
 
 #, python-brace-format
 msgid "Expected diagnostic message response, got: {}"
-msgstr ""
+msgstr "Se esperaba respuesta de mensaje de diagnóstico, se obtuvo: {}"
 
 msgid "Insufficient alive check data"
-msgstr ""
+msgstr "Datos de verificación de alive insuficientes"
 
 #, python-brace-format
 msgid "Expected alive check response, got: {}"
-msgstr ""
+msgstr "Se esperaba respuesta de verificación alive, se obtuvo: {}"
 
 #, python-brace-format
 msgid "Alive check failed: {}"
-msgstr ""
+msgstr "Verificación alive fallida: {}"
 
 msgid "Not connected to DoIP device"
-msgstr ""
+msgstr "No conectado al dispositivo DoIP"
 
 #, python-brace-format
 msgid "Invalid hex request format: {}"
-msgstr ""
+msgstr "Formato de petición hex no válido: {}"
 
 #, python-brace-format
 msgid "DoIP session start failed: {}"
-msgstr ""
+msgstr "Inicio de sesión DoIP fallido: {}"
 
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "DoIP CAN initialization failed: {}"
-msgstr "Inicialización de pantalla"
+msgstr "Inicialización DoIP CAN fallida: {}"
 
 #, python-brace-format
 msgid "DoIP: Electric ECU detected - {}"
-msgstr ""
+msgstr "DoIP: ECU eléctrico detectado - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr ""
+msgstr "DoIP: Usando direccionamiento extendido para Sistemas de Vehículos Eléctricos"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr ""
+msgstr "DoIP: Usando direccionamiento extendido de 29-bit - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr ""
+msgstr "DoIP: Usando direccionamiento estándar de 11-bit - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
-msgstr ""
+msgstr "Advertencia, no se puede obtener valor con signo para"
 
 msgid "Division by zero, please check data item: "
-msgstr ""
+msgstr "División por cero, por favor revise el elemento de datos: "
 
 msgid "getHexValue >> abnormal remaining bytes "
-msgstr ""
+msgstr "getHexValue >> bytes anormales restantes "
 
 msgid "Adding group "
-msgstr ""
+msgstr "Añadiendo grupo "
 
 msgid "Unable to find eculist"
-msgstr ""
+msgstr "No se puede encontrar eculist"
 
 #, fuzzy
 msgid "Cannot find file "
@@ -580,6 +579,10 @@ msgstr "Iniciando ELM a velocidad %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "No se ha detectado OBDLink-SX o ELM "
+
+#, fuzzy
+msgid "Initializing device features..."
+msgstr "Iniciando ELM a velocidad %i..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr ""

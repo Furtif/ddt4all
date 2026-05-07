@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -553,6 +553,9 @@ msgid "Initializing ELM with speed %i..."
 msgstr ""
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
+msgstr ""
+
+msgid "Initializing device features..."
 msgstr ""
 
 msgid "AB90 AIRBAG Reset"

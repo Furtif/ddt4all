@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DDT4ALL\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-05 17:47+0200\n"
+"POT-Creation-Date: 2026-05-07 01:09+0200\n"
 "PO-Revision-Date: 2026-05-05 17:52+0200\n"
 "Last-Translator: Furtif <msntchat@hotmail.fr>\n"
 "Language-Team: Portuguese\n"
@@ -30,28 +30,28 @@ msgstr "Resposta DoIP: {}"
 
 #, python-brace-format
 msgid "DoIP request failed: {}"
-msgstr "Falha na solicitação DoIP: {}"
+msgstr "Pedido DoIP falhou: {}"
 
 #, python-brace-format
 msgid "Testing Electric ECU: {}"
-msgstr "Testando ECU elétrica: {}"
+msgstr "Testando ECU elétrico: {}"
 
 msgid "Failed to connect to DoIP device"
 msgstr "Falha ao conectar ao dispositivo DoIP"
 
 msgid "Insufficient vehicle identification data"
-msgstr "Dados de identificação do veículo insuficientes"
+msgstr "Dados insuficientes de identificação do veículo"
 
 #, python-brace-format
 msgid "Expected vehicle identification response, got: {}"
-msgstr "Resposta esperada de identificação do veículo, obtida: {}"
+msgstr "Resposta de identificação do veículo esperada, obtido: {}"
 
 #, python-brace-format
 msgid "Vehicle identification failed: {}"
-msgstr "Falha na identificação do veículo: {}"
+msgstr "Identificação do veículo falhou: {}"
 
 msgid "Insufficient session control data"
-msgstr "Dados de controle de sessão insuficientes"
+msgstr "Dados insuficientes de controle de sessão"
 
 #, python-brace-format
 msgid "Expected diagnostic session control response, got: {}"
@@ -62,33 +62,33 @@ msgid "Diagnostic session control failed: {}"
 msgstr "Falha no controle da sessão de diagnóstico: {}"
 
 msgid "Insufficient diagnostic message data"
-msgstr "Dados de mensagens de diagnóstico insuficientes"
+msgstr "Dados insuficientes da mensagem de diagnóstico"
 
 #, python-brace-format
 msgid "Expected diagnostic message response, got: {}"
-msgstr "Resposta esperada da mensagem de diagnóstico obtida: {}"
+msgstr "Resposta de mensagem de diagnóstico esperada, obtida: {}"
 
 msgid "Insufficient alive check data"
-msgstr "Dados de verificação de atividade insuficientes"
+msgstr "Dados insuficientes da verificação alive"
 
 #, python-brace-format
 msgid "Expected alive check response, got: {}"
-msgstr "Resposta esperada da verificação ativa, obtida: {}"
+msgstr "Resposta de verificação alive esperada, obtida: {}"
 
 #, python-brace-format
 msgid "Alive check failed: {}"
-msgstr "Falha na verificação ativa: {}"
+msgstr "Verificação alive falhou: {}"
 
 msgid "Not connected to DoIP device"
 msgstr "Não conectado ao dispositivo DoIP"
 
 #, python-brace-format
 msgid "Invalid hex request format: {}"
-msgstr "Formato de solicitação hexadecimal inválido: {}"
+msgstr "Formato de pedido hex inválido: {}"
 
 #, python-brace-format
 msgid "DoIP session start failed: {}"
-msgstr "Falha no início da sessão DoIP: {}"
+msgstr "Início da sessão DoIP falhou: {}"
 
 #, python-brace-format
 msgid "DoIP CAN initialization failed: {}"
@@ -99,33 +99,32 @@ msgid "DoIP: Electric ECU detected - {}"
 msgstr "DoIP: ECU elétrica detectada - {}"
 
 msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
-msgstr ""
+msgstr "DoIP: Usando endereçamento estendido para Sistemas de Veículos Elétricos"
 "DoIP: Usando endereçamento estendido para sistemas de veículos elétricos"
 
 #, python-brace-format
 msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
-msgstr ""
+msgstr "DoIP: Usando endereçamento estendido de 29-bit - TX:0x{:04X}, RX:0x{:04X}"
 "DoIP: usando endereçamento estendido de 29 bits - TX:0x{:04X}, RX:0x{:04X}"
 
 #, python-brace-format
 msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
-msgstr ""
-"DoIP: usando endereçamento padrão de 11 bits - TX:0x{:03X}, RX:0x{:03X}"
+msgstr "DoIP: usando endereçamento padrão de 11 bits - TX:0x{:03X}, RX:0x{:03X}"
 
 msgid "Warning, cannot get signed value for"
-msgstr "Aviso, não é possível obter o valor assinado para"
+msgstr "Aviso, não é possível obter valor com sinal para"
 
 msgid "Division by zero, please check data item: "
-msgstr "Divisão por zero, verifique o item de dados: "
+msgstr "Divisão por zero, por favor verifique o item de dados: "
 
 msgid "getHexValue >> abnormal remaining bytes "
-msgstr "getHexValue >> bytes restantes anormais "
+msgstr "getHexValue >> bytes analisados !"
 
 msgid "Adding group "
 msgstr "Adicionando grupo "
 
 msgid "Unable to find eculist"
-msgstr "Não foi possível encontrar o eculista"
+msgstr "Não é possível encontrar eculist"
 
 msgid "Cannot find file "
 msgstr "Não é possível encontrar o arquivo "
@@ -198,7 +197,7 @@ msgid "Enhanced features enable error: %s"
 msgstr "Erro ao ativar recursos avançados: %s"
 
 msgid "STPX mode not supported by this adapter as native, trying fallback..."
-msgstr ""
+msgstr "Modo STPX não suportado nativamente por este adaptador, tentando alternativa..."
 "Modo STPX não suportado nativamente por este adaptador, tentando "
 "alternativa..."
 
@@ -231,7 +230,7 @@ msgid "OBDLink pin swap error: %s"
 msgstr "Erro na troca de pinos OBDLink: %s"
 
 msgid "DerleK USB-DIAG2 uses proprietary protocol - no AT commands needed"
-msgstr ""
+msgstr "DerleK USB-DIAG2 usa protocolo proprietário – não são necessários comandos AT"
 "DerleK USB-DIAG2 usa protocolo proprietário – não são necessários comandos AT"
 
 #, python-format
@@ -239,7 +238,7 @@ msgid "DerleK USB-DIAG2 pin swap error: %s"
 msgstr "Erro na troca de pinos DerleK USB-DIAG2: %s"
 
 msgid "DerleK USB-DIAG3 uses proprietary protocol - no AT commands needed"
-msgstr ""
+msgstr "DerleK USB-DIAG3 usa protocolo proprietário – não são necessários comandos AT"
 "DerleK USB-DIAG3 usa protocolo proprietário – não são necessários comandos AT"
 
 #, python-format
@@ -262,12 +261,12 @@ msgstr "Erro na troca de pinos ELS27: %s"
 
 #, python-format
 msgid "Device %s initialized successfully with enhanced features"
-msgstr ""
+msgstr "O dispositivo %s foi inicializado com sucesso com funcionalidades melhoradas"
 "O dispositivo %s foi inicializado com sucesso com funcionalidades melhoradas"
 
 #, python-format
 msgid "Device %s initialized with basic features only"
-msgstr ""
+msgstr "O dispositivo %s foi inicializado apenas com as funcionalidades básicas"
 "O dispositivo %s foi inicializado apenas com as funcionalidades básicas"
 
 #, python-format
@@ -275,10 +274,10 @@ msgid "Device initialization error: %s"
 msgstr "Erro de inicialização do dispositivo: %s"
 
 msgid "Found USB device:"
-msgstr "Dispositivo USB encontrado:"
+msgstr "Dispositivo USB encontrado: %s"
 
-msgid "USB device detection error:"
-msgstr "Erro na detecção do dispositivo USB:"
+msgid "USB device detection error: %s"
+msgstr "Erro na detecção do dispositivo USB: %s"
 
 msgid ""
 "Note: This error does not affect serial communication or bypass cable "
@@ -287,23 +286,23 @@ msgstr ""
 "Nota: este erro não afeta a comunicação serial nem a funcionalidade do cabo "
 "de bypass."
 
-msgid "Trying to open port "
-msgstr "Tentando abrir porta "
+msgid "Trying to open port %s"
+msgstr "Tentando abrir porta %s"
 
 msgid "Port initialization failed"
-msgstr "Porta de iniciação falhou"
+msgstr "Falha na inicialização da porta"
 
 msgid "Port connection failed - port object is invalid"
 msgstr "Conexão com a porta falhou – objeto da porta é inválido"
 
 msgid "No ELM interface on port"
-msgstr "No há interface ELM neste porta"
+msgstr "Não há interface ELM nesta porta"
 
 msgid "OBDLink Connection OK, attempting full speed UART switch"
 msgstr "Conexão OBDLink OK, tentando switch UART de velocidade total"
 
 msgid "Failed to switch OBDLink to "
-msgstr "Falha ao mudar para alterar OBDLink para "
+msgstr "Falha ao mudar para alterar OBDLink para %s"
 
 msgid "OBDLINK Connection OK, using optimal settings"
 msgstr "Conexão OBDLINK de velocidade total OK"
@@ -331,11 +330,11 @@ msgstr "Porta é None – não é possível alterar a velocidade"
 
 #, python-format
 msgid "%s switched baudrate OK, changing UART speed now..."
-msgstr "%s mudou baurate OK, mudando a velocidade do UART agora..."
+msgstr "%s mudou baudrate OK, mudando a velocidade do UART agora..."
 
 #, python-format
 msgid "%s STN connection established"
-msgstr "Conexão com successo %s"
+msgstr "Conexão STN estabelecida com %s"
 
 #, python-format
 msgid "%s Version: "
@@ -352,7 +351,7 @@ msgid "Unsupported baudrate for ELM: %s"
 msgstr "Baudrate não suportada para o ELM: %s"
 
 msgid "ELM baudrate switched OK, changing UART speed now..."
-msgstr ""
+msgstr "Taxa de transmissão do ELM ativada, alterando a velocidade do UART agora..."
 "Taxa de transmissão do ELM ativada, alterando a velocidade do UART agora..."
 
 msgid "ELM full speed connection OK "
@@ -366,7 +365,7 @@ msgstr "O ELM não informou a versão após a troca de velocidade"
 
 #, python-format
 msgid "Your ELM does not support baudrate %s"
-msgstr "O seu WIFI não suporta racio de bauds %s"
+msgstr "O seu ELM não suporta baudrate %s"
 
 msgid "ELM reset..."
 msgstr "Reinicialização do ELM..."
@@ -555,11 +554,11 @@ msgid "Warning: Vendor request failed:"
 msgstr "Aviso: a solicitação do fornecedor falhou:"
 
 msgid "Warning: PyQtWebEngine not available. Some features may be limited."
-msgstr ""
+msgstr "Aviso: PyQtWebEngine não disponível. Alguns recursos podem ser limitados."
 "Aviso: PyQtWebEngine não disponível. Alguns recursos podem ser limitados."
 
 msgid "resources/projects.json not found or invalid."
-msgstr ""
+msgstr "O ficheiro resources/projects.json não foi encontrado ou está inválido."
 "O ficheiro resources/projects.json não foi encontrado ou está inválido."
 
 msgid "Using custom DDT database"
@@ -574,6 +573,10 @@ msgstr "Inicializando o ELM com velocidade %i..."
 
 msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Nenhum ELM327 ou OBDLINK-SX detectado na porta COM "
+
+#, fuzzy
+msgid "Initializing device features..."
+msgstr "Inicializando o ELM com velocidade %i..."
 
 msgid "AB90 AIRBAG Reset"
 msgstr "Reinicialização do AIRBAG AB90"

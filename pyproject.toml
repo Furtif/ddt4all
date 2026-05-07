@@ -22,7 +22,6 @@ dependencies = [
     "pywin32>=227; sys_platform == 'win32'",
 
     # Safe ranges to avoid breaking changes
-    "deep_translator>=1.11.4,<2.0.0",
     "polib>=1.2.0,<2.0.0",
 ]
 
