@@ -249,7 +249,7 @@ class EcuScanner:
                 self._close_uds_session()
                 return False
         try:
-            supplier = bytes.fromhex(can_response[6:132]).decode("utf8", "ignore")
+            supplier = bytes.fromhex(can_response.replace(' ', '')[6:132]).decode("utf8", "ignore")
         except ValueError:
             self._close_uds_session()
             return False
