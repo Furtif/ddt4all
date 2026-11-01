@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -416,10 +416,10 @@ msgid "FAIL"
 msgstr "CHYBA"
 
 msgid "OK/TIMEOUT"
-msgstr "OK/ČASOVÝ LIMIT"
+msgstr "POTVRDIT/ČASOVÝ LIMIT"
 
 msgid "OK"
-msgstr "OK"
+msgstr "Potvrdit"
 
 msgid "Incompatible adapter on ARM core"
 msgstr "Nekompatibilní adaptér na jádru ARM"
@@ -513,11 +513,13 @@ msgstr "Neočekávaná chyba WiFi: %s"
 
 #, python-format
 msgid "WiFi recv: %s"
-msgstr "WiFi recv: %s"
+msgstr "Příjem WiFi: %s"
 
 #, python-format
 msgid "WiFi socket timed out %s times in a row; reconnect scheduled"
 msgstr ""
+"Vypršel časový limit soketu WiFi %s-krát za sebou; naplánováno opětovné "
+"připojení"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
@@ -652,7 +654,7 @@ msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Na COM portu nebylo detekováno žádné ELM327 nebo OBDLINK-SX "
 
 msgid "AB90 AIRBAG Reset"
-msgstr "Resetování AIRBAG AB90"
+msgstr "Resetování airbagu AB90"
 
 msgid "Airbag Tools"
 msgstr "Nástroje pro airbagy"
@@ -673,7 +675,7 @@ msgid "Waiting"
 msgstr "Čekání"
 
 msgid "Virginize ACU"
-msgstr "Virginizovat ACU"
+msgstr "Uvést ACU do čistého stavu"
 
 msgid "Cannot connect to ECU"
 msgstr "Nelze se připojit k ECU"
@@ -689,7 +691,7 @@ msgstr "<font color='green'>NEHODA NEDETEKOVÁNA</font>"
 
 #, python-format
 msgid "SDS stream: %s"
-msgstr "SDS proud: %s"
+msgstr "Datový proud SDS: %s"
 
 msgid "<font color='green'>CLEAR EXECUTED</font>"
 msgstr "<font color='green'>CLEAR PROVEDEN</font>"
@@ -723,19 +725,19 @@ msgid "CANCEL"
 msgstr "ZRUŠIT"
 
 msgid "Algo 2"
-msgstr "Algo 2"
+msgstr "Algoritmus 2"
 
 msgid "ISK"
-msgstr "ISK"
+msgstr "Kód ISK"
 
 msgid "PIN"
-msgstr "PIN"
+msgstr "Kód PIN"
 
 msgid "Num key learnt"
 msgstr "Počet naučených klíčů"
 
 msgid "CARD IDE"
-msgstr "IDE KARTY"
+msgstr "Identifikátor karty (IDE)"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr "Nelze získat ISK, zkontrolujte připojení a kompatibilitu UCH"
@@ -750,7 +752,7 @@ msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
 msgstr "<font color='green'>PIN KÓD OK / UČENÍ UCH</font>"
 
 msgid "Modus/Clio III EPS Reset"
-msgstr "Reset EPS u Modusu/Clia III"
+msgstr "Resetování EPS Modus/Clio III"
 
 msgid "EPS Tools"
 msgstr "Nástroje EPS"
@@ -766,7 +768,7 @@ msgid "BLANK STATUS & VIN READ"
 msgstr "PRÁZDNÉ STAVY A ČTENÍ VIN"
 
 msgid "Virginize EPS"
-msgstr "Virginize EPS"
+msgstr "Uvést EPS do čistého stavu"
 
 msgid "VIN - READ"
 msgstr "VIN - ČTENÍ"
@@ -778,7 +780,7 @@ msgid "Write VIN"
 msgstr "Zapsat VIN"
 
 msgid "<font color='red'>VIN - INVALID</font>"
-msgstr "<font color='red'>VIN – NEPLATNÉ</font>"
+msgstr "<font color='red'>VIN - NEPLATNÝ</font>"
 
 msgid "<font color='red'>VIN - BAD LENGTH</font>"
 msgstr "<font color='red'>VIN - ŠPATNÁ DÉLKA</font>"
@@ -790,17 +792,17 @@ msgid "<font color='green'>VIN WRITE OK</font>"
 msgstr "<font color='green'>ZÁPIS VIN OK</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr "<font color='green'>EPS virgin</font>"
+msgstr "<font color='green'>Čistá EPS</font>"
 
 msgid "<font color='red'>EPS coded</font>"
 msgstr "<font color='red'>EPS kódovaný</font>"
 
 #, python-format
 msgid "SdSC0 stream: %s"
-msgstr "Proud SdSC0: %s"
+msgstr "Datový proud SdSC0: %s"
 
 msgid "Clio IV EPS Reset"
-msgstr "Reset EPS u Clia IV"
+msgstr "Resetování EPS Clio IV"
 
 msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
@@ -820,13 +822,13 @@ msgstr "<font color='red'>NEOČEKÁVANÁ REAKCE</font>"
 
 #, python-format
 msgid "SdSFA stream: %s"
-msgstr "Stream SdSFA: %s"
+msgstr "Datový proud SdSFA: %s"
 
 msgid "DDT2000 command macros (.cmd)"
-msgstr ""
+msgstr "Příkazová makra DDT2000 (.cmd)"
 
 msgid "Macros"
-msgstr ""
+msgstr "Příkazová makra"
 
 msgid ""
 "ERROR: command should have 5 parameters: \n"
@@ -842,6 +844,18 @@ msgid ""
 "        <hex value> - bit value\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"CHYBA: příkaz musí mít 5 parametrů: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value>\n"
+"        <lid> - místní identifikátor ECU. Délka by měla být 2 znaky pro KWP "
+"nebo 4 pro CAN\n"
+"        <rsp_len> - délka odpovědi na příkaz včetně bajtů kladné odpovědi, "
+"odpovídá MinBytes z databáze ddt\n"
+"        <offset> - posun v bajtech k prvnímu změněnému bajtu (začíná od 1, "
+"nikoli od 0) \n"
+"        <hex mask> - bitová maska pro změněné bity, 1 - měnitelný, 0 - "
+"nedotknutelný\n"
+"        <hex value> - hodnota bitu\n"
+"    <hex mask> a <hex value> musí mít stejnou délku\n"
 
 msgid ""
 "ERROR: command should have 6 parameters: \n"
@@ -858,6 +872,19 @@ msgid ""
 "        <label> - label to go\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"CHYBA: příkaz musí mít 6 parametrů: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - místní identifikátor ECU. Délka by měla být 2 znaky pro KWP "
+"nebo 4 pro CAN\n"
+"        <rsp_len> - délka odpovědi na příkaz včetně bajtů kladné odpovědi, "
+"odpovídá MinBytes z databáze ddt\n"
+"        <offset> - posun v bajtech k prvnímu změněnému bajtu (začíná od 1, "
+"nikoli od 0) \n"
+"        <hex mask> - bitová maska pro změněné bity, 1 - měnitelný, 0 - "
+"nedotknutelný\n"
+"        <hex value> - hodnota bitu\n"
+"        <label> - cílové návěstí\n"
+"    <hex mask> a <hex value> musí mít stejnou délku\n"
 
 msgid ""
 "ERROR: command should have 4 or 7 parameters: \n"
@@ -875,347 +902,363 @@ msgid ""
 "        <val divider> - value divider\n"
 "\n"
 msgstr ""
+"CHYBA: příkaz musí mít 4 nebo 7 parametrů: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - místní identifikátor ECU. Délka by měla být 2 znaky pro KWP "
+"nebo 4 pro CAN\n"
+"        <rsp_len> - délka odpovědi na příkaz včetně bajtů kladné odpovědi, "
+"odpovídá MinBytes z databáze ddt\n"
+"        <offset> - posun v bajtech k prvnímu změněnému bajtu (začíná od 1, "
+"nikoli od 0) \n"
+"        <hex mask> - bitová maska pro změněné bity, 1 - měnitelný, 0 - "
+"nedotknutelný\n"
+"        <val step> - krok hodnoty\n"
+"        <val offset> - posun hodnoty\n"
+"        <val divider> - dělitel hodnoty\n"
+"\n"
 
 msgid "No ELM connection (plugin need_hw=True ?)"
-msgstr ""
+msgstr "Žádné připojení k ELM (vyžaduje plugin need_hw=True ?)"
 
 #, python-format
 msgid "guard: %(limit)d steps exceeded (infinite loop?)"
-msgstr ""
+msgstr "pojistka: překročeno %(limit)d kroků (nekonečná smyčka?)"
 
-#, fuzzy
 msgid "# abort requested"
-msgstr "Není uveden žádný požadavek"
+msgstr "# požadováno přerušení"
 
 #, python-format
 msgid "openning file: %(file)s"
-msgstr ""
+msgstr "otevírání souboru: %(file)s"
 
 #, python-format
 msgid "%(file)s:%(line)d: empty macro name"
-msgstr ""
+msgstr "%(file)s:%(line)d: prázdný název makra"
 
 #, python-format
 msgid "%(file)s:%(line)d: unexpected end of macro"
-msgstr ""
+msgstr "%(file)s:%(line)d: neočekávaný konec makra"
 
 #, python-format
 msgid "%(file)s: includes are nested too deeply (%(limit)d levels)"
-msgstr ""
+msgstr "%(file)s: vnoření zahrnutí je příliš hluboké (%(limit)d úrovní)"
 
 #, python-format
 msgid "Cannot read %(file)s: %(error)s"
-msgstr ""
+msgstr "Nelze číst %(file)s: %(error)s"
 
 #, python-format
 msgid "%(file)s: included file not found: %(target)s"
-msgstr ""
+msgstr "%(file)s: zahrnutý soubor nebyl nalezen: %(target)s"
 
 #, python-format
 msgid "include loop: %(target)s"
-msgstr ""
+msgstr "smyčka zahrnutí: %(target)s"
 
 #, python-format
 msgid "# include %(file)s"
-msgstr ""
+msgstr "# zahrnutí souboru %(file)s"
 
 #, python-format
 msgid "  %(name)s = %(value)s"
-msgstr ""
+msgstr "  %(name)s = %(value)s"
 
 #, python-format
 msgid "  %(macro)s"
-msgstr ""
+msgstr "  %(macro)s"
 
 msgid "[h]elp                 - this help"
-msgstr ""
+msgstr "[h]elp                 - tato nápověda"
 
 msgid "[q]uit, [e]xit, end    - exit from terminal"
-msgstr ""
+msgstr "[q]uit, [e]xit, end    - ukončit terminál"
 
 msgid "wait|sleep x           - wait x seconds"
-msgstr ""
+msgstr "wait|sleep x           - čekat x sekund"
 
 msgid "include <file>         - play another .cmd here"
-msgstr ""
+msgstr "include <soubor>       - spustit jiný .cmd zde"
 
 msgid "Variables:"
-msgstr ""
+msgstr "Proměnné:"
 
 msgid "Macros:"
-msgstr ""
+msgstr "Příkazová makra:"
 
 #, python-format
 msgid "Error: unknown macro name: %(macro)s"
-msgstr ""
+msgstr "Chyba: neznámý název makra: %(macro)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error: recursion prohibited: %(macro)s"
-msgstr "Chyba při uzavírání portu: %s"
+msgstr "Chyba: rekurze je zakázána: %(macro)s"
 
 #, python-format
 msgid "### %(file)s : %(count)d lines"
-msgstr ""
+msgstr "### %(file)s : %(count)d řádků"
 
 msgid "# end of command file"
-msgstr ""
+msgstr "# konec příkazového souboru"
 
 #, python-format
 msgid "> %(line)s"
-msgstr ""
+msgstr "> %(line)s"
 
 #, python-format
 msgid "Error: unknown label '%(label)s'"
-msgstr ""
+msgstr "Chyba: neznámé návěstí '%(label)s'"
 
 msgid "###### Variables #####"
-msgstr ""
+msgstr "###### Proměnné #####"
 
 #, python-format
 msgid "# %(name)20s = %(value)s"
-msgstr ""
+msgstr "# %(name)20s = %(value)s"
 
 #, python-format
 msgid "Error: unknown variable %(name)s"
-msgstr ""
+msgstr "Chyba: neznámá proměnná %(name)s"
 
 msgid "Error: too many variables in one line"
-msgstr ""
+msgstr "Chyba: příliš mnoho proměnných na jednom řádku"
 
 msgid "#(subst)"
-msgstr ""
+msgstr "#(subst)"
 
 #, python-format
 msgid "# delay: %(seconds)s"
-msgstr ""
+msgstr "# zpoždění: %(seconds)s"
 
 #, python-format
 msgid "Unrecognized init command: %(name)s"
-msgstr ""
+msgstr "Nerozpoznaný inicializační příkaz: %(name)s"
 
 msgid "ERROR: Unknown function"
-msgstr ""
+msgstr "CHYBA: Neznámá funkce"
 
 msgid "read  value: "
-msgstr ""
+msgstr "přečtená hodnota: "
 
 msgid "ERROR: Length is unexpected"
-msgstr ""
+msgstr "CHYBA: Neočekávaná délka"
 
 msgid "ERROR: Wrong simbol in response"
-msgstr ""
+msgstr "CHYBA: Nesprávný symbol v odpovědi"
 
 msgid "ERROR: Not positive response"
-msgstr ""
+msgstr "CHYBA: Odpověď není kladná"
 
 msgid "Match. Exit"
-msgstr ""
+msgstr "Shoda nalezena. Konec"
 
 msgid "Not match. Continue"
-msgstr ""
+msgstr "Bez shody. Pokračovat"
 
 msgid "Not match. Exit"
-msgstr ""
+msgstr "Bez shody. Konec"
 
 msgid "Match. Continue"
-msgstr ""
+msgstr "Shoda nalezena. Pokračovat"
 
 msgid "Match. goto: "
-msgstr ""
+msgstr "Shoda nalezena. Přejít na: "
 
 msgid "Not match. goto: "
-msgstr ""
+msgstr "Bez shody. Přejít na: "
 
 #, python-format
 msgid ""
 "# LID(%(lid)s) $rawValue = %(raw)s  $scaledValue = %(scaled)s  $hexValue = "
 "%(hex)s"
-msgstr ""
+msgstr "# LID(%(lid)s)  = %(raw)s   = %(scaled)s   = %(hex)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ERROR: unexpected positive response: %(rsp)s"
-msgstr "Očekávána odpověď kontroly alive, obdrženo: %s"
+msgstr "CHYBA: neočekávaná kladná odpověď: %(rsp)s"
 
 msgid "write value: "
-msgstr ""
+msgstr "zapsaná hodnota: "
 
 msgid "ELM connected"
-msgstr ""
+msgstr "ELM připojeno"
 
-#, fuzzy
 msgid "ELM not connected"
-msgstr "ELM není připojen nebo má špatný COM port"
+msgstr "ELM nepřipojeno"
 
 msgid "installed copy (cmd_macros_lib/macros)"
-msgstr ""
+msgstr "nainstalovaná kopie (cmd_macros_lib/macros)"
 
 msgid "manually chosen folder"
-msgstr ""
+msgstr "ručně zvolená složka"
 
 #, python-format
 msgid "ddt4all tables (%(count)d addresses)"
-msgstr ""
+msgstr "tabulky ddt4all (%(count)d adres)"
 
 #, python-format
 msgid "pyren3 fallback (%(count)d addresses)"
-msgstr ""
+msgstr "záložní pyren3 (%(count)d adres)"
 
 msgid "no table"
-msgstr ""
+msgstr "žádná tabulka"
 
 msgid "pyren3 fallback: disabled"
-msgstr ""
+msgstr "záložní pyren3: zakázáno"
 
 msgid "pyren3 fallback: no entry"
-msgstr ""
+msgstr "záložní pyren3: žádná položka"
 
 #, python-format
 msgid ""
 "pyren3 fallback: %(count)d addresses as a fallback, used only for the "
 "addresses missing from the ddt4all tables"
 msgstr ""
+"záložní pyren3: %(count)d adres jako záloha, použito pouze pro adresy "
+"chybějící v tabulkách ddt4all"
 
 #, python-format
 msgid "pyren3 fallback: %(count)d addresses (source in use)"
-msgstr ""
+msgstr "záložní pyren3: %(count)d adres (zdroj se používá)"
 
 msgid "Done"
-msgstr ""
+msgstr "Hotovo"
 
 #, python-format
 msgid "ERROR: %(error)s"
-msgstr ""
+msgstr "CHYBA: %(error)s"
 
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
 msgid "DDT2000 command macros"
-msgstr ""
+msgstr "Příkazová makra DDT2000"
 
 msgid "Macro folder (.cmd and *.txt)"
-msgstr ""
+msgstr "Složka maker (.cmd a *.txt)"
 
 msgid "Browse"
-msgstr ""
+msgstr "Procházet"
 
 msgid "Refresh"
 msgstr "Obnovit"
 
 msgid "Macro folder:"
-msgstr ""
+msgstr "Složka maker:"
 
 msgid "Log ELM traffic to file"
-msgstr ""
+msgstr "Zaznamenávat provoz ELM do souboru"
 
 msgid "Log file name:"
-msgstr ""
+msgstr "Název souboru protokolu:"
 
 msgid ".cmd files (by ECU)"
-msgstr ""
+msgstr "Soubory .cmd (podle ECU)"
 
 msgid "Named macros (by *.txt)"
-msgstr ""
+msgstr "Pojmenovaná makra (podle *.txt)"
 
 msgid "Macros by ECU (.cmd)"
-msgstr ""
+msgstr "Makra podle ECU (.cmd)"
 
 msgid "Named macros (*.txt)"
-msgstr ""
+msgstr "Pojmenovaná makra (*.txt)"
 
-#, fuzzy
 msgid "Send key"
-msgstr "Odeslat bajty"
+msgstr "Odeslat klávesu"
 
 msgid "Key for 'if_key':"
-msgstr ""
+msgstr "Klávesa pro 'if_key':"
 
-#, fuzzy
 msgid "Execute .cmd"
-msgstr "Spustit"
+msgstr "Spustit .cmd"
 
-#, fuzzy
 msgid "Execute macro"
-msgstr "Spustit"
+msgstr "Spustit makro"
 
 msgid "Stop"
-msgstr ""
+msgstr "Zastavit"
 
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 msgid "Log"
-msgstr ""
+msgstr "Protokol"
 
 msgid "Macro folder"
-msgstr ""
+msgstr "Složka maker"
 
 #, python-format
 msgid "Parsing error %(file)s: %(error)s"
-msgstr ""
+msgstr "Chyba analýzy v %(file)s: %(error)s"
 
 #, python-format
 msgid "%(macro)s (defined in %(file)s)"
-msgstr ""
+msgstr "%(macro)s (definováno v %(file)s)"
 
 #, python-format
 msgid "Host: %(host)s"
-msgstr ""
+msgstr "Hostitel: %(host)s"
 
 #, python-format
 msgid "Addresses: %(legacy)s"
-msgstr ""
+msgstr "Adresy: %(legacy)s"
 
 msgid ""
 "Format: DDT2000 command macros (pyren3); the bundled macros target Renault "
 "ECUs, address resolution follows the vehicle loaded in ddt4all."
 msgstr ""
+"Formát: příkazová makra DDT2000 (pyren3); přibalená makra jsou určena pro "
+"ECU Renault, překlad adres se řídí podle vozidla načteného v ddt4all."
 
 #, python-format
 msgid "Folder: %(folder)s"
-msgstr ""
+msgstr "Složka: %(folder)s"
 
 msgid "(none)"
-msgstr ""
+msgstr "(žádné)"
 
 #, python-format
 msgid "Source: %(source)s"
-msgstr ""
+msgstr "Zdroj: %(source)s"
 
 #, python-format
 msgid ""
 "%(groups)d ECU group(s), %(files)d .cmd file(s), %(named)d named macro(s) in "
 "%(txt)d .txt file(s)"
 msgstr ""
+"%(groups)d skupin ECU, %(files)d souborů .cmd, %(named)d pojmenovaných maker "
+"v %(txt)d souborech .txt"
 
 #, python-format
 msgid "Journal files: %(elm)s and %(ecu)s"
-msgstr ""
+msgstr "Soubory deníku: %(elm)s a %(ecu)s"
 
 msgid "No ELM connection: the journal is not written."
-msgstr ""
+msgstr "Žádné připojení k ELM: deník se nezapisuje."
 
 #, python-format
 msgid "Cannot write the journal (%(error)s)"
-msgstr ""
+msgstr "Deník nelze zapsat (%(error)s)"
 
 #, python-format
 msgid "Journal: %(elm)s"
-msgstr ""
+msgstr "Deník: %(elm)s"
 
 #, python-format
 msgid "Journal: %(ecu)s"
-msgstr ""
+msgstr "Deník: %(ecu)s"
 
 msgid "ddt4all not found (console mode only)"
-msgstr ""
+msgstr "ddt4all nenalezen (pouze konzolový režim)"
 
 #, python-format
 msgid "ddt4all %(flavor)s | %(elm)s | addressing: %(addressing)s"
-msgstr ""
+msgstr "ddt4all %(flavor)s | %(elm)s | adresování: %(addressing)s"
 
 #, python-format
 msgid "%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d named macro(s)"
 msgstr ""
+"%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d pojmenovaných maker"
 
 #, python-format
 msgid ""
@@ -1226,49 +1269,56 @@ msgid ""
 "Source: %(source)s\n"
 "%(journal)s"
 msgstr ""
+"%(host)s\n"
+"Adresy: %(legacy)s\n"
+"%(detail)s\n"
+"Složka: %(folder)s\n"
+"Zdroj: %(source)s\n"
+"%(journal)s"
 
 msgid "Journal: disabled"
-msgstr ""
+msgstr "Deník: zakázán"
 
 msgid "A macro is already running."
-msgstr ""
+msgstr "Makro již běží."
 
 msgid "ddt4all is not available: this plugin must be started from ddt4all."
-msgstr ""
+msgstr "ddt4all není k dispozici: tento plugin musí být spuštěn z ddt4all."
 
 msgid "No ELM connection: connect ddt4all to the ELM before running a macro."
-msgstr ""
+msgstr "Žádné připojení k ELM: před spuštěním makra připojte ddt4all k ELM."
 
 #, python-format
 msgid "--- START %(kind)s: %(macro)s ---"
-msgstr ""
+msgstr "--- SPUŠTĚNÍ %(kind)s: %(macro)s ---"
 
 msgid "Select a .cmd file (double-click to run)."
-msgstr ""
+msgstr "Vyberte soubor .cmd (dvojklikem spusťte)."
 
 msgid "Select a named macro (double-click to run)."
-msgstr ""
+msgstr "Vyberte pojmenované makro (dvojklikem spusťte)."
 
 #, python-format
 msgid "# key '%(key)s' sent"
-msgstr ""
+msgstr "# klávesa '%(key)s' odeslána"
 
-#, fuzzy
 msgid "# stop requested..."
-msgstr "Není uveden žádný požadavek"
+msgstr "# požadováno zastavení..."
 
 #, python-format
 msgid "--- END: %(status)s ---"
-msgstr ""
+msgstr "--- KONEC: %(status)s ---"
 
 #, python-format
 msgid ""
 "WARNING: address %(addr)s resolves to %(tx)s/%(rx)s (ddt4all) but pyren3 "
 "uses %(pltx)s/%(plrx)s"
 msgstr ""
+"VAROVÁNÍ: adresa %(addr)s odpovídá %(tx)s/%(rx)s (ddt4all), ale pyren3 "
+"používá %(pltx)s/%(plrx)s"
 
 msgid "Laguna II UCH Reset"
-msgstr "Resetování hlavní řídicí jednotky Laguna II"
+msgstr "Resetování UCH Laguna II"
 
 msgid "UCH Tools"
 msgstr "Nástroje UCH"
@@ -1284,16 +1334,16 @@ msgid "Check UCH Virgin"
 msgstr "Zkontrolujte UCH Virgin"
 
 msgid "Virginize UCH"
-msgstr "Virginize UCH"
+msgstr "Uvést UCH do čistého stavu"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr "<font color='green'>UCH virgin</font>"
+msgstr "<font color='green'>Čistá UCH</font>"
 
 msgid "<font color='red'>UCH coded</font>"
 msgstr "<font color='red'>UCH kódovaný</font>"
 
 msgid "Laguna III UCH Reset"
-msgstr "Resetování hlavní řídicí jednotky Laguny III"
+msgstr "Resetování UCH Laguna III"
 
 msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1303,7 +1353,7 @@ msgstr ""
 "UCH<br>JDI PŘÍČ, NEMÁŠ-LI PONĚTÍ, CO TO ZNAMENÁ, ZMIZÍ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr "Reset UCH Megane/Scenic II"
+msgstr "Resetování UCH Megane/Scenic II"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1313,7 +1363,7 @@ msgstr ""
 "UCH<br>JDI PŘÍČ, NEMÁŠ-LI PONĚTÍ, CO TO ZNAMENÁ</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr "Reset AIRBAG Megane3"
+msgstr "Resetování airbagu Megane3"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
@@ -1325,10 +1375,10 @@ msgstr ""
 
 #, python-format
 msgid "SDS FA stream: %s"
-msgstr "SDS FA proud: %s"
+msgstr "Datový proud SDS FA: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr "Reset EPS ZOE/FLENCE/Megane III/Scenic III"
+msgstr "Resetování EPS ZOE/FLENCE/Megane III/Scenic III"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
@@ -1340,7 +1390,7 @@ msgstr ""
 "ZRUŠTE HO</font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr "Reset UCH Megane/Scenic III"
+msgstr "Resetování UCH Megane/Scenic III"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1350,7 +1400,7 @@ msgstr ""
 "UCH<br>JDI PŘÍČ, NEMÁŠ-LI PONĚTÍ, CO TO ZNAMENÁ, ZMIZÍ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr "Reset AIRBAG RSAT4"
+msgstr "Resetování airbagu RSAT4"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
@@ -1363,16 +1413,16 @@ msgstr ""
 
 #, python-format
 msgid "SdSEX stream: %s"
-msgstr "Stream SdSEX: %s"
+msgstr "Datový proud SdSEX: %s"
 
 msgid "CRC calculator"
-msgstr "KALKULAČKA CRC"
+msgstr "Kalkulačka CRC"
 
 msgid "VIN"
-msgstr "Vin"
+msgstr "Číslo VIN"
 
 msgid "CRC Calculator"
-msgstr "KALKULAČKA CRC"
+msgstr "Kalkulačka CRC"
 
 msgid "CRC CALCULATOR"
 msgstr "KALKULAČKA CRC"
@@ -1408,7 +1458,7 @@ msgid "V_Timer_DrivWEP_ON"
 msgstr "V_Časovač_DrivWEP_Zapnuto"
 
 msgid "Reset"
-msgstr "Reset"
+msgstr "Resetovat"
 
 msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
@@ -1691,7 +1741,7 @@ msgid "Cannot find data "
 msgstr "Nelze najít data "
 
 msgid " vs "
-msgstr " vs "
+msgstr " proti "
 
 msgid "Cannot draw input "
 msgstr "Nelze nakreslit vstup "
@@ -1725,7 +1775,7 @@ msgid "ID frame :"
 msgstr "ID rám:"
 
 msgid "Search vehicle"
-msgstr ""
+msgstr "Hledat vozidlo"
 
 msgid "No vehicles available"
 msgstr "Nejsou k dispozici žádná vozidla"
@@ -1773,13 +1823,13 @@ msgid "Screen"
 msgstr "Přidat na obrazovku"
 
 msgid "CAN Sniffer"
-msgstr "Skenování CAN"
+msgstr "Analyzátor CAN"
 
 msgid "Requests"
 msgstr "Znovu načíst požadavky"
 
 msgid "Data"
-msgstr "Data"
+msgstr "Údaje"
 
 msgid "Buttons"
 msgstr "Tlačítka"
@@ -1908,7 +1958,7 @@ msgid "Rename"
 msgstr "Přejmenovat"
 
 msgid "Plugins"
-msgstr "Zásuvné moduly"
+msgstr "Pluginy"
 
 msgid "Cannot load plugin "
 msgstr "Nelze načíst plugin "
@@ -1917,7 +1967,7 @@ msgid "Help"
 msgstr "Nápověda"
 
 msgid "Web Wiki"
-msgstr "Web Wiki"
+msgstr "Webová Wiki"
 
 msgid "About Developers"
 msgstr "O vývojářích"
@@ -1975,10 +2025,10 @@ msgid "CAN Line 2@125K"
 msgstr "CAN linka 2@125K"
 
 msgid "KWP2000"
-msgstr "KWP2000"
+msgstr "Protokol KWP2000"
 
 msgid "ISO8"
-msgstr "ISO8"
+msgstr "Protokol ISO8"
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "Uložit databázi (s příponou '.zip')"
@@ -2044,25 +2094,25 @@ msgid "ELM port selection"
 msgstr "Výběr portu ELM"
 
 msgid "USB"
-msgstr "USB"
+msgstr "Připojení USB"
 
 msgid "WiFi"
-msgstr "WiFi"
+msgstr "Wi-Fi"
 
 msgid "Bluetooth"
-msgstr "Bluetooth"
+msgstr "Připojení Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr "OBDLINK SX/EX"
+msgstr "Adaptér OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
 msgstr "ELS27/ELS27 V5 – Může se zobrazovat jako zařízení FTDI/CH340/CP210x"
 
 msgid "Vlinker FS/MC"
-msgstr "Vlinker FS/MC"
+msgstr "Adaptér Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr "DERLEK USB-DIAG2/3"
+msgstr "Adaptér DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
 msgstr "VGate (Vysoká rychlost)"
@@ -2113,16 +2163,16 @@ msgid "Custom"
 msgstr "Vlastní"
 
 msgid "Bosch MTS"
-msgstr "Bosch MTS"
+msgstr "Zařízení Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr "VXDIAG VCX Nano"
+msgstr "Zařízení VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr "VAG ODIS"
+msgstr "Rozhraní VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr "JLR DoIP VCI"
+msgstr "Rozhraní JLR DoIP VCI"
 
 msgid "Generic DoIP"
 msgstr "Obecný DoIP"
@@ -2131,7 +2181,7 @@ msgid "DoIP Target IP : "
 msgstr "Cílová IP DoIP : "
 
 msgid "DoIP Port : "
-msgstr "DoIP port : "
+msgstr "Port DoIP: "
 
 msgid "DoIP Timeout (seconds) : "
 msgstr "Timeout DoIP (sekundy) : "
@@ -2179,7 +2229,7 @@ msgid "Attempting connection..."
 msgstr "Pokus o připojení..."
 
 msgid "Port: "
-msgstr "Port: "
+msgstr "Komunikační port: "
 
 msgid "Speed: "
 msgstr "Rychlost: "
@@ -2239,11 +2289,11 @@ msgstr "Aplikováno %s přednastavení:"
 
 #, python-format
 msgid "  IP: %s"
-msgstr "  IP: %s"
+msgstr "  IP adresa: %s"
 
 #, python-format
 msgid "  Port: %s"
-msgstr "  Port: %s"
+msgstr "  Port rozhraní: %s"
 
 #, python-format
 msgid "  Timeout: %ss"
@@ -2272,7 +2322,7 @@ msgid "Error in targeted DoIP update: %s"
 msgstr "Chyba v cílené aktualizaci DoIP: %s"
 
 msgid "N/A"
-msgstr "N/A"
+msgstr "Nedostupné"
 
 msgid "DoIP (Diagnostics over IP) selected"
 msgstr "DoIP (Diagnostika přes IP) vybráno"

@@ -417,7 +417,7 @@ msgid "OK/TIMEOUT"
 msgstr "TAMAM/ZAMAN AŞIMI"
 
 msgid "OK"
-msgstr "TAMAM"
+msgstr "Tamam"
 
 msgid "Incompatible adapter on ARM core"
 msgstr "ARM çekirdeğinde uyumsuz adaptör"
@@ -511,11 +511,13 @@ msgstr "Beklenmeyen WiFi hatası: %s"
 
 #, python-format
 msgid "WiFi recv: %s"
-msgstr "WiFi recv: %s"
+msgstr "WiFi alma: %s"
 
 #, python-format
 msgid "WiFi socket timed out %s times in a row; reconnect scheduled"
 msgstr ""
+"WiFi soketi arka arkaya %s kez zaman aşımına uğradı; yeniden bağlanma "
+"planlandı"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
@@ -649,7 +651,7 @@ msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "COM portta ELM327 veya OBDLINK-SX algılanmadı "
 
 msgid "AB90 AIRBAG Reset"
-msgstr "AB90 AIRBAG Sıfırlama"
+msgstr "AB90 Hava Yastığı Sıfırlama"
 
 msgid "Airbag Tools"
 msgstr "Airbag Araçları"
@@ -670,7 +672,7 @@ msgid "Waiting"
 msgstr "Bekleniyor"
 
 msgid "Virginize ACU"
-msgstr "ACU Virgin Yap"
+msgstr "ACU'yu ham yap (sıfır durum)"
 
 msgid "Cannot connect to ECU"
 msgstr "ECU'ya bağlanılamıyor"
@@ -723,16 +725,16 @@ msgid "Algo 2"
 msgstr "Algoritma 2"
 
 msgid "ISK"
-msgstr "ISK"
+msgstr "ISK Kodu"
 
 msgid "PIN"
-msgstr "PIN"
+msgstr "PIN Kodu"
 
 msgid "Num key learnt"
 msgstr "Öğrenilen anahtar sayısı"
 
 msgid "CARD IDE"
-msgstr "KART IDE"
+msgstr "Kart Kimliği (IDE)"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr "ISK alınamıyor, bağlantıları ve UCH uyumluluğunu kontrol edin"
@@ -764,7 +766,7 @@ msgid "BLANK STATUS & VIN READ"
 msgstr "BOŞ DURUM & VIN OKUMA"
 
 msgid "Virginize EPS"
-msgstr "EPS Virgin Yap"
+msgstr "EPS'yi ham yap (sıfır durum)"
 
 msgid "VIN - READ"
 msgstr "VIN - OKU"
@@ -788,7 +790,7 @@ msgid "<font color='green'>VIN WRITE OK</font>"
 msgstr "<font color='green'>VIN YAZMA TAMAMLANDI</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr "<font color='green'>EPS virgin</font>"
+msgstr "<font color='green'>Ham EPS (sıfır)</font>"
 
 msgid "<font color='red'>EPS coded</font>"
 msgstr "<font color='red'>EPS kodlanmış</font>"
@@ -821,10 +823,10 @@ msgid "SdSFA stream: %s"
 msgstr "SdSFA akışı: %s"
 
 msgid "DDT2000 command macros (.cmd)"
-msgstr ""
+msgstr "DDT2000 komut makroları (.cmd)"
 
 msgid "Macros"
-msgstr ""
+msgstr "Komut makroları"
 
 msgid ""
 "ERROR: command should have 5 parameters: \n"
@@ -840,6 +842,18 @@ msgid ""
 "        <hex value> - bit value\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"HATA: komut 5 parametreye sahip olmalıdır: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value>\n"
+"        <lid> - ECU yerel tanımlayıcısı. Uzunluk KWP için 2 veya CAN için 4 "
+"sembol olmalıdır\n"
+"        <rsp_len> - olumlu yanıt baytları dahil komut yanıtının uzunluğu, "
+"ddt veritabanındaki MinBytes değerine eşittir\n"
+"        <offset> - ilk değiştirilen bayta bayt cinsinden ofset (0'dan değil "
+"1'den başlar) \n"
+"        <hex mask> - değiştirilen bitler için bit maskesi, 1 - "
+"değiştirilebilir, 0 - dokunulamaz\n"
+"        <hex value> - bit değeri\n"
+"    <hex mask> ve <hex value> eşit uzunlukta olmalıdır\n"
 
 msgid ""
 "ERROR: command should have 6 parameters: \n"
@@ -856,6 +870,19 @@ msgid ""
 "        <label> - label to go\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"HATA: komut 6 parametreye sahip olmalıdır: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - ECU yerel tanımlayıcısı. Uzunluk KWP için 2 veya CAN için 4 "
+"sembol olmalıdır\n"
+"        <rsp_len> - olumlu yanıt baytları dahil komut yanıtının uzunluğu, "
+"ddt veritabanındaki MinBytes değerine eşittir\n"
+"        <offset> - ilk değiştirilen bayta bayt cinsinden ofset (0'dan değil "
+"1'den başlar) \n"
+"        <hex mask> - değiştirilen bitler için bit maskesi, 1 - "
+"değiştirilebilir, 0 - dokunulamaz\n"
+"        <hex value> - bit değeri\n"
+"        <label> - gidilecek etiket\n"
+"    <hex mask> ve <hex value> eşit uzunlukta olmalıdır\n"
 
 msgid ""
 "ERROR: command should have 4 or 7 parameters: \n"
@@ -873,347 +900,363 @@ msgid ""
 "        <val divider> - value divider\n"
 "\n"
 msgstr ""
+"HATA: komut 4 veya 7 parametreye sahip olmalıdır: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - ECU yerel tanımlayıcısı. Uzunluk KWP için 2 veya CAN için 4 "
+"sembol olmalıdır\n"
+"        <rsp_len> - olumlu yanıt baytları dahil komut yanıtının uzunluğu, "
+"ddt veritabanındaki MinBytes değerine eşittir\n"
+"        <offset> - ilk değiştirilen bayta bayt cinsinden ofset (0'dan değil "
+"1'den başlar) \n"
+"        <hex mask> - değiştirilen bitler için bit maskesi, 1 - "
+"değiştirilebilir, 0 - dokunulamaz\n"
+"        <val step> - değer adımı\n"
+"        <val offset> - değer ofseti\n"
+"        <val divider> - değer bölücüsü\n"
+"\n"
 
 msgid "No ELM connection (plugin need_hw=True ?)"
-msgstr ""
+msgstr "ELM bağlantısı yok (eklenti need_hw=True gerektiriyor mu ?)"
 
 #, python-format
 msgid "guard: %(limit)d steps exceeded (infinite loop?)"
-msgstr ""
+msgstr "koruma: %(limit)d adım aşıldı (sonsuz döngü?)"
 
-#, fuzzy
 msgid "# abort requested"
-msgstr "Adlandırılmış istek yok"
+msgstr "# iptal istendi"
 
 #, python-format
 msgid "openning file: %(file)s"
-msgstr ""
+msgstr "dosya açılıyor: %(file)s"
 
 #, python-format
 msgid "%(file)s:%(line)d: empty macro name"
-msgstr ""
+msgstr "%(file)s:%(line)d: boş makro adı"
 
 #, python-format
 msgid "%(file)s:%(line)d: unexpected end of macro"
-msgstr ""
+msgstr "%(file)s:%(line)d: makronun beklenmeyen sonu"
 
 #, python-format
 msgid "%(file)s: includes are nested too deeply (%(limit)d levels)"
-msgstr ""
+msgstr "%(file)s: içermeler çok derin iç içe geçmiş (%(limit)d seviye)"
 
 #, python-format
 msgid "Cannot read %(file)s: %(error)s"
-msgstr ""
+msgstr "%(file)s okunamıyor: %(error)s"
 
 #, python-format
 msgid "%(file)s: included file not found: %(target)s"
-msgstr ""
+msgstr "%(file)s: dahil edilen dosya bulunamadı: %(target)s"
 
 #, python-format
 msgid "include loop: %(target)s"
-msgstr ""
+msgstr "içerme döngüsü: %(target)s"
 
 #, python-format
 msgid "# include %(file)s"
-msgstr ""
+msgstr "# %(file)s dahil ediliyor"
 
 #, python-format
 msgid "  %(name)s = %(value)s"
-msgstr ""
+msgstr "  %(name)s = %(value)s"
 
 #, python-format
 msgid "  %(macro)s"
-msgstr ""
+msgstr "  %(macro)s"
 
 msgid "[h]elp                 - this help"
-msgstr ""
+msgstr "[h]elp                 - bu yardım"
 
 msgid "[q]uit, [e]xit, end    - exit from terminal"
-msgstr ""
+msgstr "[q]uit, [e]xit, end    - terminalden çık"
 
 msgid "wait|sleep x           - wait x seconds"
-msgstr ""
+msgstr "wait|sleep x           - x saniye bekle"
 
 msgid "include <file>         - play another .cmd here"
-msgstr ""
+msgstr "include <dosya>        - burada başka bir .cmd çalıştır"
 
 msgid "Variables:"
-msgstr ""
+msgstr "Değişkenler:"
 
 msgid "Macros:"
-msgstr ""
+msgstr "Komut makroları:"
 
 #, python-format
 msgid "Error: unknown macro name: %(macro)s"
-msgstr ""
+msgstr "Hata: bilinmeyen makro adı: %(macro)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error: recursion prohibited: %(macro)s"
-msgstr "Port kapatma hatası: %s"
+msgstr "Hata: özyineleme yasaktır: %(macro)s"
 
 #, python-format
 msgid "### %(file)s : %(count)d lines"
-msgstr ""
+msgstr "### %(file)s : %(count)d satır"
 
 msgid "# end of command file"
-msgstr ""
+msgstr "# komut dosyasının sonu"
 
 #, python-format
 msgid "> %(line)s"
-msgstr ""
+msgstr "> %(line)s"
 
 #, python-format
 msgid "Error: unknown label '%(label)s'"
-msgstr ""
+msgstr "Hata: bilinmeyen etiket '%(label)s'"
 
 msgid "###### Variables #####"
-msgstr ""
+msgstr "###### Değişkenler #####"
 
 #, python-format
 msgid "# %(name)20s = %(value)s"
-msgstr ""
+msgstr "# %(name)20s = %(value)s"
 
 #, python-format
 msgid "Error: unknown variable %(name)s"
-msgstr ""
+msgstr "Hata: bilinmeyen değişken %(name)s"
 
 msgid "Error: too many variables in one line"
-msgstr ""
+msgstr "Hata: tek satırda çok fazla değişken"
 
 msgid "#(subst)"
-msgstr ""
+msgstr "#(subst)"
 
 #, python-format
 msgid "# delay: %(seconds)s"
-msgstr ""
+msgstr "# gecikme: %(seconds)s"
 
 #, python-format
 msgid "Unrecognized init command: %(name)s"
-msgstr ""
+msgstr "Tanınmayan başlatma komutu: %(name)s"
 
 msgid "ERROR: Unknown function"
-msgstr ""
+msgstr "HATA: Bilinmeyen fonksiyon"
 
 msgid "read  value: "
-msgstr ""
+msgstr "okunan değer: "
 
 msgid "ERROR: Length is unexpected"
-msgstr ""
+msgstr "HATA: Beklenmeyen uzunluk"
 
 msgid "ERROR: Wrong simbol in response"
-msgstr ""
+msgstr "HATA: Yanıtta yanlış sembol"
 
 msgid "ERROR: Not positive response"
-msgstr ""
+msgstr "HATA: Olumlu yanıt değil"
 
 msgid "Match. Exit"
-msgstr ""
+msgstr "Eşleşti. Çıkış"
 
 msgid "Not match. Continue"
-msgstr ""
+msgstr "Eşleşmedi. Devam et"
 
 msgid "Not match. Exit"
-msgstr ""
+msgstr "Eşleşmedi. Çıkış"
 
 msgid "Match. Continue"
-msgstr ""
+msgstr "Eşleşti. Devam et"
 
 msgid "Match. goto: "
-msgstr ""
+msgstr "Eşleşti. Şuraya git: "
 
 msgid "Not match. goto: "
-msgstr ""
+msgstr "Eşleşmedi. Şuraya git: "
 
 #, python-format
 msgid ""
 "# LID(%(lid)s) $rawValue = %(raw)s  $scaledValue = %(scaled)s  $hexValue = "
 "%(hex)s"
-msgstr ""
+msgstr "# LID(%(lid)s)  = %(raw)s   = %(scaled)s   = %(hex)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ERROR: unexpected positive response: %(rsp)s"
-msgstr "Beklenen can kontrol yanıtı, alındı: %s"
+msgstr "HATA: beklenmeyen olumlu yanıt: %(rsp)s"
 
 msgid "write value: "
-msgstr ""
+msgstr "yazılan değer: "
 
 msgid "ELM connected"
-msgstr ""
+msgstr "ELM bağlandı"
 
-#, fuzzy
 msgid "ELM not connected"
-msgstr "ELM bağlı değil veya yanlış COM port"
+msgstr "ELM bağlı değil"
 
 msgid "installed copy (cmd_macros_lib/macros)"
-msgstr ""
+msgstr "yüklü kopya (cmd_macros_lib/macros)"
 
 msgid "manually chosen folder"
-msgstr ""
+msgstr "manuel seçilen klasör"
 
 #, python-format
 msgid "ddt4all tables (%(count)d addresses)"
-msgstr ""
+msgstr "ddt4all tabloları (%(count)d adres)"
 
 #, python-format
 msgid "pyren3 fallback (%(count)d addresses)"
-msgstr ""
+msgstr "pyren3 yedeği (%(count)d adres)"
 
 msgid "no table"
-msgstr ""
+msgstr "tablo yok"
 
 msgid "pyren3 fallback: disabled"
-msgstr ""
+msgstr "pyren3 yedeği: devre dışı"
 
 msgid "pyren3 fallback: no entry"
-msgstr ""
+msgstr "pyren3 yedeği: girdi yok"
 
 #, python-format
 msgid ""
 "pyren3 fallback: %(count)d addresses as a fallback, used only for the "
 "addresses missing from the ddt4all tables"
 msgstr ""
+"pyren3 yedeği: yedek olarak %(count)d adres, yalnızca ddt4all tablolarında "
+"eksik olan adresler için kullanılır"
 
 #, python-format
 msgid "pyren3 fallback: %(count)d addresses (source in use)"
-msgstr ""
+msgstr "pyren3 yedeği: %(count)d adres (kullanımdaki kaynak)"
 
 msgid "Done"
-msgstr ""
+msgstr "Tamamlandı"
 
 #, python-format
 msgid "ERROR: %(error)s"
-msgstr ""
+msgstr "HATA: %(error)s"
 
 msgid "Error"
-msgstr ""
+msgstr "Hata"
 
 msgid "DDT2000 command macros"
-msgstr ""
+msgstr "DDT2000 komut makroları"
 
 msgid "Macro folder (.cmd and *.txt)"
-msgstr ""
+msgstr "Makro klasörü (.cmd ve *.txt)"
 
 msgid "Browse"
-msgstr ""
+msgstr "Gözat"
 
 msgid "Refresh"
 msgstr "Yenile"
 
 msgid "Macro folder:"
-msgstr ""
+msgstr "Makro klasörü:"
 
 msgid "Log ELM traffic to file"
-msgstr ""
+msgstr "ELM trafiğini dosyaya kaydet"
 
 msgid "Log file name:"
-msgstr ""
+msgstr "Günlük dosyası adı:"
 
 msgid ".cmd files (by ECU)"
-msgstr ""
+msgstr ".cmd dosyaları (ECU'ya göre)"
 
 msgid "Named macros (by *.txt)"
-msgstr ""
+msgstr "Adlandırılmış makrolar (*.txt'ye göre)"
 
 msgid "Macros by ECU (.cmd)"
-msgstr ""
+msgstr "ECU'ya göre makrolar (.cmd)"
 
 msgid "Named macros (*.txt)"
-msgstr ""
+msgstr "Adlandırılmış makrolar (*.txt)"
 
-#, fuzzy
 msgid "Send key"
-msgstr "Gönderilen bayt"
+msgstr "Tuş gönder"
 
 msgid "Key for 'if_key':"
-msgstr ""
+msgstr "'if_key' için tuş:"
 
-#, fuzzy
 msgid "Execute .cmd"
-msgstr "Yürüt"
+msgstr ".cmd çalıştır"
 
-#, fuzzy
 msgid "Execute macro"
-msgstr "Yürüt"
+msgstr "Makroyu çalıştır"
 
 msgid "Stop"
-msgstr ""
+msgstr "Durdur"
 
 msgid "Close"
-msgstr ""
+msgstr "Kapat"
 
 msgid "Log"
-msgstr ""
+msgstr "Günlük"
 
 msgid "Macro folder"
-msgstr ""
+msgstr "Makro klasörü"
 
 #, python-format
 msgid "Parsing error %(file)s: %(error)s"
-msgstr ""
+msgstr "%(file)s içinde ayrıştırma hatası: %(error)s"
 
 #, python-format
 msgid "%(macro)s (defined in %(file)s)"
-msgstr ""
+msgstr "%(macro)s (%(file)s içinde tanımlandı)"
 
 #, python-format
 msgid "Host: %(host)s"
-msgstr ""
+msgstr "Ana bilgisayar: %(host)s"
 
 #, python-format
 msgid "Addresses: %(legacy)s"
-msgstr ""
+msgstr "Adresler: %(legacy)s"
 
 msgid ""
 "Format: DDT2000 command macros (pyren3); the bundled macros target Renault "
 "ECUs, address resolution follows the vehicle loaded in ddt4all."
 msgstr ""
+"Biçim: DDT2000 komut makroları (pyren3); birlikte verilen makrolar Renault "
+"ECU'larını hedefler, adres çözümleme ddt4all'a yüklenen aracı takip eder."
 
 #, python-format
 msgid "Folder: %(folder)s"
-msgstr ""
+msgstr "Klasör: %(folder)s"
 
 msgid "(none)"
-msgstr ""
+msgstr "(yok)"
 
 #, python-format
 msgid "Source: %(source)s"
-msgstr ""
+msgstr "Kaynak: %(source)s"
 
 #, python-format
 msgid ""
 "%(groups)d ECU group(s), %(files)d .cmd file(s), %(named)d named macro(s) in "
 "%(txt)d .txt file(s)"
 msgstr ""
+"%(groups)d ECU grubu, %(files)d .cmd dosyası, %(txt)d .txt dosyasında "
+"%(named)d adlandırılmış makro"
 
 #, python-format
 msgid "Journal files: %(elm)s and %(ecu)s"
-msgstr ""
+msgstr "Günlük dosyaları: %(elm)s ve %(ecu)s"
 
 msgid "No ELM connection: the journal is not written."
-msgstr ""
+msgstr "ELM bağlantısı yok: günlük yazılmadı."
 
 #, python-format
 msgid "Cannot write the journal (%(error)s)"
-msgstr ""
+msgstr "Günlük yazılamıyor (%(error)s)"
 
 #, python-format
 msgid "Journal: %(elm)s"
-msgstr ""
+msgstr "Günlük: %(elm)s"
 
 #, python-format
 msgid "Journal: %(ecu)s"
-msgstr ""
+msgstr "Günlük: %(ecu)s"
 
 msgid "ddt4all not found (console mode only)"
-msgstr ""
+msgstr "ddt4all bulunamadı (yalnızca konsol modu)"
 
 #, python-format
 msgid "ddt4all %(flavor)s | %(elm)s | addressing: %(addressing)s"
-msgstr ""
+msgstr "ddt4all %(flavor)s | %(elm)s | adresleme: %(addressing)s"
 
 #, python-format
 msgid "%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d named macro(s)"
 msgstr ""
+"%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d adlandırılmış makro"
 
 #, python-format
 msgid ""
@@ -1224,46 +1267,54 @@ msgid ""
 "Source: %(source)s\n"
 "%(journal)s"
 msgstr ""
+"%(host)s\n"
+"Adresler: %(legacy)s\n"
+"%(detail)s\n"
+"Klasör: %(folder)s\n"
+"Kaynak: %(source)s\n"
+"%(journal)s"
 
 msgid "Journal: disabled"
-msgstr ""
+msgstr "Günlük: devre dışı"
 
 msgid "A macro is already running."
-msgstr ""
+msgstr "Zaten çalışan bir makro var."
 
 msgid "ddt4all is not available: this plugin must be started from ddt4all."
-msgstr ""
+msgstr "ddt4all mevcut değil: bu eklenti ddt4all içinden başlatılmalıdır."
 
 msgid "No ELM connection: connect ddt4all to the ELM before running a macro."
 msgstr ""
+"ELM bağlantısı yok: bir makro çalıştırmadan önce ddt4all'ı ELM'ye bağlayın."
 
 #, python-format
 msgid "--- START %(kind)s: %(macro)s ---"
-msgstr ""
+msgstr "--- BAŞLANGIÇ %(kind)s: %(macro)s ---"
 
 msgid "Select a .cmd file (double-click to run)."
-msgstr ""
+msgstr "Bir .cmd dosyası seçin (çalıştırmak için çift tıklayın)."
 
 msgid "Select a named macro (double-click to run)."
-msgstr ""
+msgstr "Adlandırılmış bir makro seçin (çalıştırmak için çift tıklayın)."
 
 #, python-format
 msgid "# key '%(key)s' sent"
-msgstr ""
+msgstr "# '%(key)s' tuşu gönderildi"
 
-#, fuzzy
 msgid "# stop requested..."
-msgstr "Adlandırılmış istek yok"
+msgstr "# durdurma istendi..."
 
 #, python-format
 msgid "--- END: %(status)s ---"
-msgstr ""
+msgstr "--- SON: %(status)s ---"
 
 #, python-format
 msgid ""
 "WARNING: address %(addr)s resolves to %(tx)s/%(rx)s (ddt4all) but pyren3 "
 "uses %(pltx)s/%(plrx)s"
 msgstr ""
+"UYARI: %(addr)s adresi %(tx)s/%(rx)s (ddt4all) olarak çözümleniyor ancak "
+"pyren3 %(pltx)s/%(plrx)s kullanıyor"
 
 msgid "Laguna II UCH Reset"
 msgstr "Laguna II UCH Sıfırlama"
@@ -1282,10 +1333,10 @@ msgid "Check UCH Virgin"
 msgstr "UCH Virgin Kontrolü"
 
 msgid "Virginize UCH"
-msgstr "UCH Virgin Yap"
+msgstr "UCH'yi ham yap (sıfır durum)"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr "<font color='green'>UCH virgin</font>"
+msgstr "<font color='green'>Ham UCH (sıfır)</font>"
 
 msgid "<font color='red'>UCH coded</font>"
 msgstr "<font color='red'>UCH kodlanmış</font>"
@@ -1311,7 +1362,7 @@ msgstr ""
 "SİLECEK<br>NE ANLAMA GELDİĞİNİ BİLMİYORSANIZ UZAK DURUN</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr "Megane3 AIRBAG Sıfırlama"
+msgstr "Megane3 Hava Yastığı Sıfırlama"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
@@ -1348,7 +1399,7 @@ msgstr ""
 "SİLECEK<br>NE ANLAMA GELDİĞİNİ BİLMİYORSANIZ UZAK DURUN</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr "RSAT4 HAVA YASTIĞI Sıfırlama"
+msgstr "RSAT4 Hava Yastığı Sıfırlama"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
@@ -1364,10 +1415,10 @@ msgid "SdSEX stream: %s"
 msgstr "SdSEX akışı: %s"
 
 msgid "CRC calculator"
-msgstr "CRC hesaplayıcı"
+msgstr "CRC Hesaplayıcı"
 
 msgid "VIN"
-msgstr "VIN"
+msgstr "VIN Numarası"
 
 msgid "CRC Calculator"
 msgstr "CRC Hesaplayıcı"
@@ -1544,7 +1595,7 @@ msgid "Numeric items"
 msgstr "Sayısal Parçalar"
 
 msgid "Hex"
-msgstr "Hex"
+msgstr "Onaltılık"
 
 #, python-format
 msgid "Data is used by request %s"
@@ -1575,10 +1626,10 @@ msgid "ECU Protocol"
 msgstr "ECU Protokolü"
 
 msgid "Tool > Ecu ID (Hex)"
-msgstr "Araç > Ecu Kimliği (Hex)"
+msgstr "Araç > ECU Kimliği (Hex)"
 
 msgid "Ecu > Tool ID (Hex)"
-msgstr "Ecu > Araç Kimliği (Hex)"
+msgstr "ECU > Araç Kimliği (Hex)"
 
 msgid "Coding"
 msgstr "Kodlama"
@@ -1602,7 +1653,7 @@ msgid "Add item"
 msgstr "Parça Ekle"
 
 msgid "Del item"
-msgstr "Parça sil"
+msgstr "Öğeyi sil"
 
 msgid "New item"
 msgstr "Yeni parça"
@@ -1620,10 +1671,10 @@ msgid "Format"
 msgstr "Biçim"
 
 msgid "Value = (AX+B) / C"
-msgstr "Değer =(AX+B) / C"
+msgstr "Değer = (AX+B) / C"
 
 msgid "Number of bytes"
-msgstr "Bayt Sayısı"
+msgstr "Bayt sayısı"
 
 msgid "Send request bytes (HEX)"
 msgstr "Gönderilecek istek baytları (HEX)"
@@ -1635,20 +1686,19 @@ msgid "Data length"
 msgstr "Veri uzunluğu"
 
 msgid "Shift byte count"
-msgstr "Bayt sayısını değiştir"
+msgstr "Bayt kaydırma sayısı"
 
 msgid "Data name;Start byte;Bit offset;Bit count;Endianess"
-msgstr ""
-"Veri adı;Başlangıç baytı;Bit ofseti;Bit sayısı;Endianness(byte sıralama yönü)"
+msgstr "Veri adı;Başlangıç baytı;Bit ofseti;Bit sayısı;Sonculuk"
 
 msgid "Little"
-msgstr "Küçük"
+msgstr "Küçük soncul (Little-endian)"
 
 msgid "Big"
-msgstr "Büyük"
+msgstr "Büyük soncul (Big-endian)"
 
 msgid "Inherits globals"
-msgstr "Globalleri devralır"
+msgstr "Genelleri devralır"
 
 msgid "No SDS"
 msgstr "SDS yok"
@@ -1690,7 +1740,7 @@ msgid "Cannot find data "
 msgstr "Veri bulunamıyor "
 
 msgid " vs "
-msgstr " vs "
+msgstr " karşılık "
 
 msgid "Cannot draw input "
 msgstr "Giriş çizilemiyor "
@@ -1722,10 +1772,10 @@ msgid "Address :"
 msgstr "Adres :"
 
 msgid "ID frame :"
-msgstr "ID çerçeve :"
+msgstr "Kimlik Çerçevesi:"
 
 msgid "Search vehicle"
-msgstr ""
+msgstr "Araç ara"
 
 msgid "No vehicles available"
 msgstr "Araç bulunamadı"
@@ -1826,7 +1876,7 @@ msgid "Manual request"
 msgstr "Manuel istek"
 
 msgid "Software flow control"
-msgstr "Yazılım akış kontrolü"
+msgstr "Yazılımsal akış kontrolü"
 
 msgid "Zoom In"
 msgstr "Yakınlaştır"
@@ -1916,7 +1966,7 @@ msgid "Help"
 msgstr "Yardım"
 
 msgid "Web Wiki"
-msgstr "Web Wiki"
+msgstr "Web Vikisi"
 
 msgid "About Developers"
 msgstr "Geliştiriciler Hakkında"
@@ -1974,10 +2024,10 @@ msgid "CAN Line 2@125K"
 msgstr "CAN Hat 2@125K"
 
 msgid "KWP2000"
-msgstr "KWP2000"
+msgstr "KWP2000 Protokolü"
 
 msgid "ISO8"
-msgstr "ISO8"
+msgstr "ISO8 Protokolü"
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "Veritabanını kaydet ('.zip' uzantısını koru)"
@@ -2043,25 +2093,25 @@ msgid "ELM port selection"
 msgstr "ELM bağlantı noktası (port) seçimi"
 
 msgid "USB"
-msgstr "USB"
+msgstr "USB Bağlantısı"
 
 msgid "WiFi"
-msgstr "WiFi"
+msgstr "Wi-Fi Bağlantısı"
 
 msgid "Bluetooth"
-msgstr "Bluetooth"
+msgstr "Bluetooth Bağlantısı"
 
 msgid "OBDLINK SX/EX"
-msgstr "OBDLINK SX/EX"
+msgstr "OBDLINK SX/EX Adaptörü"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
 msgstr "ELS27/ELS27 V5 - FTDI/CH340/CP210x cihazı olarak görünebilir"
 
 msgid "Vlinker FS/MC"
-msgstr "Vlinker FS/MC"
+msgstr "Vlinker FS/MC Adaptörü"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr "DERLEK USB-DIAG2/3"
+msgstr "DERLEK USB-DIAG2/3 Adaptörü"
 
 msgid "VGate (High-Speed)"
 msgstr "VGate (Yüksek Hızlı)"
@@ -2112,16 +2162,16 @@ msgid "Custom"
 msgstr "Özel"
 
 msgid "Bosch MTS"
-msgstr "Bosch MTS"
+msgstr "Bosch MTS Cihazı"
 
 msgid "VXDIAG VCX Nano"
-msgstr "VXDIAG VCX Nano"
+msgstr "VXDIAG VCX Nano Cihazı"
 
 msgid "VAG ODIS"
-msgstr "VAG ODIS"
+msgstr "VAG ODIS Arayüzü"
 
 msgid "JLR DoIP VCI"
-msgstr "JLR DoIP VCI"
+msgstr "JLR DoIP VCI Arayüzü"
 
 msgid "Generic DoIP"
 msgstr "Genel DoIP"
@@ -2130,7 +2180,7 @@ msgid "DoIP Target IP : "
 msgstr "DoIP Hedef IP : "
 
 msgid "DoIP Port : "
-msgstr "DoIP Port : "
+msgstr "DoIP Bağlantı Noktası: "
 
 msgid "DoIP Timeout (seconds) : "
 msgstr "DoIP Zaman Aşımı (saniye) : "
@@ -2178,7 +2228,7 @@ msgid "Attempting connection..."
 msgstr "Bağlantı deneniyor..."
 
 msgid "Port: "
-msgstr "Port: "
+msgstr "Bağlantı Noktası: "
 
 msgid "Speed: "
 msgstr "Hız: "
@@ -2238,11 +2288,11 @@ msgstr "%s ön ayarı uygulandı:"
 
 #, python-format
 msgid "  IP: %s"
-msgstr "  IP: %s"
+msgstr "  IP Adresi: %s"
 
 #, python-format
 msgid "  Port: %s"
-msgstr "  Port: %s"
+msgstr "  Bağlantı Noktası: %s"
 
 #, python-format
 msgid "  Timeout: %ss"
@@ -2271,7 +2321,7 @@ msgid "Error in targeted DoIP update: %s"
 msgstr "Hedeflenmiş DoIP güncelleme hatası: %s"
 
 msgid "N/A"
-msgstr "Mevcut Değil"
+msgstr "Yok"
 
 msgid "DoIP (Diagnostics over IP) selected"
 msgstr "DoIP (IP Üzerine Tanılama) seçildi"

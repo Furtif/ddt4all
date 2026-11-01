@@ -350,7 +350,7 @@ msgid "Not supported baudrate %s"
 msgstr "Nem támogatott baudrate %s"
 
 msgid "ELM reset..."
-msgstr "ELM reset..."
+msgstr "ELM visszaállítása..."
 
 msgid "Unknown address: "
 msgstr "Ismeretlen cím: "
@@ -416,10 +416,10 @@ msgid "FAIL"
 msgstr "SIKERTELEN"
 
 msgid "OK/TIMEOUT"
-msgstr "OK/IDŐTÚLLÉPÉS"
+msgstr "RENDBEN/IDŐTÚLLÉPÉS"
 
 msgid "OK"
-msgstr "OK"
+msgstr "Rendben"
 
 msgid "Incompatible adapter on ARM core"
 msgstr "Inkompatibilis adapter az ARM magon"
@@ -513,11 +513,13 @@ msgstr "Váratlan WiFi hiba: %s"
 
 #, python-format
 msgid "WiFi recv: %s"
-msgstr "WiFi recv: %s"
+msgstr "WiFi vétel: %s"
 
 #, python-format
 msgid "WiFi socket timed out %s times in a row; reconnect scheduled"
 msgstr ""
+"A WiFi socket időtúllépése egymás után %s alkalommal; újracsatlakozás "
+"ütemezve"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
@@ -652,7 +654,7 @@ msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Nem található ELM327 vagy OBDLINK-SX a COM porton: "
 
 msgid "AB90 AIRBAG Reset"
-msgstr "AB90 AIRBAG Reset"
+msgstr "AB90 légzsák visszaállítása"
 
 msgid "Airbag Tools"
 msgstr "Airbag eszközök"
@@ -673,7 +675,7 @@ msgid "Waiting"
 msgstr "Várakozás"
 
 msgid "Virginize ACU"
-msgstr "ACU Virginizálása"
+msgstr "ACU szűzzé tétele"
 
 msgid "Cannot connect to ECU"
 msgstr "Nem lehet csatlakozni az ECU-hoz"
@@ -689,7 +691,7 @@ msgstr "<font color='green'>NINCS ÜTKÖZÉS ÉSZLELVE</font>"
 
 #, python-format
 msgid "SDS stream: %s"
-msgstr "SDS stream: %s"
+msgstr "SDS adatfolyam: %s"
 
 msgid "<font color='green'>CLEAR EXECUTED</font>"
 msgstr "<font color='green'>CLEAR VÉGREHAJTVA</font>"
@@ -723,19 +725,19 @@ msgid "CANCEL"
 msgstr "MÉGSE"
 
 msgid "Algo 2"
-msgstr "Algo 2"
+msgstr "2. algoritmus"
 
 msgid "ISK"
-msgstr "ISK"
+msgstr "ISK kód"
 
 msgid "PIN"
-msgstr "PIN"
+msgstr "PIN kód"
 
 msgid "Num key learnt"
 msgstr "Tanult kulcsok száma"
 
 msgid "CARD IDE"
-msgstr "KÁRTYA IDE"
+msgstr "Kártya azonosító (IDE)"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr ""
@@ -752,7 +754,7 @@ msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
 msgstr "<font color='green'>PIN KÓD OK / UCH TANULÁSA</font>"
 
 msgid "Modus/Clio III EPS Reset"
-msgstr "Modus/Clio III EPS Reset"
+msgstr "Modus/Clio III EPS visszaállítása"
 
 msgid "EPS Tools"
 msgstr "EPS eszközök"
@@ -768,7 +770,7 @@ msgid "BLANK STATUS & VIN READ"
 msgstr "ÜRES ÁLLAPOT & VIN OLVASÁS"
 
 msgid "Virginize EPS"
-msgstr "EPS Virginizálása"
+msgstr "EPS szűzzé tétele"
 
 msgid "VIN - READ"
 msgstr "VIN - OLVASÁS"
@@ -792,17 +794,17 @@ msgid "<font color='green'>VIN WRITE OK</font>"
 msgstr "<font color='green'>VIN ÍRÁS OK</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr "<font color='green'>EPS virgin</font>"
+msgstr "<font color='green'>Szűz EPS</font>"
 
 msgid "<font color='red'>EPS coded</font>"
 msgstr "<font color='red'>EPS kódolt</font>"
 
 #, python-format
 msgid "SdSC0 stream: %s"
-msgstr "SdSC0 stream: %s"
+msgstr "SdSC0 adatfolyam: %s"
 
 msgid "Clio IV EPS Reset"
-msgstr "Clio IV EPS Reset"
+msgstr "Clio IV EPS visszaállítása"
 
 msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
@@ -822,13 +824,13 @@ msgstr "<font color='red'>VÁRATLAN VÁLASZ</font>"
 
 #, python-format
 msgid "SdSFA stream: %s"
-msgstr "SdSFA stream: %s"
+msgstr "SdSFA adatfolyam: %s"
 
 msgid "DDT2000 command macros (.cmd)"
-msgstr ""
+msgstr "DDT2000 parancsmakrók (.cmd)"
 
 msgid "Macros"
-msgstr ""
+msgstr "Parancsmakrók"
 
 msgid ""
 "ERROR: command should have 5 parameters: \n"
@@ -844,6 +846,19 @@ msgid ""
 "        <hex value> - bit value\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"HIBA: a parancsnak 5 paraméterrel kell rendelkeznie: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value>\n"
+"        <lid> - ECU helyi azonosítója. A hossz KWP esetén 2, CAN esetén 4 "
+"karakter legyen\n"
+"        <rsp_len> - parancsválasz hossza a pozitív válaszbájtokkal együtt, "
+"egyenlő a ddt adatbázis MinBytes értékével\n"
+"        <offset> - eltolás bájtokban az első módosított bájthoz (1-től "
+"kezdődik, nem 0-tól) \n"
+"        <hex mask> - bitmaszk a módosított bitekhez, 1 - módosítható, 0 - "
+"érinthetetlen\n"
+"        <hex value> - bitérték\n"
+"    A <hex mask> és <hex value> értékeknek azonos hosszúságúaknak kell "
+"lenniük\n"
 
 msgid ""
 "ERROR: command should have 6 parameters: \n"
@@ -860,6 +875,20 @@ msgid ""
 "        <label> - label to go\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"HIBA: a parancsnak 6 paraméterrel kell rendelkeznie: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - ECU helyi azonosítója. A hossz KWP esetén 2, CAN esetén 4 "
+"karakter legyen\n"
+"        <rsp_len> - parancsválasz hossza a pozitív válaszbájtokkal együtt, "
+"egyenlő a ddt adatbázis MinBytes értékével\n"
+"        <offset> - eltolás bájtokban az első módosított bájthoz (1-től "
+"kezdődik, nem 0-tól) \n"
+"        <hex mask> - bitmaszk a módosított bitekhez, 1 - módosítható, 0 - "
+"érinthetetlen\n"
+"        <hex value> - bitérték\n"
+"        <label> - célcímke\n"
+"    A <hex mask> és <hex value> értékeknek azonos hosszúságúaknak kell "
+"lenniük\n"
 
 msgid ""
 "ERROR: command should have 4 or 7 parameters: \n"
@@ -877,347 +906,363 @@ msgid ""
 "        <val divider> - value divider\n"
 "\n"
 msgstr ""
+"HIBA: a parancsnak 4 vagy 7 paraméterrel kell rendelkeznie: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - ECU helyi azonosítója. A hossz KWP esetén 2, CAN esetén 4 "
+"karakter legyen\n"
+"        <rsp_len> - parancsválasz hossza a pozitív válaszbájtokkal együtt, "
+"egyenlő a ddt adatbázis MinBytes értékével\n"
+"        <offset> - eltolás bájtokban az első módosított bájthoz (1-től "
+"kezdődik, nem 0-tól) \n"
+"        <hex mask> - bitmaszk a módosított bitekhez, 1 - módosítható, 0 - "
+"érinthetetlen\n"
+"        <val step> - értéklépés\n"
+"        <val offset> - értékeltolás\n"
+"        <val divider> - értékosztó\n"
+"\n"
 
 msgid "No ELM connection (plugin need_hw=True ?)"
-msgstr ""
+msgstr "Nincs ELM kapcsolat (a bővítmény igényli: need_hw=True ?)"
 
 #, python-format
 msgid "guard: %(limit)d steps exceeded (infinite loop?)"
-msgstr ""
+msgstr "védelem: %(limit)d lépés túllépve (végtelen ciklus?)"
 
-#, fuzzy
 msgid "# abort requested"
-msgstr "Nincs elnevezett parancs"
+msgstr "# megszakítás kérve"
 
 #, python-format
 msgid "openning file: %(file)s"
-msgstr ""
+msgstr "fájl megnyitása: %(file)s"
 
 #, python-format
 msgid "%(file)s:%(line)d: empty macro name"
-msgstr ""
+msgstr "%(file)s:%(line)d: üres makrónév"
 
 #, python-format
 msgid "%(file)s:%(line)d: unexpected end of macro"
-msgstr ""
+msgstr "%(file)s:%(line)d: a makró váratlanul véget ért"
 
 #, python-format
 msgid "%(file)s: includes are nested too deeply (%(limit)d levels)"
-msgstr ""
+msgstr "%(file)s: a beágyazások túl mélyek (%(limit)d szint)"
 
 #, python-format
 msgid "Cannot read %(file)s: %(error)s"
-msgstr ""
+msgstr "Nem olvasható: %(file)s: %(error)s"
 
 #, python-format
 msgid "%(file)s: included file not found: %(target)s"
-msgstr ""
+msgstr "%(file)s: a beágyazott fájl nem található: %(target)s"
 
 #, python-format
 msgid "include loop: %(target)s"
-msgstr ""
+msgstr "beágyazási ciklus: %(target)s"
 
 #, python-format
 msgid "# include %(file)s"
-msgstr ""
+msgstr "# %(file)s beágyazása"
 
 #, python-format
 msgid "  %(name)s = %(value)s"
-msgstr ""
+msgstr "  %(name)s = %(value)s"
 
 #, python-format
 msgid "  %(macro)s"
-msgstr ""
+msgstr "  %(macro)s"
 
 msgid "[h]elp                 - this help"
-msgstr ""
+msgstr "[h]elp                 - ez a súgó"
 
 msgid "[q]uit, [e]xit, end    - exit from terminal"
-msgstr ""
+msgstr "[q]uit, [e]xit, end    - kilépés a terminálból"
 
 msgid "wait|sleep x           - wait x seconds"
-msgstr ""
+msgstr "wait|sleep x           - várakozás x másodpercig"
 
 msgid "include <file>         - play another .cmd here"
-msgstr ""
+msgstr "include <fájl>         - másik .cmd lejátszása itt"
 
 msgid "Variables:"
-msgstr ""
+msgstr "Változók:"
 
 msgid "Macros:"
-msgstr ""
+msgstr "Parancsmakrók:"
 
 #, python-format
 msgid "Error: unknown macro name: %(macro)s"
-msgstr ""
+msgstr "Hiba: ismeretlen makrónév: %(macro)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error: recursion prohibited: %(macro)s"
-msgstr "Port lezárási hiba: %s"
+msgstr "Hiba: rekurzió tiltva: %(macro)s"
 
 #, python-format
 msgid "### %(file)s : %(count)d lines"
-msgstr ""
+msgstr "### %(file)s : %(count)d sor"
 
 msgid "# end of command file"
-msgstr ""
+msgstr "# parancsfájl vége"
 
 #, python-format
 msgid "> %(line)s"
-msgstr ""
+msgstr "> %(line)s"
 
 #, python-format
 msgid "Error: unknown label '%(label)s'"
-msgstr ""
+msgstr "Hiba: ismeretlen címke: '%(label)s'"
 
 msgid "###### Variables #####"
-msgstr ""
+msgstr "###### Változók #####"
 
 #, python-format
 msgid "# %(name)20s = %(value)s"
-msgstr ""
+msgstr "# %(name)20s = %(value)s"
 
 #, python-format
 msgid "Error: unknown variable %(name)s"
-msgstr ""
+msgstr "Hiba: ismeretlen változó: %(name)s"
 
 msgid "Error: too many variables in one line"
-msgstr ""
+msgstr "Hiba: túl sok változó egy sorban"
 
 msgid "#(subst)"
-msgstr ""
+msgstr "#(subst)"
 
 #, python-format
 msgid "# delay: %(seconds)s"
-msgstr ""
+msgstr "# késleltetés: %(seconds)s"
 
 #, python-format
 msgid "Unrecognized init command: %(name)s"
-msgstr ""
+msgstr "Felismerhetetlen inicializálási parancs: %(name)s"
 
 msgid "ERROR: Unknown function"
-msgstr ""
+msgstr "HIBA: Ismeretlen függvény"
 
 msgid "read  value: "
-msgstr ""
+msgstr "beolvasott érték: "
 
 msgid "ERROR: Length is unexpected"
-msgstr ""
+msgstr "HIBA: Váratlan hosszúság"
 
 msgid "ERROR: Wrong simbol in response"
-msgstr ""
+msgstr "HIBA: Hibás szimbólum a válaszban"
 
 msgid "ERROR: Not positive response"
-msgstr ""
+msgstr "HIBA: Nem pozitív válasz"
 
 msgid "Match. Exit"
-msgstr ""
+msgstr "Egyezés. Kilépés"
 
 msgid "Not match. Continue"
-msgstr ""
+msgstr "Nincs egyezés. Folytatás"
 
 msgid "Not match. Exit"
-msgstr ""
+msgstr "Nincs egyezés. Kilépés"
 
 msgid "Match. Continue"
-msgstr ""
+msgstr "Egyezés. Folytatás"
 
 msgid "Match. goto: "
-msgstr ""
+msgstr "Egyezés. Ugrás ide: "
 
 msgid "Not match. goto: "
-msgstr ""
+msgstr "Nincs egyezés. Ugrás ide: "
 
 #, python-format
 msgid ""
 "# LID(%(lid)s) $rawValue = %(raw)s  $scaledValue = %(scaled)s  $hexValue = "
 "%(hex)s"
-msgstr ""
+msgstr "# LID(%(lid)s)  = %(raw)s   = %(scaled)s   = %(hex)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ERROR: unexpected positive response: %(rsp)s"
-msgstr "Várt élő ellenőrzési válasz, érkezett: %s"
+msgstr "HIBA: váratlan pozitív válasz: %(rsp)s"
 
 msgid "write value: "
-msgstr ""
+msgstr "beírt érték: "
 
 msgid "ELM connected"
-msgstr ""
+msgstr "ELM csatlakoztatva"
 
-#, fuzzy
 msgid "ELM not connected"
-msgstr "ELM nincs csatlakoztatva vagy rossz COM port"
+msgstr "ELM nincs csatlakoztatva"
 
 msgid "installed copy (cmd_macros_lib/macros)"
-msgstr ""
+msgstr "telepített másolat (cmd_macros_lib/macros)"
 
 msgid "manually chosen folder"
-msgstr ""
+msgstr "manuálisan kiválasztott mappa"
 
 #, python-format
 msgid "ddt4all tables (%(count)d addresses)"
-msgstr ""
+msgstr "ddt4all táblák (%(count)d cím)"
 
 #, python-format
 msgid "pyren3 fallback (%(count)d addresses)"
-msgstr ""
+msgstr "pyren3 tartalék (%(count)d cím)"
 
 msgid "no table"
-msgstr ""
+msgstr "nincs tábla"
 
 msgid "pyren3 fallback: disabled"
-msgstr ""
+msgstr "pyren3 tartalék: letiltva"
 
 msgid "pyren3 fallback: no entry"
-msgstr ""
+msgstr "pyren3 tartalék: nincs bejegyzés"
 
 #, python-format
 msgid ""
 "pyren3 fallback: %(count)d addresses as a fallback, used only for the "
 "addresses missing from the ddt4all tables"
 msgstr ""
+"pyren3 tartalék: %(count)d cím tartalékként, csak a ddt4all táblákból "
+"hiányzó címekhez használatos"
 
 #, python-format
 msgid "pyren3 fallback: %(count)d addresses (source in use)"
-msgstr ""
+msgstr "pyren3 tartalék: %(count)d cím (forrás használatban)"
 
 msgid "Done"
-msgstr ""
+msgstr "Kész"
 
 #, python-format
 msgid "ERROR: %(error)s"
-msgstr ""
+msgstr "HIBA: %(error)s"
 
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 msgid "DDT2000 command macros"
-msgstr ""
+msgstr "DDT2000 parancsmakrók"
 
 msgid "Macro folder (.cmd and *.txt)"
-msgstr ""
+msgstr "Makrómappa (.cmd és *.txt)"
 
 msgid "Browse"
-msgstr ""
+msgstr "Tallózás"
 
 msgid "Refresh"
 msgstr "Frissítés"
 
 msgid "Macro folder:"
-msgstr ""
+msgstr "Makrómappa:"
 
 msgid "Log ELM traffic to file"
-msgstr ""
+msgstr "ELM forgalom fájlba naplózása"
 
 msgid "Log file name:"
-msgstr ""
+msgstr "Naplófájl neve:"
 
 msgid ".cmd files (by ECU)"
-msgstr ""
+msgstr ".cmd fájlok (ECU szerint)"
 
 msgid "Named macros (by *.txt)"
-msgstr ""
+msgstr "Megnevezett makrók (*.txt szerint)"
 
 msgid "Macros by ECU (.cmd)"
-msgstr ""
+msgstr "Makrók ECU szerint (.cmd)"
 
 msgid "Named macros (*.txt)"
-msgstr ""
+msgstr "Megnevezett makrók (*.txt)"
 
-#, fuzzy
 msgid "Send key"
-msgstr "Bájtok küldése"
+msgstr "Gombnyomás küldése"
 
 msgid "Key for 'if_key':"
-msgstr ""
+msgstr "Gomb 'if_key' esetén:"
 
-#, fuzzy
 msgid "Execute .cmd"
-msgstr "Végrehajtás"
+msgstr ".cmd futtatása"
 
-#, fuzzy
 msgid "Execute macro"
-msgstr "Végrehajtás"
+msgstr "Makró futtatása"
 
 msgid "Stop"
-msgstr ""
+msgstr "Leállítás"
 
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 msgid "Log"
-msgstr ""
+msgstr "Napló"
 
 msgid "Macro folder"
-msgstr ""
+msgstr "Makrómappa"
 
 #, python-format
 msgid "Parsing error %(file)s: %(error)s"
-msgstr ""
+msgstr "Feldolgozási hiba a(z) %(file)s fájlban: %(error)s"
 
 #, python-format
 msgid "%(macro)s (defined in %(file)s)"
-msgstr ""
+msgstr "%(macro)s (definiálva itt: %(file)s)"
 
 #, python-format
 msgid "Host: %(host)s"
-msgstr ""
+msgstr "Kiszolgáló: %(host)s"
 
 #, python-format
 msgid "Addresses: %(legacy)s"
-msgstr ""
+msgstr "Címek: %(legacy)s"
 
 msgid ""
 "Format: DDT2000 command macros (pyren3); the bundled macros target Renault "
 "ECUs, address resolution follows the vehicle loaded in ddt4all."
 msgstr ""
+"Formátum: DDT2000 parancsmakrók (pyren3); a mellékelt makrók Renault ECU-kat "
+"céloznak meg, a címfeloldás a ddt4all-ba betöltött járművet követi."
 
 #, python-format
 msgid "Folder: %(folder)s"
-msgstr ""
+msgstr "Mappa: %(folder)s"
 
 msgid "(none)"
-msgstr ""
+msgstr "(nincs)"
 
 #, python-format
 msgid "Source: %(source)s"
-msgstr ""
+msgstr "Forrás: %(source)s"
 
 #, python-format
 msgid ""
 "%(groups)d ECU group(s), %(files)d .cmd file(s), %(named)d named macro(s) in "
 "%(txt)d .txt file(s)"
 msgstr ""
+"%(groups)d ECU csoport, %(files)d .cmd fájl, %(named)d megnevezett makró "
+"%(txt)d .txt fájlban"
 
 #, python-format
 msgid "Journal files: %(elm)s and %(ecu)s"
-msgstr ""
+msgstr "Naplófájlok: %(elm)s és %(ecu)s"
 
 msgid "No ELM connection: the journal is not written."
-msgstr ""
+msgstr "Nincs ELM kapcsolat: a napló nem kerül mentésre."
 
 #, python-format
 msgid "Cannot write the journal (%(error)s)"
-msgstr ""
+msgstr "A napló nem írható (%(error)s)"
 
 #, python-format
 msgid "Journal: %(elm)s"
-msgstr ""
+msgstr "Napló: %(elm)s"
 
 #, python-format
 msgid "Journal: %(ecu)s"
-msgstr ""
+msgstr "Napló: %(ecu)s"
 
 msgid "ddt4all not found (console mode only)"
-msgstr ""
+msgstr "ddt4all nem található (csak konzolos mód)"
 
 #, python-format
 msgid "ddt4all %(flavor)s | %(elm)s | addressing: %(addressing)s"
-msgstr ""
+msgstr "ddt4all %(flavor)s | %(elm)s | címzés: %(addressing)s"
 
 #, python-format
 msgid "%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d named macro(s)"
 msgstr ""
+"%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d megnevezett makró"
 
 #, python-format
 msgid ""
@@ -1228,49 +1273,58 @@ msgid ""
 "Source: %(source)s\n"
 "%(journal)s"
 msgstr ""
+"%(host)s\n"
+"Címek: %(legacy)s\n"
+"%(detail)s\n"
+"Mappa: %(folder)s\n"
+"Forrás: %(source)s\n"
+"%(journal)s"
 
 msgid "Journal: disabled"
-msgstr ""
+msgstr "Napló: letiltva"
 
 msgid "A macro is already running."
-msgstr ""
+msgstr "Már fut egy makró."
 
 msgid "ddt4all is not available: this plugin must be started from ddt4all."
-msgstr ""
+msgstr "ddt4all nem érhető el: ezt a bővítményt a ddt4all-ból kell indítani."
 
 msgid "No ELM connection: connect ddt4all to the ELM before running a macro."
 msgstr ""
+"Nincs ELM kapcsolat: makró futtatása előtt csatlakoztassa a ddt4all-t az ELM-"
+"hez."
 
 #, python-format
 msgid "--- START %(kind)s: %(macro)s ---"
-msgstr ""
+msgstr "--- INDÍTÁS %(kind)s: %(macro)s ---"
 
 msgid "Select a .cmd file (double-click to run)."
-msgstr ""
+msgstr "Válasszon egy .cmd fájlt (dupla kattintás a futtatáshoz)."
 
 msgid "Select a named macro (double-click to run)."
-msgstr ""
+msgstr "Válasszon egy megnevezett makrót (dupla kattintás a futtatáshoz)."
 
 #, python-format
 msgid "# key '%(key)s' sent"
-msgstr ""
+msgstr "# '%(key)s' gomb elküldve"
 
-#, fuzzy
 msgid "# stop requested..."
-msgstr "Nincs elnevezett parancs"
+msgstr "# leállítás kérve..."
 
 #, python-format
 msgid "--- END: %(status)s ---"
-msgstr ""
+msgstr "--- VÉGE: %(status)s ---"
 
 #, python-format
 msgid ""
 "WARNING: address %(addr)s resolves to %(tx)s/%(rx)s (ddt4all) but pyren3 "
 "uses %(pltx)s/%(plrx)s"
 msgstr ""
+"FIGYELMEZTETÉS: a(z) %(addr)s cím %(tx)s/%(rx)s értékre oldódik fel "
+"(ddt4all), de a pyren3 a következőt használja: %(pltx)s/%(plrx)s"
 
 msgid "Laguna II UCH Reset"
-msgstr "Laguna II UCH Reset"
+msgstr "Laguna II UCH visszaállítása"
 
 msgid "UCH Tools"
 msgstr "UCH eszközök"
@@ -1286,16 +1340,16 @@ msgid "Check UCH Virgin"
 msgstr "UCH Virgin ellenőrzése"
 
 msgid "Virginize UCH"
-msgstr "UCH Virginizálása"
+msgstr "UCH szűzzé tétele"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr "<font color='green'>UCH virgin</font>"
+msgstr "<font color='green'>Szűz UCH</font>"
 
 msgid "<font color='red'>UCH coded</font>"
 msgstr "<font color='red'>UCH kódolt</font>"
 
 msgid "Laguna III UCH Reset"
-msgstr "Laguna III UCH Reset"
+msgstr "Laguna III UCH visszaállítása"
 
 msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1305,7 +1359,7 @@ msgstr ""
 "JÁT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr "Megane/Scenic II UCH Reset"
+msgstr "Megane/Scenic II UCH visszaállítása"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1315,7 +1369,7 @@ msgstr ""
 "JÁT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr "Megane3 AIRBAG Reset"
+msgstr "Megane3 légzsák visszaállítása"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
@@ -1326,10 +1380,10 @@ msgstr ""
 
 #, python-format
 msgid "SDS FA stream: %s"
-msgstr "SDS FA stream: %s"
+msgstr "SDS FA adatfolyam: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
+msgstr "ZOE/FLENCE/Megane III/Scenic III EPS visszaállítása"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
@@ -1341,7 +1395,7 @@ msgstr ""
 "JELENT EZ</font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr "Megane/Scenic III UCH Reset"
+msgstr "Megane/Scenic III UCH visszaállítása"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1351,7 +1405,7 @@ msgstr ""
 "JÁT<br>MENJ EL, HA NINCS ÖTLETED, MIT JELENT EZ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr "RSAT4 AIRBAG Reset"
+msgstr "RSAT4 légzsák visszaállítása"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
@@ -1364,19 +1418,19 @@ msgstr ""
 
 #, python-format
 msgid "SdSEX stream: %s"
-msgstr "SdSEX stream: %s"
+msgstr "SdSEX adatfolyam: %s"
 
 msgid "CRC calculator"
-msgstr "CRC számológép"
+msgstr "CRC számoló"
 
 msgid "VIN"
-msgstr "VIN"
+msgstr "VIN szám"
 
 msgid "CRC Calculator"
-msgstr "CRC számológép"
+msgstr "CRC számoló"
 
 msgid "CRC CALCULATOR"
-msgstr "CRC SZÁMOLÓGÉP"
+msgstr "CRC SZÁMOLÓ"
 
 msgid "Zoe water pump Reset"
 msgstr "Zoe vízpumpa Reset"
@@ -1406,10 +1460,10 @@ msgid "High Speed"
 msgstr "Magas sebesség"
 
 msgid "V_Timer_DrivWEP_ON"
-msgstr "V_Timer_DrivWEP_ON"
+msgstr "V_Timer_DrivWEP_ON (időzítő)"
 
 msgid "Reset"
-msgstr "Reset"
+msgstr "Visszaállítás"
 
 msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
@@ -1547,7 +1601,7 @@ msgid "Numeric items"
 msgstr "Numerikus elemek"
 
 msgid "Hex"
-msgstr "Hex"
+msgstr "Hexadecimális"
 
 #, python-format
 msgid "Data is used by request %s"
@@ -1578,10 +1632,10 @@ msgid "ECU Protocol"
 msgstr "ECU protokoll"
 
 msgid "Tool > Ecu ID (Hex)"
-msgstr "Eszköz > Ecu ID (Hex)"
+msgstr "Eszköz > ECU ID (Hex)"
 
 msgid "Ecu > Tool ID (Hex)"
-msgstr "Ecu > Eszköz ID (Hex)"
+msgstr "ECU > Eszköz ID (Hex)"
 
 msgid "Coding"
 msgstr "Kódolás"
@@ -1617,7 +1671,7 @@ msgid "Number of bit"
 msgstr "Bitek száma"
 
 msgid "Unit"
-msgstr "Egység"
+msgstr "Mértékegység"
 
 msgid "Format"
 msgstr "Formátum"
@@ -1638,31 +1692,31 @@ msgid "Data length"
 msgstr "Adathossz"
 
 msgid "Shift byte count"
-msgstr "Bájtok eltolása"
+msgstr "Bájteltolás száma"
 
 msgid "Data name;Start byte;Bit offset;Bit count;Endianess"
-msgstr "Adat neve;Kezdő bájt,Bit offszet;Bitek száma;Bájtsorrend"
+msgstr "Adatnév;Kezdő bájt;Biteltolás;Bitek száma;Endianitás"
 
 msgid "Little"
-msgstr "Kicsi az elején"
+msgstr "Little-endian"
 
 msgid "Big"
-msgstr "Nagy az elején"
+msgstr "Big-endian"
 
 msgid "Inherits globals"
-msgstr "Globális megöröklése"
+msgstr "Globálisak öröklése"
 
 msgid "No SDS"
 msgstr "Nincs SDS"
 
 msgid "Plant"
-msgstr "Üzem"
+msgstr "Gyár"
 
 msgid "After Sale"
 msgstr "Értékesítés utáni"
 
 msgid "Engineering"
-msgstr "Mérnöki"
+msgstr "Mérnöki mód"
 
 msgid "Supplier"
 msgstr "Gyártó"
@@ -1692,7 +1746,7 @@ msgid "Cannot find data "
 msgstr "Nem található adat "
 
 msgid " vs "
-msgstr " vs "
+msgstr " ellenében "
 
 msgid "Cannot draw input "
 msgstr "Sikertelen parancshívás "
@@ -1723,10 +1777,10 @@ msgid "Address :"
 msgstr "Cím :"
 
 msgid "ID frame :"
-msgstr "ID keret :"
+msgstr "ID keret:"
 
 msgid "Search vehicle"
-msgstr ""
+msgstr "Jármű keresése"
 
 msgid "No vehicles available"
 msgstr "Nincs elérhető jármű"
@@ -1773,7 +1827,7 @@ msgid "Screen"
 msgstr "Képernyő"
 
 msgid "CAN Sniffer"
-msgstr "CAN Sniffer"
+msgstr "CAN elemző"
 
 msgid "Requests"
 msgstr "Parancsok"
@@ -1827,7 +1881,7 @@ msgid "Manual request"
 msgstr "Manuális kérés"
 
 msgid "Software flow control"
-msgstr "Szoftver folyamatvezérlés"
+msgstr "Szoftveres áramlásvezérlés"
 
 msgid "Zoom In"
 msgstr "Nagyítás"
@@ -1917,7 +1971,7 @@ msgid "Help"
 msgstr "Súgó"
 
 msgid "Web Wiki"
-msgstr "Web Wiki"
+msgstr "Webes Wiki"
 
 msgid "About Developers"
 msgstr "A fejlesztőkről"
@@ -1975,10 +2029,10 @@ msgid "CAN Line 2@125K"
 msgstr "CAN 2-es vonal@125K"
 
 msgid "KWP2000"
-msgstr "KWP2000"
+msgstr "KWP2000 protokoll"
 
 msgid "ISO8"
-msgstr "ISO8"
+msgstr "ISO8 protokoll"
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "Adatbázis mentése (tartsa meg a '.zip' kiterjesztést)"
@@ -2044,25 +2098,25 @@ msgid "ELM port selection"
 msgstr "ELM port kiválasztása"
 
 msgid "USB"
-msgstr "USB"
+msgstr "USB kapcsolat"
 
 msgid "WiFi"
-msgstr "WiFi"
+msgstr "Wi-Fi"
 
 msgid "Bluetooth"
-msgstr "Bluetooth"
+msgstr "Bluetooth kapcsolat"
 
 msgid "OBDLINK SX/EX"
-msgstr "OBDLINK SX/EX"
+msgstr "OBDLINK SX/EX adapter"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
 msgstr "ELS27/ELS27 V5 - Megjelenhet FTDI/CH340/CP210x eszközként"
 
 msgid "Vlinker FS/MC"
-msgstr "Vlinker FS/MC"
+msgstr "Vlinker FS/MC adapter"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr "DERLEK USB-DIAG2/3"
+msgstr "DERLEK USB-DIAG2/3 adapter"
 
 msgid "VGate (High-Speed)"
 msgstr "VGate (Nagy sebességű)"
@@ -2114,16 +2168,16 @@ msgid "Custom"
 msgstr "Egyéni"
 
 msgid "Bosch MTS"
-msgstr "Bosch MTS"
+msgstr "Bosch MTS eszköz"
 
 msgid "VXDIAG VCX Nano"
-msgstr "VXDIAG VCX Nano"
+msgstr "VXDIAG VCX Nano interfész"
 
 msgid "VAG ODIS"
-msgstr "VAG ODIS"
+msgstr "VAG ODIS diagnosztika"
 
 msgid "JLR DoIP VCI"
-msgstr "JLR DoIP VCI"
+msgstr "JLR DoIP VCI interfész"
 
 msgid "Generic DoIP"
 msgstr "Általános DoIP"
@@ -2132,7 +2186,7 @@ msgid "DoIP Target IP : "
 msgstr "DoIP cél IP : "
 
 msgid "DoIP Port : "
-msgstr "DoIP port : "
+msgstr "DoIP portszám: "
 
 msgid "DoIP Timeout (seconds) : "
 msgstr "DoIP időtúllépés (másodperc) : "
@@ -2182,7 +2236,7 @@ msgid "Attempting connection..."
 msgstr "Kapcsolódási kísérlet..."
 
 msgid "Port: "
-msgstr "Port: "
+msgstr "Portszám: "
 
 msgid "Speed: "
 msgstr "Sebesség: "
@@ -2243,11 +2297,11 @@ msgstr "%s beállítás alkalmazva:"
 
 #, python-format
 msgid "  IP: %s"
-msgstr "  IP: %s"
+msgstr "  IP-cím: %s"
 
 #, python-format
 msgid "  Port: %s"
-msgstr "  Port: %s"
+msgstr "  Portszám: %s"
 
 #, python-format
 msgid "  Timeout: %ss"
@@ -2276,7 +2330,7 @@ msgid "Error in targeted DoIP update: %s"
 msgstr "Hiba a célzott DoIP frissítésben: %s"
 
 msgid "N/A"
-msgstr "N/A"
+msgstr "Nincs adat"
 
 msgid "DoIP (Diagnostics over IP) selected"
 msgstr "DoIP (Diagnosztika IP-n keresztül) kiválasztva"

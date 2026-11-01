@@ -422,10 +422,10 @@ msgid "FAIL"
 msgstr "BŁĄD"
 
 msgid "OK/TIMEOUT"
-msgstr "OK/CZAS OCZEKIWANIA"
+msgstr "ZATWIERDŹ/LIMIT CZASU"
 
 msgid "OK"
-msgstr "OK"
+msgstr "Zatwierdź"
 
 msgid "Incompatible adapter on ARM core"
 msgstr "Niekompatybilny adapter na rdzeniu ARM"
@@ -519,11 +519,13 @@ msgstr "Nieoczekiwany błąd WiFi: %s"
 
 #, python-format
 msgid "WiFi recv: %s"
-msgstr "WiFi recv: %s"
+msgstr "Odbiór WiFi: %s"
 
 #, python-format
 msgid "WiFi socket timed out %s times in a row; reconnect scheduled"
 msgstr ""
+"Przekroczono limit czasu gniazda WiFi %s razy z rzędu; zaplanowano ponowne "
+"połączenie"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
@@ -562,7 +564,7 @@ msgid "*       Write error: %s"
 msgstr "*       Błąd zapisu: %s"
 
 msgid "TIMEOUT"
-msgstr "CZAS OCZEKIWANIA"
+msgstr "LIMIT CZASU"
 
 msgid "Checking port speed:"
 msgstr "Sprawdzanie prędkości portu:"
@@ -659,7 +661,7 @@ msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "ELM327 lub OBDLink-SX nie wykryty na porcie COM "
 
 msgid "AB90 AIRBAG Reset"
-msgstr "Reset AIRBAG AB90"
+msgstr "Resetowanie poduszki powietrznej AB90"
 
 msgid "Airbag Tools"
 msgstr "Narzędzia dla Airbagów"
@@ -680,7 +682,7 @@ msgid "Waiting"
 msgstr "Oczekiwanie"
 
 msgid "Virginize ACU"
-msgstr "Zrób ACU Virgin"
+msgstr "Przywróć stan czysty ACU"
 
 msgid "Cannot connect to ECU"
 msgstr "Nie można połączyć z ECU"
@@ -730,19 +732,19 @@ msgid "CANCEL"
 msgstr "ANULUJ"
 
 msgid "Algo 2"
-msgstr "Algo 2"
+msgstr "Algorytm 2"
 
 msgid "ISK"
-msgstr "ISK"
+msgstr "Kod ISK"
 
 msgid "PIN"
-msgstr "PIN"
+msgstr "Kod PIN"
 
 msgid "Num key learnt"
 msgstr "Liczba nauczonych kluczy"
 
 msgid "CARD IDE"
-msgstr "IDE KARTY"
+msgstr "Identyfikator karty (IDE)"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr "Nie można uzyskać ISK, sprawdź połączenia i kompatybilność UCH"
@@ -757,7 +759,7 @@ msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
 msgstr "<font color='green'>KOD PIN OK / UCZENIE UCH</font>"
 
 msgid "Modus/Clio III EPS Reset"
-msgstr "Reset EPS Modus/Clio III"
+msgstr "Resetowanie EPS Modus/Clio III"
 
 msgid "EPS Tools"
 msgstr "Narzędzia EPS"
@@ -773,7 +775,7 @@ msgid "BLANK STATUS & VIN READ"
 msgstr "PUSTY STATUS I ODCZYT VIN"
 
 msgid "Virginize EPS"
-msgstr "Zrób EPS Virgin"
+msgstr "Przywróć stan czysty EPS"
 
 msgid "VIN - READ"
 msgstr "VIN - ODCZYT"
@@ -797,7 +799,7 @@ msgid "<font color='green'>VIN WRITE OK</font>"
 msgstr "<font color='green'>ZAPIS VIN OK</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr "<font color='green'>EPS virgin</font>"
+msgstr "<font color='green'>Czysty EPS</font>"
 
 msgid "<font color='red'>EPS coded</font>"
 msgstr "<font color='red'>EPS zakodowany</font>"
@@ -807,7 +809,7 @@ msgid "SdSC0 stream: %s"
 msgstr "Strumień SdSC0: %s"
 
 msgid "Clio IV EPS Reset"
-msgstr "Reset EPS Clio IV"
+msgstr "Resetowanie EPS Clio IV"
 
 msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
@@ -830,10 +832,10 @@ msgid "SdSFA stream: %s"
 msgstr "Strumień SdSFA: %s"
 
 msgid "DDT2000 command macros (.cmd)"
-msgstr ""
+msgstr "Makra poleceń DDT2000 (.cmd)"
 
 msgid "Macros"
-msgstr ""
+msgstr "Makra poleceń"
 
 msgid ""
 "ERROR: command should have 5 parameters: \n"
@@ -849,6 +851,18 @@ msgid ""
 "        <hex value> - bit value\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"BŁĄD: polecenie musi mieć 5 parametrów: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value>\n"
+"        <lid> - lokalny identyfikator ECU. Długość powinna wynosić 2 znaki "
+"dla KWP lub 4 dla CAN\n"
+"        <rsp_len> - długość odpowiedzi polecenia wraz z bajtami odpowiedzi "
+"pozytywnej, równa MinBytes z bazy ddt\n"
+"        <offset> - przesunięcie w bajtach do pierwszego zmienionego bajtu "
+"(zaczyna się od 1, nie od 0) \n"
+"        <hex mask> - maska bitowa zmienionych bitów, 1 - modyfikowalny, 0 - "
+"nienaruszalny\n"
+"        <hex value> - wartość bitowa\n"
+"    <hex mask> i <hex value> muszą mieć jednakową długość\n"
 
 msgid ""
 "ERROR: command should have 6 parameters: \n"
@@ -865,6 +879,19 @@ msgid ""
 "        <label> - label to go\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"BŁĄD: polecenie musi mieć 6 parametrów: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - lokalny identyfikator ECU. Długość powinna wynosić 2 znaki "
+"dla KWP lub 4 dla CAN\n"
+"        <rsp_len> - długość odpowiedzi polecenia wraz z bajtami odpowiedzi "
+"pozytywnej, równa MinBytes z bazy ddt\n"
+"        <offset> - przesunięcie w bajtach do pierwszego zmienionego bajtu "
+"(zaczyna się od 1, nie od 0) \n"
+"        <hex mask> - maska bitowa zmienionych bitów, 1 - modyfikowalny, 0 - "
+"nienaruszalny\n"
+"        <hex value> - wartość bitowa\n"
+"        <label> - etykieta docelowa\n"
+"    <hex mask> i <hex value> muszą mieć jednakową długość\n"
 
 msgid ""
 "ERROR: command should have 4 or 7 parameters: \n"
@@ -882,347 +909,362 @@ msgid ""
 "        <val divider> - value divider\n"
 "\n"
 msgstr ""
+"BŁĄD: polecenie musi mieć 4 lub 7 parametrów: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - lokalny identyfikator ECU. Długość powinna wynosić 2 znaki "
+"dla KWP lub 4 dla CAN\n"
+"        <rsp_len> - długość odpowiedzi polecenia wraz z bajtami odpowiedzi "
+"pozytywnej, równa MinBytes z bazy ddt\n"
+"        <offset> - przesunięcie w bajtach do pierwszego zmienionego bajtu "
+"(zaczyna się od 1, nie od 0) \n"
+"        <hex mask> - maska bitowa zmienionych bitów, 1 - modyfikowalny, 0 - "
+"nienaruszalny\n"
+"        <val step> - krok wartości\n"
+"        <val offset> - przesunięcie wartości\n"
+"        <val divider> - dzielnik wartości\n"
+"\n"
 
 msgid "No ELM connection (plugin need_hw=True ?)"
-msgstr ""
+msgstr "Brak połączenia ELM (czy wtyczka wymaga need_hw=True ?)"
 
 #, python-format
 msgid "guard: %(limit)d steps exceeded (infinite loop?)"
-msgstr ""
+msgstr "strażnik: przekroczono %(limit)d kroków (nieskończona pętla?)"
 
-#, fuzzy
 msgid "# abort requested"
-msgstr "Nie nazwany request"
+msgstr "# zażądano przerwania"
 
 #, python-format
 msgid "openning file: %(file)s"
-msgstr ""
+msgstr "otwieranie pliku: %(file)s"
 
 #, python-format
 msgid "%(file)s:%(line)d: empty macro name"
-msgstr ""
+msgstr "%(file)s:%(line)d: pusta nazwa makra"
 
 #, python-format
 msgid "%(file)s:%(line)d: unexpected end of macro"
-msgstr ""
+msgstr "%(file)s:%(line)d: nieoczekiwany koniec makra"
 
 #, python-format
 msgid "%(file)s: includes are nested too deeply (%(limit)d levels)"
-msgstr ""
+msgstr "%(file)s: dołączenia zagnieżdżone zbyt głęboko (%(limit)d poziomów)"
 
 #, python-format
 msgid "Cannot read %(file)s: %(error)s"
-msgstr ""
+msgstr "Nie można odczytać %(file)s: %(error)s"
 
 #, python-format
 msgid "%(file)s: included file not found: %(target)s"
-msgstr ""
+msgstr "%(file)s: nie znaleziono dołączonego pliku: %(target)s"
 
 #, python-format
 msgid "include loop: %(target)s"
-msgstr ""
+msgstr "pętla dołączeń: %(target)s"
 
 #, python-format
 msgid "# include %(file)s"
-msgstr ""
+msgstr "# dołączenie pliku %(file)s"
 
 #, python-format
 msgid "  %(name)s = %(value)s"
-msgstr ""
+msgstr "  %(name)s = %(value)s"
 
 #, python-format
 msgid "  %(macro)s"
-msgstr ""
+msgstr "  %(macro)s"
 
 msgid "[h]elp                 - this help"
-msgstr ""
+msgstr "[h]elp                 - ta pomoc"
 
 msgid "[q]uit, [e]xit, end    - exit from terminal"
-msgstr ""
+msgstr "[q]uit, [e]xit, end    - wyjście z terminala"
 
 msgid "wait|sleep x           - wait x seconds"
-msgstr ""
+msgstr "wait|sleep x           - czekaj x sekund"
 
 msgid "include <file>         - play another .cmd here"
-msgstr ""
+msgstr "include <plik>         - wykonaj inny .cmd tutaj"
 
 msgid "Variables:"
-msgstr ""
+msgstr "Zmienne:"
 
 msgid "Macros:"
-msgstr ""
+msgstr "Makra poleceń:"
 
 #, python-format
 msgid "Error: unknown macro name: %(macro)s"
-msgstr ""
+msgstr "Błąd: nieznana nazwa makra: %(macro)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error: recursion prohibited: %(macro)s"
-msgstr "Błąd podczas zamykania portu: %s"
+msgstr "Błąd: rekurencja zabroniona: %(macro)s"
 
 #, python-format
 msgid "### %(file)s : %(count)d lines"
-msgstr ""
+msgstr "### %(file)s : %(count)d wierszy"
 
 msgid "# end of command file"
-msgstr ""
+msgstr "# koniec pliku poleceń"
 
 #, python-format
 msgid "> %(line)s"
-msgstr ""
+msgstr "> %(line)s"
 
 #, python-format
 msgid "Error: unknown label '%(label)s'"
-msgstr ""
+msgstr "Błąd: nieznana etykieta '%(label)s'"
 
 msgid "###### Variables #####"
-msgstr ""
+msgstr "###### Zmienne #####"
 
 #, python-format
 msgid "# %(name)20s = %(value)s"
-msgstr ""
+msgstr "# %(name)20s = %(value)s"
 
 #, python-format
 msgid "Error: unknown variable %(name)s"
-msgstr ""
+msgstr "Błąd: nieznana zmienna %(name)s"
 
 msgid "Error: too many variables in one line"
-msgstr ""
+msgstr "Błąd: zbyt wiele zmiennych w jednym wierszu"
 
 msgid "#(subst)"
-msgstr ""
+msgstr "#(subst)"
 
 #, python-format
 msgid "# delay: %(seconds)s"
-msgstr ""
+msgstr "# opóźnienie: %(seconds)s"
 
 #, python-format
 msgid "Unrecognized init command: %(name)s"
-msgstr ""
+msgstr "Nierozpoznane polecenie inicjalizacji: %(name)s"
 
 msgid "ERROR: Unknown function"
-msgstr ""
+msgstr "BŁĄD: Nieznana funkcja"
 
 msgid "read  value: "
-msgstr ""
+msgstr "odczytana wartość: "
 
 msgid "ERROR: Length is unexpected"
-msgstr ""
+msgstr "BŁĄD: Nieoczekiwana długość"
 
 msgid "ERROR: Wrong simbol in response"
-msgstr ""
+msgstr "BŁĄD: Nieprawidłowy symbol w odpowiedzi"
 
 msgid "ERROR: Not positive response"
-msgstr ""
+msgstr "BŁĄD: Brak pozytywnej odpowiedzi"
 
 msgid "Match. Exit"
-msgstr ""
+msgstr "Dopasowanie znalezione. Wyjście"
 
 msgid "Not match. Continue"
-msgstr ""
+msgstr "Brak dopasowania. Kontynuuj"
 
 msgid "Not match. Exit"
-msgstr ""
+msgstr "Brak dopasowania. Wyjście"
 
 msgid "Match. Continue"
-msgstr ""
+msgstr "Dopasowanie znalezione. Kontynuuj"
 
 msgid "Match. goto: "
-msgstr ""
+msgstr "Dopasowanie znalezione. Przejdź do: "
 
 msgid "Not match. goto: "
-msgstr ""
+msgstr "Brak dopasowania. Przejdź do: "
 
 #, python-format
 msgid ""
 "# LID(%(lid)s) $rawValue = %(raw)s  $scaledValue = %(scaled)s  $hexValue = "
 "%(hex)s"
-msgstr ""
+msgstr "# LID(%(lid)s)  = %(raw)s   = %(scaled)s   = %(hex)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ERROR: unexpected positive response: %(rsp)s"
-msgstr "Oczekiwano odpowiedź kontroli alive, otrzymano: %s"
+msgstr "BŁĄD: nieoczekiwana pozytywna odpowiedź: %(rsp)s"
 
 msgid "write value: "
-msgstr ""
+msgstr "zapisana wartość: "
 
 msgid "ELM connected"
-msgstr ""
+msgstr "ELM połączony"
 
-#, fuzzy
 msgid "ELM not connected"
-msgstr "ELM nie podłączony lub wybrano zły port COM"
+msgstr "ELM niepołączony"
 
 msgid "installed copy (cmd_macros_lib/macros)"
-msgstr ""
+msgstr "zainstalowana kopia (cmd_macros_lib/macros)"
 
 msgid "manually chosen folder"
-msgstr ""
+msgstr "ręcznie wybrany folder"
 
 #, python-format
 msgid "ddt4all tables (%(count)d addresses)"
-msgstr ""
+msgstr "tabele ddt4all (%(count)d adresów)"
 
 #, python-format
 msgid "pyren3 fallback (%(count)d addresses)"
-msgstr ""
+msgstr "rozwiązanie zastępcze pyren3 (%(count)d adresów)"
 
 msgid "no table"
-msgstr ""
+msgstr "brak tabeli"
 
 msgid "pyren3 fallback: disabled"
-msgstr ""
+msgstr "rozwiązanie zastępcze pyren3: wyłączone"
 
 msgid "pyren3 fallback: no entry"
-msgstr ""
+msgstr "rozwiązanie zastępcze pyren3: brak wpisu"
 
 #, python-format
 msgid ""
 "pyren3 fallback: %(count)d addresses as a fallback, used only for the "
 "addresses missing from the ddt4all tables"
 msgstr ""
+"rozwiązanie zastępcze pyren3: %(count)d adresów jako rozwiązanie zastępcze, "
+"używane tylko dla brakujących adresów w tabelach ddt4all"
 
 #, python-format
 msgid "pyren3 fallback: %(count)d addresses (source in use)"
-msgstr ""
+msgstr "rozwiązanie zastępcze pyren3: %(count)d adresów (źródło w użyciu)"
 
 msgid "Done"
-msgstr ""
+msgstr "Gotowe"
 
 #, python-format
 msgid "ERROR: %(error)s"
-msgstr ""
+msgstr "BŁĄD: %(error)s"
 
 msgid "Error"
-msgstr ""
+msgstr "Błąd"
 
 msgid "DDT2000 command macros"
-msgstr ""
+msgstr "Makra poleceń DDT2000"
 
 msgid "Macro folder (.cmd and *.txt)"
-msgstr ""
+msgstr "Folder makr (.cmd i *.txt)"
 
 msgid "Browse"
-msgstr ""
+msgstr "Przeglądaj"
 
 msgid "Refresh"
 msgstr "Odśwież"
 
 msgid "Macro folder:"
-msgstr ""
+msgstr "Folder makr:"
 
 msgid "Log ELM traffic to file"
-msgstr ""
+msgstr "Rejestruj ruch ELM do pliku"
 
 msgid "Log file name:"
-msgstr ""
+msgstr "Nazwa pliku dziennika:"
 
 msgid ".cmd files (by ECU)"
-msgstr ""
+msgstr "Pliki .cmd (według ECU)"
 
 msgid "Named macros (by *.txt)"
-msgstr ""
+msgstr "Nazwane makra (według *.txt)"
 
 msgid "Macros by ECU (.cmd)"
-msgstr ""
+msgstr "Makra według ECU (.cmd)"
 
 msgid "Named macros (*.txt)"
-msgstr ""
+msgstr "Nazwane makra (*.txt)"
 
-#, fuzzy
 msgid "Send key"
-msgstr "Wyślij bajty"
+msgstr "Wyślij klawisz"
 
 msgid "Key for 'if_key':"
-msgstr ""
+msgstr "Klawisz dla 'if_key':"
 
-#, fuzzy
 msgid "Execute .cmd"
-msgstr "Wykonaj"
+msgstr "Wykonaj .cmd"
 
-#, fuzzy
 msgid "Execute macro"
-msgstr "Wykonaj"
+msgstr "Wykonaj makro"
 
 msgid "Stop"
-msgstr ""
+msgstr "Zatrzymaj"
 
 msgid "Close"
-msgstr ""
+msgstr "Zamknij"
 
 msgid "Log"
-msgstr ""
+msgstr "Dziennik"
 
 msgid "Macro folder"
-msgstr ""
+msgstr "Folder makr"
 
 #, python-format
 msgid "Parsing error %(file)s: %(error)s"
-msgstr ""
+msgstr "Błąd parsowania w %(file)s: %(error)s"
 
 #, python-format
 msgid "%(macro)s (defined in %(file)s)"
-msgstr ""
+msgstr "%(macro)s (zdefiniowane w %(file)s)"
 
 #, python-format
 msgid "Host: %(host)s"
-msgstr ""
+msgstr "Host (serwer): %(host)s"
 
 #, python-format
 msgid "Addresses: %(legacy)s"
-msgstr ""
+msgstr "Adresy: %(legacy)s"
 
 msgid ""
 "Format: DDT2000 command macros (pyren3); the bundled macros target Renault "
 "ECUs, address resolution follows the vehicle loaded in ddt4all."
 msgstr ""
+"Format: makra poleceń DDT2000 (pyren3); dołączone makra dotyczą ECU Renault, "
+"rozpoznawanie adresów następuje według pojazdu wczytanego w ddt4all."
 
 #, python-format
 msgid "Folder: %(folder)s"
-msgstr ""
+msgstr "Katalog: %(folder)s"
 
 msgid "(none)"
-msgstr ""
+msgstr "(brak)"
 
 #, python-format
 msgid "Source: %(source)s"
-msgstr ""
+msgstr "Źródło: %(source)s"
 
 #, python-format
 msgid ""
 "%(groups)d ECU group(s), %(files)d .cmd file(s), %(named)d named macro(s) in "
 "%(txt)d .txt file(s)"
 msgstr ""
+"%(groups)d grup ECU, %(files)d plików .cmd, %(named)d nazwanych makr w "
+"%(txt)d plikach .txt"
 
 #, python-format
 msgid "Journal files: %(elm)s and %(ecu)s"
-msgstr ""
+msgstr "Pliki dziennika: %(elm)s i %(ecu)s"
 
 msgid "No ELM connection: the journal is not written."
-msgstr ""
+msgstr "Brak połączenia ELM: dziennik nie jest zapisywany."
 
 #, python-format
 msgid "Cannot write the journal (%(error)s)"
-msgstr ""
+msgstr "Nie można zapisać dziennika (%(error)s)"
 
 #, python-format
 msgid "Journal: %(elm)s"
-msgstr ""
+msgstr "Dziennik: %(elm)s"
 
 #, python-format
 msgid "Journal: %(ecu)s"
-msgstr ""
+msgstr "Dziennik: %(ecu)s"
 
 msgid "ddt4all not found (console mode only)"
-msgstr ""
+msgstr "ddt4all nie znaleziony (tylko tryb konsoli)"
 
 #, python-format
 msgid "ddt4all %(flavor)s | %(elm)s | addressing: %(addressing)s"
-msgstr ""
+msgstr "ddt4all %(flavor)s | %(elm)s | adresowanie: %(addressing)s"
 
 #, python-format
 msgid "%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d named macro(s)"
-msgstr ""
+msgstr "%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d nazwanych makr"
 
 #, python-format
 msgid ""
@@ -1233,49 +1275,58 @@ msgid ""
 "Source: %(source)s\n"
 "%(journal)s"
 msgstr ""
+"%(host)s\n"
+"Adresy: %(legacy)s\n"
+"%(detail)s\n"
+"Folder: %(folder)s\n"
+"Źródło: %(source)s\n"
+"%(journal)s"
 
 msgid "Journal: disabled"
-msgstr ""
+msgstr "Dziennik: wyłączony"
 
 msgid "A macro is already running."
-msgstr ""
+msgstr "Makro jest już uruchomione."
 
 msgid "ddt4all is not available: this plugin must be started from ddt4all."
 msgstr ""
+"ddt4all nie jest dostępny: ta wtyczka musi zostać uruchomiona z poziomu "
+"ddt4all."
 
 msgid "No ELM connection: connect ddt4all to the ELM before running a macro."
-msgstr ""
+msgstr "Brak połączenia ELM: połącz ddt4all z ELM przed uruchomieniem makra."
 
 #, python-format
 msgid "--- START %(kind)s: %(macro)s ---"
-msgstr ""
+msgstr "--- URUCHOMIENIE %(kind)s: %(macro)s ---"
 
 msgid "Select a .cmd file (double-click to run)."
-msgstr ""
+msgstr "Wybierz plik .cmd (kliknij dwukrotnie, aby uruchomić)."
 
 msgid "Select a named macro (double-click to run)."
-msgstr ""
+msgstr "Wybierz nazwane makro (kliknij dwukrotnie, aby uruchomić)."
 
 #, python-format
 msgid "# key '%(key)s' sent"
-msgstr ""
+msgstr "# klawisz '%(key)s' wysłany"
 
-#, fuzzy
 msgid "# stop requested..."
-msgstr "Nie nazwany request"
+msgstr "# zażądano zatrzymania..."
 
 #, python-format
 msgid "--- END: %(status)s ---"
-msgstr ""
+msgstr "--- KONIEC: %(status)s ---"
 
 #, python-format
 msgid ""
 "WARNING: address %(addr)s resolves to %(tx)s/%(rx)s (ddt4all) but pyren3 "
 "uses %(pltx)s/%(plrx)s"
 msgstr ""
+"OSTRZEŻENIE: adres %(addr)s wskazuje na %(tx)s/%(rx)s (ddt4all), lecz pyren3 "
+"używa %(pltx)s/%(plrx)s"
 
 msgid "Laguna II UCH Reset"
-msgstr "Reset UCH Laguna II"
+msgstr "Resetowanie UCH Laguna II"
 
 msgid "UCH Tools"
 msgstr "Narzędzia UCH"
@@ -1291,16 +1342,16 @@ msgid "Check UCH Virgin"
 msgstr "Sprawdź UCH Virgin"
 
 msgid "Virginize UCH"
-msgstr "Zrób UCH Virgin"
+msgstr "Przywróć stan czysty UCH"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr "<font color='green'>UCH virgin</font>"
+msgstr "<font color='green'>Czysty UCH</font>"
 
 msgid "<font color='red'>UCH coded</font>"
 msgstr "<font color='red'>UCH zakodowany</font>"
 
 msgid "Laguna III UCH Reset"
-msgstr "Laguna III Reset UCH"
+msgstr "Resetowanie UCH Laguna III"
 
 msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1310,7 +1361,7 @@ msgstr ""
 "UCH<br>IDŹ DALEJ JEŚLI NIE MASZ POJEDU, CO TO ZNACZY</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr "Megan/Scenic II Reset UCH"
+msgstr "Resetowanie UCH Megane/Scenic II"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1320,7 +1371,7 @@ msgstr ""
 "UCH<br>IDŹ DALEJ JEŚLI NIE MASZ POJEDU, CO TO ZNACZY</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr "Megane3 Reset Airbag"
+msgstr "Resetowanie poduszki powietrznej Megane3"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
@@ -1334,7 +1385,7 @@ msgid "SDS FA stream: %s"
 msgstr "Strumień SDS FA: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr "ZOE/FLENCE/Megane III/Scenic III Reset EPS"
+msgstr "Resetowanie EPS ZOE/FLENCE/Megane III/Scenic III"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
@@ -1346,7 +1397,7 @@ msgstr ""
 "ZNACZY</font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr "Megane/Scenic III Reset UCH"
+msgstr "Resetowanie UCH Megane/Scenic III"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1356,7 +1407,7 @@ msgstr ""
 "UCH<br>IDŹ DALEJ JEŚLI NIE MASZ POJEDU, CO TO ZNACZY</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr "RSAT4 Reset Airbag"
+msgstr "Resetowanie poduszki powietrznej RSAT4"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
@@ -1375,7 +1426,7 @@ msgid "CRC calculator"
 msgstr "Kalkulator CRC"
 
 msgid "VIN"
-msgstr "VIN"
+msgstr "Numer VIN"
 
 msgid "CRC Calculator"
 msgstr "Kalkulator CRC"
@@ -1411,10 +1462,10 @@ msgid "High Speed"
 msgstr "Wysoka prędkość"
 
 msgid "V_Timer_DrivWEP_ON"
-msgstr "V_Timer_DrivWEP_ON"
+msgstr "V_Timer_DrivWEP_ON (zegar)"
 
 msgid "Reset"
-msgstr "Reset"
+msgstr "Resetuj"
 
 msgid ""
 "Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
@@ -1552,7 +1603,7 @@ msgid "Numeric items"
 msgstr "Pozycja numeryczna"
 
 msgid "Hex"
-msgstr "Hex"
+msgstr "Szesnastkowy"
 
 #, python-format
 msgid "Data is used by request %s"
@@ -1610,7 +1661,7 @@ msgid "Add item"
 msgstr "Dodaj pozycję"
 
 msgid "Del item"
-msgstr "Usuń pozycję"
+msgstr "Usuń element"
 
 msgid "New item"
 msgstr "Nowa pozycja"
@@ -1625,7 +1676,7 @@ msgid "Unit"
 msgstr "Jednostka"
 
 msgid "Format"
-msgstr "Format"
+msgstr "Format danych"
 
 msgid "Value = (AX+B) / C"
 msgstr "Wartość"
@@ -1662,7 +1713,7 @@ msgid "No SDS"
 msgstr "Nie SDS"
 
 msgid "Plant"
-msgstr "Plant"
+msgstr "Zakład produkcyjny"
 
 msgid "After Sale"
 msgstr "Po sprzedaży"
@@ -1698,7 +1749,7 @@ msgid "Cannot find data "
 msgstr "Nie można znaleźć danych "
 
 msgid " vs "
-msgstr " vs "
+msgstr " kontra "
 
 msgid "Cannot draw input "
 msgstr "Nie można narysować wejścia "
@@ -1732,7 +1783,7 @@ msgid "ID frame :"
 msgstr "ID ramki :"
 
 msgid "Search vehicle"
-msgstr ""
+msgstr "Szukaj pojazdu"
 
 msgid "No vehicles available"
 msgstr "Brak dostępnych pojazdów"
@@ -1780,7 +1831,7 @@ msgid "Screen"
 msgstr "Ekran"
 
 msgid "CAN Sniffer"
-msgstr "CAN Sniffer"
+msgstr "Analizator CAN"
 
 msgid "Requests"
 msgstr "Polecenie"
@@ -1837,10 +1888,10 @@ msgid "Software flow control"
 msgstr "Softwarowy kontroler przepływu"
 
 msgid "Zoom In"
-msgstr "Powiększ"
+msgstr "Przybliż"
 
 msgid "Zoom Out"
-msgstr "Pomniejsz"
+msgstr "Oddal"
 
 msgid "UI Edit"
 msgstr "Edycja UI"
@@ -1915,7 +1966,7 @@ msgid "Rename"
 msgstr "Zmień nazwę"
 
 msgid "Plugins"
-msgstr "Pluginy"
+msgstr "Wtyczki"
 
 msgid "Cannot load plugin "
 msgstr "Nie można załadować pluginu "
@@ -1982,10 +2033,10 @@ msgid "CAN Line 2@125K"
 msgstr "Linia CAN 2@125K"
 
 msgid "KWP2000"
-msgstr "KWP2000"
+msgstr "Protokół KWP2000"
 
 msgid "ISO8"
-msgstr "ISO8"
+msgstr "Protokół ISO8"
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "Zapisz bazę danych (zachowaj rozszerzenie '.zip')"
@@ -2051,25 +2102,25 @@ msgid "ELM port selection"
 msgstr "Wybierz port ELMa"
 
 msgid "USB"
-msgstr "USB"
+msgstr "Połączenie USB"
 
 msgid "WiFi"
-msgstr "WiFi"
+msgstr "Połączenie Wi-Fi"
 
 msgid "Bluetooth"
-msgstr "Bluetooth"
+msgstr "Połączenie Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr "OBDLINK SX/EX"
+msgstr "Adapter OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
 msgstr "ELS27/ELS27 V5 - Może pojawić się jako urządzenie FTDI/CH340/CP210x"
 
 msgid "Vlinker FS/MC"
-msgstr "Vlinker FS/MC"
+msgstr "Adapter Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr "DERLEK USB-DIAG2/3"
+msgstr "Adapter DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
 msgstr "VGate (Wysoka prędkość)"
@@ -2121,16 +2172,16 @@ msgid "Custom"
 msgstr "Niestandardowy"
 
 msgid "Bosch MTS"
-msgstr "Bosch MTS"
+msgstr "Urządzenie Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr "VXDIAG VCX Nano"
+msgstr "Urządzenie VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr "VAG ODIS"
+msgstr "Interfejs VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr "JLR DoIP VCI"
+msgstr "Interfejs JLR DoIP VCI"
 
 msgid "Generic DoIP"
 msgstr "Ogólny DoIP"
@@ -2139,7 +2190,7 @@ msgid "DoIP Target IP : "
 msgstr "Docelowy IP DoIP : "
 
 msgid "DoIP Port : "
-msgstr "Port DoIP : "
+msgstr "Port DoIP: "
 
 msgid "DoIP Timeout (seconds) : "
 msgstr "Timeout DoIP (sekundy) : "
@@ -2187,7 +2238,7 @@ msgid "Attempting connection..."
 msgstr "Próba połączenia..."
 
 msgid "Port: "
-msgstr "Port: "
+msgstr "Port komunikacyjny: "
 
 msgid "Speed: "
 msgstr "Prędkość: "
@@ -2247,15 +2298,15 @@ msgstr "Zastosowano ustawienia %s:"
 
 #, python-format
 msgid "  IP: %s"
-msgstr "  IP: %s"
+msgstr "  Adres IP: %s"
 
 #, python-format
 msgid "  Port: %s"
-msgstr "  Port: %s"
+msgstr "  Port komunikacyjny: %s"
 
 #, python-format
 msgid "  Timeout: %ss"
-msgstr "  Timeout: %ss"
+msgstr "  Limit czasu: %ss"
 
 msgid "  Configuration saved and device list reloaded"
 msgstr "  Konfiguracja zapisana i lista urządzeń przeładowana"
@@ -2280,7 +2331,7 @@ msgid "Error in targeted DoIP update: %s"
 msgstr "Błąd w ukierunkowanej aktualizacji DoIP: %s"
 
 msgid "N/A"
-msgstr "N/A"
+msgstr "Brak danych"
 
 msgid "DoIP (Diagnostics over IP) selected"
 msgstr "DoIP (Diagnostyka przez IP) wybrany"
