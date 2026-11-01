@@ -236,11 +236,23 @@ class EcuScanner:
                                "20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20" \
                                "20 20 20 20 20 20 20 20 20 20 20 20 20"
         else:
-            can_response = options.elm.request(req='22F18A', positive='', cache=False)
-            if 'WRONG' in can_response:
+            can_response = options.elm.request(req='22F18A', positive='', cache=False)      
+            if not can_response:
                 self._close_uds_session()
                 return False
-        supplier = bytes.fromhex(can_response.replace(' ', '')[6:132]).decode("utf8", "ignore")
+            resp = can_response.upper().replace(" ", "")
+            if 'WRONG' in can_response.upper() or resp.startswith("7F"):
+                self._close_uds_session()
+                return False
+            clean = "".join(ch for ch in resp if ch in "0123456789ABCDEF")
+            if len(clean) < 12:
+                self._close_uds_session()
+                return False
+        try:
+            supplier = bytes.fromhex(can_response[6:132]).decode("utf8", "ignore")
+        except ValueError:
+            self._close_uds_session()
+            return False
 
         # Check soft number
         if options.simulation_mode:
@@ -267,9 +279,7 @@ class EcuScanner:
                 self._close_uds_session()
                 return False
 
-        soft = bytes.fromhex(
-            can_response.replace(' ', '')[6:]
-        ).rstrip(b'\x00\xff ').decode("utf8", "ignore")
+        soft = bytes.fromhex(can_response.replace(' ', '')[6:]).rstrip(b'\x00\xff ').decode("utf8", "ignore")
         # Check soft version
         if options.simulation_mode:
             # Give scanner something to eat...
