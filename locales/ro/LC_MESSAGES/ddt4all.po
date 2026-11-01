@@ -412,10 +412,10 @@ msgid "FAIL"
 msgstr "EȘEC"
 
 msgid "OK/TIMEOUT"
-msgstr "OK/TIMP EXPIRAT"
+msgstr "CONFIRMĂ/EXPIRAT"
 
 msgid "OK"
-msgstr "OK"
+msgstr "Confirmă"
 
 msgid "Incompatible adapter on ARM core"
 msgstr "Adaptor incompatibil pe miezul ARM"
@@ -509,11 +509,11 @@ msgstr "Eroare WiFi neașteptată: %s"
 
 #, python-format
 msgid "WiFi recv: %s"
-msgstr "WiFi recv: %s"
+msgstr "Recepție WiFi: %s"
 
 #, python-format
 msgid "WiFi socket timed out %s times in a row; reconnect scheduled"
-msgstr ""
+msgstr "Socket-ul WiFi a expirat de %s ori la rând; reconectare programată"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
@@ -552,7 +552,7 @@ msgid "*       Write error: %s"
 msgstr "*       Eroare de scriere: %s"
 
 msgid "TIMEOUT"
-msgstr "TIMP EXPIRAT"
+msgstr "EXPIRAT"
 
 msgid "Checking port speed:"
 msgstr "Verificarea vitezei portului:"
@@ -649,7 +649,7 @@ msgid "No ELM327 or OBDLINK-SX detected on COM port "
 msgstr "Niciun ELM327 sau OBDLINK-SX nu a fost detectat în portul COM "
 
 msgid "AB90 AIRBAG Reset"
-msgstr "Resetare AIRBAG AB90"
+msgstr "Resetare Airbag AB90"
 
 msgid "Airbag Tools"
 msgstr "Instrumente pentru airbag"
@@ -670,7 +670,7 @@ msgid "Waiting"
 msgstr "Așteptare"
 
 msgid "Virginize ACU"
-msgstr "Virginizare ACU"
+msgstr "Verginizare ACU"
 
 msgid "Cannot connect to ECU"
 msgstr "Nu se poate conecta la ECU"
@@ -720,19 +720,19 @@ msgid "CANCEL"
 msgstr "ANULARE"
 
 msgid "Algo 2"
-msgstr "Algo 2"
+msgstr "Algoritmul 2"
 
 msgid "ISK"
-msgstr "ISK"
+msgstr "Cod ISK"
 
 msgid "PIN"
-msgstr "PIN"
+msgstr "Cod PIN"
 
 msgid "Num key learnt"
 msgstr "Nume cheie învățat"
 
 msgid "CARD IDE"
-msgstr "CARD IDE"
+msgstr "Identificator card (IDE)"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr "Nu se poate obține ISK, verificați conexiunile și compatibilitatea UCH"
@@ -763,7 +763,7 @@ msgid "BLANK STATUS & VIN READ"
 msgstr "ȘTERGE STATUS ȘI CITESTE VIN"
 
 msgid "Virginize EPS"
-msgstr "Virginizare EPS"
+msgstr "Verginizare EPS"
 
 msgid "VIN - READ"
 msgstr "VIN - CITESTE"
@@ -775,7 +775,7 @@ msgid "Write VIN"
 msgstr "Scrie VIN"
 
 msgid "<font color='red'>VIN - INVALID</font>"
-msgstr "<font color='red'>VIN - INVALID</font>"
+msgstr "<font color='red'>VIN - NEVALID</font>"
 
 msgid "<font color='red'>VIN - BAD LENGTH</font>"
 msgstr "<font color='red'>VIN - LUNGIME FALSA</font>"
@@ -787,7 +787,7 @@ msgid "<font color='green'>VIN WRITE OK</font>"
 msgstr "<font color='green'>SCRIERE VIN BINE</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr "<font color='green'>EPS virgin</font>"
+msgstr "<font color='green'>EPS virgin (nou)</font>"
 
 msgid "<font color='red'>EPS coded</font>"
 msgstr "<font color='red'>EPS codat</font>"
@@ -797,7 +797,7 @@ msgid "SdSC0 stream: %s"
 msgstr "Flux SdSC0: %s"
 
 msgid "Clio IV EPS Reset"
-msgstr "Clio IV EPS Reset"
+msgstr "Resetare EPS Clio IV"
 
 msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
@@ -820,10 +820,10 @@ msgid "SdSFA stream: %s"
 msgstr "Flux SdSFA: %s"
 
 msgid "DDT2000 command macros (.cmd)"
-msgstr ""
+msgstr "Macrocomenzi DDT2000 (.cmd)"
 
 msgid "Macros"
-msgstr ""
+msgstr "Macrocomenzi"
 
 msgid ""
 "ERROR: command should have 5 parameters: \n"
@@ -839,6 +839,18 @@ msgid ""
 "        <hex value> - bit value\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"EROARE: comanda trebuie să aibă 5 parametri: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value>\n"
+"        <lid> - identificatorul local al ECU. Lungimea trebuie să fie de 2 "
+"simboluri pentru KWP sau 4 pentru CAN\n"
+"        <rsp_len> - lungimea răspunsului la comandă inclusiv octeții de "
+"răspuns pozitiv, egală cu MinBytes din baza ddt\n"
+"        <offset> - deplasarea în octeți până la primul octet modificat "
+"(începe de la 1, nu 0) \n"
+"        <hex mask> - mască de biți pentru biții modificați, 1 - modificabil, "
+"0 - neatins\n"
+"        <hex value> - valoarea bitului\n"
+"    <hex mask> și <hex value> trebuie să aibă aceeași lungime\n"
 
 msgid ""
 "ERROR: command should have 6 parameters: \n"
@@ -855,6 +867,19 @@ msgid ""
 "        <label> - label to go\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"EROARE: comanda trebuie să aibă 6 parametri: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - identificatorul local al ECU. Lungimea trebuie să fie de 2 "
+"simboluri pentru KWP sau 4 pentru CAN\n"
+"        <rsp_len> - lungimea răspunsului la comandă inclusiv octeții de "
+"răspuns pozitiv, egală cu MinBytes din baza ddt\n"
+"        <offset> - deplasarea în octeți până la primul octet modificat "
+"(începe de la 1, nu 0) \n"
+"        <hex mask> - mască de biți pentru biții modificați, 1 - modificabil, "
+"0 - neatins\n"
+"        <hex value> - valoarea bitului\n"
+"        <label> - etichetă de salt\n"
+"    <hex mask> și <hex value> trebuie să aibă aceeași lungime\n"
 
 msgid ""
 "ERROR: command should have 4 or 7 parameters: \n"
@@ -872,347 +897,363 @@ msgid ""
 "        <val divider> - value divider\n"
 "\n"
 msgstr ""
+"EROARE: comanda trebuie să aibă 4 sau 7 parametri: \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - identificatorul local al ECU. Lungimea trebuie să fie de 2 "
+"simboluri pentru KWP sau 4 pentru CAN\n"
+"        <rsp_len> - lungimea răspunsului la comandă inclusiv octeții de "
+"răspuns pozitiv, egală cu MinBytes din baza ddt\n"
+"        <offset> - deplasarea în octeți până la primul octet modificat "
+"(începe de la 1, nu 0) \n"
+"        <hex mask> - mască de biți pentru biții modificați, 1 - modificabil, "
+"0 - neatins\n"
+"        <val step> - pasul valorii\n"
+"        <val offset> - deplasarea valorii\n"
+"        <val divider> - divizorul valorii\n"
+"\n"
 
 msgid "No ELM connection (plugin need_hw=True ?)"
-msgstr ""
+msgstr "Nicio conexiune ELM (modulul necesită need_hw=True ?)"
 
 #, python-format
 msgid "guard: %(limit)d steps exceeded (infinite loop?)"
-msgstr ""
+msgstr "gardă: s-au depășit %(limit)d pași (buclă infinită?)"
 
-#, fuzzy
 msgid "# abort requested"
-msgstr "Nicio cerere numită"
+msgstr "# întrerupere solicitată"
 
 #, python-format
 msgid "openning file: %(file)s"
-msgstr ""
+msgstr "se deschide fișierul: %(file)s"
 
 #, python-format
 msgid "%(file)s:%(line)d: empty macro name"
-msgstr ""
+msgstr "%(file)s:%(line)d: nume de macrocomandă gol"
 
 #, python-format
 msgid "%(file)s:%(line)d: unexpected end of macro"
-msgstr ""
+msgstr "%(file)s:%(line)d: sfârșit neașteptat al macrocomenzii"
 
 #, python-format
 msgid "%(file)s: includes are nested too deeply (%(limit)d levels)"
-msgstr ""
+msgstr "%(file)s: includerile sunt imbricate prea adânc (%(limit)d niveluri)"
 
 #, python-format
 msgid "Cannot read %(file)s: %(error)s"
-msgstr ""
+msgstr "Nu se poate citi %(file)s: %(error)s"
 
 #, python-format
 msgid "%(file)s: included file not found: %(target)s"
-msgstr ""
+msgstr "%(file)s: fișierul inclus nu a fost găsit: %(target)s"
 
 #, python-format
 msgid "include loop: %(target)s"
-msgstr ""
+msgstr "buclă de includere: %(target)s"
 
 #, python-format
 msgid "# include %(file)s"
-msgstr ""
+msgstr "# includere %(file)s"
 
 #, python-format
 msgid "  %(name)s = %(value)s"
-msgstr ""
+msgstr "  %(name)s = %(value)s"
 
 #, python-format
 msgid "  %(macro)s"
-msgstr ""
+msgstr "  %(macro)s"
 
 msgid "[h]elp                 - this help"
-msgstr ""
+msgstr "[h]elp                 - acest ajutor"
 
 msgid "[q]uit, [e]xit, end    - exit from terminal"
-msgstr ""
+msgstr "[q]uit, [e]xit, end    - ieșire din terminal"
 
 msgid "wait|sleep x           - wait x seconds"
-msgstr ""
+msgstr "wait|sleep x           - așteaptă x secunde"
 
 msgid "include <file>         - play another .cmd here"
-msgstr ""
+msgstr "include <fișier>       - execută alt fișier .cmd aici"
 
 msgid "Variables:"
-msgstr ""
+msgstr "Variabile:"
 
 msgid "Macros:"
-msgstr ""
+msgstr "Macrocomenzi:"
 
 #, python-format
 msgid "Error: unknown macro name: %(macro)s"
-msgstr ""
+msgstr "Eroare: nume necunoscut de macrocomandă: %(macro)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error: recursion prohibited: %(macro)s"
-msgstr "Eroare la închiderea portului: %s"
+msgstr "Eroare: recursivitatea este interzisă: %(macro)s"
 
 #, python-format
 msgid "### %(file)s : %(count)d lines"
-msgstr ""
+msgstr "### %(file)s : %(count)d linii"
 
 msgid "# end of command file"
-msgstr ""
+msgstr "# sfârșitul fișierului de comenzi"
 
 #, python-format
 msgid "> %(line)s"
-msgstr ""
+msgstr "> %(line)s"
 
 #, python-format
 msgid "Error: unknown label '%(label)s'"
-msgstr ""
+msgstr "Eroare: etichetă necunoscută '%(label)s'"
 
 msgid "###### Variables #####"
-msgstr ""
+msgstr "###### Variabile #####"
 
 #, python-format
 msgid "# %(name)20s = %(value)s"
-msgstr ""
+msgstr "# %(name)20s = %(value)s"
 
 #, python-format
 msgid "Error: unknown variable %(name)s"
-msgstr ""
+msgstr "Eroare: variabilă necunoscută %(name)s"
 
 msgid "Error: too many variables in one line"
-msgstr ""
+msgstr "Eroare: prea multe variabile pe o singură linie"
 
 msgid "#(subst)"
-msgstr ""
+msgstr "#(subst)"
 
 #, python-format
 msgid "# delay: %(seconds)s"
-msgstr ""
+msgstr "# întârziere: %(seconds)s"
 
 #, python-format
 msgid "Unrecognized init command: %(name)s"
-msgstr ""
+msgstr "Comandă de inițializare nerecunoscută: %(name)s"
 
 msgid "ERROR: Unknown function"
-msgstr ""
+msgstr "EROARE: Funcție necunoscută"
 
 msgid "read  value: "
-msgstr ""
+msgstr "valoare citită: "
 
 msgid "ERROR: Length is unexpected"
-msgstr ""
+msgstr "EROARE: Lungime neașteptată"
 
 msgid "ERROR: Wrong simbol in response"
-msgstr ""
+msgstr "EROARE: Simbol incorect în răspuns"
 
 msgid "ERROR: Not positive response"
-msgstr ""
+msgstr "EROARE: Răspunsul nu este pozitiv"
 
 msgid "Match. Exit"
-msgstr ""
+msgstr "Potrivire găsită. Ieșire"
 
 msgid "Not match. Continue"
-msgstr ""
+msgstr "Fără potrivire. Continuare"
 
 msgid "Not match. Exit"
-msgstr ""
+msgstr "Fără potrivire. Ieșire"
 
 msgid "Match. Continue"
-msgstr ""
+msgstr "Potrivire găsită. Continuare"
 
 msgid "Match. goto: "
-msgstr ""
+msgstr "Potrivire găsită. Salt la: "
 
 msgid "Not match. goto: "
-msgstr ""
+msgstr "Fără potrivire. Salt la: "
 
 #, python-format
 msgid ""
 "# LID(%(lid)s) $rawValue = %(raw)s  $scaledValue = %(scaled)s  $hexValue = "
 "%(hex)s"
-msgstr ""
+msgstr "# LID(%(lid)s)  = %(raw)s   = %(scaled)s   = %(hex)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ERROR: unexpected positive response: %(rsp)s"
-msgstr "Se aștepta răspuns verificare alive, s-a primit: %s"
+msgstr "EROARE: răspuns pozitiv neașteptat: %(rsp)s"
 
 msgid "write value: "
-msgstr ""
+msgstr "valoare scrisă: "
 
 msgid "ELM connected"
-msgstr ""
+msgstr "ELM conectat"
 
-#, fuzzy
 msgid "ELM not connected"
-msgstr "ELM nu este conectat sau port COM gresit"
+msgstr "ELM neconectat"
 
 msgid "installed copy (cmd_macros_lib/macros)"
-msgstr ""
+msgstr "copie instalată (cmd_macros_lib/macros)"
 
 msgid "manually chosen folder"
-msgstr ""
+msgstr "dosar ales manual"
 
 #, python-format
 msgid "ddt4all tables (%(count)d addresses)"
-msgstr ""
+msgstr "tabele ddt4all (%(count)d adrese)"
 
 #, python-format
 msgid "pyren3 fallback (%(count)d addresses)"
-msgstr ""
+msgstr "soluție de rezervă pyren3 (%(count)d adrese)"
 
 msgid "no table"
-msgstr ""
+msgstr "fără tabel"
 
 msgid "pyren3 fallback: disabled"
-msgstr ""
+msgstr "soluție de rezervă pyren3: dezactivată"
 
 msgid "pyren3 fallback: no entry"
-msgstr ""
+msgstr "soluție de rezervă pyren3: nicio intrare"
 
 #, python-format
 msgid ""
 "pyren3 fallback: %(count)d addresses as a fallback, used only for the "
 "addresses missing from the ddt4all tables"
 msgstr ""
+"soluție de rezervă pyren3: %(count)d adrese ca rezervă, utilizate doar "
+"pentru adresele lipsă din tabelele ddt4all"
 
 #, python-format
 msgid "pyren3 fallback: %(count)d addresses (source in use)"
-msgstr ""
+msgstr "soluție de rezervă pyren3: %(count)d adrese (sursă în uz)"
 
 msgid "Done"
-msgstr ""
+msgstr "Finalizat"
 
 #, python-format
 msgid "ERROR: %(error)s"
-msgstr ""
+msgstr "EROARE: %(error)s"
 
 msgid "Error"
-msgstr ""
+msgstr "Eroare"
 
 msgid "DDT2000 command macros"
-msgstr ""
+msgstr "Macrocomenzi DDT2000"
 
 msgid "Macro folder (.cmd and *.txt)"
-msgstr ""
+msgstr "Dosar macrocomenzi (.cmd și *.txt)"
 
 msgid "Browse"
-msgstr ""
+msgstr "Răsfoire"
 
 msgid "Refresh"
 msgstr "Reimprospateaza"
 
 msgid "Macro folder:"
-msgstr ""
+msgstr "Dosar macrocomenzi:"
 
 msgid "Log ELM traffic to file"
-msgstr ""
+msgstr "Înregistrează traficul ELM în fișier"
 
 msgid "Log file name:"
-msgstr ""
+msgstr "Nume fișier jurnal:"
 
 msgid ".cmd files (by ECU)"
-msgstr ""
+msgstr "Fișiere .cmd (după ECU)"
 
 msgid "Named macros (by *.txt)"
-msgstr ""
+msgstr "Macrocomenzi cu nume (după *.txt)"
 
 msgid "Macros by ECU (.cmd)"
-msgstr ""
+msgstr "Macrocomenzi după ECU (.cmd)"
 
 msgid "Named macros (*.txt)"
-msgstr ""
+msgstr "Macrocomenzi cu nume (*.txt)"
 
-#, fuzzy
 msgid "Send key"
-msgstr "Trimiteti octeti"
+msgstr "Trimite tasta"
 
 msgid "Key for 'if_key':"
-msgstr ""
+msgstr "Tasta pentru 'if_key':"
 
-#, fuzzy
 msgid "Execute .cmd"
-msgstr "Execută"
+msgstr "Execută .cmd"
 
-#, fuzzy
 msgid "Execute macro"
-msgstr "Execută"
+msgstr "Execută macrocomanda"
 
 msgid "Stop"
-msgstr ""
+msgstr "Oprește"
 
 msgid "Close"
-msgstr ""
+msgstr "Închide"
 
 msgid "Log"
-msgstr ""
+msgstr "Jurnal"
 
 msgid "Macro folder"
-msgstr ""
+msgstr "Dosar macrocomenzi"
 
 #, python-format
 msgid "Parsing error %(file)s: %(error)s"
-msgstr ""
+msgstr "Eroare de parsare în %(file)s: %(error)s"
 
 #, python-format
 msgid "%(macro)s (defined in %(file)s)"
-msgstr ""
+msgstr "%(macro)s (definit în %(file)s)"
 
 #, python-format
 msgid "Host: %(host)s"
-msgstr ""
+msgstr "Gazdă: %(host)s"
 
 #, python-format
 msgid "Addresses: %(legacy)s"
-msgstr ""
+msgstr "Adrese: %(legacy)s"
 
 msgid ""
 "Format: DDT2000 command macros (pyren3); the bundled macros target Renault "
 "ECUs, address resolution follows the vehicle loaded in ddt4all."
 msgstr ""
+"Format: macrocomenzi DDT2000 (pyren3); macrocomenzile integrate vizează ECU-"
+"uri Renault, rezoluția adreselor urmează vehiculul încărcat în ddt4all."
 
 #, python-format
 msgid "Folder: %(folder)s"
-msgstr ""
+msgstr "Dosar: %(folder)s"
 
 msgid "(none)"
-msgstr ""
+msgstr "(niciunul)"
 
 #, python-format
 msgid "Source: %(source)s"
-msgstr ""
+msgstr "Sursă: %(source)s"
 
 #, python-format
 msgid ""
 "%(groups)d ECU group(s), %(files)d .cmd file(s), %(named)d named macro(s) in "
 "%(txt)d .txt file(s)"
 msgstr ""
+"%(groups)d grup(uri) ECU, %(files)d fișier(e) .cmd, %(named)d "
+"macrocomandă(e) cu nume în %(txt)d fișier(e) .txt"
 
 #, python-format
 msgid "Journal files: %(elm)s and %(ecu)s"
-msgstr ""
+msgstr "Fișiere jurnal: %(elm)s și %(ecu)s"
 
 msgid "No ELM connection: the journal is not written."
-msgstr ""
+msgstr "Fără conexiune ELM: jurnalul nu este scris."
 
 #, python-format
 msgid "Cannot write the journal (%(error)s)"
-msgstr ""
+msgstr "Nu se poate scrie jurnalul (%(error)s)"
 
 #, python-format
 msgid "Journal: %(elm)s"
-msgstr ""
+msgstr "Jurnal: %(elm)s"
 
 #, python-format
 msgid "Journal: %(ecu)s"
-msgstr ""
+msgstr "Jurnal: %(ecu)s"
 
 msgid "ddt4all not found (console mode only)"
-msgstr ""
+msgstr "ddt4all nu a fost găsit (doar modul consolă)"
 
 #, python-format
 msgid "ddt4all %(flavor)s | %(elm)s | addressing: %(addressing)s"
-msgstr ""
+msgstr "ddt4all %(flavor)s | %(elm)s | adresare: %(addressing)s"
 
 #, python-format
 msgid "%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d named macro(s)"
 msgstr ""
+"%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d macrocomandă(e) cu nume"
 
 #, python-format
 msgid ""
@@ -1223,52 +1264,61 @@ msgid ""
 "Source: %(source)s\n"
 "%(journal)s"
 msgstr ""
+"%(host)s\n"
+"Adrese: %(legacy)s\n"
+"%(detail)s\n"
+"Dosar: %(folder)s\n"
+"Sursă: %(source)s\n"
+"%(journal)s"
 
 msgid "Journal: disabled"
-msgstr ""
+msgstr "Jurnal: dezactivat"
 
 msgid "A macro is already running."
-msgstr ""
+msgstr "O macrocomandă rulează deja."
 
 msgid "ddt4all is not available: this plugin must be started from ddt4all."
-msgstr ""
+msgstr "ddt4all nu este disponibil: acest modul trebuie pornit din ddt4all."
 
 msgid "No ELM connection: connect ddt4all to the ELM before running a macro."
 msgstr ""
+"Fără conexiune ELM: conectați ddt4all la ELM înainte de a rula o "
+"macrocomandă."
 
 #, python-format
 msgid "--- START %(kind)s: %(macro)s ---"
-msgstr ""
+msgstr "--- PORNIRE %(kind)s: %(macro)s ---"
 
 msgid "Select a .cmd file (double-click to run)."
-msgstr ""
+msgstr "Selectați un fișier .cmd (dublu clic pentru executare)."
 
 msgid "Select a named macro (double-click to run)."
-msgstr ""
+msgstr "Selectați o macrocomandă cu nume (dublu clic pentru executare)."
 
 #, python-format
 msgid "# key '%(key)s' sent"
-msgstr ""
+msgstr "# tasta '%(key)s' trimisă"
 
-#, fuzzy
 msgid "# stop requested..."
-msgstr "Nicio cerere numită"
+msgstr "# oprire solicitată..."
 
 #, python-format
 msgid "--- END: %(status)s ---"
-msgstr ""
+msgstr "--- SFÂRȘIT: %(status)s ---"
 
 #, python-format
 msgid ""
 "WARNING: address %(addr)s resolves to %(tx)s/%(rx)s (ddt4all) but pyren3 "
 "uses %(pltx)s/%(plrx)s"
 msgstr ""
+"AVERTISMENT: adresa %(addr)s se rezolvă la %(tx)s/%(rx)s (ddt4all) dar "
+"pyren3 utilizează %(pltx)s/%(plrx)s"
 
 msgid "Laguna II UCH Reset"
-msgstr "Laguna II UCH Reset"
+msgstr "Resetare UCH Laguna II"
 
 msgid "UCH Tools"
-msgstr "Instrumente pentru UCH"
+msgstr "Instrumente UCH"
 
 msgid ""
 "LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1281,16 +1331,16 @@ msgid "Check UCH Virgin"
 msgstr "Verifică UCH Virgin"
 
 msgid "Virginize UCH"
-msgstr "Virginizare UCH"
+msgstr "Verginizare UCH"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr "<font color='green'>UCH virgin</font>"
+msgstr "<font color='green'>UCH virgin (nou)</font>"
 
 msgid "<font color='red'>UCH coded</font>"
 msgstr "<font color='red'>UCH codat</font>"
 
 msgid "Laguna III UCH Reset"
-msgstr "Laguna III UCH Reset"
+msgstr "Resetare UCH Laguna III"
 
 msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1300,7 +1350,7 @@ msgstr ""
 "DVS.<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr "Megane/Scenic II UCH Reset"
+msgstr "Resetare UCH Megane/Scenic II"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1310,7 +1360,7 @@ msgstr ""
 "DVS.<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr "Megane3 AIRBAG Reset"
+msgstr "Resetare Airbag Megane3"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
@@ -1324,7 +1374,7 @@ msgid "SDS FA stream: %s"
 msgstr "Flux SDS FA: %s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
+msgstr "Resetare EPS ZOE/FLENCE/Megane III/Scenic III"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
@@ -1336,7 +1386,7 @@ msgstr ""
 "font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr "Megane/Scenic III UCH Reset"
+msgstr "Resetare UCH Megane/Scenic III"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1346,7 +1396,7 @@ msgstr ""
 "DVS.<br>PLECAȚI DACĂ NU AVEȚI IDEIE CE INSEAMNĂ</font>"
 
 msgid "RSAT4 AIRBAG Reset"
-msgstr "RSAT4 AIRBAG Reset"
+msgstr "Resetare Airbag RSAT4"
 
 msgid ""
 "TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
@@ -1365,7 +1415,7 @@ msgid "CRC calculator"
 msgstr "Calculator CRC"
 
 msgid "VIN"
-msgstr "VIN"
+msgstr "Număr VIN"
 
 msgid "CRC Calculator"
 msgstr "Calculator CRC"
@@ -1401,7 +1451,7 @@ msgid "High Speed"
 msgstr "Viteză mare"
 
 msgid "V_Timer_DrivWEP_ON"
-msgstr "V_Timer_DrivWEP_ON"
+msgstr "V_Timer_DrivWEP_ON (temporizator)"
 
 msgid "Reset"
 msgstr "Resetare"
@@ -1536,13 +1586,13 @@ msgid "Data type"
 msgstr "Tipul de date"
 
 msgid "Numeric"
-msgstr "Numeric"
+msgstr "Valoare numerică"
 
 msgid "Numeric items"
 msgstr "Articole numerice"
 
 msgid "Hex"
-msgstr "Hex"
+msgstr "Hexazecimal"
 
 #, python-format
 msgid "Data is used by request %s"
@@ -1570,13 +1620,13 @@ msgid "ECU Function address"
 msgstr "ECU Adresa functiei"
 
 msgid "ECU Protocol"
-msgstr "ECU Protocol"
+msgstr "Protocol ECU"
 
 msgid "Tool > Ecu ID (Hex)"
-msgstr "Instrument > Ecu ID (Hex)"
+msgstr "Instrument > ID ECU (Hex)"
 
 msgid "Ecu > Tool ID (Hex)"
-msgstr "Ecu > Instrument ID (Hex)"
+msgstr "ECU > ID Instrument (Hex)"
 
 msgid "Coding"
 msgstr "Codificare"
@@ -1600,13 +1650,13 @@ msgid "Add item"
 msgstr "Adaugare element"
 
 msgid "Del item"
-msgstr "Sterge element"
+msgstr "Șterge elementul"
 
 msgid "New item"
 msgstr "Element nou"
 
 msgid "Value;Text"
-msgstr "Valoare; Text"
+msgstr "Valoare;Text"
 
 msgid "Number of bit"
 msgstr "Numar de biti"
@@ -1615,13 +1665,13 @@ msgid "Unit"
 msgstr "Unitate"
 
 msgid "Format"
-msgstr "Format"
+msgstr "Format afișare"
 
 msgid "Value = (AX+B) / C"
 msgstr "Valoare = (AX+B) / C"
 
 msgid "Number of bytes"
-msgstr "Numar de octeti"
+msgstr "Număr de octeți"
 
 msgid "Send request bytes (HEX)"
 msgstr "Trimiteti octeti de solicitare (HEX)"
@@ -1633,25 +1683,25 @@ msgid "Data length"
 msgstr "Lungimea datelor"
 
 msgid "Shift byte count"
-msgstr "Shift byte count"
+msgstr "Număr octeți de deplasare"
 
 msgid "Data name;Start byte;Bit offset;Bit count;Endianess"
-msgstr "Nume date;Byte Start;Bit de offset;Numar de biti;Endianness"
+msgstr "Nume date;Octet de început;Offset bit;Număr de biți;Endianness"
 
 msgid "Little"
-msgstr "Mic"
+msgstr "Little-endian"
 
 msgid "Big"
-msgstr "Mare"
+msgstr "Big-endian"
 
 msgid "Inherits globals"
-msgstr "Mosteniri globale"
+msgstr "Moștenește variabile globale"
 
 msgid "No SDS"
 msgstr "Fara SDS"
 
 msgid "Plant"
-msgstr "Instalatie"
+msgstr "Uzină"
 
 msgid "After Sale"
 msgstr "Dupa vanzare"
@@ -1687,7 +1737,7 @@ msgid "Cannot find data "
 msgstr "Nu se pot găsi date "
 
 msgid " vs "
-msgstr " vs "
+msgstr " față de "
 
 msgid "Cannot draw input "
 msgstr "Pluginul nu se poate incarca "
@@ -1720,10 +1770,10 @@ msgid "Address :"
 msgstr "Adresă :"
 
 msgid "ID frame :"
-msgstr "ID cadru :"
+msgstr "Cadru ID:"
 
 msgid "Search vehicle"
-msgstr ""
+msgstr "Căutare vehicul"
 
 msgid "No vehicles available"
 msgstr "Nu sunt vehicule disponibile"
@@ -1765,13 +1815,13 @@ msgid "Can timeout (ms) [0:AUTO] :"
 msgstr "Se poate expira timpul (ms) [0: AUTO] :"
 
 msgid "Documentation"
-msgstr "Documentatie"
+msgstr "Documentație"
 
 msgid "Screen"
 msgstr "Ecran"
 
 msgid "CAN Sniffer"
-msgstr "CAN Sniffer"
+msgstr "Analizor CAN"
 
 msgid "Requests"
 msgstr "Cereri"
@@ -1825,19 +1875,19 @@ msgid "Manual request"
 msgstr "Cerere manuala"
 
 msgid "Software flow control"
-msgstr "Controlul fluxului software"
+msgstr "Control flux software"
 
 msgid "Zoom In"
-msgstr "Mareste"
+msgstr "Mărește"
 
 msgid "Zoom Out"
-msgstr "Micsoreaza"
+msgstr "Micșorează"
 
 msgid "UI Edit"
 msgstr "Editare UI"
 
 msgid "File"
-msgstr "Fisier"
+msgstr "Fișier"
 
 msgid "Open XML"
 msgstr "Deschideti XML-ul"
@@ -1906,7 +1956,7 @@ msgid "Rename"
 msgstr "Redenumiti"
 
 msgid "Plugins"
-msgstr "Plugin-uri"
+msgstr "Module (Plug-in)"
 
 msgid "Cannot load plugin "
 msgstr "Plugin-ul nu poate fi încărcat "
@@ -1915,7 +1965,7 @@ msgid "Help"
 msgstr "Ajutor"
 
 msgid "Web Wiki"
-msgstr "Web Wiki"
+msgstr "Wiki Web"
 
 msgid "About Developers"
 msgstr "Despre dezvoltatori"
@@ -1973,10 +2023,10 @@ msgid "CAN Line 2@125K"
 msgstr "Linie CAN 2@125K"
 
 msgid "KWP2000"
-msgstr "KWP2000"
+msgstr "Protocol KWP2000"
 
 msgid "ISO8"
-msgstr "ISO8"
+msgstr "Protocol ISO8"
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "Salvati baza de date (pastrati extensia \".zip\")"
@@ -2042,25 +2092,25 @@ msgid "ELM port selection"
 msgstr "Selectie port ELM"
 
 msgid "USB"
-msgstr "USB"
+msgstr "Conexiune USB"
 
 msgid "WiFi"
-msgstr "WiFi"
+msgstr "Conexiune Wi-Fi"
 
 msgid "Bluetooth"
-msgstr "Bluetooth"
+msgstr "Conexiune Bluetooth"
 
 msgid "OBDLINK SX/EX"
-msgstr "OBDLINK SX/EX"
+msgstr "Adaptor OBDLINK SX/EX"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
 msgstr "ELS27/ELS27 V5 - Poate aparea ca dispozitiv FTDI/CH340/CP210x"
 
 msgid "Vlinker FS/MC"
-msgstr "Vlinker FS/MC"
+msgstr "Adaptor Vlinker FS/MC"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr "DERLEK USB-DIAG2/3"
+msgstr "Adaptor DERLEK USB-DIAG2/3"
 
 msgid "VGate (High-Speed)"
 msgstr "VGate (Viteza mare)"
@@ -2111,16 +2161,16 @@ msgid "Custom"
 msgstr "Personalizat"
 
 msgid "Bosch MTS"
-msgstr "Bosch MTS"
+msgstr "Dispozitiv Bosch MTS"
 
 msgid "VXDIAG VCX Nano"
-msgstr "VXDIAG VCX Nano"
+msgstr "Dispozitiv VXDIAG VCX Nano"
 
 msgid "VAG ODIS"
-msgstr "VAG ODIS"
+msgstr "Interfață VAG ODIS"
 
 msgid "JLR DoIP VCI"
-msgstr "JLR DoIP VCI"
+msgstr "Interfață JLR DoIP VCI"
 
 msgid "Generic DoIP"
 msgstr "DoIP Generic"
@@ -2129,7 +2179,7 @@ msgid "DoIP Target IP : "
 msgstr "IP Tinta DoIP : "
 
 msgid "DoIP Port : "
-msgstr "Port DoIP : "
+msgstr "Port DoIP: "
 
 msgid "DoIP Timeout (seconds) : "
 msgstr "Timeout DoIP (secunde) : "
@@ -2177,7 +2227,7 @@ msgid "Attempting connection..."
 msgstr "Incercare de conectare..."
 
 msgid "Port: "
-msgstr "Port: "
+msgstr "Port conexiune: "
 
 msgid "Speed: "
 msgstr "Viteza: "
@@ -2237,15 +2287,15 @@ msgstr "Predefinită %s aplicată:"
 
 #, python-format
 msgid "  IP: %s"
-msgstr "  IP: %s"
+msgstr "  Adresă IP: %s"
 
 #, python-format
 msgid "  Port: %s"
-msgstr "  Port: %s"
+msgstr "  Port comunicare: %s"
 
 #, python-format
 msgid "  Timeout: %ss"
-msgstr "  Timeout: %ss"
+msgstr "  Timp limită: %ss"
 
 msgid "  Configuration saved and device list reloaded"
 msgstr "  Configurare salvată și listă de dispozitive reîncărcată"
@@ -2270,7 +2320,7 @@ msgid "Error in targeted DoIP update: %s"
 msgstr "Eroare în actualizarea țintită DoIP: %s"
 
 msgid "N/A"
-msgstr "N/A"
+msgstr "N/D"
 
 msgid "DoIP (Diagnostics over IP) selected"
 msgstr "DoIP (Diagnosticare prin IP) selectat"
@@ -2430,7 +2480,7 @@ msgid "Blocked writing parameter"
 msgstr "Parametru de scriere blocat"
 
 msgid "Invalid"
-msgstr "Invalid"
+msgstr "Nevalid"
 
 msgid "ECU uses SDS "
 msgstr "ECU utilizeaza SDS "

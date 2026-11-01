@@ -403,10 +403,10 @@ msgid "FAIL"
 msgstr "失败"
 
 msgid "OK/TIMEOUT"
-msgstr "正常/超时"
+msgstr "确定/超时"
 
 msgid "OK"
-msgstr "成功"
+msgstr "确定"
 
 msgid "Incompatible adapter on ARM core"
 msgstr "ARM 核心上的适配器不兼容"
@@ -504,7 +504,7 @@ msgstr "WiFi 接收：%s"
 
 #, python-format
 msgid "WiFi socket timed out %s times in a row; reconnect scheduled"
-msgstr ""
+msgstr "WiFi 套接字已连续超时 %s 次；已安排重新连接"
 
 #, python-format
 msgid "Serial error in read_byte: %s"
@@ -658,7 +658,7 @@ msgid "Waiting"
 msgstr "等待中"
 
 msgid "Virginize ACU"
-msgstr "刷空 ACU（重置为新件状态）"
+msgstr "ACU 恢复初始态 (全新状态)"
 
 msgid "Cannot connect to ECU"
 msgstr "无法连接到 ECU"
@@ -674,7 +674,7 @@ msgstr "<font color='green'>未检测到碰撞记录</font>"
 
 #, python-format
 msgid "SDS stream: %s"
-msgstr "SDS 流：%s"
+msgstr "SDS 数据流：%s"
 
 msgid "<font color='green'>CLEAR EXECUTED</font>"
 msgstr "<font color='green'>清除操作已执行</font>"
@@ -710,7 +710,7 @@ msgid "Algo 2"
 msgstr "算法 2"
 
 msgid "ISK"
-msgstr "ISK 码"
+msgstr "ISK 密钥"
 
 msgid "PIN"
 msgstr "PIN 码"
@@ -719,7 +719,7 @@ msgid "Num key learnt"
 msgstr "已学习钥匙数量"
 
 msgid "CARD IDE"
-msgstr "卡片 ID"
+msgstr "卡标识 (IDE)"
 
 msgid "Cannot get ISK, check connections and UCH compatibility"
 msgstr "无法获取 ISK，请检查连接和 UCH 兼容性"
@@ -734,7 +734,7 @@ msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
 msgstr "<font color='green'>密码正确 / 正在匹配 UCH</font>"
 
 msgid "Modus/Clio III EPS Reset"
-msgstr "Modus/克丽欧 III 电动助力转向(EPS)重置"
+msgstr "Modus/Clio III EPS 重置"
 
 msgid "EPS Tools"
 msgstr "EPS 工具"
@@ -750,7 +750,7 @@ msgid "BLANK STATUS & VIN READ"
 msgstr "空白状态与 VIN 读取"
 
 msgid "Virginize EPS"
-msgstr "刷空 EPS"
+msgstr "EPS 恢复初始态 (全新状态)"
 
 msgid "VIN - READ"
 msgstr "VIN - 读取"
@@ -774,17 +774,17 @@ msgid "<font color='green'>VIN WRITE OK</font>"
 msgstr "<font color='green'>VIN 写入成功</font>"
 
 msgid "<font color='green'>EPS virgin</font>"
-msgstr "<font color='green'>EPS 状态：未编程/全新</font>"
+msgstr "<font color='green'>EPS 初始态 (全新)</font>"
 
 msgid "<font color='red'>EPS coded</font>"
 msgstr "<font color='red'>EPS 状态：已编程/已绑定</font>"
 
 #, python-format
 msgid "SdSC0 stream: %s"
-msgstr "SdSC0 流：%s"
+msgstr "SdSC0 数据流：%s"
 
 msgid "Clio IV EPS Reset"
-msgstr "克丽欧 IV EPS 重置"
+msgstr "Clio IV EPS 重置"
 
 msgid ""
 "Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
@@ -804,13 +804,13 @@ msgstr "<font color='red'>未预期的响应</font>"
 
 #, python-format
 msgid "SdSFA stream: %s"
-msgstr "SdSFA 流：%s"
+msgstr "SdSFA 数据流：%s"
 
 msgid "DDT2000 command macros (.cmd)"
-msgstr ""
+msgstr "DDT2000 命令宏 (.cmd)"
 
 msgid "Macros"
-msgstr ""
+msgstr "命令宏"
 
 msgid ""
 "ERROR: command should have 5 parameters: \n"
@@ -826,6 +826,15 @@ msgid ""
 "        <hex value> - bit value\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"错误：命令应包含 5 个参数： \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value>\n"
+"        <lid> - ECU 本地标识符。KWP 长度应为 2 个字符，CAN 应为 4 个字符\n"
+"        <rsp_len> - 包含肯定响应字节的命令响应长度，等于 ddt 数据库中的 "
+"MinBytes\n"
+"        <offset> - 到首个更改字节的字节偏移量（从 1 开始而非 0） \n"
+"        <hex mask> - 更改位的位掩码，1 - 可更改，0 - 不可更改\n"
+"        <hex value> - 位值\n"
+"    <hex mask> 与 <hex value> 长度必须相等\n"
 
 msgid ""
 "ERROR: command should have 6 parameters: \n"
@@ -842,6 +851,16 @@ msgid ""
 "        <label> - label to go\n"
 "    <hex mask> and <hex value> should have equal length\n"
 msgstr ""
+"错误：命令应包含 6 个参数： \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - ECU 本地标识符。KWP 长度应为 2 个字符，CAN 应为 4 个字符\n"
+"        <rsp_len> - 包含肯定响应字节的命令响应长度，等于 ddt 数据库中的 "
+"MinBytes\n"
+"        <offset> - 到首个更改字节的字节偏移量（从 1 开始而非 0） \n"
+"        <hex mask> - 更改位的位掩码，1 - 可更改，0 - 不可更改\n"
+"        <hex value> - 位值\n"
+"        <label> - 跳转标签\n"
+"    <hex mask> 与 <hex value> 长度必须相等\n"
 
 msgid ""
 "ERROR: command should have 4 or 7 parameters: \n"
@@ -859,347 +878,358 @@ msgid ""
 "        <val divider> - value divider\n"
 "\n"
 msgstr ""
+"错误：命令应包含 4 或 7 个参数： \n"
+"    <command> <lid> <rsp_len> <offset> <hex mask> <hex value> <label>\n"
+"        <lid> - ECU 本地标识符。KWP 长度应为 2 个字符，CAN 应为 4 个字符\n"
+"        <rsp_len> - 包含肯定响应字节的命令响应长度，等于 ddt 数据库中的 "
+"MinBytes\n"
+"        <offset> - 到首个更改字节的字节偏移量（从 1 开始而非 0） \n"
+"        <hex mask> - 更改位的位掩码，1 - 可更改，0 - 不可更改\n"
+"        <val step> - 步进值\n"
+"        <val offset> - 偏移值\n"
+"        <val divider> - 分频/除数值\n"
+"\n"
 
 msgid "No ELM connection (plugin need_hw=True ?)"
-msgstr ""
+msgstr "无 ELM 连接（插件需要 need_hw=True ？）"
 
 #, python-format
 msgid "guard: %(limit)d steps exceeded (infinite loop?)"
-msgstr ""
+msgstr "防护检查：超出 %(limit)d 步（疑似无限循环？）"
 
-#, fuzzy
 msgid "# abort requested"
-msgstr "无对应命名的请求："
+msgstr "# 已请求中止"
 
 #, python-format
 msgid "openning file: %(file)s"
-msgstr ""
+msgstr "正在打开文件：%(file)s"
 
 #, python-format
 msgid "%(file)s:%(line)d: empty macro name"
-msgstr ""
+msgstr "%(file)s:%(line)d: 宏名称为空"
 
 #, python-format
 msgid "%(file)s:%(line)d: unexpected end of macro"
-msgstr ""
+msgstr "%(file)s:%(line)d: 宏意外结束"
 
 #, python-format
 msgid "%(file)s: includes are nested too deeply (%(limit)d levels)"
-msgstr ""
+msgstr "%(file)s: 包含层级嵌套过深 (%(limit)d 层)"
 
 #, python-format
 msgid "Cannot read %(file)s: %(error)s"
-msgstr ""
+msgstr "无法读取 %(file)s：%(error)s"
 
 #, python-format
 msgid "%(file)s: included file not found: %(target)s"
-msgstr ""
+msgstr "%(file)s: 未找到包含的文件：%(target)s"
 
 #, python-format
 msgid "include loop: %(target)s"
-msgstr ""
+msgstr "包含循环：%(target)s"
 
 #, python-format
 msgid "# include %(file)s"
-msgstr ""
+msgstr "# 包含 %(file)s"
 
 #, python-format
 msgid "  %(name)s = %(value)s"
-msgstr ""
+msgstr "  %(name)s = %(value)s"
 
 #, python-format
 msgid "  %(macro)s"
-msgstr ""
+msgstr "  %(macro)s"
 
 msgid "[h]elp                 - this help"
-msgstr ""
+msgstr "[h]elp                 - 此帮助"
 
 msgid "[q]uit, [e]xit, end    - exit from terminal"
-msgstr ""
+msgstr "[q]uit, [e]xit, end    - 退出终端"
 
 msgid "wait|sleep x           - wait x seconds"
-msgstr ""
+msgstr "wait|sleep x           - 等待 x 秒"
 
 msgid "include <file>         - play another .cmd here"
-msgstr ""
+msgstr "include <文件>         - 在此执行另一个 .cmd"
 
 msgid "Variables:"
-msgstr ""
+msgstr "变量："
 
 msgid "Macros:"
-msgstr ""
+msgstr "命令宏："
 
 #, python-format
 msgid "Error: unknown macro name: %(macro)s"
-msgstr ""
+msgstr "错误：未知的宏名称：%(macro)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error: recursion prohibited: %(macro)s"
-msgstr "关闭端口时出错：%s"
+msgstr "错误：禁止递归：%(macro)s"
 
 #, python-format
 msgid "### %(file)s : %(count)d lines"
-msgstr ""
+msgstr "### %(file)s : %(count)d 行"
 
 msgid "# end of command file"
-msgstr ""
+msgstr "# 命令文件结束"
 
 #, python-format
 msgid "> %(line)s"
-msgstr ""
+msgstr "> %(line)s"
 
 #, python-format
 msgid "Error: unknown label '%(label)s'"
-msgstr ""
+msgstr "错误：未知的标签 '%(label)s'"
 
 msgid "###### Variables #####"
-msgstr ""
+msgstr "###### 变量 #####"
 
 #, python-format
 msgid "# %(name)20s = %(value)s"
-msgstr ""
+msgstr "# %(name)20s = %(value)s"
 
 #, python-format
 msgid "Error: unknown variable %(name)s"
-msgstr ""
+msgstr "错误：未知的变量 %(name)s"
 
 msgid "Error: too many variables in one line"
-msgstr ""
+msgstr "错误：单行中的变量过多"
 
 msgid "#(subst)"
-msgstr ""
+msgstr "#(subst)"
 
 #, python-format
 msgid "# delay: %(seconds)s"
-msgstr ""
+msgstr "# 延迟：%(seconds)s"
 
 #, python-format
 msgid "Unrecognized init command: %(name)s"
-msgstr ""
+msgstr "无法识别的初始化命令：%(name)s"
 
 msgid "ERROR: Unknown function"
-msgstr ""
+msgstr "错误：未知函数"
 
 msgid "read  value: "
-msgstr ""
+msgstr "读取的值："
 
 msgid "ERROR: Length is unexpected"
-msgstr ""
+msgstr "错误：长度异常"
 
 msgid "ERROR: Wrong simbol in response"
-msgstr ""
+msgstr "错误：响应中包含错误符号"
 
 msgid "ERROR: Not positive response"
-msgstr ""
+msgstr "错误：非肯定响应"
 
 msgid "Match. Exit"
-msgstr ""
+msgstr "匹配成功。退出"
 
 msgid "Not match. Continue"
-msgstr ""
+msgstr "不匹配。继续"
 
 msgid "Not match. Exit"
-msgstr ""
+msgstr "不匹配。退出"
 
 msgid "Match. Continue"
-msgstr ""
+msgstr "匹配成功。继续"
 
 msgid "Match. goto: "
-msgstr ""
+msgstr "匹配成功。跳转至："
 
 msgid "Not match. goto: "
-msgstr ""
+msgstr "不匹配。跳转至："
 
 #, python-format
 msgid ""
 "# LID(%(lid)s) $rawValue = %(raw)s  $scaledValue = %(scaled)s  $hexValue = "
 "%(hex)s"
-msgstr ""
+msgstr "# LID(%(lid)s)  = %(raw)s   = %(scaled)s   = %(hex)s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ERROR: unexpected positive response: %(rsp)s"
-msgstr "预期为保持存活检查响应，实际获取：%s"
+msgstr "错误：意外的肯定响应：%(rsp)s"
 
 msgid "write value: "
-msgstr ""
+msgstr "写入的值："
 
 msgid "ELM connected"
-msgstr ""
+msgstr "ELM 已连接"
 
-#, fuzzy
 msgid "ELM not connected"
-msgstr "ELM 未连接或选择了错误的 COM 端口"
+msgstr "ELM 未连接"
 
 msgid "installed copy (cmd_macros_lib/macros)"
-msgstr ""
+msgstr "已安装的副本 (cmd_macros_lib/macros)"
 
 msgid "manually chosen folder"
-msgstr ""
+msgstr "手动选择的文件夹"
 
 #, python-format
 msgid "ddt4all tables (%(count)d addresses)"
-msgstr ""
+msgstr "ddt4all 映射表 (%(count)d 个地址)"
 
 #, python-format
 msgid "pyren3 fallback (%(count)d addresses)"
-msgstr ""
+msgstr "pyren3 后备方案 (%(count)d 个地址)"
 
 msgid "no table"
-msgstr ""
+msgstr "无映射表"
 
 msgid "pyren3 fallback: disabled"
-msgstr ""
+msgstr "pyren3 后备方案：已禁用"
 
 msgid "pyren3 fallback: no entry"
-msgstr ""
+msgstr "pyren3 后备方案：无条目"
 
 #, python-format
 msgid ""
 "pyren3 fallback: %(count)d addresses as a fallback, used only for the "
 "addresses missing from the ddt4all tables"
 msgstr ""
+"pyren3 后备方案：%(count)d 个后备地址，仅用于 ddt4all 映射表中缺失的地址"
 
 #, python-format
 msgid "pyren3 fallback: %(count)d addresses (source in use)"
-msgstr ""
+msgstr "pyren3 后备方案：%(count)d 个地址（使用中的来源）"
 
 msgid "Done"
-msgstr ""
+msgstr "完成"
 
 #, python-format
 msgid "ERROR: %(error)s"
-msgstr ""
+msgstr "错误：%(error)s"
 
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 msgid "DDT2000 command macros"
-msgstr ""
+msgstr "DDT2000 命令宏"
 
 msgid "Macro folder (.cmd and *.txt)"
-msgstr ""
+msgstr "宏文件夹 (.cmd 与 *.txt)"
 
 msgid "Browse"
-msgstr ""
+msgstr "浏览"
 
 msgid "Refresh"
 msgstr "刷新"
 
 msgid "Macro folder:"
-msgstr ""
+msgstr "宏文件夹："
 
 msgid "Log ELM traffic to file"
-msgstr ""
+msgstr "将 ELM 通信记录到文件"
 
 msgid "Log file name:"
-msgstr ""
+msgstr "日志文件名："
 
 msgid ".cmd files (by ECU)"
-msgstr ""
+msgstr ".cmd 文件（按 ECU 分类）"
 
 msgid "Named macros (by *.txt)"
-msgstr ""
+msgstr "已命名的宏（按 *.txt 分类）"
 
 msgid "Macros by ECU (.cmd)"
-msgstr ""
+msgstr "按 ECU 分类的宏 (.cmd)"
 
 msgid "Named macros (*.txt)"
-msgstr ""
+msgstr "已命名的宏 (*.txt)"
 
-#, fuzzy
 msgid "Send key"
-msgstr "发送字节"
+msgstr "发送按键"
 
 msgid "Key for 'if_key':"
-msgstr ""
+msgstr "'if_key' 对应的按键："
 
-#, fuzzy
 msgid "Execute .cmd"
-msgstr "执行"
+msgstr "执行 .cmd"
 
-#, fuzzy
 msgid "Execute macro"
-msgstr "执行"
+msgstr "执行宏"
 
 msgid "Stop"
-msgstr ""
+msgstr "停止"
 
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 msgid "Log"
-msgstr ""
+msgstr "日志"
 
 msgid "Macro folder"
-msgstr ""
+msgstr "宏文件夹"
 
 #, python-format
 msgid "Parsing error %(file)s: %(error)s"
-msgstr ""
+msgstr "解析 %(file)s 时出错：%(error)s"
 
 #, python-format
 msgid "%(macro)s (defined in %(file)s)"
-msgstr ""
+msgstr "%(macro)s（定义于 %(file)s）"
 
 #, python-format
 msgid "Host: %(host)s"
-msgstr ""
+msgstr "主机：%(host)s"
 
 #, python-format
 msgid "Addresses: %(legacy)s"
-msgstr ""
+msgstr "地址：%(legacy)s"
 
 msgid ""
 "Format: DDT2000 command macros (pyren3); the bundled macros target Renault "
 "ECUs, address resolution follows the vehicle loaded in ddt4all."
 msgstr ""
+"格式：DDT2000 命令宏 (pyren3)；随附的宏适用于雷诺 ECU，地址解析遵循在 "
+"ddt4all 中加载的车辆。"
 
 #, python-format
 msgid "Folder: %(folder)s"
-msgstr ""
+msgstr "文件夹：%(folder)s"
 
 msgid "(none)"
-msgstr ""
+msgstr "(无)"
 
 #, python-format
 msgid "Source: %(source)s"
-msgstr ""
+msgstr "来源：%(source)s"
 
 #, python-format
 msgid ""
 "%(groups)d ECU group(s), %(files)d .cmd file(s), %(named)d named macro(s) in "
 "%(txt)d .txt file(s)"
 msgstr ""
+"%(groups)d 个 ECU 组，%(files)d 个 .cmd 文件，%(txt)d 个 .txt 文件中包含 "
+"%(named)d 个命名宏"
 
 #, python-format
 msgid "Journal files: %(elm)s and %(ecu)s"
-msgstr ""
+msgstr "日志文件：%(elm)s 与 %(ecu)s"
 
 msgid "No ELM connection: the journal is not written."
-msgstr ""
+msgstr "未连接 ELM：未写入日志。"
 
 #, python-format
 msgid "Cannot write the journal (%(error)s)"
-msgstr ""
+msgstr "无法写入日志 (%(error)s)"
 
 #, python-format
 msgid "Journal: %(elm)s"
-msgstr ""
+msgstr "日志：%(elm)s"
 
 #, python-format
 msgid "Journal: %(ecu)s"
-msgstr ""
+msgstr "日志：%(ecu)s"
 
 msgid "ddt4all not found (console mode only)"
-msgstr ""
+msgstr "未找到 ddt4all（仅限控制台模式）"
 
 #, python-format
 msgid "ddt4all %(flavor)s | %(elm)s | addressing: %(addressing)s"
-msgstr ""
+msgstr "ddt4all %(flavor)s | %(elm)s | 寻址：%(addressing)s"
 
 #, python-format
 msgid "%(elm)s | %(files)d .cmd (%(groups)d ECU) | %(named)d named macro(s)"
-msgstr ""
+msgstr "%(elm)s | %(files)d 个 .cmd (%(groups)d 个 ECU) | %(named)d 个命名宏"
 
 #, python-format
 msgid ""
@@ -1210,49 +1240,56 @@ msgid ""
 "Source: %(source)s\n"
 "%(journal)s"
 msgstr ""
+"%(host)s\n"
+"地址：%(legacy)s\n"
+"%(detail)s\n"
+"文件夹：%(folder)s\n"
+"来源：%(source)s\n"
+"%(journal)s"
 
 msgid "Journal: disabled"
-msgstr ""
+msgstr "日志：已禁用"
 
 msgid "A macro is already running."
-msgstr ""
+msgstr "已有宏正在运行。"
 
 msgid "ddt4all is not available: this plugin must be started from ddt4all."
-msgstr ""
+msgstr "ddt4all 不可用：必须从 ddt4all 内部启动此插件。"
 
 msgid "No ELM connection: connect ddt4all to the ELM before running a macro."
-msgstr ""
+msgstr "未连接 ELM：在运行宏之前，请将 ddt4all 连接到 ELM。"
 
 #, python-format
 msgid "--- START %(kind)s: %(macro)s ---"
-msgstr ""
+msgstr "--- 开始 %(kind)s：%(macro)s ---"
 
 msgid "Select a .cmd file (double-click to run)."
-msgstr ""
+msgstr "选择一个 .cmd 文件（双击运行）。"
 
 msgid "Select a named macro (double-click to run)."
-msgstr ""
+msgstr "选择一个命名宏（双击运行）。"
 
 #, python-format
 msgid "# key '%(key)s' sent"
-msgstr ""
+msgstr "# 已发送按键 '%(key)s'"
 
-#, fuzzy
 msgid "# stop requested..."
-msgstr "无对应命名的请求："
+msgstr "# 已请求停止..."
 
 #, python-format
 msgid "--- END: %(status)s ---"
-msgstr ""
+msgstr "--- 结束：%(status)s ---"
 
 #, python-format
 msgid ""
 "WARNING: address %(addr)s resolves to %(tx)s/%(rx)s (ddt4all) but pyren3 "
 "uses %(pltx)s/%(plrx)s"
 msgstr ""
+"警告：地址 %(addr)s 解析为 %(tx)s/%(rx)s (ddt4all)，但 pyren3 使用 %(pltx)s/"
+"%(plrx)s"
 
 msgid "Laguna II UCH Reset"
-msgstr "拉古娜 II UCH 重置"
+msgstr "Laguna II UCH 重置"
 
 msgid "UCH Tools"
 msgstr "UCH 工具"
@@ -1268,16 +1305,16 @@ msgid "Check UCH Virgin"
 msgstr "检查 UCH 是否为空白"
 
 msgid "Virginize UCH"
-msgstr "刷空 UCH"
+msgstr "UCH 恢复初始态 (全新状态)"
 
 msgid "<font color='green'>UCH virgin</font>"
-msgstr "<font color='green'>UCH 状态：全新/未绑定</font>"
+msgstr "<font color='green'>UCH 初始态 (全新)</font>"
 
 msgid "<font color='red'>UCH coded</font>"
 msgstr "<font color='red'>UCH 状态：已绑定</font>"
 
 msgid "Laguna III UCH Reset"
-msgstr "拉古娜 III UCH 重置"
+msgstr "Laguna III UCH 重置"
 
 msgid ""
 "LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1287,7 +1324,7 @@ msgstr ""
 "果您不明白这是什么意思，请立即离开</font>"
 
 msgid "Megane/Scenic II UCH Reset"
-msgstr "梅甘娜/风景 II UCH 重置"
+msgstr "Megane/Scenic II UCH 重置"
 
 msgid ""
 "MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1297,7 +1334,7 @@ msgstr ""
 "您不明白这是什么意思，请立即离开</font>"
 
 msgid "Megane3 AIRBAG Reset"
-msgstr "梅甘娜 3 安全气囊重置"
+msgstr "Megane3 安全气囊重置"
 
 msgid ""
 "Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
@@ -1308,10 +1345,10 @@ msgstr ""
 
 #, python-format
 msgid "SDS FA stream: %s"
-msgstr "SDS FA 流：%s"
+msgstr "SDS FA 数据流：%s"
 
 msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
-msgstr "ZOE/风朗/梅甘娜 III/风景 III EPS 重置"
+msgstr "ZOE/FLENCE/Megane III/Scenic III EPS 重置"
 
 msgid ""
 "ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
@@ -1322,7 +1359,7 @@ msgstr ""
 "EPS 防盗数据<br>如果您不明白这是什么意思，请立即离开</font>"
 
 msgid "Megane/Scenic III UCH Reset"
-msgstr "梅甘娜/风景 III UCH 重置"
+msgstr "Megane/Scenic III UCH 重置"
 
 msgid ""
 "MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
@@ -1345,13 +1382,13 @@ msgstr ""
 
 #, python-format
 msgid "SdSEX stream: %s"
-msgstr "SdSEX 流：%s"
+msgstr "SdSEX 数据流：%s"
 
 msgid "CRC calculator"
 msgstr "CRC 计算器"
 
 msgid "VIN"
-msgstr "VIN 码"
+msgstr "VIN 车架号"
 
 msgid "CRC Calculator"
 msgstr "CRC 计算器"
@@ -1387,7 +1424,7 @@ msgid "High Speed"
 msgstr "高速"
 
 msgid "V_Timer_DrivWEP_ON"
-msgstr "V_Timer_DrivWEP_ON"
+msgstr "V_Timer_DrivWEP_ON (定时器)"
 
 msgid "Reset"
 msgstr "重置"
@@ -1554,13 +1591,13 @@ msgid "ECU Function address"
 msgstr "ECU 功能地址"
 
 msgid "ECU Protocol"
-msgstr "ECU 通信协议"
+msgstr "ECU 协议"
 
 msgid "Tool > Ecu ID (Hex)"
-msgstr "诊断仪 > ECU ID (Hex)"
+msgstr "工具 > ECU 标识 (Hex)"
 
 msgid "Ecu > Tool ID (Hex)"
-msgstr "ECU > 诊断仪 ID (Hex)"
+msgstr "ECU > 工具标识 (Hex)"
 
 msgid "Coding"
 msgstr "编码"
@@ -1584,7 +1621,7 @@ msgid "Add item"
 msgstr "添加项"
 
 msgid "Del item"
-msgstr "删除项"
+msgstr "删除项目"
 
 msgid "New item"
 msgstr "新建项"
@@ -1617,16 +1654,16 @@ msgid "Data length"
 msgstr "数据长度"
 
 msgid "Shift byte count"
-msgstr "字节偏移量"
+msgstr "位移字节数"
 
 msgid "Data name;Start byte;Bit offset;Bit count;Endianess"
-msgstr "数据名称;起始字节;位偏移;位数量;端序"
+msgstr "数据名称;起始字节;位偏移;位数;字节序"
 
 msgid "Little"
-msgstr "小端序 (Little)"
+msgstr "小端 (Little-endian)"
 
 msgid "Big"
-msgstr "大端序 (Big)"
+msgstr "大端 (Big-endian)"
 
 msgid "Inherits globals"
 msgstr "继承全局变量"
@@ -1635,13 +1672,13 @@ msgid "No SDS"
 msgstr "无 SDS"
 
 msgid "Plant"
-msgstr "工厂级"
+msgstr "工厂"
 
 msgid "After Sale"
 msgstr "售后级"
 
 msgid "Engineering"
-msgstr "工程级"
+msgstr "工程"
 
 msgid "Supplier"
 msgstr "供应商级"
@@ -1705,7 +1742,7 @@ msgid "ID frame :"
 msgstr "ID 帧："
 
 msgid "Search vehicle"
-msgstr ""
+msgstr "搜索车辆"
 
 msgid "No vehicles available"
 msgstr "无可用车型"
@@ -1749,7 +1786,7 @@ msgid "Screen"
 msgstr "界面/屏幕"
 
 msgid "CAN Sniffer"
-msgstr "CAN 抓包工具"
+msgstr "CAN 嗅探器"
 
 msgid "Requests"
 msgstr "请求"
@@ -1893,7 +1930,7 @@ msgid "Help"
 msgstr "帮助"
 
 msgid "Web Wiki"
-msgstr "网页 Wiki"
+msgstr "网络 Wiki"
 
 msgid "About Developers"
 msgstr "关于开发者"
@@ -1951,10 +1988,10 @@ msgid "CAN Line 2@125K"
 msgstr "CAN 2 线@125K"
 
 msgid "KWP2000"
-msgstr "KWP2000"
+msgstr "KWP2000 协议"
 
 msgid "ISO8"
-msgstr "ISO8"
+msgstr "ISO8 协议"
 
 msgid "Save database (keep '.zip' extension)"
 msgstr "保存数据库（保持 '.zip' 扩展名）"
@@ -2020,25 +2057,25 @@ msgid "ELM port selection"
 msgstr "ELM 端口选择"
 
 msgid "USB"
-msgstr "USB"
+msgstr "USB 连接"
 
 msgid "WiFi"
-msgstr "WiFi"
+msgstr "Wi-Fi 无线连接"
 
 msgid "Bluetooth"
-msgstr "蓝牙"
+msgstr "蓝牙连接"
 
 msgid "OBDLINK SX/EX"
-msgstr "OBDLINK SX/EX"
+msgstr "OBDLINK SX/EX 诊断仪"
 
 msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
 msgstr "ELS27/ELS27 V5 - 可能显示为 FTDI/CH340/CP210x 设备"
 
 msgid "Vlinker FS/MC"
-msgstr "Vlinker FS/MC"
+msgstr "Vlinker FS/MC 适配器"
 
 msgid "DERLEK USB-DIAG2/3"
-msgstr "DERLEK USB-DIAG2/3"
+msgstr "DERLEK USB-DIAG2/3 适配器"
 
 msgid "VGate (High-Speed)"
 msgstr "VGate (高速)"
@@ -2089,16 +2126,16 @@ msgid "Custom"
 msgstr "自定义"
 
 msgid "Bosch MTS"
-msgstr "博世 MTS"
+msgstr "博世 Bosch MTS 设备"
 
 msgid "VXDIAG VCX Nano"
-msgstr "VXDIAG VCX Nano"
+msgstr "VXDIAG VCX Nano 诊断仪"
 
 msgid "VAG ODIS"
-msgstr "大众 ODIS"
+msgstr "大众 VAG ODIS 接口"
 
 msgid "JLR DoIP VCI"
-msgstr "捷豹路虎 DoIP VCI"
+msgstr "捷豹路虎 JLR DoIP VCI 接口"
 
 msgid "Generic DoIP"
 msgstr "通用 DoIP"
@@ -2215,7 +2252,7 @@ msgstr "已应用 %s 预设："
 
 #, python-format
 msgid "  IP: %s"
-msgstr "  IP：%s"
+msgstr "  IP 地址：%s"
 
 #, python-format
 msgid "  Port: %s"
@@ -2223,7 +2260,7 @@ msgstr "  端口：%s"
 
 #, python-format
 msgid "  Timeout: %ss"
-msgstr "  超时：%s 秒"
+msgstr "  超时：%ss"
 
 msgid "  Configuration saved and device list reloaded"
 msgstr "  配置已保存，设备列表已重新加载"
@@ -2248,7 +2285,7 @@ msgid "Error in targeted DoIP update: %s"
 msgstr "定向 DoIP 更新出错：%s"
 
 msgid "N/A"
-msgstr "不适用/无"
+msgstr "不适用"
 
 msgid "DoIP (Diagnostics over IP) selected"
 msgstr "已选择 DoIP (车载以太网诊断)"
