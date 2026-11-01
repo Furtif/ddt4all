@@ -1371,7 +1371,11 @@ class ParamWidget(widgets.QWidget):
                 response_data = can_response[1] if len(can_response) > 1 else 'insufficient data'
                 print(_("Invalid DTC response: ") + response_data)
                 return
-            numberofdtc = int('0x' + can_response[1], 16)
+            if can_response[0].upper() == "59" and can_response[1] == "02":
+                # UDS ReadDTCInformation / reportDTCByStatusMask: 59 02 <mask> + records
+                numberofdtc = (len(can_response) - 3) // shiftbytecount
+            else:
+                numberofdtc = int('0x' + can_response[1], 16)
         except (ValueError, IndexError):
             # Invalid hexadecimal response or malformed data, treat as no DTC - return silently
             print(_("DTC parsing error - response: ") + str(can_response))
